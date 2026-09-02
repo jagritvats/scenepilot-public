@@ -1,0 +1,12 @@
+# gcloud uploads this directory to Cloud Build before Docker ever sees it, and it does NOT read
+# .dockerignore for that step. Without this file the 766 MB .venv and the developer's own
+# scenepilot.db go up with every deploy.
+#
+# seed/fixtures/recordings/ is deliberately NOT excluded: the warm demo seed and the outage
+# fallback both replay from it, so it has to be in the image.
+.venv
+data
+__pycache__
+*.pyc
+.pytest_cache
+.git

@@ -1,0 +1,136 @@
+{
+  "request": {
+    "role": "breakdown_agent",
+    "user_text": "SCENE HEADING: EXT MUMBAI ROOFTOP — SUNSET\n\nACTION / DESCRIPTION:\nEXT. MUMBAI ROOFTOP — SUNSET #42#\n\nA motorcycle tears across adjoining rooftops.\nA drone follows while fireworks explode over the skyline.\n\nAARAV\n(into helmet radio)\nPackage is secured. Exfil route is hot!\n\nRain begins as the rider jumps to an adjacent building. The tires skid dangerously on the wet concrete."
+  },
+  "response": {
+    "output": {
+      "scene_summary": "A motorcycle chase across Mumbai rooftops at sunset during a sudden rainstorm, featuring a dangerous building-to-building jump and fireworks in the background.",
+      "elements": [
+        {
+          "category": "CAST",
+          "name": "Aarav",
+          "description": "Speaking protagonist, riding the motorcycle and communicating via helmet radio.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "STUNTS",
+          "name": "Motorcycle Rooftop Jump",
+          "description": "Precision stunt rider performing a jump from one rooftop to an adjacent building.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "High fall hazard. Requires precision speed and trajectory."
+        },
+        {
+          "category": "STUNTS",
+          "name": "Motorcycle Wet Skid",
+          "description": "Stunt rider skidding the motorcycle on wet concrete after landing.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "High risk of lowside crash on wet concrete."
+        },
+        {
+          "category": "STUNT_RIGGING",
+          "name": "Jump Ramps and Catch Systems",
+          "description": "Specially engineered take-off and landing ramps, plus safety catch rigging/nets between buildings.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "Must be structurally certified for motorcycle weight and impact."
+        },
+        {
+          "category": "PROPS",
+          "name": "The Package",
+          "description": "The secured package Aarav is transporting.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "PROPS",
+          "name": "Helmet with Radio",
+          "description": "Aarav's helmet featuring an integrated communication radio.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "VEHICLES",
+          "name": "Hero Motorcycle",
+          "description": "Stunt-modified motorcycle capable of rooftop jumping and skidding.",
+          "count": 2,
+          "implied": false,
+          "safety_notes": "Requires mechanical inspection before every take."
+        },
+        {
+          "category": "WARDROBE",
+          "name": "Aarav's Riding Suit",
+          "description": "Tactical riding gear. Requires duplicates for stunt double and wet-weather continuity.",
+          "count": 4,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SFX",
+          "name": "Practical Rain Effects",
+          "description": "Rain bars and water trucks to simulate sudden rainfall on the rooftop.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Creates slip hazards on all rooftop surfaces."
+        },
+        {
+          "category": "VFX",
+          "name": "CGI Skyline and Fireworks",
+          "description": "Digital extension of the Mumbai skyline and background fireworks.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "VFX",
+          "name": "Wire and Rig Removal",
+          "description": "Digital removal of safety wires, ramps, and catch rigs.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SPECIAL_EQUIPMENT",
+          "name": "Filming Drone",
+          "description": "FPV or heavy-lift camera drone to capture the chase and jump.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Must maintain safe distance from stunt rider and crew."
+        },
+        {
+          "category": "LIGHTING",
+          "name": "Sunset and Wet-Down Lighting Package",
+          "description": "Large lighting fixtures to maintain sunset golden hour look and create reflections on wet concrete.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "Electrical safety protocols for wet environment on rooftop."
+        },
+        {
+          "category": "SAFETY",
+          "name": "Rooftop Edge Protection",
+          "description": "Safety lines, harnesses, and spotters for all crew members working near rooftop edges.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "Mandatory fall protection protocols."
+        }
+      ],
+      "stop_conditions": [
+        "Wind gusts exceeding 25 km/h (unsafe for drone flight and motorcycle jump)",
+        "Excessive water pooling on the jump ramp causing hydroplaning risk",
+        "Lightning detected within 10 miles of the rooftop set"
+      ],
+      "continuity_notes": [
+        "Wetness level of Aarav's wardrobe and motorcycle must match across takes",
+        "Sunset lighting angle and color temperature must remain consistent",
+        "Scratches and dirt on the motorcycle and helmet must match prior scenes"
+      ]
+    },
+    "tool_calls": []
+  }
+}

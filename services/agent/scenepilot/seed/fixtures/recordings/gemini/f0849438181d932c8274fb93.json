@@ -1,0 +1,40 @@
+{
+  "request": {
+    "role": "rescue_planner",
+    "user_text": "SHOOT DAY 4 (@DATE@): unit call 06:30, standard day 12.5 h (overtime after 19:00 at ₹7,500/h), hard wrap 22:00, golden hour 17:45–19:15\nDISRUPTION: Rain expected 13:00–17:00 — window 13:00–17:00 (+30 min dry-out), affects exteriors=True, affected resources=none\nBASELINE SCHEDULE:\n  07:00–09:30 Sc 31 EXT. SERVICE ALLEY — DAY [EXT/DAY, 150 min] cast=Aarav Mehta, Meera Iyer equipment=Lighting package\n  10:00–12:30 Sc 19 INT. APARTMENT — DAY [INT/ANY, 150 min] cast=Meera Iyer, Vikram Rao equipment=Lighting package\n  13:30–16:00 Sc 48 EXT. MARKET STREET — DAY [EXT/DAY, 150 min] cast=Aarav Mehta, Vikram Rao equipment=Lighting package\n  16:30–19:00 Sc 42 EXT. MUMBAI ROOFTOP — SUNSET [EXT/SUNSET, 150 min] cast=Aarav Mehta, Stunt double equipment=FPV drone unit, 30 ft telescopic crane, Hero motorcycle + camera rig, Fireworks rig (licensed pyrotechnician)\nCOVER SCENES (unscheduled, can be pulled forward): Sc 27 INT. APARTMENT KITCHEN — MORNING [INT, 75 min] cast=Meera Iyer\nAVAILABILITY WINDOWS TODAY:\n  CAST Aarav Mehta (Rider / lead): 06:00–21:00\n  CAST Meera Iyer (Zoya): 06:30–19:00 — evening flight — hard out 19:00\n  CAST Vikram Rao (Inspector Dalvi): 09:00–20:00 — arrives from second unit\n  CAST Stunt double (Rider): 06:00–21:00\n  LOCATION Rooftop A — Sitara Mills, Lower Parel: 06:00–20:30 — owner permission + rooftop access\n  LOCATION Service alley — Kala Ghoda: 06:30–18:00\n  LOCATION Market street — Bhuleshwar: 13:00–18:00 — traffic police permit window only\n  LOCATION Apartment set — Film City Stage 3: 06:00–23:00\n  EQUIPMENT FPV drone unit: 06:00–21:00 (weather-sensitive)\n  EQUIPMENT 30 ft telescopic crane: 06:00–21:00 — one-day rental\n  EQUIPMENT Hero motorcycle + camera rig: 06:00–21:00\n  EQUIPMENT Fireworks rig (licensed pyrotechnician): 14:00–21:00 (weather-sensitive)\nTRAVEL (min): Service alley↔Apartment set 30, Apartment set↔Market street 40, Market street↔Rooftop A 25, Service alley↔Market street 20, Service alley↔Rooftop A 35, Apartment set↔Rooftop A 45\n\nIMPACT: 2 scheduled scene(s) directly affected during 13:00–17:00: Sc 48, Sc 42. 5 requirement(s) violated, 11 resource(s) implicated, 1 item(s) pinned, 3 movable, 1 cover scene(s) available.\n  - violated: WEATHER: Dry exterior; crowd of 60 background artists\n  - violated: SAFETY: Dry, non-slip rooftop surface for motorcycle and rider jump; wet surface is a stop condition\n  - violated: TECHNICAL: Drone tracking flight over an urban rooftop — no flight in rain or gusts\n  - violated: WEATHER: Controlled rain effect on cue; ambient rain must not be present before the jump\n  - violated: EQUIPMENT: Telescopic crane for the jump reveal; motorcycle camera rig\n\nALREADY EVALUATED ORDERINGS (do not repeat):\nOPTION A (FEASIBLE, origin deterministic): defer Sc 48; pull cover Sc 27 into 13:00; move Sc 42 16:30→17:30 (later)\n  schedule: Sc 31 07:00–09:30, Sc 19 10:00–12:30, Sc 27 13:00–14:15, Sc 42 17:30–20:00\n  carried over: Sc 48\n  score: total 80 | preservation 81, cost 55 (₹67,500 extra), overtime 67 (60 min), moves 100 (+0), resources 100, creative 90, confidence 70\n  violations: soft: 60 min overtime beyond 19:00 wrap (≈₹7,500); soft: Scene 48 carried over to another day (≈₹60,000)\nOPTION B (FEASIBLE, origin deterministic): defer Sc 48; move Sc 42 16:30→17:30 (later)\n  schedule: Sc 31 07:00–09:30, Sc 19 10:00–12:30, Sc 42 17:30–20:00\n  carried over: Sc 48\n  score: total 77 | preservation 71, cost 55 (₹67,500 extra), overtime 67 (60 min), moves 100 (+0), resources 100, creative 90, confidence 70\n  violations: soft: 60 min overtime beyond 19:00 wrap (≈₹7,500); soft: Scene 48 carried over to another day (≈₹60,000)\nOPTION C (FEASIBLE, origin deterministic): defer Sc 48; defer Sc 42; pull cover Sc 27 into 13:00\n  schedule: Sc 31 07:00–09:30, Sc 19 10:00–12:30, Sc 27 13:00–14:15\n  carried over: Sc 48, Sc 42\n  score: total 60 | preservation 60, cost 0 (₹240,000 extra), overtime 100 (0 min), moves 100 (+0), resources 20, creative 80, confidence 70\n  violations: soft: Scene 48 carried over to another day (≈₹60,000); soft: Scene 42 carried over to another day (≈₹60,000); soft: FPV drone unit is only booked for Day 4; carrying Scene 42 needs a re-rental (≈₹35,000); soft: 30 ft telescopic crane is only booked for Day 4; carrying Scene 42 needs a re-rental (≈₹45,000); soft: Hero motorcycle + camera rig is only booked for Day 4; carrying Scene 42 needs a re-rental (≈₹15,000); soft: Fireworks rig (licensed pyrotechnician) is only booked for Day 4; carrying Scene 42 needs a re-rental (≈₹25,000)\nOPTION D (REJECTED, origin deterministic): Shoot through as planned\n  schedule: Sc 31 07:00–09:30, Sc 19 10:00–12:30, Sc 48 13:30–16:00, Sc 42 16:30–19:00\n  carried over: none\n  score: total 0 | preservation 100, cost 100 (₹0 extra), overtime 100 (0 min), moves 100 (+0), resources 100, creative 100, confidence 70\n  violations: HARD: Scene 48 overlaps rain expected 13:00–17:00 window by 150 min (exterior scene, not rain-tolerant); HARD: Scene 42 overlaps rain expected 13:00–17:00 window by 60 min (exterior scene, not rain-tolerant)\nOPTION E (REJECTED, origin deterministic): move Sc 48 13:30→10:00 (earlier); move Sc 19 10:00→13:10 (later); move Sc 42 16:30→17:30 (later)\n  schedule: Sc 31 07:00–09:30, Sc 48 10:00–12:30, Sc 19 13:10–15:40, Sc 42 17:30–20:00\n  carried over: none\n  score: total 0 | preservation 88, cost 95 (₹7,500 extra), overtime 67 (60 min), moves 100 (+0), resources 60, creative 100, confidence 70\n  violations: HARD: Market street — Bhuleshwar not available for Scene 48 at 10:00–12:30 (window 13:00–18:00); soft: 60 min overtime beyond 19:00 wrap (≈₹7,500)\n\nPropose up to 2 additional orderings using scene numbers only."
+  },
+  "response": {
+    "output": {
+      "proposals": [
+        {
+          "title": "Early Kitchen Cover and Midday Apartment",
+          "strategy": "Start with the kitchen cover scene at Film City, move to the alley before the rain, and return to the apartment set to utilize the rain window for the main interior scene, releasing Meera Iyer early.",
+          "order_scene_numbers": [
+            "Sc 27",
+            "Sc 31",
+            "Sc 19",
+            "Sc 42"
+          ],
+          "deferred_scene_numbers": [
+            "Sc 48"
+          ]
+        },
+        {
+          "title": "Alley First, Kitchen Cover, then Midday Apartment",
+          "strategy": "Shoot the alley scene first, then move to Film City to shoot the kitchen cover and the main interior scene back-to-back during the rain window, before moving to the rooftop.",
+          "order_scene_numbers": [
+            "Sc 31",
+            "Sc 27",
+            "Sc 19",
+            "Sc 42"
+          ],
+          "deferred_scene_numbers": [
+            "Sc 48"
+          ]
+        }
+      ],
+      "reasoning": "Both proposals group the Film City Stage 3 apartment scenes (Sc 27 and Sc 19) together to minimize company moves, utilize the 13:00–17:00 rain window for interior shooting, and wrap Meera Iyer by 14:15 so she easily makes her 19:00 hard out flight."
+    },
+    "tool_calls": []
+  }
+}

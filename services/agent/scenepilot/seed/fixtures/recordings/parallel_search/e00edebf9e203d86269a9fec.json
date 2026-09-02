@@ -1,0 +1,89 @@
+{
+  "request": {
+    "objective": "Find the specific application form, lead times, and safety distance protocols (such as fallout zones) required by the Mumbai Fire Brigade and Mumbai Police for a public fireworks display or aerial pyrotechnics permit in Mumbai.",
+    "search_queries": [
+      "Mumbai Fire Brigade fireworks display NOC application",
+      "Mumbai Police permission public fireworks display lead time",
+      "Explosives Rules 2008 public display fireworks safety distance"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_1da012d46da933303908a973c81b5fbb",
+    "results": [
+      {
+        "url": "https://mahafireservice.gov.in/e-fire.php",
+        "title": "E-Approval | Maharashtra Fire & Emergency Services",
+        "publish_date": null,
+        "excerpts": [
+          "# Government of Maharashtra\n## Maharashtra Fire & Emergency Services\nMFS Logo\nE-Approval\n[E-Approval Online Application. click here](https://mahafireservice.com/Login)\nDocuments Required for Obtaining Fire Approval or Provisional No-Objection Certificate\n| Sr. No. | Description |\n| 1 | Application shall be addressed to “ The Director Maharashtra Fire & Emergency Services-Mumbai ” |\n| 2 | Application from the Individual/Company/ Society on letterhead duly stamped and signed by authorized signatory or the Architect/ Civil Engineers appointed by the company along with authorization letter issued by the company.\n\n...\n\n* Locate Us\nMAHARASHTRA FIRE & EMERGENCY SERVICES ACADEMY,\nHANS BHUGRA MARG, KALINA, SANTACRUZ (EAST),\nMUMBAI- 400098\nPhone: [022 69820555](tel: 022 69820555)\n* Services\n+ Training\n+ Fire Approval\n+ License\n+ Technical Specs\n+ Support\n* The Industry\n+ List of License Agency\n+ Seminar & Conferences\n+ Products\n* Public Relations\n+ Public Awareness\n+ RTI\n+ News & Events\n+ Other imp Links\n* About\n+ ULB and SPA Fire Service Details\n+ Directorate Staff\n+ Contact Us"
+        ]
+      },
+      {
+        "url": "https://services.india.gov.in/service/detail/online-application-of-e-fire-approval-for-maharashtra-1",
+        "title": "Online application of e-fire approval for Maharashtra | National Government Services Portal",
+        "publish_date": null,
+        "excerpts": [
+          "Registered users can <strong>apply online for fire approval certificate or provisional No Objection Certificate (NOC) for Maharashtra</strong>, this service is provided by the Directorate of Maharashtra Fire Services. Detailed instructions on how to apply for fire approval and the NOC are provided."
+        ]
+      },
+      {
+        "url": "https://autodcr.mcgm.gov.in/BPAMSClient2/Downloads/Forms/Document%20Checklist%20for%20Occupancy%20NOC.pdf",
+        "title": "MUMBAI FIRE BRIGADE Documents required for NOC for ...",
+        "publish_date": null,
+        "excerpts": [
+          "We cannot provide a description for this page right now"
+        ]
+      },
+      {
+        "url": "https://peso.gov.in/web/en/forms-and-certificates-list?page=1&tid=All&tid_1=All",
+        "title": "Forms and Certificates | Petroleum & Explosive Safety Organisation ",
+        "publish_date": null,
+        "excerpts": [
+          "# Forms and Certificates\n## Breadcrumb\n| Explosives Rules, 2008 | Form AE-3 (37.37 KB) | Application for approval or grant or amendment or transfer of licence for possession and sale of explosives; for possession and use of explosives; or for possession of fireworks or safety fuse in a store house | Application Form |\n\n...\n\n| Explosives Rules, 2008 | Form AE-6 (17.89 KB) | Application for approval or grant of licence for public display of fireworks | Application Form |\n| Explosives Rules, 2008 | Form AE-7 (17.17 KB) | Application for approval or grant or amendment or transfer of licence for transport of explosives in road van | Application Form |\n\n...\n\n| Explosives Rules, 2008 | Form DE-1 (30.51 KB) | Distance form to be submitted by the applicant indicating the clear distances available around proposed storage magazine for explosives or fire works or proposed explosives factory | Application Form |"
+        ]
+      },
+      {
+        "url": "https://www.latestlaws.com/bare-acts/central-acts-rules/criminal-laws/the-explosives-act-1884/explosives-rules2008",
+        "title": "Explosives Rules, 2008",
+        "publish_date": null,
+        "excerpts": [
+          "# Explosives Rules, 2008\n_(iii) Display fireworks_ .—Any product of fireworks assembled at the site for the purpose of display including shell of diameter exceeding 25 mm, multiple shots or cake products of any diameter exceeding 25 nos., of shots in a product and lance network or other products as approved by the Chief Controller; and\n\n...\n\n_(v)_ Licence fee as per Schedule IV, Part 2.\n[(vi) Copies of documents in support of rightful possession of the premises.] |\n|20. |Licence to possess and use fireworks for public display. |6 |LE-6 |Not necessary as per sub-rule (4) of rule 101. |_(i)_ Form AE-6;\n_(ii)_ Site Plan for display of fireworks;\n\n...\n\n| 6 | Licence to possess and use fireworks for public display. | LE-6 | District Magistrate |\n| 7 | Licence to transport explosives in a road van [or freight container mounted on a fixed chasis motor truck or goose neck type semi trailer vehicle]. | LE-7 | Controller of Explosives |\n\n...\n\n| (2) | The following fees(one time) shall be payable for each licence issued under these rules: |  |\n|  | Licence fees for - |  |\n|  | (i) import of explosives | Rs.1500 |\n|  | (ii) export of explosives | Rs.1000 |\n|  | (iii) possession and public display of fireworks | Rs . 500 |\n\n...\n\n**FORM AE - 6**\n( _See rule 113 of the Explosives Rules, 2008_ )\nAPPLICATION FOR APPROVAL OR GRANT OF LICENCE FOR PUBLIC DISPLAY OF FIREWORKS\nI,...............on behalf of..................apply for approval or grant or amendment(1) of licence for the following purpose.\n\n...\n\n| 4. Qualifications and experience of applicant and the technical personnel employed by him. | …………………………. |\n| (Give individual details and attach separate sheet if required) | …………………………. |\n| 5. Name, qualification and experience of the persons supervising the display | ………………………….. |\n| 6.\n\n...\n\n(1) The licensee shall intimate the licensing authority at least seven days in advance before conducting fireworks display :\n(a) time and place at which the public display is to be held,\n(b) the types of fireworks to be used in the display,\n\n...\n\nThe suitability of a site and the amount of explosives that may be stored are determined by its distance from public thoroughfares; residential or industrial areas, railways etc. as specified in the table of safety distance in Schedule VIII.\n\n...\n\n(2) The storehouse shall maintain open safety distance of 3 metres on all sides, which shall be protected by 1.8 metres high boundary wall or fencing.\n(3) The storehouse shall have a floor area of not less than 12 square metres and not more than 40 square metres for storage of fireworks.\n\n...\n\n**TABLE - 3**\nTable of safety distances (in metres) for, magazine of category \"X\"(fireworks)"
+        ]
+      },
+      {
+        "url": "https://indiankanoon.org/doc/60892116/",
+        "title": "The Explosives Rules, 2008",
+        "publish_date": null,
+        "excerpts": [
+          "# The Explosives Rules, 2008\n## Rule THE-EXPLOSIVES-RULES-2008 of 2008\n### 113. Documents for approval and grant of licence\nObjection Certificate with approved plan by District Magistrate; (v)Licence fee as per Schedule IV, Part 2. |\n|20. |Licence to possess and use fireworks for public display. |6 |LE-6 |Not necessary as per sub-rule (4) of rule 101.\n|(i)Form AE-6; (ii)Site Plan for display of fireworks; (iii)Passport size photographs of the occupier along with documentary evidence of nomination as occupier as per rule 2; (iv)Licence fee as per Schedule IV, Part 2; (v)Public liability insurance. |\n|21.\n\n...\n\n## Part 1 – (See rule 99)\n### 4. Explosives proposed to be possessed :\nFORM AE - 6 (See rule 113 of the Explosives Rules, 2008) APPLICATION FOR APPROVAL OR GRANT OF LICENCE FOR PUBLIC DISPLAY OF FIREWORKS I,...............on behalf of..................apply for approval or grant or amendment(1) of licence for the following purpose.\n\n...\n\n### 3. The proposed premises are situated at the following address:\n|…………………………. |\n| --- | --- |\n|(Give individual details and attach separate sheet if required) |…………………………. |\n|5. Name, qualification and experience of the persons supervising the display |………………………….. |\n|6. Description and quantity of fireworks to be used |………………………….. |\n|7.\n\n...\n\n### 9. This licence shall remain valid till 31st day of March.....................20.....................\ndwelling house, other building, another licensed premises, highway, street, public thoroughfare or public place by a distance of 45 metres.\n\n...\n\n### 2. Date of Arrival at.......................Port......................\nForm DE - 1 (See rule 113 of the Explosives Rules, 2008) Distance form to be submitted by the applicant indicating the clear distances available around proposed storage magazine for explosives or fire works or proposed explosives factory Proposed kinds and quantity of\n\n...\n\nFORM DE - 2 (See rule 113 of the Explosives Rules, 2008) (Distance Form to be attached to the licence) Safety distances required to be kept clear around magazine for high explosives or fire works or factory licence number..........in form...........granted to.........\n\n...\n\n## Part 1\n(2) The storehouse shall maintain open safety distance of 3 metres on all sides, which shall be protected by 1.8 metres high boundary wall or fencing.\n(3) The storehouse shall have a floor area of not less than 12 square metres and not more than 40 square metres for storage of fireworks."
+        ]
+      },
+      {
+        "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=160455&reg=48&lang=2",
+        "title": "\n\tDirectives under Rule 126 of Explosives Rules 2008 \n",
+        "publish_date": null,
+        "excerpts": [
+          "A recent accident\nduring display of fireworks at Paravoor, Kerala has brought out several\ndiscrepancies such as lack of effective enforcement of the Explosive Rules 2008\non the part of the district administration, use of unauthorized fireworks, viz.\nAmittus, Kuzhiminnal, Palm leaf crackers, multishots, gundus etc., use of\nunauthorized chemicals i.e. potassium chlorate in fireworks, unauthorized\nstorage of fireworks at public display site and non-adherence of prescribed\nsafety distances between display site and spectators,\netc.\nTo prevent such\nincidents in future, there is an urgent need of tightening of enforcement of\nthe Explosives Rules 2008 by District Authorities. For the same, following\ndirectives are issued under Rule 126 of the Explosives Rules 2008 to be\nimplemented by District Authorities for safe public display of fireworks:-\n(i) District Magistrate’s office will be the single window for granting licenses\nin Form LE-6 of the Explosives Rules, 2008 for public display of fireworks.\nApplication for license for public display of fireworks shall be submitted to\nthe District Magistrate’s office two months prior to scheduled date of display\n\n...\n\n(ii) District Magistrate may take appropriate decision on relaxation of\ntiming for display of fireworks in the light of Hon’ble Supreme Court’s order\ndated 26.03.2007 in the case of Prevention of Environmental and Sound Pollution\nForum Vs Union of India and others [Writ Petition (Civil) No. 72 of 1998];\n(iii) Only authorized fireworks approved by Chief Controller of Explosives\nshall be used for public display of fireworks ( _Rule 6 and condition 4 of\nlicence in Form LE-6 of the Explosives Rules 2008)_ ;\n\n...\n\n(vi) The District Magistrate shall ascertain that 100 meters safety distance between\nthe fireworks display site and spectators and 250 meters from hospitals,\nschools and nursing home shall be strictly complied. Barricading shall be\nprovided at 100 meters around the display site to prevent entry of general\npublic in the display area _(conditions 3 and 11 of licence in Form LE-6 of\nthe Explosives Rules 2008_ );\n(vii) Wherever these safety distances are not available, the display site\nshould be shifted to a suitable area.  Even if safety distances are available\nbut the display site is congested, that may make evacuation of people in case\nof an accident difficult/ problematic, it should be shifted to an open area;\n(viii) District Authority shall ensure presence of experienced manpower for\nconducting fireworks display _(condition 24 of licence in Form LE-6 of the\nExplosives Rules 2008);_\n\n...\n\nshall not be used for public display ( _Rule 128 (c) and condition 6 of\nlicence in Form LE-6 of the Explosives Rules 2008)_ ;\n(xii) District Magistrate will have to send a report every 15 days to the\nState Government regarding display of fireworks, starting one month prior to start\nof festival season till the end. The report shall include particulars like no.\nof applications received, no. of licenses granted, su"
+        ]
+      },
+      {
+        "url": "https://safetyculture.com/topics/firework-safety",
+        "title": "The Ultimate Guide to Firework Safety | SafetyCulture",
+        "publish_date": null,
+        "excerpts": [
+          "Common types typically include aerial shells, cakes, and other complex pyrotechnic devices that create elaborate visual effects at heights ranging from <strong>200 to 1,000 feet</strong>. Unlike consumer fireworks, display fireworks are classified as 1.3G explosives"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

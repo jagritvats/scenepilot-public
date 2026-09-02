@@ -1,0 +1,132 @@
+{
+  "request": {
+    "role": "scene_breakdown",
+    "user_text": "PRODUCTION: Project Nightfall (fictional). Base city: Mumbai, IN.\nSCENE NUMBER: 42\nKNOWN HEADING: EXT. MUMBAI ROOFTOP — SUNSET\n\nSCENE INPUT:\nEXT. MUMBAI ROOFTOP — SUNSET\n\nA motorcycle tears across adjoining rooftops.\nA drone follows while fireworks explode over the skyline.\nRain begins as the rider jumps to an adjacent building.\n"
+  },
+  "response": {
+    "output": {
+      "scene": {
+        "heading": "EXT. MUMBAI ROOFTOP — SUNSET",
+        "int_ext": "EXT",
+        "time_of_day": "SUNSET",
+        "synopsis": "A motorcycle tears across adjoining rooftops. A drone follows while fireworks explode over the skyline. Rain begins as the rider jumps to an adjacent building.",
+        "estimated_minutes": 240,
+        "cast_roles": [
+          "Stunt Rider"
+        ],
+        "equipment": [
+          "Heavy-duty camera drone",
+          "Stunt motorcycle",
+          "SFX Rain machines",
+          "Water tankers",
+          "Pyrotechnic launch systems",
+          "Stunt ramps",
+          "Safety catch nets / Airbags"
+        ],
+        "rain_tolerant": false
+      },
+      "requirements": [
+        {
+          "ref": "R1",
+          "category": "LOCATION",
+          "description": "Two structurally sound, adjoining flat rooftops in Mumbai capable of supporting a motorcycle, ramps, and crew.",
+          "importance": "CRITICAL",
+          "source_ref": "adjoining rooftops",
+          "depends_on": [],
+          "weather_sensitive": true
+        },
+        {
+          "ref": "R2",
+          "category": "SAFETY",
+          "description": "Structural engineering assessment and reinforcement of the rooftops to safely handle the impact of the motorcycle jump.",
+          "importance": "CRITICAL",
+          "source_ref": "the rider jumps to an adjacent building",
+          "depends_on": [
+            "R1"
+          ],
+          "weather_sensitive": false
+        },
+        {
+          "ref": "R3",
+          "category": "REGULATORY",
+          "description": "DGCA drone flight permits and local police clearance for operating a camera drone over urban Mumbai rooftops at sunset.",
+          "importance": "HIGH",
+          "source_ref": "A drone follows",
+          "depends_on": [],
+          "weather_sensitive": true
+        },
+        {
+          "ref": "R4",
+          "category": "CAST",
+          "description": "Professional stunt rider experienced in high-speed motorcycle jumps and wet-surface maneuvers.",
+          "importance": "CRITICAL",
+          "source_ref": "the rider jumps to an adjacent building",
+          "depends_on": [],
+          "weather_sensitive": true
+        },
+        {
+          "ref": "R5",
+          "category": "REGULATORY",
+          "description": "Pyrotechnics permit and clearance from Mumbai fire department for launching fireworks over the skyline.",
+          "importance": "HIGH",
+          "source_ref": "fireworks explode over the skyline",
+          "depends_on": [],
+          "weather_sensitive": true
+        },
+        {
+          "ref": "R6",
+          "category": "TECHNICAL",
+          "description": "SFX rain machines and overhead truss systems to simulate localized rain starting mid-scene without damaging electrical equipment.",
+          "importance": "HIGH",
+          "source_ref": "Rain begins",
+          "depends_on": [],
+          "weather_sensitive": true
+        },
+        {
+          "ref": "R7",
+          "category": "SAFETY",
+          "description": "Non-slip surface treatment applied to the motorcycle takeoff and landing zones to ensure traction when wet.",
+          "importance": "CRITICAL",
+          "source_ref": "Rain begins as the rider jumps",
+          "depends_on": [
+            "R6"
+          ],
+          "weather_sensitive": true
+        },
+        {
+          "ref": "R8",
+          "category": "SCHEDULE",
+          "description": "Strict scheduling to shoot during the limited 30-40 minute sunset window for matching skyline lighting.",
+          "importance": "HIGH",
+          "source_ref": "SUNSET",
+          "depends_on": [],
+          "weather_sensitive": true
+        },
+        {
+          "ref": "R9",
+          "category": "LOGISTICS",
+          "description": "Coordination with local neighborhood associations regarding noise control for the motorcycle engine and fireworks.",
+          "importance": "MEDIUM",
+          "source_ref": "fireworks explode over the skyline",
+          "depends_on": [
+            "R5"
+          ],
+          "weather_sensitive": false
+        },
+        {
+          "ref": "R10",
+          "category": "SAFETY",
+          "description": "Rooftop edge protection, safety harnesses for crew, and specialized catch nets/airbags for the stunt jump gap.",
+          "importance": "CRITICAL",
+          "source_ref": "the rider jumps to an adjacent building",
+          "depends_on": [
+            "R2",
+            "R4"
+          ],
+          "weather_sensitive": true
+        }
+      ]
+    },
+    "tool_calls": []
+  }
+}

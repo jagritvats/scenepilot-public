@@ -1,0 +1,47 @@
+{
+  "request": {
+    "role": "rescue_explainer",
+    "user_text": "SHOOT DAY 3 (@DATE@): unit call 06:30, standard day 12 h (overtime after 18:30 at ₹5,000/h), hard wrap 22:00, golden hour 17:45–19:15\nDISRUPTION: Vikram Rao delayed until 15:00 — window 06:30–15:00 (+0 min dry-out), affects exteriors=False, affected resources=['cast_vikram']\nBASELINE SCHEDULE:\n  05:45–07:15 Sc 12 EXT. SEA LINK — DAWN [EXT/DAWN, 90 min] cast= equipment=FPV drone unit\nCOVER SCENES (unscheduled, can be pulled forward): Sc 27 INT APARTMENT KITCHEN — MORNING [INT, 75 min] cast=Meera Iyer\nAVAILABILITY WINDOWS TODAY:\n  CAST Aarav Mehta (Rider / lead): \n  CAST Meera Iyer (Zoya):  — evening flight — hard out 19:00\n  CAST Vikram Rao (Inspector Dalvi):  — arrives from second unit\n  CAST Stunt double (Rider): \n  LOCATION Rooftop A — Sitara Mills, Lower Parel:  — owner permission + rooftop access\n  LOCATION Service alley — Kala Ghoda: \n  LOCATION Market street — Bhuleshwar:  — traffic police permit window only\n  LOCATION Apartment set — Film City Stage 3: \n  EQUIPMENT FPV drone unit:  (weather-sensitive)\n  EQUIPMENT 30 ft telescopic crane:  — one-day rental\n  EQUIPMENT Hero motorcycle + camera rig: \n  EQUIPMENT Fireworks rig (licensed pyrotechnician):  (weather-sensitive)\nTRAVEL (min): Service alley↔Apartment set 30, Apartment set↔Market street 40, Market street↔Rooftop A 25, Service alley↔Market street 20, Service alley↔Rooftop A 35, Apartment set↔Rooftop A 45\n\nDISRUPTION VERIFICATION: n/a — Internal disruption — external verification not applicable.\n\nRANKED OPTIONS:\nOPTION A (FEASIBLE, origin deterministic): defer Sc 12\n  schedule: \n  carried over: Sc 12\n  score: total 60 | preservation 0, cost 60 (₹60,000 extra), overtime 100 (0 min), moves 100 (+0), resources 100, creative 90, confidence 50\n  violations: soft: Scene 12 carried over to another day (≈₹60,000)\nOPTION B (REJECTED, origin deterministic): Shoot through as planned\n  schedule: Sc 12 05:45–07:15\n  carried over: none\n  score: total 0 | preservation 100, cost 100 (₹0 extra), overtime 100 (0 min), moves 100 (+0), resources 60, creative 100, confidence 50\n  violations: HARD: Scene 12 starts 05:45 before unit call 06:30; HARD: FPV drone unit unavailable for Scene 12 at 05:45–07:15 (available not on this day)\nOPTION C (REJECTED, origin deterministic): move Sc 12 05:45→07:00 (later)\n  schedule: Sc 12 07:00–08:30\n  carried over: none\n  score: total 0 | preservation 96, cost 100 (₹0 extra), overtime 100 (0 min), moves 100 (+0), resources 60, creative 70, confidence 50\n  violations: HARD: FPV drone unit unavailable for Scene 12 at 07:00–08:30 (available not on this day); soft: DAWN scene 12 gets 30 min of golden hour instead of 60\nOPTION D (REJECTED, origin gemini): Utilize the morning crew call by pulling forward interior cover Scene 27 with Meera Iyer, releasing her well before her evening flight, while deferring the drone-dependent Scene 12.\n  schedule: Sc 27 07:00–08:15\n  carried over: Sc 12\n  score: total 0 | preservation 10, cost 60 (₹60,000 extra), overtime 100 (0 min), moves 100 (+0), resources 20, creative 90, confidence 50\n  violations: HARD: Meera Iyer (Zoya) unavailable for Scene 27 at 07:00–08:15 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 27 at 07:00–08:15 (window not on this day); soft: Scene 12 carried over to another day (≈₹60,000)\n\nSCORE WEIGHTS: schedule_preservation: 0 × 0.30, cost_impact: 60 × 0.15, overtime_risk: 100 × 0.15, company_moves: 100 × 0.10, resource_conflicts: 100 × 0.10, creative_compromise: 90 × 0.15, confidence: 50 × 0.05"
+  },
+  "response": {
+    "output": {
+      "headline": "Defer Scene 12 due to drone and call time constraints",
+      "options": [
+        {
+          "label": "Option A (Feasible): Defer Sc 12",
+          "explanation": "This option defers the dawn exterior Scene 12 to a later day. It successfully avoids scheduling conflicts with the unavailable FPV drone unit and respects the 06:30 unit call time. This keeps the day's schedule clean of overtime and resource clashes.",
+          "trade_offs": [
+            "Carries over Scene 12 to another day, incurring an estimated ₹60,000 extra cost.",
+            "Reduces schedule preservation score to 0."
+          ]
+        },
+        {
+          "label": "Option B (Rejected): Shoot through as planned",
+          "explanation": "This option attempts to shoot Scene 12 at its original time of 05:45–07:15. It is rejected because it schedules the scene before the 06:30 unit call and relies on the FPV drone unit which is unavailable on this day.",
+          "trade_offs": [
+            "Violates the 06:30 unit call time constraint.",
+            "Requires an unavailable FPV drone unit."
+          ]
+        },
+        {
+          "label": "Option C (Rejected): Move Sc 12 05:45→07:00",
+          "explanation": "This option shifts Scene 12 to a slightly later slot starting at 07:00. It is rejected because the FPV drone unit remains completely unavailable on this day, and it also reduces the dawn creative quality.",
+          "trade_offs": [
+            "Requires an unavailable FPV drone unit.",
+            "Reduces dawn creative quality by overlapping with golden hour."
+          ]
+        },
+        {
+          "label": "Option D (Rejected): Pull forward cover Scene 27",
+          "explanation": "This option attempts to utilize the morning by pulling forward interior cover Scene 27 while deferring Scene 12. It is rejected because both Meera Iyer and the Apartment set (Film City Stage 3) are unavailable during the proposed 07:00–08:15 slot.",
+          "trade_offs": [
+            "Violates Meera Iyer's availability window.",
+            "Violates the Apartment set location availability."
+          ]
+        }
+      ],
+      "recommendation_rationale": "Option A is the only feasible path forward. While it carries over Scene 12 to another day at an estimated cost of ₹60,000, it is the only option that does not violate hard constraints. Option B and Option C are impossible because the FPV drone unit is unavailable today, and Option B additionally violates the 06:30 unit call. Option D is blocked because both cast member Meera Iyer and the Film City Stage 3 apartment set are unavailable in the morning. Option A preserves perfect scores for overtime (0 minutes), company moves (+0), and resource conflicts, making it the safest operational choice despite the creative compromise of a carried-over scene."
+    },
+    "tool_calls": []
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "request": {
+    "role": "research_planner",
+    "user_text": "PRODUCTION: Project Nightfall (fictional). Base city: Mumbai, IN. Planned shoot window: @DATE@ to @DATE@.\nSCENE 42: EXT. MUMBAI ROOFTOP — SUNSET\nSYNOPSIS: A motorcycle rider tears across adjoining rooftops in Mumbai, followed by a drone, while fireworks explode in the background. As the rider jumps to an adjacent building, rain begins to fall.\n\nREQUIREMENTS:\n- req_sc_42_1 [LOCATION/CRITICAL] Two or more structurally sound, adjoining flat rooftops in Mumbai with adequate clearance for motorcycle acceleration and landing.\n- req_sc_42_2 [SAFETY/CRITICAL] Structural engineering assessment and reinforcement of the rooftops to safely bear the weight of the motorcycle, ramps, and crew.\n- req_sc_42_3 [REGULATORY/HIGH] DGCA drone flight permits and local Mumbai airspace clearance for low-altitude filming over residential/commercial structures.\n- req_sc_42_4 [REGULATORY/HIGH] Local municipal and fire department permits for launching fireworks over the Mumbai skyline at sunset.\n- req_sc_42_5 [CAST/CRITICAL] Professional precision stunt rider experienced in high-altitude motorcycle jumps and rooftop maneuvers.\n- req_sc_42_6 [EQUIPMENT/CRITICAL] Engineered takeoff and landing ramps with high-friction, non-slip surfaces to prevent motorcycle slippage during the jump.\n- req_sc_42_7 [WEATHER/HIGH] Dry weather window with low wind speeds (<15 knots) to ensure safe drone flight and motorcycle jump execution.\n- req_sc_42_8 [TECHNICAL/HIGH] Controlled rain machines or VFX rain coordination to simulate the sudden downpour without wetting the takeoff ramp before the jump.\n- req_sc_42_9 [EQUIPMENT/HIGH] Heavy-lift drone equipped with a low-light optimized camera rig to capture high-speed action during the rapid sunset transition.\n- req_sc_42_10 [SCHEDULE/HIGH] Strict rehearsal schedule during daylight to allow execution within the narrow 30-40 minute sunset window.\n- req_sc_42_11 [CONTINUITY/MEDIUM] Multiple identical wardrobe sets for the rider to allow quick dry-offs between takes once the rain effect is activated.\n- req_sc_42_12 [SAFETY/CRITICAL] Dedicated high-angle rescue team, fall-arrest rigging, and on-site emergency medical services stationed at the rooftop level.\n"
+  },
+  "response": {
+    "output": {
+      "questions": [
+        {
+          "ref": "Q1",
+          "question": "What are the historical weather patterns, monsoon risks, and average wind speeds in Mumbai during late August (specifically August 25-27) that could impact drone flights and motorcycle stunts?",
+          "rationale": "August is peak monsoon season in Mumbai. High winds and heavy downpours pose critical safety risks for both the high-altitude motorcycle jump and drone operations, making historical weather feasibility data essential.",
+          "priority": "CRITICAL",
+          "requirement_refs": [
+            "req_sc_42_7",
+            "req_sc_42_8"
+          ],
+          "objective": "Determine historical rainfall, wind speeds, and monsoon patterns in Mumbai during late August, preferring official India Meteorological Department (IMD) data.",
+          "search_queries": [
+            "Mumbai weather late August IMD",
+            "Mumbai monsoon rainfall statistics August",
+            "average wind speed Mumbai August"
+          ]
+        },
+        {
+          "ref": "Q2",
+          "question": "What are the current DGCA regulations, Digital Sky clearances, and local Mumbai Police NOC requirements for low-altitude commercial drone filming over urban structures?",
+          "rationale": "Filming with a heavy-lift drone over commercial or residential rooftops in Mumbai requires strict airspace permissions and local police clearance to avoid legal and safety violations.",
+          "priority": "HIGH",
+          "requirement_refs": [
+            "req_sc_42_3",
+            "req_sc_42_9"
+          ],
+          "objective": "Identify current DGCA and Digital Sky regulations, permit lead times, and local Mumbai Police NOC requirements for low-altitude commercial drone filming over urban areas, preferring official DGCA and Mumbai Police guidelines.",
+          "search_queries": [
+            "DGCA drone filming permit Mumbai",
+            "Mumbai Police drone NOC permission",
+            "Digital Sky commercial drone clearance"
+          ]
+        },
+        {
+          "ref": "Q3",
+          "question": "What are the municipal and fire department permitting requirements and safety protocols for launching aerial fireworks over the Mumbai skyline?",
+          "rationale": "Launching fireworks over rooftops requires explicit clearance from the Brihanmumbai Municipal Corporation (BMC) and the Mumbai Fire Brigade to ensure fire safety and compliance with local environmental laws.",
+          "priority": "HIGH",
+          "requirement_refs": [
+            "req_sc_42_4"
+          ],
+          "objective": "Determine the permitting process, safety guidelines, and lead times for launching aerial fireworks or pyrotechnics in Mumbai, preferring official Brihanmumbai Municipal Corporation (BMC) and Mumbai Fire Brigade documentation.",
+          "search_queries": [
+            "Mumbai Fire Brigade pyrotechnics permit",
+            "BMC fireworks NOC filming",
+            "Mumbai aerial fireworks permission"
+          ]
+        },
+        {
+          "ref": "Q4",
+          "question": "What are the structural safety standards, load-bearing certification requirements, and municipal guidelines for executing vehicle stunts on building rooftops in Mumbai?",
+          "rationale": "The rooftops must be certified by a structural engineer to safely support the dynamic loads of a motorcycle jump, ramps, and crew. Understanding local structural compliance and liability is critical.",
+          "priority": "HIGH",
+          "requirement_refs": [
+            "req_sc_42_1",
+            "req_sc_42_2",
+            "req_sc_42_12"
+          ],
+          "objective": "Research structural safety standards, load-bearing requirements, and local municipal guidelines for executing vehicle stunts on building rooftops in Mumbai, preferring official BMC building bylaws and Indian Standards (IS) codes.",
+          "search_queries": [
+            "BMC building load capacity regulations",
+            "rooftop stunt safety guidelines India",
+            "structural engineering certification Mumbai filming"
+          ]
+        }
+      ]
+    },
+    "tool_calls": []
+  }
+}

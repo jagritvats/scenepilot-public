@@ -1,0 +1,47 @@
+{
+  "request": {
+    "role": "rescue_explainer",
+    "user_text": "SHOOT DAY 4 (@DATE@): unit call 06:30, standard day 12.5 h (overtime after 19:00 at ₹7,500/h), hard wrap 22:00, golden hour @SOLAR@–@SOLAR@\nDISRUPTION: Crane hydraulic fault — vendor swap by 16:00 — window 06:30–16:00 (+0 min dry-out), affects exteriors=False, affected resources=['eq_crane']\nBASELINE SCHEDULE:\n  07:00–09:30 Sc 31 EXT SERVICE ALLEY — DAY [EXT/DAY, 150 min] cast=Aarav Mehta, Meera Iyer equipment=Lighting package\n  10:00–12:30 Sc 19 INT APARTMENT — DAY [INT/DAY, 150 min] cast=Meera Iyer, Vikram Rao equipment=Lighting package\n  13:30–16:00 Sc 48 EXT MARKET STREET — DAY [EXT/DAY, 150 min] cast=Aarav Mehta, Vikram Rao equipment=Lighting package\n  16:30–19:00 Sc 42 EXT MUMBAI ROOFTOP — SUNSET [EXT/SUNSET, 150 min] cast=Aarav Mehta, Stunt double equipment=FPV drone unit, 30 ft telescopic crane, Hero motorcycle + camera rig, Fireworks rig (licensed pyrotechnician)\nCOVER SCENES (unscheduled, can be pulled forward): Sc 27 INT APARTMENT KITCHEN — MORNING [INT, 75 min] cast=Meera Iyer\nAVAILABILITY WINDOWS TODAY:\n  CAST Aarav Mehta (Rider / lead): 06:00–21:00 — night unit — stage interior only\n  CAST Meera Iyer (Zoya): 06:30–19:00 — evening flight — hard out 19:00\n  CAST Vikram Rao (Inspector Dalvi): 09:00–20:00 — arrives from second unit\n  CAST Stunt double (Rider): 06:00–21:00\n  LOCATION Rooftop A — Sitara Mills, Lower Parel: 06:00–20:30 — owner permission + rooftop access\n  LOCATION Service alley — Kala Ghoda: 06:30–18:00\n  LOCATION Market street — Bhuleshwar: 13:00–18:00 — traffic police permit window only\n  LOCATION Apartment set — Film City Stage 3: 06:00–23:00 — stage held overnight — prelight from 17:00\n  LOCATION Sea link approach — Worli:  — aerial slot agreed before the morning peak — off the carriageway\n  EQUIPMENT FPV drone unit: 06:00–21:00 — dawn charter for the sea-link plate (weather-sensitive)\n  EQUIPMENT 30 ft telescopic crane: 06:00–21:00 — one-day rental\n  EQUIPMENT Hero motorcycle + camera rig: 06:00–21:00\n  EQUIPMENT Fireworks rig (licensed pyrotechnician): 14:00–21:00 (weather-sensitive)\nTRAVEL (min): Service alley↔Apartment set 30, Apartment set↔Market street 40, Market street↔Rooftop A 25, Service alley↔Market street 20, Service alley↔Rooftop A 35, Apartment set↔Rooftop A 45\n\nDISRUPTION VERIFICATION: n/a — Internal disruption — external verification not applicable.\n\nRANKED OPTIONS:\nOPTION A (FEASIBLE, origin deterministic): move Sc 48 13:30→13:10 (earlier); move Sc 42 16:30→16:37 (later)\n  schedule: Sc 31 07:00–09:30, Sc 19 10:00–12:30, Sc 48 13:10–15:40, Sc 42 16:37–19:07\n  carried over: none\n  score: total 94 | preservation 92, cost 99 (₹875 extra), overtime 96 (7 min), moves 100 (+0), resources 100, creative 100, confidence 50\n  violations: soft: 7 min overtime beyond 19:00 wrap (≈₹875)\nOPTION B (FEASIBLE, origin deterministic): pull cover Sc 27 into 13:00; move Sc 48 13:30→14:55 (later); move Sc 42 16:30→17:55 (later)\n  schedule: Sc 31 07:00–09:30, Sc 19 10:00–12:30, Sc 27 13:00–14:15, Sc 48 14:55–17:25, Sc 42 17:55–20:25\n  carried over: none\n  score: total 89 | preservation 100, cost 93 (₹10,625 extra), overtime 53 (85 min), moves 100 (+0), resources 100, creative 100, confidence 50\n  violations: soft: 85 min overtime beyond 19:00 wrap (≈₹10,625)\nOPTION C (REJECTED, origin deterministic): move Sc 48 13:30→10:00 (earlier); move Sc 19 10:00→13:10 (later); move Sc 42 16:30→16:37 (later)\n  schedule: Sc 31 07:00–09:30, Sc 48 10:00–12:30, Sc 19 13:10–15:40, Sc 42 16:37–19:07\n  carried over: none\n  score: total 0 | preservation 88, cost 99 (₹875 extra), overtime 96 (7 min), moves 100 (+0), resources 60, creative 100, confidence 50\n  violations: HARD: Market street — Bhuleshwar not available for Scene 48 at 10:00–12:30 (window 13:00–18:00); soft: 7 min overtime beyond 19:00 wrap (≈₹875)\nOPTION D (REJECTED, origin deterministic): move Sc 19 10:00→07:00 (earlier); move Sc 31 07:00→10:00 (later); move Sc 48 13:30→13:00 (earlier); move Sc 42 16:30→16:37 (later)\n  schedule: Sc 19 07:00–09:30, Sc 31 10:00–12:30, Sc 48 13:00–15:30, Sc 42 16:37–19:07\n  carried over: none\n  score: total 0 | preservation 84, cost 99 (₹875 extra), overtime 96 (7 min), moves 100 (+0), resources 60, creative 100, confidence 50\n  violations: HARD: Vikram Rao (Inspector Dalvi) unavailable for Scene 19 at 07:00–09:30 (available 09:00–20:00); soft: 7 min overtime beyond 19:00 wrap (≈₹875)\n\nSCORE WEIGHTS: schedule_preservation: 92 × 0.30, cost_impact: 99 × 0.15, overtime_risk: 96 × 0.15, company_moves: 100 × 0.10, resource_conflicts: 100 × 0.10, creative_compromise: 100 × 0.15, confidence: 50 × 0.05"
+  },
+  "response": {
+    "output": {
+      "headline": "Shift afternoon blocks slightly to accommodate crane swap",
+      "options": [
+        {
+          "label": "Option A",
+          "explanation": "This option shifts Scene 48 slightly earlier to 13:10 and pushes Scene 42 to 16:37 to wait for the crane replacement. This allows the production to complete all scheduled scenes with only 7 minutes of overtime.",
+          "trade_offs": [
+            "Incurs ₹875 in overtime costs",
+            "Requires starting Scene 48 at 13:10, which is 20 minutes earlier than baseline"
+          ]
+        },
+        {
+          "label": "Option B",
+          "explanation": "This option pulls in cover Scene 27 at 13:00, pushing Scene 48 to 14:55 and Scene 42 to 17:55. While it maximizes schedule preservation by adding a scene, it pushes the wrap time significantly later.",
+          "trade_offs": [
+            "Incurs 85 minutes of overtime beyond the 19:00 wrap",
+            "Increases costs by ₹10,625 in overtime fees"
+          ]
+        },
+        {
+          "label": "Option C",
+          "explanation": "This option attempts to move Scene 48 earlier to 10:00 and swap it with Scene 19. However, it is rejected because the Market street — Bhuleshwar location is not available for Scene 48 during the 10:00–12:30 window, as its permit is only valid from 13:00–18:00.",
+          "trade_offs": [
+            "Violates the strict traffic police permit window for Market street",
+            "Cannot be executed due to location unavailability"
+          ]
+        },
+        {
+          "label": "Option D",
+          "explanation": "This option attempts to move Scene 19 earlier to 07:00 and push Scene 31 to 10:00. It is rejected because cast member Vikram Rao (Inspector Dalvi) is unavailable for Scene 19 at 07:00–09:30, as he only arrives from the second unit at 09:00.",
+          "trade_offs": [
+            "Violates cast member Vikram Rao's availability window",
+            "Cannot be executed due to talent arrival constraints"
+          ]
+        }
+      ],
+      "recommendation_rationale": "Option A is the recommended choice because it achieves a high total score of 94 compared to Option B's 89. It minimizes overtime risk to just 7 minutes (costing ₹875) compared to Option B's heavy 85 minutes of overtime (costing ₹10,625). Both options avoid company moves and resource conflicts, but Option A preserves the schedule with minimal financial impact and avoids pushing past the 19:00 wrap, keeping confidence at 50. Options C and D are completely unfeasible due to hard location and cast availability constraints."
+    },
+    "tool_calls": []
+  }
+}

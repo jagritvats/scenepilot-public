@@ -1,0 +1,57 @@
+{
+  "request": {
+    "objective": "Find the specific codified requirements for temporary structures, structural stability certificates, and film shooting permissions from the BMC Film Shooting Policy or related BMC circulars.",
+    "search_queries": [
+      "Building and Factory Department Codified Requirements for Temporary structure",
+      "FilmShootingPolicy.pdf temporary structure",
+      "SPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING BMC"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_aba108bc02",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_6f6ee6fe5218731f59475d1991ae455a",
+    "results": [
+      {
+        "url": "https://www.mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+        "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI",
+        "publish_date": "2019-05-22",
+        "excerpts": [
+          "# **MUNICIPAL CORPORATION OF GREATER MUMBAI**\n## Contents\n### GENERAL CONDITIONS:............................................................................................................ 11\nSPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO: ..................................... 12\n\n...\n\n## **CURRENT PROCESS:**\n### temporary structures. Requirements for erection of temporary structure and any other special requirement shall be captured in the common application form. Many a times th\nbe obtained through State Single Window as per Govt. Notification under no.गोचिन\n2016/प्र.क्र.189/स ां.क -1 dt. 22.05.2018. MCGM is only involved in the grant of permission for Film\nshooting as per the scope defined in the circular vide no. अ. अ/ ओडी/ ९७०/आ.ज . दि. 16.10.2015.\n\n### / Municipal Markets /Municipal Sports Complex/ Private Properties - At ward level through Assistant Commissioner (Ward), as per remarks from the concerned officer\nof the department at ward level. Hence, The Assistant Commissioner (ward) is designated as the Nodal Agency For implementation of this policy in respective ward jurisdiction\n\n...\n\n## **SPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO:**\n### a. Two Nos. of Water type extinguisher of 9 litres capacity & One ABC Dry\nPowder extinguisher of 9 kgs capacity, per 100 m ² of floor space shall be\n\n### Building / permanent structure where fire prevention and fire-fighting arrangements are not provided, then following minimum fire safety measures shall be provided. (Addi\n1) Four Nos. of Water type extinguisher, 9 litres capacity, per 100 m ² of floor space\n\n### **Building and Factory Department Codified Requirements for Temporary structure on Private Property:**\n\n\n### A detail layout plan showing the size of the temporary structures, whether Indoor or Outdoor along with necessary sections shall be uploaded/submitted duly certified by a Licensed Architect.\n"
+        ]
+      },
+      {
+        "url": "https://screenmanchester.com/wp-content/uploads/2020/11/SCREEN-MANCHESTER-CODE-OF-PRACTICE.pdf",
+        "title": "LOCATION FILMING IN MANCHESTER CODE OF PRACTICE www.screenmanchester.com",
+        "publish_date": "2020-11-25",
+        "excerpts": [
+          "# **CONTENTS**\n## **INTRODUCTION**\n### • Crew should be reminded to respect the local community and where possible staff amenities and meeting places shall be sited away from residential properties. The moving\n________________________________________________________________________________________________________________________"
+        ]
+      },
+      {
+        "url": "https://codelibrary.amlegal.com/codes/summerset/latest/summerset_sd/0-0-0-4890",
+        "title": "§ 153.059 REQUIREMENTS FOR TEMPORARY STRUCTURES.",
+        "publish_date": null,
+        "excerpts": [
+          "# CHAPTER 153: LICENSING AND CONSTRUCTION REGULATIONS\n## § 153.059 REQUIREMENTS FOR TEMPORARY STRUCTURES.\nThe following requirements shall apply to all temporary structures, except those specifically exempted above.\n(A)   The structural frame of all temporary structures shall be made of steel, aluminum, PVC, or wood. If constructed of wood, the smallest wood member shall not be less than two inches by four inches in width.\n(1)   Wood used for the interior and exterior skins of a temporary structure may be as follows: one-half inch of plywood, one-half inch chipboard, or particleboard.\n(2)   Wood, as defined above, may also be used for shelving temporary structure.\n(3)   Tarps which are utilized on temporary structures occupied by temporary merchants shall be flame retardant or flame resistant as defined in this chapter. All tarps not complying with this chapter shall be removed.\n(B)   All temporary structures shall be removed upon expiration of the time limit stated on the permit.\n(C)   If the structure is not removed by the expiration date stated on the permit, the city shall remove the structure without further notice to the owner and shall charge the cost of the removal to the owner.\nAt the time the permit is issued, the Planning Department or its designee shall provide the owner with a copy of the ordinance codified herein.\n\n...\n\n(E)   Temporary structures or appendages thereof shall not be placed closer than five feet to any public alley.\n\n...\n\n(F)   The permit herein before described may be suspended or revoked if at any time the structure or its occupants are in violation of the city's ordinances or the state's laws.\n(G)   Temporary structures may not be used for housing permanent or seasonal businesses."
+        ]
+      },
+      {
+        "url": "https://berkeley.municipal.codes/BMC/13.72.090",
+        "title": "13.72.090 Shooting range--Regulations generally--Inspection requirements | Berkeley Municipal Code",
+        "publish_date": null,
+        "excerpts": [
+          "# 13.72.090 Shooting range--Regulations generally--Inspection requirements.\nAll shooting ranges shall be designed, constructed and maintained in a safe condition with regard to the health, peace and safety of persons and property and in accordance with the regulations and specifications adopted by the Chief of Police, and all shooting"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "request": {
+    "objective": "Find the official India Meteorological Department (IMD) climatological table data for Mumbai (Santacruz or Colaba) in August, specifically average wind speed, rainfall, and rainy days.",
+    "search_queries": [
+      "climatological table Mumbai Santacruz August",
+      "IMD Mumbai climatological table August",
+      "Mumbai climatological table wind speed August"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_c2150271fa2346fd09e8f0ab78fd7130",
+    "results": [
+      {
+        "url": "https://city.imd.gov.in/citywx/city_weather_test_try_warnings.php?id=43003",
+        "title": "Mumbai-Santacruz",
+        "publish_date": null,
+        "excerpts": [
+          "**Local Weather Report and Forecast For:** Mumbai-Santacruz **Dated :Aug 24, 2026**\nMumbai-Santacruz\n|**Past 24 Hours Weather Data** |\n| --- | --- |\n|Maximum Temp( o C) (Recorded. on 24/08/26) |NA |\n|Departure from Normal( o C) |NA |\n|Minimum Temp ( o C) (Recorded. on 24/08/26) |25.0 |\n|Departure from Normal( o C) |0.0 |\n|24 Hours Rainfall (mm) (Recorded from 0830 hrs IST\nof yesterday to 0830 hrs IST of today) |9 |\n\n...\n\n|  |\n**( Climatological & Extreme Weather Information )**"
+        ]
+      },
+      {
+        "url": "http://www.imdmumbai.gov.in/scripts/latest.asp?releaseId=EDM",
+        "title": "Official website of Regional Meteorological Centre Mumbai, Government of India",
+        "publish_date": null,
+        "excerpts": [
+          "This Site Content Administered by"
+        ]
+      },
+      {
+        "url": "https://weather-and-climate.com/average-monthly-Wind-speed,mumbai,India",
+        "title": "Average monthly wind speed in Mumbai - Weather and Climate",
+        "publish_date": null,
+        "excerpts": [
+          "Wind speeds reach an average of <strong>3 m/s (6 knots)</strong> in July and August; these are statistically the windiest months. This means that on some days, the air is a fair and normal breeze."
+        ]
+      },
+      {
+        "url": "https://wanderlog.com/weather/7865/8/mumbai-weather-in-august",
+        "title": "Mumbai, India weather in August: average temperature & climate",
+        "publish_date": null,
+        "excerpts": [
+          "# Mumbai, India weather in August\n## Historical temperature average in August\n### General weather summary\nVery warm, slightly windy\nFeels like\n81%\nChance of rain\n0.495 in\nAmount\n15.9 mph\nWind speed\n88%\nHumidity\n12.8 hrs\nDaylight length\n6:18 AM\nSunrise\n7:05 PM\nSunset\n23%\nCloud cover\nSleeveless shirt, rain coat and rain boots\nWhat to wear\nYour itinerary and your map in one view\n\n...\n\n#### Table of contents\n* What is the average temperature\n* How much does it rain\n* How cloudy is it\n* When is sunrise and sunset\n* How humid is it\n* How windy is it\n* What to wear\n\n### What is the average temperature in August\nThe average temperature in Mumbai in August for a typical day ranges from a high of 83°F (28°C) to a low of 77°F (25°C).Some would describe the temperature to be very warm. The general area may also feel slightly windy.\n\n...\n\n### How much does it rain in August\nIn Mumbai in August, there's a 81% chance of rain on an average day. And on the average day it rains or snows, we get 0.61 in (15.6 mm) of precipitation. In more common terms of how much that is, some would describe it as moderate rain.\n\n...\n\n### How windy is it in August\nHistorically, the wind in Mumbai during August blows at an average speed of 15.9 mph (25.6 kph). The windiest month is July with an average wind speed of 17.5 mph (28.2 kph), while the calmest month is October with an average wind speed of 9.2 mph (14.8 kph).\nThis graph shows the average wind speed in Mumbai in August based on historical data.\nAverage monthly wind speed in Mumbai\n\n...\n\n### Where does this data come from\nFor all data based on historical data, we've averaged the data from the past 11 years (2010-2020). For example, for the hourly temperature at 10am, we've looked at the temperature at 10am on every day in August (e.g., August 1, August 2, etc. in 2010, 2011, etc.) and took the arithmetic mean.\nWe did not smooth the data, so for example, our daily temperature line will have some randomness due to the fact that weather is random in the first place."
+        ]
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Climate_of_Mumbai",
+        "title": "Climate of Mumbai - Wikipedia",
+        "publish_date": "2026-06-22",
+        "excerpts": [
+          "[Am](https://en.wikipedia.org/wiki/Tropical_monsoon_climate \"Tropical monsoon climate\")_ ). The mean annual temperature is 27.7 °C or 81.9 °F . Average annual rainfall is 2,213.4 millimetres or 87 inches in Colaba, which represents South Mumbai, and 2,502.3 millimetres or 99 inches in Santacruz, which represents central and suburban Mumbai.\n\n...\n\n# Climate data\nClimate data for Mumbai ( [Colaba](https://en.wikipedia.org/wiki/Colaba \"Colaba\") ) 1991–2020 normals, extremes 1901–present |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|Month |Jan |Feb |Mar |Apr |May |Jun |Jul |Aug |Sep |Oct |Nov |Dec |Year |\n|Record high °C (°F) |37.1\n(98.8) |38.3\n\n...\n\n(64.0) |12.8\n(55.0) |11.7\n(53.1) |\n|Average rainfall mm (inches) |0.6\n(0.02) |0.4\n(0.02) |0.7\n(0.03) |0.2\n(0.01) |15.9\n(0.63) |506.0\n(19.92) |768.5\n(30.26) |471.9\n(18.58) |355.6\n(14.00) |81.7\n(3.22) |8.5\n(0.33) |3.4\n(0.13) |2,213.4\n(87.14) |\n|Average rainy days |0.1 |0.1 |0.1 |0.0 |0.6 |14.1 |22.1 |20.2 |14.0 |3.6 |0.5 |0.3 |75.6 |\n\n...\n\n|Climate data for Mumbai ( [Chhatrapati Shivaji Maharaj International Airport](https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Maharaj_International_Airport \"Chhatrapati Shivaji Maharaj International Airport\") , located in [Santacruz](https://en.wikipedia.org/wiki/Santacruz,_Mumbai \"Santacruz, Mumbai\") ) 1991–2020, extremes\n\n...\n\n|Average rainfall mm (inches) |0.2\n(0.01) |0.2\n(0.01) |0.1\n(0.00) |0.1\n(0.00) |7.3\n(0.29) |526.3\n(20.72) |919.9\n(36.22) |560.8\n(22.08) |383.5\n(15.10) |91.3\n(3.59) |11.0\n(0.43) |1.6\n(0.06) |2,502.3\n(98.52) |\n|Average rainy days |0.0 |0.0 |0.1 |0.0 |0.7 |14.0 |23.3 |21.4 |14.4 |3.9 |0.6 |0.2 |78.6 |\n\n...\n\n|Source: [India Meteorological Department](https://en.wikipedia.org/wiki/India_Meteorological_Department \"India Meteorological Department\") [[ 8 ]]() [[ 9 ]]() |\n\n...\n\n## Monthly breakdown of climate\n### August\nThe weather in August is almost identical to July. Towards the latter half of the month, rainfall activity tends to lessen. The coolest days of the monsoon season are often in August. The max temperature might drop to 29.3 °C during the day and 24.5 °C at night. [[ 11 ]]()\n\n...\n\n## References\n1. 1 2 [\"Climatological Tables 1991-2020\"](https://www.imdpune.gov.in/library/public/Climatological%20Tables%201991-2020.pdf) (PDF) . _www.imdpune.gov.in_ . Retrieved 2 September 2023 .\n2.\n↑ [\"Station: Mumbai (Colaba) Climatological Table 1981–2010\"](https://web.archive.org/web/20200205040301/http://imdpune.gov.in/library/public/1981-2010%20CLIM%20NORMALS%20%28STATWISE%29.pdf) (PDF) . _Climatological Normals 1981–2010_ . India Meteorological Department. January 2015. pp. 509– 510."
+        ]
+      },
+      {
+        "url": "https://mausam.imd.gov.in/mumbai/",
+        "title": "RMC Mumbai - IMD - India Meteorological Department",
+        "publish_date": "2026-08-14",
+        "excerpts": [
+          "# India Meteorological Department\nRMC Mumbai\nSkip to main content (press enter)\nIndia Meteorological Department\n\n...\n\n# प्रादेशिक मौसम केंद्र मुंबई\n## हमारी सेवाएं\n[चक्रवात](https://mausam.imd.gov.in/imd_latest/contents/cyclone.php)\n* कृषि मौसम सेवाएं\n[पंजीकरण](https://www.imdagrimet.gov.in/newfarmer/FarmerRegistrationFrontpage/welcome.php) | [बुलेटिन](https://mausam.imd.gov.in/imd_latest/contents/agromet/advisory/indiadistrictforecast.php) | [कृषि मौसम परामर्शीय सेवाएं (मराठी)](https://mausam.imd.gov.in/mumbai/mcdata/advisory-marathi.pdf)\n* मुंबई मॉनसून\n\n...\n\n## बड़े शहरों के वर्तमान मौसम\n### Mumbai-Santacruz\n29°\n18.5km/h\n79%\n[मौसम पूर्वानुमान](https://city.imd.gov.in/citywx/city_weather.php?id=43003)\n\n...\n\n### Jalna\n|एंड्रॉयडऐप्स : [मौसम](https://play.google.com/store/apps/details?id=com.imd.masuam) | [उमंग](https://play.google.com/store/apps/details?id=in.gov.umang.negd.g2c) | [मेघदूत कृषि मौसम](https://play.google.com/store/apps/details?id=com.aas.meghdoot) ( [वीडियो](https://mausam.imd.gov.in/imd_latest/weather_video/meghdoot_app.mp4) ) |\n\n...\n\n© Copyright [Regional Met Centre Mumbai India Meteorological Department Ministry of Earth Sciences](https://moes.gov.in/) , New Delhi, India"
+        ]
+      },
+      {
+        "url": "https://weather-and-climate.com/average-monthly-Wind-speed,navi-mumbai-maharashtra-in,India",
+        "title": "Average Wind Speed in Navi Mumbai by Month",
+        "publish_date": "2026-04-01",
+        "excerpts": [
+          "Wind speeds reach an average of <strong>3 m/s (6 knots)</strong> in July and August; these are statistically the windiest months. This means that on some days, the air is a fair and normal breeze."
+        ]
+      },
+      {
+        "url": "https://en.tutiempo.net/climate/ws-430030.html",
+        "title": "Climate Bombay / Santacruz - Climate data (430030)",
+        "publish_date": null,
+        "excerpts": [
+          "# Climate Bombay / Santacruz Climate data: 1957 - 2025\n## Average climatic values ​​and annual totals\n| Year | T | TM | Tm | PP | V | RA | SN | TS | FG | TN | GR |\n| **1957** | - | - | - | - | - | - | - | - | - | - | - |\n| **1958** | 26.6 | 31.3 | 23.1 | 1921.21 | 11.8 | 90 | 0 | 12 | 0 | 0 | 0 |\n| **1962** | 26.4 | 30.2 | 22.6 | 1716.60 | 10.4 | 92 | 0 | 9 | 0 | 0 | 0 |\n\n...\n\n| Year | T | TM | Tm | PP | V | RA | SN | TS | FG | TN | GR |\n| **1957** | - | - | - | - | - | - | - | - | - | - | - |\n| **1958** | 26.6 | 31.3 | 23.1 | 1921.21 | 11.8 | 90 | 0 | 12 | 0 | 0 | 0 |\n| **1974** | 26.8 | 31.7 | 22.2 | - | - | 104 | 0 | 32 | 3 | 0 | 0 |\n\n...\n\n| Year | T | TM | Tm | PP | V | RA | SN | TS | FG | TN | GR |\n| **1957** | - | - | - | - | - | - | - | - | - | - | - |\n| **1958** | 26.6 | 31.3 | 23.1 | 1921.21 | 11.8 | 90 | 0 | 12 | 0 | 0 | 0 |\n| **1997** | 27.7 | 32.3 | 22.4 | 1849.64 | 7.5 | 108 | 0 | 13 | 7 | 0 | 0 |\n\n...\n\n| Year | T | TM | Tm | PP | V | RA | SN | TS | FG | TN | GR |\n| **1957** | - | - | - | - | - | - | - | - | - | - | - |\n| **1958** | 26.6 | 31.3 | 23.1 | 1921.21 | 11.8 | 90 | 0 | 12 | 0 | 0 | 0 |\n| **2018** | 28.7 | 32.6 | 22.7 | - | 11.9 | 114 | 1 | 26 | 1 | 0 | 3 |\n\n...\n\n| Year | T | TM | Tm | PP | V | RA | SN | TS | FG | TN | GR |\n| **1957** | - | - | - | - | - | - | - | - | - | - | - |\n| **1958** | 26.6 | 31.3 | 23.1 | 1921.21 | 11.8 | 90 | 0 | 12 | 0 | 0 | 0 |\n| **2020** | 28.4 | 32.2 | 23.2 | 3438.32 | 10.5 | 128 | 0 | 65 | 0 | 0 | 1 |\n\n...\n\n| Year | T | TM | Tm | PP | V | RA | SN | TS | FG | TN | GR |\n| **1957** | - | - | - | - | - | - | - | - | - | - | - |\n| **1958** | 26.6 | 31.3 | 23.1 | 1921.21 | 11.8 | 90 | 0 | 12 | 0 | 0 | 0 |\n| **2024** | - | - | - | - | - | 123 | 0 | 39 | 0 | 0 | 2 |\n\n...\n\n## New version available:\n### Interpretation annual average climate values\n| T | Average annual temperature (°C) |\n| TM | Annual average maximum temperature (°C) |\n| Tm | Average annual minimum temperature (°C) |\n| PP | Rain or snow precipitation total annual |\n| V | Annual average wind speed (km/h) |\n| RA | Number of days with rain |\n| SN | Number of days with snow |"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

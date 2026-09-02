@@ -1,0 +1,105 @@
+{
+  "request": {
+    "role": "breakdown_agent",
+    "user_text": "SCENE HEADING: EXT. MUMBAI ROOFTOP — SUNSET\n\nACTION / DESCRIPTION:\nEXT. MUMBAI ROOFTOP — SUNSET\nA motorcycle tears across adjoining rooftops.\nA drone follows while fireworks explode over the skyline.\nRain begins as the rider jumps to an adjacent building."
+  },
+  "response": {
+    "output": {
+      "scene_summary": "A high-speed motorcycle chase across Mumbai rooftops at sunset, featuring a drone tracking the action, background fireworks, and a dramatic jump to an adjacent building as rain begins to fall.",
+      "elements": [
+        {
+          "category": "CAST",
+          "name": "Rider",
+          "description": "The protagonist/motorcycle rider performing the rooftop escape. Requires a professional stunt double.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "STUNTS",
+          "name": "Motorcycle Rooftop Gap Jump",
+          "description": "High-risk motorcycle jump from one rooftop to an adjacent building. Requires a professional stunt rider, custom ramps, and landing deceleration systems.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Extremely high-risk. Requires structural engineering approval of rooftops and landing airbag/catch systems."
+        },
+        {
+          "category": "VEHICLES",
+          "name": "Hero Stunt Motorcycle",
+          "description": "Lightweight, high-performance dirt/enduro bike modified for rooftop traction and jumping.",
+          "count": 2,
+          "implied": false,
+          "safety_notes": "Tires must be checked for optimal grip before every take."
+        },
+        {
+          "category": "SFX",
+          "name": "Rain FX System",
+          "description": "Overhead rain bars/towers to simulate rain starting mid-scene.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "Water on rooftops increases slip hazards for both motorcycle and crew."
+        },
+        {
+          "category": "VFX",
+          "name": "Ramp and Rig Removal",
+          "description": "Digital removal of motorcycle takeoff/landing ramps, safety wires, and catch nets.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "VFX",
+          "name": "CGI Fireworks & Skyline Enhancement",
+          "description": "Digital fireworks in the background to ensure safety of the drone and stunt rider, plus Mumbai skyline extensions.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SPECIAL_EQUIPMENT",
+          "name": "FPV Tracking Drone",
+          "description": "High-speed camera drone to chase the motorcycle across rooftops.",
+          "count": 2,
+          "implied": false,
+          "safety_notes": "Must maintain safe distance from stunt rider and crew."
+        },
+        {
+          "category": "WARDROBE",
+          "name": "Stunt Rider Wardrobe (Wet/Dry Duplicates)",
+          "description": "Weatherproof tactical riding gear with integrated body armor. Multiple duplicates needed for wet/dry continuity.",
+          "count": 4,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SAFETY",
+          "name": "Rooftop Edge Fall Arrest Systems",
+          "description": "Safety lines, harnesses, and perimeter netting for crew and non-riding stunt personnel near rooftop edges.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "Mandatory for all crew members working within 2 meters of the roof edge."
+        },
+        {
+          "category": "ART_DEPARTMENT",
+          "name": "Engineered Jump Ramps",
+          "description": "Custom-built, structurally certified takeoff and landing ramps disguised or painted for digital removal.",
+          "count": 2,
+          "implied": true,
+          "safety_notes": "Must be anchored securely to the building structure."
+        }
+      ],
+      "stop_conditions": [
+        "Wind speeds exceeding 25 km/h (hazardous for drone flight and motorcycle jump stability).",
+        "Unplanned wet surfaces on the takeoff ramp prior to the jump (loss of traction).",
+        "Loss of direct line-of-sight or radio communication with the tracking drone.",
+        "Structural compromise or weight limit warning on either rooftop."
+      ],
+      "continuity_notes": [
+        "Rain progression: The scene starts dry and rain begins mid-jump. Wardrobe and motorcycle surfaces must match this transition in subsequent shots.",
+        "Sunset lighting: Golden hour matching across all coverage angles, requiring tight shooting windows or digital color grading matching.",
+        "Motorcycle damage: Any scuffs or dirt acquired during the rooftop run must match subsequent scenes."
+      ]
+    },
+    "tool_calls": []
+  }
+}

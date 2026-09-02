@@ -1,0 +1,62 @@
+{
+  "request": {
+    "objective": "Current weather forecast and official rain or thunderstorm warnings for Mumbai, India on 2026-08-26, especially afternoon rain timing and wind; prefer IMD, Skymet and established news sources.",
+    "search_queries": [
+      "Mumbai weather forecast today",
+      "IMD Mumbai rain warning",
+      "Mumbai weather tomorrow"
+    ],
+    "mode": "fast",
+    "advanced_settings": {
+      "location": "in",
+      "max_results": 6,
+      "excerpt_settings": {
+        "max_chars_per_result": 1200
+      },
+      "source_policy": {
+        "after_date": "2026-07-27"
+      },
+      "fetch_policy": {
+        "max_age_seconds": 3600
+      }
+    },
+    "session_id": "scenepilot_rescue_run_8ce6ed27cc",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_062b7aa940acb4d081ff8ce4133aad0d",
+    "results": [
+      {
+        "url": "https://www.accuweather.com/en/in/mumbai/204842/weather-forecast/204842",
+        "title": "Mumbai, Maharashtra, India Weather Forecast | AccuWeather",
+        "publish_date": null,
+        "excerpts": [
+          "Mumbai, Maharashtra, India Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+        ]
+      },
+      {
+        "url": "https://mumbairain.tropmet.res.in/",
+        "title": "MUMBAI RAINFALL",
+        "publish_date": null,
+        "excerpts": [
+          "<strong>Generally cloudy sky with intermittent light to moderate rainfall in city and suburbs</strong>. Heavy rainfall at isolated places. - (Source IMD) ... Background:: Mumbai, country&#x27;s financial capital with about 12 million people, weather plays a very important role especially during south west monsoon season."
+        ]
+      },
+      {
+        "url": "https://mausam.imd.gov.in/mumbai/",
+        "title": "RMC Mumbai - IMD - India Meteorological Department",
+        "publish_date": "2026-08-14",
+        "excerpts": [
+          "[](https://mausam.imd.gov.in/survey_app/survey.php?survey=hw_gp)\n\nShare your feedback. Take the IMD Heat Wave Alert Survey (13 Aug 2026 to 13 Sept 2026).\n\n×\n\n# India Meteorological Department  \nRMC Mumbai\n\nSkip to main content (press enter)\n\nIndia Meteorological Department\n\n# पृथ्वी विज्ञान मंत्रालय\n\n# भारत मौसम विज्ञान विभाग\n\n# प्रादेशिक मौसम केंद्र मुंबई\n\n♦ [Monthly Outlook for Rainfall and Temperature during July 2026](https://mausam.imd.gov.in/Forecast/mcmarq/mcmarq_data/English Press Release July 2026.pdf)\n\nCity forecast\n\nवर्तमान मौसम\n\n### Mumbai\n\n29 o C\n\n79%\n\n* 18\\.5 km/h\n\nअवलोकन समय: 2026-08-25 23.30 IST\n\nसूर्योदय: 06:22 (IST)\n\nसूर्यास्त: 19:00 (IST)\n\nचंद्रोदय: 17:14 (IST)\n\nचंद्रास्त: 03:38 (IST)\n\n* [उपग्रह](https://mausam.imd.gov.in/imd_latest/contents/satellite.php)\n* [रडार](https://mausam.imd.gov.in/mumbai/index_radar.php)\n* [उपग्रहसहआकाशीय बिजली](https://mausam.imd.gov.in/lightning/Converted/BT.gif \"Current Weather\")\n*\n\n## हमारी सेवाएं\n\n* मौसम विवरण  \n  दैनिक"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

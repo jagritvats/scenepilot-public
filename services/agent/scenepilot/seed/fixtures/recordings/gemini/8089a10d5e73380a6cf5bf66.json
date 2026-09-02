@@ -1,0 +1,111 @@
+{
+  "request": {
+    "role": "evidence_analyst",
+    "user_text": "RESEARCH QUESTION rq_@@@@@@_3: What are the permitting requirements and safety guidelines for launching pyrotechnics/fireworks from rooftops in Mumbai?\nWHY IT MATTERS: Determine the permitting process, safety regulations, and lead times for launching commercial pyrotechnics from rooftops in Mumbai, preferring official Mumbai Fire Brigade and PESO guidelines.\nSCENE: EXT. MUMBAI ROOFTOP — SUNSET\nREQUIREMENTS SERVED:\n- req_sc_42_5: Pyrotechnics permit and clearance from Mumbai fire department for launching fireworks over the skyline.\n- req_sc_42_9: Coordination with local neighborhood associations regarding noise control for the motorcycle engine and fireworks.\n\nSEARCH RESULTS (Parallel Search API):\n### SearchRun search_@0 — objective: What are the permitting requirements and safety guidelines for launching pyrotechnics/fireworks from rooftops in Mumbai? — Determine the permitting process, safety regulations, and lead times for launching commercial pyrotechnics from rooftops in Mumbai, preferring official Mumbai Fire Brigade and PESO guidelines.\nqueries: ['Mumbai Fire Brigade pyrotechnics NOC', 'PESO fireworks permit Mumbai', 'rooftop fireworks permission Mumbai']\n[search_@0#1] Fire NOC Process in Mumbai: Complete Step-by-Step Guide (2025) — https://www.ftechenterprises.com/post/fire-noc-process-in-mumbai-complete-step-by-step-guide-2025 — published: unknown\n    > ... assessment to identify gaps in your current setup.  ### **Step 2: Online Application Submission**  1. Visit the **Mumbai Fire Brigade official portal** 2. Create an account using **PAN number** and **mobile number** 3. Select an appropriate **fir\n[search_@0#2] Authorized Fireworks | Petroleum & Explosive Safety ... - PESO — https://peso.gov.in/web/en/authorized-fireworks — published: unknown\n    > G.S.R..in exercise of the powers conferred by Rule 6 of the Explosives Rules, 2008, the Central Government hereby declares the following explosives as Authorized Explosives for export, transport, manufacture, possession, use and sale. List of Authorized fireworks Items\n[search_@0#3] MUMBAI FIRE BRIGADE Documents required for NOC for ... — https://autodcr.mcgm.gov.in/BPAMSClient2/Downloads/Forms/Document%20Checklist%20for%20Occupancy%20NOC.pdf — published: unknown\n    > We cannot provide a description for this page right now\n[search_@0#4] Regulatory Event Advisory Services in Mumbai | Happiffie — https://www.happiffie.com/mumbai/regulatory-event-advisory-services — published: @DATE@\n    > Navigate Mumbai Event Permits with Confidence  Navigate Mumbai Event Permits with Confidence  Event Support in Mumbai  # Regulatory Event Advisory Services in Mumbai  Hosting a wedding, sangeet, or large corporate celebration in Mumbai means navigating a complex web of municipal approvals, police NOCs, fire safety clearances, and noise-restriction guidelines — and missing even one document can shut your event down on the big day. Happiffie connects you with specialists in Regulatory Event Advisory Services who understand the BMC rules, Maharashtra Pollution Control Board norms, and local ward-\n[search_@0#5] PESO License India | Petroleum & Explosive Safety Organisation Approvals | Global Approbation — https://www.global-approbation.com/peso.html — published: unknown\n    > ... does a petrol pump (retail outlet) PESO licence take? ⌄  For a new petrol pump, total timeline including land NOC, plot plan, fire NOC, public-notice (newspaper), PESO inspection & final licence is typically **3–6 months** . Existing  ...\n[search_@0#6] PESO licensing services in Mumbai | Aanee Facilities Services — https://www.aanee.in/PESO-licensing-services-in-Mumbai.asp — published: unknown\n    > # PESO licensing services in Mumbai  Embark on a seamless journey to obtain PESO licensing services in Mumbai with Aanee Facilities Services Pvt Ltd. Our expert team specializes in navigating the complex regulatory landscape, ensuring compliance, and facilitating hassle-free licensing processes. Trust us to be your trusted partner in securing PESO approvals swiftly and efficiently.  These licensing services typically include:     **Manufacturing Licenses:** Required for the manufacture of explosives, fireworks, petroleum products, and other hazardous substances.     **Storage Licenses:** Neces\n[search_@0#7] Mumbai Fire Brigade - Wikipedia — https://en.wikipedia.org/wiki/Mumbai_Fire_Brigade — published: @DATE@\n    > The brigade was motorised by replacing horse-drawn steam engines in 1920, and the Bombay Fire Brigade started ambulance services using six donated ambulances. [[ 5 ]]() [[ 6 ]]()  The Mumbai Fire Brigade observes [Fire Safety](https://en.wikipedia.org/wiki/Fire_safety \"Fire safety\") Week from 14 to 20 April every year, in honour of the 66 [fire-fighters](https://en.wikipedia.org/wiki/Fire-fighter \"Fire-fighter\") who died in the [1944 Bombay Explosion](https://en.wikipedia.org/wiki/Bombay_Explosion_\\(1944\\) \"Bombay Explosion (1944)\") . [[ 7 ]](:4-7)  In 1948, M.G. Pradhan was appointed [Chief F\n[search_@0#8] Home | Petroleum & Explosive Safety Organisation - PESO — https://peso.gov.in/web/en — published: unknown\n    > Fireworks Noise Level Test (Updated) Samples collected from fireworks shops and tested for sound level · Proforma under Rule 18, 19, 33, 43, 44(2) and CoC under rule 12(2) Import of Cylinders and Valves · Timeline For Disposal · NAPES &amp; TS · FRDC Sivakasi ·\n\n"
+  },
+  "response": {
+    "output": {
+      "status": "SUPPORTED",
+      "assessment": "The permitting process and safety guidelines for public fireworks displays in Mumbai are strictly regulated under Rule 126 of the Explosives Rules, 2008, overseen by the District Magistrate (DM) and PESO. Obtaining a Form LE-6 license requires a 2-month lead time and a strict 100-meter safety clearance from spectators, which highly restricts rooftop launches in congested urban areas. While the general framework is clear, the specific internal clearance policies of the Mumbai Fire Brigade for rooftop-specific structures remain subject to individual site inspections.",
+      "evidence": [
+        {
+          "claim": "The District Magistrate’s office is the single window for granting licenses in Form LE-6 of the Explosives Rules, 2008 for the public display of fireworks.",
+          "source_ref": "extract_@3#1",
+          "relevance": 1.0,
+          "confidence": 1.0,
+          "production_implication": "The production must submit its primary application for the rooftop fireworks display to the Mumbai District Magistrate/Collector's office rather than attempting to get separate piecemeal approvals first."
+        },
+        {
+          "claim": "Applications for a public display license must be submitted to the District Magistrate's office two months prior to the scheduled display date, and if approved, permission is granted at least one month prior.",
+          "source_ref": "extract_@3#1",
+          "relevance": 1.0,
+          "confidence": 1.0,
+          "production_implication": "The production must factor in a strict 60-day lead time for the permitting process before the scheduled shoot date."
+        },
+        {
+          "claim": "A strict safety distance of 100 meters must be maintained between the fireworks display site and spectators (with barricading), and 250 meters from hospitals, schools, and nursing homes.",
+          "source_ref": "extract_@3#1",
+          "relevance": 1.0,
+          "confidence": 1.0,
+          "production_implication": "The selected Mumbai rooftop must have a 100-meter clear radius from any spectators or public areas, and must not be within 250 meters of any school, hospital, or nursing home."
+        },
+        {
+          "claim": "If safety distances are not available or if the display site is congested (making evacuation difficult in case of an accident), the display site must be shifted to an open area.",
+          "source_ref": "extract_@3#1",
+          "relevance": 1.0,
+          "confidence": 1.0,
+          "production_implication": "Standard rooftops in congested areas of Mumbai will likely be rejected by authorities. The production must select a highly isolated rooftop with clear evacuation routes to pass the safety inspection."
+        },
+        {
+          "claim": "Organizers must conduct a formal risk assessment by a reputable organization to identify potential hazards prior to applying for a display license.",
+          "source_ref": "extract_@3#1",
+          "relevance": 0.9,
+          "confidence": 1.0,
+          "production_implication": "The production must hire a certified safety agency or licensed pyrotechnics vendor to draft a professional risk assessment report to accompany the permit application."
+        },
+        {
+          "claim": "The manufacture, sale, or use of fireworks generating noise levels exceeding 125 dB(A) or 145 dB(C) peak at a 4-meter distance is prohibited.",
+          "source_ref": "search_@2#1",
+          "relevance": 0.8,
+          "confidence": 1.0,
+          "production_implication": "The pyrotechnics team must ensure that the selected fireworks comply with these noise limits, which will also assist in coordinating with local neighborhood associations."
+        },
+        {
+          "claim": "The Mumbai Police can impose temporary bans on the use of firecrackers, rockets, and sky lanterns within city limits under the Mumbai Police Act.",
+          "source_ref": "search_@1#4",
+          "relevance": 0.8,
+          "confidence": 1.0,
+          "production_implication": "The production team must actively monitor Mumbai Police orders to ensure no temporary bans are active during the scheduled filming window."
+        }
+      ],
+      "follow_up_objective": "",
+      "follow_up_queries": []
+    },
+    "tool_calls": [
+      {
+        "name": "parallel_search",
+        "args": {
+          "question_id": "rq_@@@@@@_3",
+          "search_queries": [
+            "Mumbai Fire Brigade fireworks NOC permission",
+            "PESO public display of fireworks rules",
+            "Mumbai police permission rooftop fireworks pyrotechnics"
+          ],
+          "objective": "Find the permitting process, safety guidelines, and lead times for launching pyrotechnics or fireworks from rooftops in Mumbai, including Mumbai Fire Brigade, PESO, and Mumbai Police requirements."
+        }
+      },
+      {
+        "name": "parallel_search",
+        "args": {
+          "search_queries": [
+            "\"public display of fireworks\" PESO rules",
+            "\"Explosives Rules 2008\" \"public display\" distance",
+            "rooftop fireworks permission India safety"
+          ],
+          "objective": "Find specific safety guidelines, distances, and restrictions for public display of fireworks under PESO Explosives Rules 2008, and whether rooftop launching is permitted in Mumbai.",
+          "question_id": "rq_@@@@@@_3"
+        }
+      },
+      {
+        "name": "parallel_extract",
+        "args": {
+          "question_id": "rq_@@@@@@_3",
+          "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=160455",
+          "objective": "Extract the full text of the directives under Rule 126 of Explosives Rules 2008 for public display of fireworks, including safety distances, licensing, and restrictions."
+        }
+      },
+      {
+        "name": "parallel_search",
+        "args": {
+          "search_queries": [
+            "\"Mumbai Fire Brigade\" fireworks NOC",
+            "Mumbai Police fireworks permission rooftop",
+            "rooftop fireworks permission Mumbai"
+          ],
+          "question_id": "rq_@@@@@@_3",
+          "objective": "Find specific Mumbai Fire Brigade or Mumbai Police guidelines, NOC requirements, or restrictions for rooftop fireworks or pyrotechnics."
+        }
+      }
+    ]
+  }
+}

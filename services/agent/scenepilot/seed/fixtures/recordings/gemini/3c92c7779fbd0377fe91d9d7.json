@@ -1,0 +1,56 @@
+{
+  "request": {
+    "role": "rescue_explainer",
+    "user_text": "SHOOT DAY 5 (@DATE@): unit call 06:30, standard day 12 h (overtime after 18:30 at ₹5,000/h), hard wrap 22:00, golden hour 17:45–19:15\nDISRUPTION: Vikram Rao delayed until 15:00 — window 06:30–15:00 (+0 min dry-out), affects exteriors=False, affected resources=['cast_vikram']\nBASELINE SCHEDULE:\n  19:30–21:30 Sc 55 INT. STAIRWELL — NIGHT [INT/NIGHT, 120 min] cast=Aarav Mehta equipment=Lighting package\nCOVER SCENES (unscheduled, can be pulled forward): Sc 27 INT APARTMENT KITCHEN — MORNING [INT, 75 min] cast=Meera Iyer\nAVAILABILITY WINDOWS TODAY:\n  CAST Aarav Mehta (Rider / lead): \n  CAST Meera Iyer (Zoya):  — evening flight — hard out 19:00\n  CAST Vikram Rao (Inspector Dalvi):  — arrives from second unit\n  CAST Stunt double (Rider): \n  LOCATION Rooftop A — Sitara Mills, Lower Parel:  — owner permission + rooftop access\n  LOCATION Service alley — Kala Ghoda: \n  LOCATION Market street — Bhuleshwar:  — traffic police permit window only\n  LOCATION Apartment set — Film City Stage 3: \n  EQUIPMENT FPV drone unit:  (weather-sensitive)\n  EQUIPMENT 30 ft telescopic crane:  — one-day rental\n  EQUIPMENT Hero motorcycle + camera rig: \n  EQUIPMENT Fireworks rig (licensed pyrotechnician):  (weather-sensitive)\nTRAVEL (min): Service alley↔Apartment set 30, Apartment set↔Market street 40, Market street↔Rooftop A 25, Service alley↔Market street 20, Service alley↔Rooftop A 35, Apartment set↔Rooftop A 45\n\nDISRUPTION VERIFICATION: n/a — Internal disruption — external verification not applicable.\n\nRANKED OPTIONS:\nOPTION A (FEASIBLE, origin deterministic): defer Sc 55\n  schedule: \n  carried over: Sc 55\n  score: total 60 | preservation 0, cost 60 (₹60,000 extra), overtime 100 (0 min), moves 100 (+0), resources 100, creative 90, confidence 50\n  violations: soft: Scene 55 carried over to another day (≈₹60,000)\nOPTION B (REJECTED, origin deterministic): Shoot through as planned\n  schedule: Sc 55 19:30–21:30\n  carried over: none\n  score: total 0 | preservation 100, cost 87 (₹20,000 extra), overtime 0 (180 min), moves 100 (+0), resources 20, creative 100, confidence 50\n  violations: HARD: Aarav Mehta (Rider / lead) unavailable for Scene 55 at 19:30–21:30 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 55 at 19:30–21:30 (window not on this day); soft: 180 min overtime beyond 18:30 wrap (≈₹15,000); soft: No 30-min lunch gap near 12:30 (call + 6 h) - meal-penalty exposure (≈₹5,000)\nOPTION C (REJECTED, origin deterministic): pull cover Sc 27 into 07:00; move Sc 55 19:30→19:15 (earlier)\n  schedule: Sc 27 07:00–08:15, Sc 55 19:15–21:15\n  carried over: none\n  score: total 0 | preservation 100, cost 91 (₹13,750 extra), overtime 8 (165 min), moves 100 (+0), resources 0, creative 100, confidence 50\n  violations: HARD: Meera Iyer (Zoya) unavailable for Scene 27 at 07:00–08:15 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 27 at 07:00–08:15 (window not on this day); HARD: Aarav Mehta (Rider / lead) unavailable for Scene 55 at 19:15–21:15 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 55 at 19:15–21:15 (window not on this day); soft: 165 min overtime beyond 18:30 wrap (≈₹13,750)\nOPTION D (REJECTED, origin gemini): Shoot only the cover scene 27 during the day before Meera Iyer's departure flight, deferring the unavailable Scene 55.\n  schedule: Sc 27 07:00–08:15\n  carried over: Sc 55\n  score: total 0 | preservation 10, cost 60 (₹60,000 extra), overtime 100 (0 min), moves 100 (+0), resources 20, creative 90, confidence 50\n  violations: HARD: Meera Iyer (Zoya) unavailable for Scene 27 at 07:00–08:15 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 27 at 07:00–08:15 (window not on this day); soft: Scene 55 carried over to another day (≈₹60,000)\nOPTION E (REJECTED, origin gemini): Attempt to shoot Scene 55 first in the afternoon, followed by Cover Scene 27 before Meera Iyer's evening flight.\n  schedule: Sc 55 19:15–21:15, Sc 27 21:45–23:00\n  carried over: none\n  score: total 0 | preservation 100, cost 82 (₹27,500 extra), overtime 0 (270 min), moves 100 (+0), resources 0, creative 100, confidence 50\n  violations: HARD: Aarav Mehta (Rider / lead) unavailable for Scene 55 at 19:15–21:15 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 55 at 19:15–21:15 (window not on this day); HARD: Scene 27 ends 23:00 after hard wrap 22:00; HARD: Meera Iyer (Zoya) unavailable for Scene 27 at 21:45–23:00 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 27 at 21:45–23:00 (window not on this day); HARD: DAY scene 27 has 75 min outside usable daylight (06:30–18:45); soft: 270 min overtime beyond 18:30 wrap (≈₹22,500); soft: No 30-min lunch gap near 12:30 (call + 6 h) - meal-penalty exposure (≈₹5,000)\n\nSCORE WEIGHTS: schedule_preservation: 0 × 0.30, cost_impact: 60 × 0.15, overtime_risk: 100 × 0.15, company_moves: 100 × 0.10, resource_conflicts: 100 × 0.10, creative_compromise: 90 × 0.15, confidence: 50 × 0.05"
+  },
+  "response": {
+    "output": {
+      "headline": "Defer Scene 55 due to cast and location unavailability",
+      "options": [
+        {
+          "label": "OPTION A",
+          "explanation": "Defer Scene 55 to a future shoot day. This is the only feasible option because Aarav Mehta and the Apartment set are completely unavailable today. It avoids any overtime or resource conflicts on Day 5 but requires carrying over the scene.",
+          "trade_offs": [
+            "Carries over Scene 55 to another day, incurring an estimated ₹60,000 extra cost",
+            "Reduces schedule preservation score to 0"
+          ]
+        },
+        {
+          "label": "OPTION B",
+          "explanation": "Attempt to shoot through with the baseline schedule as planned. This is rejected because Aarav Mehta and the Apartment set are unavailable for Scene 55 today. It would also trigger 180 minutes of overtime and a meal penalty.",
+          "trade_offs": [
+            "Violates hard constraints for Aarav Mehta and Apartment set availability",
+            "Incurs ₹15,000 in overtime and ₹5,000 in meal penalties"
+          ]
+        },
+        {
+          "label": "OPTION C",
+          "explanation": "Pull cover Scene 27 to 07:00 and move Scene 55 slightly earlier to 19:15. This is rejected because Meera Iyer and the Apartment set are unavailable for Scene 27 in the morning, and Aarav Mehta and the Apartment set remain unavailable for Scene 55.",
+          "trade_offs": [
+            "Violates hard availability constraints for Meera Iyer, Aarav Mehta, and the Apartment set",
+            "Incurs ₹13,750 in overtime costs"
+          ]
+        },
+        {
+          "label": "OPTION D",
+          "explanation": "Shoot only cover Scene 27 in the morning and defer Scene 55. This is rejected because Meera Iyer and the Apartment set are unavailable for Scene 27 at 07:00.",
+          "trade_offs": [
+            "Violates hard availability constraints for Meera Iyer and the Apartment set",
+            "Carries over Scene 55 at an estimated cost of ₹60,000"
+          ]
+        },
+        {
+          "label": "OPTION E",
+          "explanation": "Shoot Scene 55 in the evening followed by cover Scene 27. This is rejected because Aarav Mehta and the Apartment set are unavailable for Scene 55, and Meera Iyer and the Apartment set are unavailable for Scene 27. Additionally, Scene 27 would end at 23:00, violating the 22:00 hard wrap.",
+          "trade_offs": [
+            "Violates hard wrap time of 22:00 by 60 minutes",
+            "Violates multiple cast and location availability constraints",
+            "Shoots a day scene outside usable daylight"
+          ]
+        }
+      ],
+      "recommendation_rationale": "Option A is the only feasible recovery path. All other options (B, C, D, and E) are rejected due to critical hard constraints: Aarav Mehta (Rider / lead) and the Apartment set (Film City Stage 3) are completely unavailable today for Scene 55, and Meera Iyer is unavailable for the cover Scene 27. While Option A carries over Scene 55 at an estimated cost of ₹60,000 (reducing schedule preservation to 0), it successfully avoids ₹15,000 to ₹22,500 in overtime risks, eliminates resource conflicts, and ensures we do not violate the 22:00 hard wrap or shoot day scenes in the dark."
+    },
+    "tool_calls": []
+  }
+}

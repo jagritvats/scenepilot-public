@@ -1,0 +1,238 @@
+{
+  "request": {
+    "input": "Filming location: Service alley — Kala Ghoda. City: Mumbai, IN. Location type: kind: street. Research the rules and practical constraints that apply to a film production shooting here: which authority issues the filming permit, the typical lead time and fee band, any night-time noise curfew as a time range, whether camera drones and pyrotechnics are allowed, other filming restrictions, the nearest emergency hospital, and any monsoon flooding history. Prefer official municipal, police and civil-aviation sources. Leave a field empty rather than guessing.",
+    "processor": "core-fast",
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "permit_authority": {
+          "type": "string",
+          "description": "The authority that issues filming permits for this location, by name."
+        },
+        "permit_lead_time_days": {
+          "type": "string",
+          "description": "Typical lead time to obtain a filming permit, in days. Empty if unknown."
+        },
+        "fee_band_inr": {
+          "type": "string",
+          "description": "Typical permit or location fee range in INR. Empty if unknown."
+        },
+        "noise_curfew": {
+          "type": "string",
+          "description": "Local night-time noise restriction as a plain time range, e.g. '22:00-06:00'. Empty string if there is no curfew."
+        },
+        "drone_rules": {
+          "type": "string",
+          "description": "Rules on flying camera drones here — say plainly whether drones are prohibited, permitted with permission, or unrestricted."
+        },
+        "fireworks_rules": {
+          "type": "string",
+          "description": "Rules on pyrotechnics or fireworks here — say plainly whether they are prohibited or permitted with a licence."
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Other filming restrictions that apply at this location, one per item."
+        },
+        "nearest_hospital": {
+          "type": "string",
+          "description": "Nearest hospital with an emergency department, and approximate distance."
+        },
+        "monsoon_flooding_history": {
+          "type": "string",
+          "description": "Known monsoon waterlogging or flooding history for this area."
+        }
+      },
+      "required": [
+        "permit_authority",
+        "restrictions"
+      ]
+    }
+  },
+  "response": {
+    "content": {
+      "permit_lead_time_days": "2",
+      "monsoon_flooding_history": "",
+      "drone_rules": "",
+      "fireworks_rules": "Prohibited without a licence",
+      "noise_curfew": "22:00-06:00",
+      "permit_authority": "Assistant Commissioner (Ward) of the Brihanmumbai Municipal Corporation (BMC)",
+      "nearest_hospital": "",
+      "fee_band_inr": "₹66–₹425 per sq.mt., plus possible lump sum of ₹15000",
+      "restrictions": [
+        "Traffic control and road closure require police coordination.",
+        "Temporary structures require fire safety clearance."
+      ]
+    },
+    "basis": [
+      {
+        "field": "permit_lead_time_days",
+        "reasoning": "The MCGM film shooting policy states that the Ward One Window grants permission within 48 hours, implying a typical lead time of 2 days.",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "The circular provisions for Ward One Window for granting Film shooting permission within 48 hrs, if no temporary structure is involved. Online module for the same shall be launched soon through State Single Window System. GENERAL CONDITIONS:** The charges for film shooting shall be applicable as per the current department guidelines. III) PRIVATE OUTDOOR LOCATION WITH NO TEMPORARY STRUCTURES (Open to Sky locations) a. Private outdoor locations need to have permanent Trade License u/s 394 of MMC Act 1888 from MCGM License department."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "monsoon_flooding_history",
+        "reasoning": "The source lists filming locations in Mumbai but contains no mention of monsoon waterlogging for Service alley.",
+        "citations": [
+          {
+            "url": "http://thefilmmap.com/locations/mumbai",
+            "excerpts": [
+              "Mumbai, India — filming locations — FilmMap Mumbai, India is a filming location for 30 productions, including Slumdog Millionaire (2008)."
+            ],
+            "title": null
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "drone_rules",
+        "reasoning": "The DGCA page references Drone Rules 2021 but does not provide a specific statement about filming drone permissions, so no explicit rule was found.",
+        "citations": [
+          {
+            "url": "https://www.dgca.gov.in/digigov-portal?page=jsp%2Fdgca%2FInventoryList%2Fheaderblock%2Fdrones%2FRPAS.html",
+            "excerpts": [
+              "DGCA Welcome to DGCA AI Assistant Recording... Sit Environment Unmanned Aircraft System(UAS) | [DRONE RULES 2021]"
+            ],
+            "title": "Home | Directorate General of Civil Aviation | Government of India"
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "fireworks_rules",
+        "reasoning": "The policy requires a fire compliance certificate under the Maharashtra Fire and Life Safety Act, indicating pyrotechnics need a licence.",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "It was established on 26th September 1977 by the Department of Cultural Affairs Government of Maharashtra under, the Company Act 1956, is one of the largest studio complex in India. Film City was built by State government to provide facilities and concessions to the film industry. It was renamed as Dadasaheb Phalke Chitranagari in the year 2001 to commemorate the founder of Indian Film Industry Dadasaheb Phalke. It offers infrastructure such as AC studios along with 40+ outdoor locations. It has several recording rooms, gardens, lakes, theaters, hills, valleys, flat open ground, natural forest, shruberry and water bodies that serve as the venue of many Bollywood film shootings. Facilities of Film Processing and Post Production are also available at Film City."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "noise_curfew",
+        "reasoning": "The Noise Pollution Rules prohibit loudspeaker use between 10 p.m. and 6 a.m., which applies to filming noise.",
+        "citations": [
+          {
+            "url": "https://indiankanoon.org/doc/199903026",
+            "excerpts": [
+              "Section 5 in The Noise Pollution (Regulation And Control ... Union of India - Section Section 5 in The Noise Pollution (Regulation And Control) Rules, 2000 5. Restrictions on the use of loud speakers/public address system .- (1) A loud speaker or a public address system shall not be used except after obtaining written permission from the authority. (2) A loud speaker or a public address system shall not be used at night (between 10.00 p.m. to 6.00 a.m"
+            ],
+            "title": "Section 5 in The Noise Pollution (Regulation And Control ..."
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "permit_authority",
+        "reasoning": "The MCGM policy designates the Assistant Commissioner (Ward) as the nodal agency for film shooting permissions.",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "In case of temporary structure to be erected – Plan layout signed by authorised signatory of the applicant along with Structural Stability certificate from licensed structural engineer. 4\\. For foreign filmmakers – Copy of clearance by the Ministry of External Affairs / Ministry of Information & Broadcasting, Govt. of India, as the case may be. 5\\. Fire Compliance certificate from the registered agency under Maharashtra Fire and Life Safety Act. Shooting for Film/ T.V./ advertisements and processing of cinematograph films is a licensable activity u/s 394 of the M.M.C. Act 1888 and figures in the Part IV of Schedule 'M' which reads as: \"Shooting and processing of cinematograph films (in a studio or laboratory) or any other places \"."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "nearest_hospital",
+        "reasoning": "The source provides no information on nearby hospitals.",
+        "citations": [
+          {
+            "url": "http://thefilmmap.com/locations/mumbai",
+            "excerpts": [
+              "Mumbai, India — filming locations — FilmMap Mumbai, India is a filming location for 30 productions, including Slumdog Millionaire (2008)."
+            ],
+            "title": null
+          }
+        ],
+        "confidence": "low"
+      },
+      {
+        "field": "fee_band_inr",
+        "reasoning": "The policy lists a fee of ₹66 per sq.mt. for private outdoor locations and a fee of ₹425 per sq.mt. plus a lump sum of ₹15000 for temporary structures, giving a range of ₹66–₹425 per sq.mt. with possible additional charges.",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "The temporary permission may be issued on a half-yearly basis at par with the regular commercial user, by recovering revalidation charges (₹15000/- lump sum), till its demolition. d. Temporary permissions charges may be accepted at par with labour hutment camp, site office, etc.i.e.at the rate of ₹425/- per Sq.mt.as per circular under no. ChE/23087/DP dt. 20.01.2012. e. The applicant shall submit the application along with plans showing the proposed temporary structure for permission/approval to the concerned Asstt. Commissioner through an Architect/Licensed Surveyor only, along with an appointment letter. The Architect/Licensed Surveyor shall sign the plans. Permission Granting Authority:** 1\\.",
+              "For Municipal Roads and footpaths/ Schools/ Garden/ Cemeteries/ Swimming Pools / Municipal Markets /Municipal Sports Complex/ Private Properties - At ward level through Assistant Commissioner (Ward), as per remarks from the concerned officer of the department at ward level. Hence, The Assistant Commissioner (ward) is designated as the Nodal Agency For implementation of this policy in respective ward jurisdiction 2\\. For Veer Jijamata Udyan – Director Zoo **Supporting Documents Required along with application:** 1\\. Police N.O.C. – (Local police and traffic police), 2. NOC from the property / location owner, in case property is not in the ownership of MCGM, 3\\."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "restrictions",
+        "reasoning": "Police licensing unit handles traffic and stunt clearances, implying traffic control requires police coordination; fire compliance certificate required for temporary structures, indicating fire safety clearance needed.",
+        "citations": [
+          {
+            "url": "http://lineproducersindia.in/filming-permissions-in-mumbai",
+            "excerpts": [
+              "India Cine Hub maintains its own MIB-linked portal that international productions use for single-window clearance, but ICH does not issue Mumbai Police or BMC permissions directly — it facilitates and expedites communication, but the underlying NOCs still originate from the Which Ward Offices Handle Film Applications and at What Level For standard outdoor shoots — streets, local parks, residential lanes — the Assistant Commissioner at ward level has approval authority. ... For productions shooting at landmark locations that span multiple wards, or at locations adjacent to coastal zones, the application requires Commissioner-level approval. ..."
+            ],
+            "title": "Mumbai Filming Permissions | BMC, Police, CRZ NOCs"
+          },
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "It was established on 26th September 1977 by the Department of Cultural Affairs Government of Maharashtra under, the Company Act 1956, is one of the largest studio complex in India. Film City was built by State government to provide facilities and concessions to the film industry. It was renamed as Dadasaheb Phalke Chitranagari in the year 2001 to commemorate the founder of Indian Film Industry Dadasaheb Phalke. It offers infrastructure such as AC studios along with 40+ outdoor locations. It has several recording rooms, gardens, lakes, theaters, hills, valleys, flat open ground, natural forest, shruberry and water bodies that serve as the venue of many Bollywood film shootings. Facilities of Film Processing and Post Production are also available at Film City."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "restrictions.0",
+        "reasoning": "Police licensing unit handles traffic and stunt clearances, so traffic control and road closures need police coordination.",
+        "citations": [
+          {
+            "url": "http://lineproducersindia.in/filming-permissions-in-mumbai",
+            "excerpts": [
+              "India Cine Hub maintains its own MIB-linked portal that international productions use for single-window clearance, but ICH does not issue Mumbai Police or BMC permissions directly — it facilitates and expedites communication, but the underlying NOCs still originate from the Which Ward Offices Handle Film Applications and at What Level For standard outdoor shoots — streets, local parks, residential lanes — the Assistant Commissioner at ward level has approval authority. ... For productions shooting at landmark locations that span multiple wards, or at locations adjacent to coastal zones, the application requires Commissioner-level approval. ..."
+            ],
+            "title": "Mumbai Filming Permissions | BMC, Police, CRZ NOCs"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "restrictions.1",
+        "reasoning": "Fire compliance certificate is required for temporary structures, indicating fire safety clearance is needed.",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "It was established on 26th September 1977 by the Department of Cultural Affairs Government of Maharashtra under, the Company Act 1956, is one of the largest studio complex in India. Film City was built by State government to provide facilities and concessions to the film industry. It was renamed as Dadasaheb Phalke Chitranagari in the year 2001 to commemorate the founder of Indian Film Industry Dadasaheb Phalke. It offers infrastructure such as AC studios along with 40+ outdoor locations. It has several recording rooms, gardens, lakes, theaters, hills, valleys, flat open ground, natural forest, shruberry and water bodies that serve as the venue of many Bollywood film shootings. Facilities of Film Processing and Post Production are also available at Film City."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      }
+    ],
+    "run_id": "trun_2ecf9b5f69134be6938d4af74f36f30a",
+    "interaction_id": "trun_2ecf9b5f69134be6938d4af74f36f30a",
+    "processor": "core-fast",
+    "warnings": []
+  }
+}

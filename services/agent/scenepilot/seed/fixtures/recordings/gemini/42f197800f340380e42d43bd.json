@@ -1,0 +1,129 @@
+{
+  "request": {
+    "role": "breakdown_agent",
+    "user_text": "SCENE HEADING: EXT MUMBAI ROOFTOP — SUNSET\n\nACTION / DESCRIPTION:\nEXT. MUMBAI ROOFTOP — SUNSET #42#\n\nA motorcycle tears across adjoining rooftops.\nA drone follows while fireworks explode over the skyline.\n\nAARAV\n(into helmet radio)\nPackage is secured. Exfil route is hot!\n\nRain begins as the rider jumps to an adjacent building. The tires skid dangerously on the wet concrete."
+  },
+  "response": {
+    "output": {
+      "scene_summary": "Aarav flees across Mumbai rooftops on a motorcycle at sunset. As practical rain begins, he performs a high-risk jump to an adjacent building, skidding on the wet concrete while a tracking drone captures the action against a backdrop of exploding fireworks.",
+      "elements": [
+        {
+          "category": "CAST",
+          "name": "Aarav",
+          "description": "Lead character, wearing riding gear and helmet. Delivers dialogue via helmet radio.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Actor to be positioned away from rooftop edges during close-ups; stunt double to perform high-risk maneuvers."
+        },
+        {
+          "category": "STUNTS",
+          "name": "Motorcycle Rooftop Jump",
+          "description": "Stunt double rides motorcycle off a ramp from one rooftop to an adjacent building.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Requires structural engineering sign-off on both rooftops, deceleration/catch rigs, and precision stunt rider."
+        },
+        {
+          "category": "STUNTS",
+          "name": "Wet Concrete Motorcycle Skid",
+          "description": "Precision motorcycle slide/skid on wet concrete surface upon landing.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Test braking distance on wet concrete prior to shooting. Ensure clear run-off path free of obstacles."
+        },
+        {
+          "category": "PROPS",
+          "name": "The Package",
+          "description": "The secured item Aarav is transporting. Must be secured to his person or motorcycle.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "PROPS",
+          "name": "Helmet with Integrated Radio",
+          "description": "Hero helmet worn by Aarav with visible/audible communication mic.",
+          "count": 2,
+          "implied": false,
+          "safety_notes": "Ensure helmet does not obstruct stunt rider's peripheral vision."
+        },
+        {
+          "category": "SFX",
+          "name": "Practical Rain Effects",
+          "description": "Rain bars set up on the rooftop to simulate sudden downpour.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Electrical equipment must be waterproofed. Wet surfaces increase slip hazards for crew and stunt riders."
+        },
+        {
+          "category": "SFX",
+          "name": "Rooftop Pyrotechnic Fireworks",
+          "description": "Controlled practical fireworks/flares launched from distant rooftops for background atmosphere.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Licensed pyrotechnician required. Wind direction must be monitored to avoid smoke/debris blowing into the stunt path."
+        },
+        {
+          "category": "VFX",
+          "name": "Skyline Extension & Wire Removal",
+          "description": "Digital enhancement of the Mumbai skyline, addition of background fireworks, and removal of safety wires/harnesses used for the jump.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SPECIAL_EQUIPMENT",
+          "name": "Heavy-Duty Camera Drone",
+          "description": "High-speed tracking drone to follow the motorcycle jump.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Drone operator must maintain safe distance from the stunt rider and pyrotechnic launch zones."
+        },
+        {
+          "category": "WARDROBE",
+          "name": "Aarav's Tactical Riding Suit",
+          "description": "Weatherproof tactical riding gear. Requires duplicates for stunt double and wet-weather continuity.",
+          "count": 4,
+          "implied": true,
+          "safety_notes": "Must accommodate hidden safety harness and protective body armor underneath."
+        },
+        {
+          "category": "VEHICLES",
+          "name": "Hero Motorcycle",
+          "description": "Dual-sport or adventure motorcycle modified for rooftop jumping and stunt work.",
+          "count": 2,
+          "implied": false,
+          "safety_notes": "Tires must be optimized for wet concrete grip. Throttle and brakes must be thoroughly inspected before each take."
+        },
+        {
+          "category": "SOUND",
+          "name": "Helmet Radio Playback & Engine SFX",
+          "description": "Live recording of Aarav's dialogue and high-fidelity recording of the motorcycle engine and tire skids.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SAFETY",
+          "name": "Rooftop Edge Fall Protection",
+          "description": "Safety netting, catch barriers, and harness anchor points installed along rooftop perimeters.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "All crew working near edges must be harnessed and tethered."
+        }
+      ],
+      "stop_conditions": [
+        "Wind gusts exceeding 25 km/h (renders drone flight and motorcycle jump unsafe).",
+        "Uncontrolled water pooling on the jump ramp or landing zone causing aquaplaning risk.",
+        "Loss of direct radio communication between the Stunt Coordinator, Rider, and Drone Operator.",
+        "Pyrotechnic fallout or smoke drifting directly into the rider's flight path or landing zone."
+      ],
+      "continuity_notes": [
+        "Wetness level of Aarav's wardrobe must match subsequent scenes immediately following the escape.",
+        "Motorcycle body damage, mud, and tire wear must match continuity in the next sequence.",
+        "Sunset lighting plates must be captured quickly to maintain the 'magic hour' look across multiple takes."
+      ]
+    },
+    "tool_calls": []
+  }
+}

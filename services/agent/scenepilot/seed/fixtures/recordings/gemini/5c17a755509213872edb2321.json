@@ -1,0 +1,39 @@
+{
+  "request": {
+    "role": "rescue_planner",
+    "user_text": "SHOOT DAY 4 (@DATE@): unit call 06:30, standard day 12.5 h (overtime after 19:00 at ₹7,500/h), hard wrap 22:00, golden hour @SOLAR@–@SOLAR@\nDISRUPTION: Crane hydraulic fault — vendor swap by 16:00 — window 06:30–16:00 (+0 min dry-out), affects exteriors=False, affected resources=['eq_crane']\nBASELINE SCHEDULE:\n  07:00–09:30 Sc 31 EXT SERVICE ALLEY — DAY [EXT/DAY, 150 min] cast=Aarav Mehta, Meera Iyer equipment=Lighting package\n  10:00–12:30 Sc 19 INT APARTMENT — DAY [INT/DAY, 150 min] cast=Meera Iyer, Vikram Rao equipment=Lighting package\n  13:30–16:00 Sc 48 EXT MARKET STREET — DAY [EXT/DAY, 150 min] cast=Aarav Mehta, Vikram Rao equipment=Lighting package\n  16:30–19:00 Sc 42 EXT MUMBAI ROOFTOP — SUNSET [EXT/SUNSET, 150 min] cast=Aarav Mehta, Stunt double equipment=FPV drone unit, 30 ft telescopic crane, Hero motorcycle + camera rig, Fireworks rig (licensed pyrotechnician)\nCOVER SCENES (unscheduled, can be pulled forward): Sc 27 INT APARTMENT KITCHEN — MORNING [INT, 75 min] cast=Meera Iyer\nAVAILABILITY WINDOWS TODAY:\n  CAST Aarav Mehta (Rider / lead): 06:00–21:00 — night unit — stage interior only\n  CAST Meera Iyer (Zoya): 06:30–19:00 — evening flight — hard out 19:00\n  CAST Vikram Rao (Inspector Dalvi): 09:00–20:00 — arrives from second unit\n  CAST Stunt double (Rider): 06:00–21:00\n  LOCATION Rooftop A — Sitara Mills, Lower Parel: 06:00–20:30 — owner permission + rooftop access\n  LOCATION Service alley — Kala Ghoda: 06:30–18:00\n  LOCATION Market street — Bhuleshwar: 13:00–18:00 — traffic police permit window only\n  LOCATION Apartment set — Film City Stage 3: 06:00–23:00 — stage held overnight — prelight from 17:00\n  LOCATION Sea link approach — Worli:  — aerial slot agreed before the morning peak — off the carriageway\n  EQUIPMENT FPV drone unit: 06:00–21:00 — dawn charter for the sea-link plate (weather-sensitive)\n  EQUIPMENT 30 ft telescopic crane: 06:00–21:00 — one-day rental\n  EQUIPMENT Hero motorcycle + camera rig: 06:00–21:00\n  EQUIPMENT Fireworks rig (licensed pyrotechnician): 14:00–21:00 (weather-sensitive)\nTRAVEL (min): Service alley↔Apartment set 30, Apartment set↔Market street 40, Market street↔Rooftop A 25, Service alley↔Market street 20, Service alley↔Rooftop A 35, Apartment set↔Rooftop A 45\n\nIMPACT: 0 scheduled scene(s) directly affected during 06:30–16:00: none. 0 requirement(s) violated, 0 resource(s) implicated, 1 item(s) pinned, 3 movable, 1 cover scene(s) available.\n\n\nALREADY EVALUATED ORDERINGS (do not repeat):\nOPTION A (FEASIBLE, origin deterministic): move Sc 48 13:30→13:10 (earlier); move Sc 42 16:30→16:37 (later)\n  schedule: Sc 31 07:00–09:30, Sc 19 10:00–12:30, Sc 48 13:10–15:40, Sc 42 16:37–19:07\n  carried over: none\n  score: total 94 | preservation 92, cost 99 (₹875 extra), overtime 96 (7 min), moves 100 (+0), resources 100, creative 100, confidence 50\n  violations: soft: 7 min overtime beyond 19:00 wrap (≈₹875)\nOPTION B (FEASIBLE, origin deterministic): pull cover Sc 27 into 13:00; move Sc 48 13:30→14:55 (later); move Sc 42 16:30→17:55 (later)\n  schedule: Sc 31 07:00–09:30, Sc 19 10:00–12:30, Sc 27 13:00–14:15, Sc 48 14:55–17:25, Sc 42 17:55–20:25\n  carried over: none\n  score: total 89 | preservation 100, cost 93 (₹10,625 extra), overtime 53 (85 min), moves 100 (+0), resources 100, creative 100, confidence 50\n  violations: soft: 85 min overtime beyond 19:00 wrap (≈₹10,625)\nOPTION C (REJECTED, origin deterministic): move Sc 48 13:30→10:00 (earlier); move Sc 19 10:00→13:10 (later); move Sc 42 16:30→16:37 (later)\n  schedule: Sc 31 07:00–09:30, Sc 48 10:00–12:30, Sc 19 13:10–15:40, Sc 42 16:37–19:07\n  carried over: none\n  score: total 0 | preservation 88, cost 99 (₹875 extra), overtime 96 (7 min), moves 100 (+0), resources 60, creative 100, confidence 50\n  violations: HARD: Market street — Bhuleshwar not available for Scene 48 at 10:00–12:30 (window 13:00–18:00); soft: 7 min overtime beyond 19:00 wrap (≈₹875)\nOPTION D (REJECTED, origin deterministic): move Sc 19 10:00→07:00 (earlier); move Sc 31 07:00→10:00 (later); move Sc 48 13:30→13:00 (earlier); move Sc 42 16:30→16:37 (later)\n  schedule: Sc 19 07:00–09:30, Sc 31 10:00–12:30, Sc 48 13:00–15:30, Sc 42 16:37–19:07\n  carried over: none\n  score: total 0 | preservation 84, cost 99 (₹875 extra), overtime 96 (7 min), moves 100 (+0), resources 60, creative 100, confidence 50\n  violations: HARD: Vikram Rao (Inspector Dalvi) unavailable for Scene 19 at 07:00–09:30 (available 09:00–20:00); soft: 7 min overtime beyond 19:00 wrap (≈₹875)\n\nPropose up to 2 additional orderings using scene numbers only."
+  },
+  "response": {
+    "output": {
+      "proposals": [
+        {
+          "title": "Defer Sunset Rooftop to Avoid Crane Risk and Overtime",
+          "strategy": "Defer the complex rooftop scene Sc 42 to a later day to eliminate crane disruption risks and wrap the crew before overtime, while pulling in the apartment cover scene.",
+          "order_scene_numbers": [
+            "Sc 31",
+            "Sc 19",
+            "Sc 27",
+            "Sc 48"
+          ],
+          "deferred_scene_numbers": [
+            "Sc 42"
+          ]
+        },
+        {
+          "title": "Early Cover Scene and Sequential Progression",
+          "strategy": "Shoot the apartment cover scene first thing in the morning, allowing a smooth transition to the alley and back to the apartment before heading to the afternoon market and sunset rooftop.",
+          "order_scene_numbers": [
+            "Sc 27",
+            "Sc 31",
+            "Sc 19",
+            "Sc 48",
+            "Sc 42"
+          ],
+          "deferred_scene_numbers": []
+        }
+      ],
+      "reasoning": "Proposal 1 prioritizes risk mitigation by deferring the sunset scene Sc 42, which relies on the disrupted crane and causes overtime. Proposal 2 offers an alternative flow by starting with the cover scene Sc 27 in the morning, which fits within Meera Iyer's early availability and leaves the afternoon open for the market and rooftop scenes."
+    },
+    "tool_calls": []
+  }
+}

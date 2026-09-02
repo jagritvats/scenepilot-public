@@ -1,0 +1,105 @@
+{
+  "request": {
+    "objective": "Find historical daily weather data, rainfall probability, and average wind speeds for Mumbai specifically during late August (August 25-27) to assess monsoon risks for drone flights and motorcycle stunts.",
+    "search_queries": [
+      "Mumbai weather August 25 26 27",
+      "Mumbai climatological table August IMD",
+      "Mumbai average wind speed late August knots"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_001f56e5610899a6276c2021939f54a3",
+    "results": [
+      {
+        "url": "http://www.imdmumbai.gov.in/scripts/latest.asp?releaseId=EDM",
+        "title": "Official website of Regional Meteorological Centre Mumbai, Government of India",
+        "publish_date": null,
+        "excerpts": [
+          "This Site Content Administered by"
+        ]
+      },
+      {
+        "url": "https://weather-and-climate.com/average-monthly-Wind-speed,mumbai,India",
+        "title": "Average monthly wind speed in Mumbai - Weather and Climate",
+        "publish_date": null,
+        "excerpts": [
+          "Wind speeds reach an average of 3 m/s <strong>(6 knots</strong>) in July and August; these are statistically the windiest months. This means that on some days, the air is a fair and normal breeze."
+        ]
+      },
+      {
+        "url": "https://www.weather25.com/asia/india/maharashtra/mumbai?page=month&month=August",
+        "title": "Mumbai weather in August 2026 | Mumbai 14 day weather",
+        "publish_date": null,
+        "excerpts": [
+          "# Mumbai weather in August 2026\n[Wednesday Aug 26 2.5 mm 28 ° / 28 °](https://www.weather25.com/asia/india/maharashtra/mumbai?page=today) [Thursday Aug 27 3.3 mm 28 ° / 28 °](https://www.weather25.com/asia/india/maharashtra/mumbai?page=tomorrow) [Friday Aug 28 3 mm 28 ° / 28\n\n...\n\n## The average weather in Mumbai in August\nThe weather in Mumbai in August is very hot. The average temperatures are between **26 ° C and 29 ° C** , drinking water regularly is advisable.\nThere’s going to be many days of rain during the month of August in Mumbai.\n\n...\n\nSun Hours\n9.5\nHrs\nHistoric average weather for August\n[](https://www.weather25.com/asia/india/maharashtra/mumbai?page=month&month=July)\nAugust\n[](https://www.weather25.com/asia/india/maharashtra/mumbai?page=month&month=September)\n\n...\n\n| [2 29 ° / 27 °](https://www.weather25.com/asia/india/maharashtra/mumbai?page=past-weather=2&month=8 \"Weather in 2 august 2026\") | [3 29 ° / 27 °](https://www.weather25.com/asia/india/maharashtra/mumbai?page=past-weather=3&month=8 \"Weather in 3 august 2026\") | [4 28 ° / 27\n\n...\n\n| [23 28 ° / 26 °](https://www.weather25.com/asia/india/maharashtra/mumbai?page=past-weather=23&month=8 \"Weather in 23 august 2026\") | [24 28 ° / 27 °](https://www.weather25.com/asia/india/maharashtra/mumbai?page=past-weather=24&month=8 \"Weather in 24 august 2026\") | [25 28 ° / 26\n°](https://www.weather25.com/asia/india/maharashtra/mumbai?page=past-weather=25&month=8 \"Weather in 25 august 2026\") | [26 28 ° / 28 °](https://www.weather25.com/asia/india/maharashtra/mumbai?page=today \"Weather in 26 august 2026\") | [27 28 ° / 28\n°](https://www.weather25.com/asia/india/maharashtra/mumbai?page=tomorrow \"Weather in 27 august 2026\") | [28 28 ° / 28 °](https://www.weather25.com/asia/india/maharashtra/mumbai?page=day=2026-08-28 \"Weather in 28 august 2026\") | [29 28 ° / 27\n\n...\n\n## Mumbai annual weather\n| Month | Temperatures | Rainy Days | Dry Days | Snowy Days | Rainfall | Weather | More details |\n| August | **29 °** / 26 ° | 21 | 10 | 0 | 779 mm | Ok | [Mumbai in August](https://www.weather25.com/asia/india/maharashtra/mumbai?page=month&month=August) |\n\n...\n\n## Weather in Mumbai in August - FAQ\nWhat is the average temperature in Mumbai in August?\nThe average temperature in Mumbai in August is 26 / 29 ° C .\nWhat is the chance of rain in Mumbai in August?\nOn average, there are 21 rainy days in Mumbai during August.\nWeather wise, is August a good time to visit Mumbai?"
+        ]
+      },
+      {
+        "url": "https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/august",
+        "title": "Weather in Mumbai in August 2026 - Detailed Forecast",
+        "publish_date": "2026-08-22",
+        "excerpts": [
+          "# Weather in Mumbai for August 2026\n## Temperatures\n### Rain 🌧️\n* Mumbai experiences **heavy rainfall** in August, with over 20 rainy days and an average total precipitation 399.9 mm .\nAverage dry days\n2\nDry days\nAverage rainy days\n29\nRainy days\nAverage snowy days\n0\nSnow days\nAverage temperatures\n28 ° / 26 °\nTemperatures\nAverage wind speed\n24 km/h\nAvg max wind\nAverage humidity\n79 %\nAvg humidity\n\n...\n\n## Mumbai Weather August\npossible 28 °](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/day=2026-08-25 \"Weather for August 25 2026\") | [26 Patchy rain possible 28 °](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/day=2026-08-26 \"Weather for August 26 2026\") | [27 Patchy rain possible 28\n°](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/day=2026-08-27 \"Weather for August 27 2026\") | [28 Patchy rain possible 28 °](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/day=2026-08-28 \"Weather for August 28 2026\") | [29 Patchy rain possible 28\n\n...\n\n## August weather in Mumbai day by day\nModerate rain at times |29 ° / 26 ° |11.8 mm |6 | |\n|[6 Aug.](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/past=6&month=8 \"The weather in Mumbai on the 6th of August\") |Patchy rain possible\n\n...\n\nPatchy rain possible |28 ° / 28 ° |3.3 mm |8.8 | |\n|[27 Aug.](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/day=2026-08-27 \"The weather in Mumbai on the 27th of August\") |Patchy rain possible\nPatchy rain possible |28 ° / 28 ° |2.9 mm |6 | |\n|[28 Aug.](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/day=2026-08-28 \"The weather in Mumbai on the 28th of August\") |Patchy rain possible\n\n...\n\n## Mumbai in August - FAQ\n### What are the expected maximum and minimum temperatures in Mumbai during August?\nSignificant rainfall exceeding 399.9 mm is expected in Mumbai during August, occurring over more than 29 days. Preparing for wet conditions is recommended in your planning. ### What are the typical wind conditions in Mumbai during August?\nThe average wind speed in Mumbai during August is 24 km/h , suggesting breezy to windy conditions, depending on your activities.\n\n## August rainfall patterns in Mumbai\nExplore the daily rainfall trends and prepare for Mumbais August weather 💧\nTypically, Mumbai has 29 rainy days in August with a total of 399.9 mm of rainfall."
+        ]
+      },
+      {
+        "url": "https://www.easeweather.com/asia/india/maharashtra/august",
+        "title": "Weather in Maharashtra in August 2026 - Detailed Forecast",
+        "publish_date": "2026-07-18",
+        "excerpts": [
+          "Maharashtra (Mumbai)\n\n...\n\n[Ludhiāna](https://www.easeweather.com/asia/india/punjab/ludhiana/august) [Madurai](https://www.easeweather.com/asia/india/tamil-nadu/madurai/august) [Mangalore](https://www.easeweather.com/asia/india/karnataka/dakshina-kannada/mangalore/august) [Mumbai](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai)\n\n...\n\n# Weather in Maharashtra for August 2026\n## Temperatures\n* In general, the average temperature in Maharashtra at the beginning of August is 29 ° C . As the month progressed, temperatures tended to moderately fall, reaching an average of 27.9 ° C by the [end of August](https://www.easeweather.com/asia/india/maharashtra/august) .\n\n### Rain 🌧️\n* Maharashtra experiences **heavy rainfall** in August, with over 20 rainy days and an average total precipitation 399.9 mm .\nAverage dry days\n2\nDry days\nAverage rainy days\n29\nRainy days\nAverage snowy days\n0\nSnow days\nAverage temperatures\n28 ° / 26 °\nTemperatures\nAverage wind speed\n24 km/h\nAvg max wind\nAverage humidity\n79 %\n\n...\n\n## Maharashtra Weather August\n°](https://www.easeweather.com/asia/india/maharashtra/past=25&month=8 \"Weather for August 25 2026\") | [26 Patchy rain possible 28 °](https://www.easeweather.com/asia/india/maharashtra/today \"Weather for August 26 2026\") | [27 Patchy rain possible 28 °](https://www.easeweather.com/asia/india/maharashtra/tomorrow\n\n...\n\n## What’s the Weather Like in Maharashtra This August?\n[Patchy rain possible Mumbai **28 ° C** / 26 ° C](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/august) [Patchy rain possible Pune **26 ° C** / 21 ° C](https://www.easeweather.com/asia/india/maharashtra/pune-division/pune/august) [Patchy rain possible Nagpur\n\n...\n\n## Maharashtra in August - FAQ\n### What are the expected maximum and minimum temperatures in Maharashtra during August?\nThe average wind speed in Maharashtra during August is 24 km/h , suggesting breezy to windy conditions, depending on your activities.\n\n...\n\n## UV exposure in Maharashtra during August\n[Mumbai Suburban](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/august) [Nagpur Division](https://www.easeweather.com/asia/india/maharashtra/nagpur-division/august) [Nashik Division](https://www.easeweather.com/asia/india/maharashtra/nashik-division/august) [Pune\n\n...\n\n[Mumbai](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/mumbai/august) [Nagpur](https://www.easeweather.com/asia/india/maharashtra/nagpur-division/nagpur/august) [Nashik](https://www.easeweather.com/asia/india/maharashtra/nashik-division/nashik/august)"
+        ]
+      },
+      {
+        "url": "https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/august",
+        "title": "August 2026 Weather - Mumbai Suburban",
+        "publish_date": "2026-08-24",
+        "excerpts": [
+          "# Weather in Mumbai Suburban for August 2026\n## Temperatures\n* Until now, August 2026 in Mumbai Suburban has been nearly identical to the historical average, with a temperature of 28.5 ° C (showing only a slight deviation of 0.1 ° C ).\n* The forecast for the next days in Mumbai Suburban predicts temperatures to be around 28 ° C , close to the historical average.\n\n...\n\n### Rain 🌧️\n* Mumbai Suburban experiences **heavy rainfall** in August, with over 20 rainy days and an average total precipitation 399.9 mm .\nAverage dry days\n2\nDry days\nAverage rainy days\n29\nRainy days\nAverage snowy days\n0\nSnow days\nAverage temperatures\n28 ° / 26 °\nTemperatures\nAverage wind speed\n24 km/h\nAvg max wind\nAverage humidity\n79 %\n\n...\n\n## August weather in Mumbai Suburban day by day\nLight rain shower |29 ° / 28 ° |5 mm |9.9 | |\n|[25 Aug.](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/tomorrow \"The weather in Mumbai Suburban on the 25th of August\") |Patchy rain possible\nPatchy rain possible |29 ° / 28 ° |1.7 mm |6.8 | |\n|[26 Aug.](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/day=2026-08-26 \"The weather in Mumbai Suburban on the 26th of August\") |Light rain shower\nLight rain shower |29 ° / 28 ° |4.6 mm |8.9 | |\n|[27 Aug.](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/day=2026-08-27 \"The weather in Mumbai Suburban on the 27th of August\") |Light rain shower\nLight rain shower |29 ° / 28 ° |3.6 mm |9.4 | |\n|[28 Aug.](https://www.easeweather.com/asia/india/maharashtra/mumbai-suburban/day=2026-08-28 \"The weather in Mumbai Suburban on the 28th of August\") |Light rain shower\n\n...\n\n## Mumbai Suburban in August - FAQ\n### What are the expected maximum and minimum temperatures in Mumbai Suburban during August?\nSignificant rainfall exceeding 399.9 mm is expected in Mumbai Suburban during August, occurring over more than 29 days. Preparing for wet conditions is recommended in your planning.\n\n...\n\nThe average wind speed in Mumbai Suburban during August is 24 km/h , suggesting breezy to windy conditions, depending on your activities.\n\n## August rainfall patterns in Mumbai Suburban\nExplore the daily rainfall trends and prepare for Mumbai Suburbans August weather 💧\nTypically, Mumbai Suburban has 29 rainy days in August with a total of 399.9 mm of rainfall."
+        ]
+      },
+      {
+        "url": "https://indianexpress.com/article/cities/mumbai/imd-mumbai-weather-forecast-braces-temperature-heat-rise-rain-clears-thane-palghar-10817058/",
+        "title": "As rain activity eases, IMD warns of temperature rise in Mumbai; Thane, Palghar off alerts",
+        "publish_date": null,
+        "excerpts": [
+          "While heavy monsoon showers are ... IMD’s climatological records, during August, <strong>the city receives an average of 561 mm rainfall at the Santacruz station and 472 mm at Colaba</strong>."
+        ]
+      },
+      {
+        "url": "https://internal.imd.gov.in/pages/press_release_mausam.php",
+        "title": "Imd",
+        "publish_date": null,
+        "excerpts": [
+          "PRESS RELEASE DATE: 25TH AUGUST 2026 <strong>SUBDUED RAINFALL ACTIVITY LIKELY TO CONTINUE OVER PENINSULAR INDIA DURING NEXT ONE WEEK</strong> · PRESS RELEASE DATE: 24TH AUGUST 2026 <strong>SUBDUED RAINFALL ACTIVITY LIKELY TO CONTINUE OVER PENINSULAR INDIA DURING NEXT ONE WEEK</strong> · PRESS RELEASE DATED 21ST AUGUST"
+        ]
+      },
+      {
+        "url": "https://weather-and-climate.com/average-monthly-Wind-speed,navi-mumbai-maharashtra-in,India",
+        "title": "Average Wind Speed in Navi Mumbai by Month",
+        "publish_date": "2026-04-01",
+        "excerpts": [
+          "Wind speeds reach an average of 3 m/s <strong>(6 knots</strong>) in July and August; these are statistically the windiest months. This means that on some days, the air is a fair and normal breeze."
+        ]
+      },
+      {
+        "url": "https://www.accuweather.com/en/in/mumbai/204842/august-weather/204842",
+        "title": "Mumbai, Maharashtra, India Monthly Weather | AccuWeather",
+        "publish_date": null,
+        "excerpts": [
+          "Lo · Actual Hi · Actual Lo · Forecast Hi · Forecast Lo · Mumbai&#x27;s August 2026 forecast shows <strong>daily high temperatures ranging from 86° to 91°, with overnight lows between 79° and 81°</strong>. The average high for August is 89° with an average"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

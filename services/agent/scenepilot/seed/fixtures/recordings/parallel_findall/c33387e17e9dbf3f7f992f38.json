@@ -1,0 +1,83 @@
+{
+  "request": {
+    "mode": "findall",
+    "objective": "equipment rental houses in and around Mumbai, IN, that can supply a replacement for '30 ft telescopic crane' at short notice for a film shoot.",
+    "entity_type": "companies",
+    "match_limit": 5,
+    "generator": "base",
+    "match_conditions": [
+      {
+        "name": "location",
+        "description": "The company operates in or delivers to Mumbai, IN."
+      },
+      {
+        "name": "capability",
+        "description": "The company supplies or rents equipment equivalent to '30 ft telescopic crane' for film or television production."
+      },
+      {
+        "name": "contactable",
+        "description": "The company publishes a phone number or enquiry contact on its website."
+      }
+    ],
+    "enrich": true
+  },
+  "response": {
+    "candidates": [
+      {
+        "name": "Famos Cine Equipmentss",
+        "url": "https://fceindia.com/",
+        "description": "Famos Cine Equipmentss is the likely official-name match for Famous Cine Equipment. It is a Mumbai-based film-equipment rental and supply company serving the Bollywood and cinematographic production industry, with rental offerings that include lighting, cinematographic equipment, cranes, trolleys and Jimmy Jib systems. The exact 30-foot telescopic-crane specification and short-notice availability are not stated.",
+        "match_status": "matched",
+        "match_reasons": [
+          "The official page states that the company rents and supplies cinematographic equipment and specifically lists cranes, trolleys and Jimmy Jib. The IndiaMART company listing independently includes Cranes among its products and services. These support a film camera-crane-equipment match, although neither source states the exact 30-foot telescopic dimension.",
+          "The company’s official site provides a dedicated Contact page describing collaboration and enquiries. A company brochure/listing identifies Famos Cine Equipmentss and publishes the phone number +91-8069017096.",
+          "The company listing identifies Famos Cine Equipmentss as being in Mumbai, Maharashtra and gives a Mumbai/Goregaon operating address. This confirms Mumbai operation, though the retrieved listing does not independently reproduce the supplied Mahalaxmi street address."
+        ],
+        "citations": [
+          {
+            "url": "https://fceindia.com/",
+            "title": "Famos Cine Equipments - Hires of Film Equipments",
+            "excerpts": [
+              "Famos Cine Equipmentss** is recognized and known in the Indian Bollywood movie industry for its trusted, dependability & unparalleled performance in renting and supplying the best Lighting & Cinematographic Equipments Renting out state-of-the-art lights & cinematographic equipments at competitive rates which include the latest & the most sophisticated Arri, Kino, Moving Heads, Scanners, Follow Spot, H.M.I., Flicker Free, Generator, Cranes, Trolleys & Jimmy Jib. Developing customized equipment packages to suit your equipment needs."
+            ]
+          },
+          {
+            "url": "https://www.indiamart.com/famouscine-equipments/",
+            "title": "Famos Cine Equipmentss, Mumbai - Service Provider of Rental Services and Light Renting",
+            "excerpts": [
+              "1 Have a requirement? Chat with us Electric Dimmer Switches Get Best Quote Cranes Get Best Quote Scanners Get Best Quote Generator Get Best Quote Light Renting Get Best Quote About Us Famous Cine Equipments is recognized and known in the Indian Bollywood movie industry for its trusted dependability and unparalleled performance in renting and supplying the best Lighting and Cinematographic Equipments Renting out stateoftheart lights and cinematographic equipments at competitive rates which include the latest and the most sophisticated Arri Kino Moving Heads Scanners Follow Spot H.M.I. Flicker Free Generator Cranes Trolleys and Jimmy Jib."
+            ]
+          },
+          {
+            "url": "https://fceindia.com/contact.html",
+            "title": "Contact | Famos Cine Equipmentss - fceindia.com",
+            "excerpts": [
+              "At Famos Cine Equipmentss, we’re always excited to collaborate with creative minds and production houses. Whether it’s for lighting solutions, on-set support, or equipment partnerships, our team is ready to bring your vision to life with precision and professionalism."
+            ]
+          },
+          {
+            "url": "https://www.indiamart.com/famos-cine-equipmentss-mumbai/famos-cine-equipmentss-prop-putul-rajkumar-bhagchandka.pdf",
+            "title": "Famos Cine Equipmentss (Prop. Putul Rajkumar Bhagchandka)",
+            "excerpts": [
+              "CONTACT US Famos Cine Equipmentss (Prop. Putul Rajkumar Bhagchandka) Contact Person: Satya Verma Godown S No105 Rammandir Road Hissa-04, Suvey 89 Goregoan West Mumbai - 400062, Maharashtra, India +91-8069017096 https://www.indiamart.com/famos-cine-equipmentss-mumbai/ Copyright © IndiaMART InterMESH Ltd."
+            ]
+          }
+        ],
+        "phone": null,
+        "address": null,
+        "distance_km": null,
+        "day_rate_band": null
+      }
+    ],
+    "provider_findall_id": "findall_16e76f7bbabe45bf9c718bad301607b7",
+    "termination_reason": null,
+    "warnings": [
+      {
+        "type": "timeout",
+        "message": "FindAll still running after 420s; showing candidates found so far",
+        "detail": null
+      }
+    ],
+    "enriched": false
+  }
+}

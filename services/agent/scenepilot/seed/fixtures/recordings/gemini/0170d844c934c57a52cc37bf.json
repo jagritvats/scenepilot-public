@@ -1,0 +1,24 @@
+{
+  "request": {
+    "role": "rescue_planner",
+    "user_text": "SHOOT DAY 3 (@DATE@): unit call 06:30, standard day 12 h (overtime after 18:30 at ₹5,000/h), hard wrap 22:00, golden hour 17:45–19:15\nDISRUPTION: Vikram Rao delayed until 15:00 — window 06:30–15:00 (+0 min dry-out), affects exteriors=False, affected resources=['cast_vikram']\nBASELINE SCHEDULE:\n  05:45–07:15 Sc 12 EXT. SEA LINK — DAWN [EXT/DAWN, 90 min] cast= equipment=FPV drone unit\nCOVER SCENES (unscheduled, can be pulled forward): Sc 27 INT APARTMENT KITCHEN — MORNING [INT, 75 min] cast=Meera Iyer\nAVAILABILITY WINDOWS TODAY:\n  CAST Aarav Mehta (Rider / lead): \n  CAST Meera Iyer (Zoya):  — evening flight — hard out 19:00\n  CAST Vikram Rao (Inspector Dalvi):  — arrives from second unit\n  CAST Stunt double (Rider): \n  LOCATION Rooftop A — Sitara Mills, Lower Parel:  — owner permission + rooftop access\n  LOCATION Service alley — Kala Ghoda: \n  LOCATION Market street — Bhuleshwar:  — traffic police permit window only\n  LOCATION Apartment set — Film City Stage 3: \n  EQUIPMENT FPV drone unit:  (weather-sensitive)\n  EQUIPMENT 30 ft telescopic crane:  — one-day rental\n  EQUIPMENT Hero motorcycle + camera rig: \n  EQUIPMENT Fireworks rig (licensed pyrotechnician):  (weather-sensitive)\nTRAVEL (min): Service alley↔Apartment set 30, Apartment set↔Market street 40, Market street↔Rooftop A 25, Service alley↔Market street 20, Service alley↔Rooftop A 35, Apartment set↔Rooftop A 45\n\nIMPACT: 0 scheduled scene(s) directly affected during 06:30–15:00: none. 0 requirement(s) violated, 0 resource(s) implicated, 1 item(s) pinned, 0 movable, 1 cover scene(s) available.\n\n\nALREADY EVALUATED ORDERINGS (do not repeat):\nOPTION A (FEASIBLE, origin deterministic): defer Sc 12\n  schedule: \n  carried over: Sc 12\n  score: total 60 | preservation 0, cost 60 (₹60,000 extra), overtime 100 (0 min), moves 100 (+0), resources 100, creative 90, confidence 50\n  violations: soft: Scene 12 carried over to another day (≈₹60,000)\nOPTION B (REJECTED, origin deterministic): Shoot through as planned\n  schedule: Sc 12 05:45–07:15\n  carried over: none\n  score: total 0 | preservation 100, cost 100 (₹0 extra), overtime 100 (0 min), moves 100 (+0), resources 60, creative 100, confidence 50\n  violations: HARD: Scene 12 starts 05:45 before unit call 06:30; HARD: FPV drone unit unavailable for Scene 12 at 05:45–07:15 (available not on this day)\nOPTION C (REJECTED, origin deterministic): move Sc 12 05:45→07:00 (later)\n  schedule: Sc 12 07:00–08:30\n  carried over: none\n  score: total 0 | preservation 96, cost 100 (₹0 extra), overtime 100 (0 min), moves 100 (+0), resources 60, creative 70, confidence 50\n  violations: HARD: FPV drone unit unavailable for Scene 12 at 07:00–08:30 (available not on this day); soft: DAWN scene 12 gets 30 min of golden hour instead of 60\n\nPropose up to 2 additional orderings using scene numbers only."
+  },
+  "response": {
+    "output": {
+      "proposals": [
+        {
+          "title": "Morning Cover Shoot",
+          "strategy": "Utilize the morning crew call by pulling forward interior cover Scene 27 with Meera Iyer, releasing her well before her evening flight, while deferring the drone-dependent Scene 12.",
+          "order_scene_numbers": [
+            "27"
+          ],
+          "deferred_scene_numbers": [
+            "12"
+          ]
+        }
+      ],
+      "reasoning": "Since the FPV drone unit is unavailable today, Scene 12 cannot proceed. Pulling forward the interior cover Scene 27 allows the production to utilize the day productively and wraps Meera Iyer early in the day, safely ahead of her 19:00 hard out."
+    },
+    "tool_calls": []
+  }
+}

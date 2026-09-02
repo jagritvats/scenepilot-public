@@ -1,0 +1,70 @@
+{
+  "request": {
+    "role": "breakdown_agent",
+    "user_text": "SCENE HEADING: INT WAREHOUSE — NIGHT\n\nACTION / DESCRIPTION:\nINT. WAREHOUSE — NIGHT #102#\n\nZOYA\nWe have five minutes."
+  },
+  "response": {
+    "output": {
+      "scene_summary": "Inside a warehouse at night, Zoya urgently states that they only have five minutes remaining.",
+      "elements": [
+        {
+          "category": "CAST",
+          "name": "ZOYA",
+          "description": "Speaking female lead character, delivers the line warning about the five-minute limit.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "PROPS",
+          "name": "Tactical Watch or Mobile Phone",
+          "description": "A timepiece or phone used by Zoya to track the remaining five minutes.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "WARDROBE",
+          "name": "Zoya's Night/Tactical Attire",
+          "description": "Dark or tactical clothing suitable for a stealthy night warehouse operation.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "LIGHTING",
+          "name": "Night Warehouse Lighting Setup",
+          "description": "Low-key, high-contrast night lighting, potentially utilizing practical overheads or moonlight shafts through windows.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SOUND",
+          "name": "Warehouse Room Tone and Echo",
+          "description": "Acoustic environment setup to capture the natural reverb and hollow atmosphere of an empty warehouse.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SAFETY",
+          "name": "Warehouse Floor Clearance & Air Quality Check",
+          "description": "Inspection of the warehouse floor for tripping hazards, exposed wiring, and dust/mold levels before filming in low-light conditions.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "Ensure proper ventilation if dust is kicked up, and mark any uneven flooring with glow tape for crew safety."
+        }
+      ],
+      "stop_conditions": [
+        "Airborne dust or hazardous particulate levels exceeding safe breathing thresholds inside the warehouse.",
+        "Total loss of safety/orientation lighting for crew members in the dark warehouse environment."
+      ],
+      "continuity_notes": [
+        "Zoya's watch/timer must display a logical time consistent with the 'five minutes' dialogue.",
+        "Wardrobe and makeup must match the scenes immediately preceding and following this entry into the warehouse."
+      ]
+    },
+    "tool_calls": []
+  }
+}

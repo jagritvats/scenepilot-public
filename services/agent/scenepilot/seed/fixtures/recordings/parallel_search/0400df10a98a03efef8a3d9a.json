@@ -1,0 +1,105 @@
+{
+  "request": {
+    "objective": "Find the exact lead time (number of days) and specific restrictions (e.g., Navy, airport, height limits) for flying commercial drones in Mumbai.",
+    "search_queries": [
+      "Mumbai Police drone permission days weeks",
+      "Mumbai drone permission lead time days",
+      "Mumbai drone no-fly zone Navy airport restrictions"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_aba108bc02",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_d77fc303603ffccbfe01783ae03b46fa",
+    "results": [
+      {
+        "url": "https://mumbaipolice.gov.in/Dronepermission?ps_id=2",
+        "title": "Application for permission to fly a drone",
+        "publish_date": null,
+        "excerpts": [
+          "# Application for permission to fly a drone\n## Applicant Details\n### Terms and Conditions:\n1) Drone flight permission is granted only for the requested flight location.\n2) The flight radius of the application is also limited to the application site.\n3) The drone flight will be limited to the application program only and should be done on schedule and on scheduled day.\n\n...\n\nSo that It shall be the responsibility of the Applicant to ensure that such locations are not misused for photographing and carrying out harmful activities.\n8) Care must be taken that the drone will not be flown at altitude higher than necessary. (Maximum 100m)\n9) When flying the drone, inform the concerned police station and in coordination with them.\n10) Drone flight permits will be restricted to the area within the limits of Hon'ble Police Commissioner, Greater Mumbai."
+        ]
+      },
+      {
+        "url": "https://dronemap.com/in/mh/mumbai/rules",
+        "title": "Drone Rules for Mumbai - DroneMap",
+        "publish_date": "2026-05-31",
+        "excerpts": [
+          "# Drone Rules for Mumbai\nMuch of South Mumbai falls within the Indian Navy's 3 km designated “No-fly Zone”\nSo Permission is required to fly drones\nAny lawful drone flight in India requires clearance on the official DGCA Digital Sky Platform. For Mumbai, you must also submit an application to the Greater Mumbai Police and coordinate with the local police station before flying.\nMap is not loaded yet\nLoad the map only when you need to view the rule outline."
+        ]
+      },
+      {
+        "url": "https://thinkrobotics.com/blogs/learn/drone-photography-regulations-india-complete-legal-guide-for-safe-and-compliant-aerial-photography-in-2025",
+        "title": "Drone Photography Regulations India: Complete Legal Guide for Safe and – ThinkRobotics.com",
+        "publish_date": null,
+        "excerpts": [
+          "# Drone Photography Regulations India: Complete Legal Guide for Safe and Compliant Aerial Photography in 2025\n## Operational Restrictions\n### Flight Limitations\nAltitude Restrictions: Drones must not be flown higher than 400 feet (120 meters) from the ground. This limitation applies universally across all categories.\n\n...\n\n## No-Fly Zones and Restricted Areas\n### Critical Infrastructure\nAirport Restrictions:\n* Delhi Indira Gandhi International Airport: Within 5 km radius restricted\n* Mumbai Chhatrapati Shivaji Airport: 5 km radius no-fly zone\n* Chennai International Airport: 5 km radius restriction\n* All airports nationwide maintain similar restricted perimeters\nMilitary Facilities: Military Bases & Cantonments: Locations across India are red zones on Digital Sky platform requiring special clearances.\n\n### Airspace Classification\nGreen Zones: Unrestricted flying up to 400 feet with no prior permission required.\nYellow Zones: Controlled airspace requiring prior permission through Digital Sky Platform with approval typically required 24-48 hours in advance.\nRed Zones: Completely prohibited for civilian drone operations including airports, military installations, and international borders.\n\n...\n\n## Permissions and Clearance Procedures\n### Digital Sky Platform Process\nFlight Permission Application:\n* Submit detailed flight plan including location, duration, and purpose\n* Specify equipment details and operator credentials\n* Allow 24-48 hours for approval processing\n\n...\n\n## Penalties and Legal Consequences\n### Violation Penalties\nFinancial Penalties: Up to ₹50,000 Fine for flying without registration or in red zones, plus additional penalties for privacy violations and equipment confiscation.\nCriminal Consequences: Imprisonment for serious breaches, especially near airports or military zones, with legal action under civil aviation and IT laws."
+        ]
+      },
+      {
+        "url": "https://www.freepressjournal.in/mumbai/mumbai-police-imposes-drone-flying-lantern-ban-ahead-of-diwali",
+        "title": "Mumbai Police Imposes Drone & Flying Lantern Ban Ahead Of Diwali",
+        "publish_date": "2025-10-06",
+        "excerpts": [
+          "# Mumbai Police Imposes Drone & Flying Lantern Ban Ahead Of Diwali\n## The police cited concerns over the possibility of accidental fires, major mishaps, and the potential for anti-social elements to use these aerial devices to target prominent individuals (VVIPs) or cause widespread disruption, thereby compromising law and order.\n**Mumbai:** With the festive season of Diwali just two weeks away, the Mumbai\nPolice Commissionerate enforced a critical ban on drones and flying lanterns\n\n...\n\nin effect from October 7 to November 5, 2025, reported _TV9 Marathi_ .\n\n...\n\nprohibited for a 30-day period, commencing on October 12 and lasting until\n\n...\n\nMumbai Police or any activity granted explicit written permission by the"
+        ]
+      },
+      {
+        "url": "https://www.deccanherald.com/india/maharashtra/mumbai-police-ban-flying-of-drones-paragliders-for-30-days-3253168",
+        "title": "Mumbai Police ban flying of drones, paragliders for 30 days",
+        "publish_date": "2024-10-29",
+        "excerpts": [
+          "# Mumbai Police ban flying of drones, paragliders for 30 days\nPolice on Monday issued a prohibitory order under section 163 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), and it will be in force from October 31 till November 29, an official said.\nPTI\nLast Updated : 29 October 2024, 10:19 IST\nStory continues below. [Go Ad Lite](https://www.deccanherald.com/subscribe?utm_source=dh_site&utm_medium=ad_cta&utm_campaign=dh_subscription)\n[Join Us](https://www.whatsapp.com/channel/0029Va4ifN6AYlULZASc7V3S)\nPrefer\nComments\nAdvertisement. [Go Ad Lite](https://www.deccanherald.com/subscribe?utm_source=dh_site&utm_medium=ad_cta&utm_campaign=dh_subscription)\nPublished 29 October 2024, 10:19 IST\nIndia News drone Mumbai police paragliding\n\n...\n\n## Follow us on : ## Follow Us\n[](https://www.instagram.com/deccanherald/) [](https://www.youtube.com/channel/UCHDXXHPrz-1GVbK_qk82hBQ)\n[](https://apps.apple.com/us/app/deccan-herald-news/id1511179557) [](https://play.google.com/store/apps/details?id=com.tpml.dh)\nRead More"
+        ]
+      },
+      {
+        "url": "https://www.ndtv.com/mumbai-news/mumbai-bans-drones-hot-air-balloons-paragliders-till-january-18-prohibitory-orders-issued-4710780",
+        "title": "Mumbai Bans Drones, Hot Air Balloons, Paragliders Till January 18 Prohibitory Orders Issued",
+        "publish_date": "2023-12-21",
+        "excerpts": [
+          "The Mumbai police have banned the flying of drones, remote-controlled microlight aircraft, paragliders, para motors, hand gliders and hot air balloons over the city for <strong>30 days</strong>, an official said on Wednesday."
+        ]
+      },
+      {
+        "url": "https://www.unmannedairspace.info/latest-news-and-information/mumbai-police-temporarily-ban-drone-flights/",
+        "title": "Mumbai Police temporarily bans drone flights - Unmanned airspace",
+        "publish_date": "2024-10-29",
+        "excerpts": [
+          "# Mumbai Police temporarily bans drone flights\nThe operation of drones, remote-controlled microlight aircraft, paragliders and hot air balloons is prohibited until after November 29. The [order](https://mumbaipolice.gov.in/files/PressRelease/2737.pdf) states that “restrictions are necessary to prevent probable sabotage”.\nMumbai Police will be able to operate its own uncrewed aerial systems for surveillance and specific permission can be requested for flights.\nIndia has seen a sudden surge in bomb threats to commercial aviation in the last two weeks, affecting multiple airlines. Hundreds of threats have been made, largely through social media.\n**For more information**\n[Mumbai Police](http://www.mumbaipolice.gov.in)\nShare this:"
+        ]
+      },
+      {
+        "url": "https://www.mid-day.com/mumbai/mumbai-crime-news/article/mumbai-police-bans-flying-of-drones-gliders-in-city-for-30-days-23325903",
+        "title": "Mumbai Police bans flying of drones, gliders in city for 30 days",
+        "publish_date": "2023-12-20",
+        "excerpts": [
+          "# Mumbai Police bans flying of drones, gliders in city for 30 days\nUpdated On: 20 December, 2023 09:23 PM IST |Mumbai | mid-day online correspondent\nMumbai Police have banned the flying of drones, remote-controlled micro light aircraft, paragliders, para motors, hand gliders and hot air balloons over the city for 30 days\n* [WhatsApp](https://www.google.com/preferences/source?q=mid-day.com)\n* [](https://www.facebook.com/sharer.php?u=https://www.mid-day.com/%2Fmumbai%2Fmumbai-crime-news%2Farticle%2Fmumbai-police-bans-flying-of-drones-gliders-in-city-for-30-days-23325903)\n* [Twitter](https://twitter.com/intent/tweet?url=https://www.mid-day.com/%2Fmumbai%2Fmumbai-crime-news%2Farticle%2Fmumbai-police-bans-flying-of-drones-gliders-in-city-for-30-days-23325903)\n\n...\n\nPlay Listen to this article :\nRepresentational Pic/File\nRepresentational Pic/File\n[**Mumbai Police**](https://www.mid-day.com/mumbai/mumbai-crime-news/article/mumbai-assistant-director-lured-into-sextortion-racket-malwani-police-launch-investigations-23325897) have banned the flying of drones, remote-controlled micro light aircraft, paragliders, para\nmotors, hand gliders and hot air balloons over the city for 30 days, an official preventive order said on Wednesday.\nThe prohibitory order said that it will come into effect from December 20, 2023 and would remain in place till January 18, 2024.\nRead More\nRead Next Story\nMumbai: 39-year-old man held for raping, assaulting senior citizen woman ›\n\n## Latest Web Stories View All\nADVERTISEMENT\n\n...\n\n## Mid-Day Fast View All\n### Top Categories\n* Mumbai\n* Entertainment\n* India\n* World\n* Sports\n* Lifestyle\n* Sunday Mid-Day\n* Mumbai Guide"
+        ]
+      },
+      {
+        "url": "https://www.mumbailive.com/en/civic/navy-marks-3-km-area-in-mumbai-as-no-fly-zone-for-drones-66785",
+        "title": "Navy Marks 3 km Area in Mumbai As a ‘No-Fly Zone’ for Drones | Mumbai Live",
+        "publish_date": "2021-09-16",
+        "excerpts": [
+          "# [Navy Marks 3 km Area in Mumbai As a ‘No-Fly Zone’ for Drones](https://www.mumbailive.com/en/civic/navy-marks-3-km-area-in-mumbai-as-no-fly-zone-for-drones-66785)\nA 3 kilometre (km) area from the perimeter of Mumbai’s naval installations has been designated as a “No-fly Zone” by the Indian Navy’s Western Naval Command (WNC).\nThis prohibits drones from individuals and civil agencies from accessing the space without prior permission.\n\n...\n\nThe necessary approval to operate a drone in the region will come from the Directorate General of Civil Aviation (DGCA).\n\n...\n\nA copy of the letter shall then be sent to the WNC headquarters at least a week before the scheduled drone flight.\nThe Indian Navy can destroy or confiscate drones flying in restricted areas without the requisite permissions.\n\n...\n\nECI extends state SIR of electoral rolls by 10 days ECI extends state SIR of electoral rolls by 10 days"
+        ]
+      },
+      {
+        "url": "https://www.hindustantimes.com/mumbai-news/mumbai-police-extends-ban-on-drones-flying-objects-within-city-limits-for-another-month/story-EhgPKEB0b9Guju3APP6acP.html",
+        "title": "Mumbai Police extends ban on drones, flying objects within city limits for another month | Mumbai news - Hindustan Times",
+        "publish_date": "2020-10-27",
+        "excerpts": [
+          "# Mumbai Police extends ban on drones, flying objects within city limits for another month\n## Police said it is likely that terrorists or anti-social elements use these equipment to target VVIPs or to endanger public life or destroy public property or to cause law and order issues\nthe period of next 30 days i.e; from October 30, 2020 to November 28, 2020, except for aerial surveillance by Mumbai Police or by specific permission in"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

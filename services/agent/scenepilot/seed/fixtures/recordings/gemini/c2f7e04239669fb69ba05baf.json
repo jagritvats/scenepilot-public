@@ -1,0 +1,95 @@
+{
+  "request": {
+    "role": "breakdown_agent",
+    "user_text": "SCENE HEADING: EXT MARKET STREET — DAY\n\nACTION / DESCRIPTION:\nEXT. MARKET STREET — DAY #48#\n\nInspector Dalvi pushes through a dense crowd of fruit vendors and shoppers.\nSirens wail in the distance.\n\nDALVI\nBlock the southern exit! Nobody leaves this bazaar!\n\nSixty background extras scatter in panic as vegetable crates collapse."
+  },
+  "response": {
+    "output": {
+      "scene_summary": "Inspector Dalvi orders a lockdown of a crowded bazaar, causing sixty panicked shoppers and vendors to scatter as vegetable crates collapse.",
+      "elements": [
+        {
+          "category": "CAST",
+          "name": "Inspector Dalvi",
+          "description": "Speaking actor who pushes through the crowd and orders the southern exit blocked.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "EXTRAS",
+          "name": "Market Shoppers and Vendors",
+          "description": "Sixty background extras who populate the bazaar and scatter in panic.",
+          "count": 60,
+          "implied": false,
+          "safety_notes": "Crowd movement must be carefully choreographed to prevent trampling."
+        },
+        {
+          "category": "STUNTS",
+          "name": "Crowd Panic Choreography",
+          "description": "Choreographed movement of sixty extras running and scattering through a tight market space.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "Stunt coordinators must map out clear running lanes to avoid collisions."
+        },
+        {
+          "category": "PROPS",
+          "name": "Collapsing Vegetable Crates",
+          "description": "Specially prepared lightweight wooden or foam crates designed to collapse safely on cue.",
+          "count": 6,
+          "implied": false,
+          "safety_notes": "Must be free of sharp edges, splinters, or heavy nails."
+        },
+        {
+          "category": "PROPS",
+          "name": "Market Produce",
+          "description": "Fruits and vegetables to stock the vendor stalls and scatter on the ground.",
+          "count": 150,
+          "implied": true,
+          "safety_notes": "Crushed real fruit can create severe slip hazards; consider rubber/fake produce for high-traffic footpaths."
+        },
+        {
+          "category": "SOUND",
+          "name": "Distant Sirens",
+          "description": "Sound of police sirens wailing in the distance.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "WARDROBE",
+          "name": "Inspector Dalvi's Uniform/Suit",
+          "description": "Professional attire or police uniform for Inspector Dalvi.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "ART_DEPARTMENT",
+          "name": "Bazaar Market Stalls",
+          "description": "Set dressing for a dense market street, including tables, canopies, and signs.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "All structures must be securely anchored to withstand the crowd rush."
+        },
+        {
+          "category": "SAFETY",
+          "name": "Slip and Trip Hazard Control",
+          "description": "Dedicated crew members to sweep and dry the pavement between takes to remove crushed produce.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "Essential to prevent actors and extras from slipping during fast-paced movement."
+        }
+      ],
+      "stop_conditions": [
+        "Any actual slip or fall during the crowd panic sequence.",
+        "Accumulation of crushed fruit on the ground creating an unmanaged slip hazard.",
+        "Failure of breakaway crates to collapse safely, leaving exposed sharp materials."
+      ],
+      "continuity_notes": [
+        "Dalvi's physical state (sweat, dirt, disheveled clothing) must match subsequent pursuit scenes.",
+        "The distribution of scattered fruit and collapsed crates must be reset to match continuity across multiple takes and camera angles."
+      ]
+    },
+    "tool_calls": []
+  }
+}

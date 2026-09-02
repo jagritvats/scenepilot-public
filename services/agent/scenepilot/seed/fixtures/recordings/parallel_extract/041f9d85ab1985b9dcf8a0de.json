@@ -1,0 +1,37 @@
+{
+  "request": {
+    "urls": [
+      "https://www.accuweather.com/en/in/mumbai/204842/weather-forecast/204842"
+    ],
+    "objective": "Rain expected 13:00–17:00: what does this page say about the disruption and its timing?",
+    "advanced_settings": {
+      "full_content": {
+        "max_chars_per_result": 20000
+      }
+    },
+    "session_id": "scenepilot_rescue_run_e0ff305fd8",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "extract_id": "extract_51cd49e3b4a8cb3954431a5bc7bfec0a",
+    "results": [
+      {
+        "url": "https://www.accuweather.com/en/in/mumbai/204842/weather-forecast/204842",
+        "title": "Mumbai, Maharashtra, India Weather Forecast | AccuWeather",
+        "publish_date": null,
+        "excerpts": [
+          "Get AccuWeather alerts as they happen with our browser notifications.\nEnable Notifications\nNo, Thanks"
+        ],
+        "full_content": "Get AccuWeather alerts as they happen with our browser notifications.\n\nEnable Notifications\n\nNo, Thanks"
+      }
+    ],
+    "errors": [],
+    "usage": [
+      {
+        "name": "sku_extract_excerpts",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "request": {
+    "objective": "Find the permitting process, safety guidelines, and lead times for launching aerial fireworks or pyrotechnics in Mumbai, specifically from the Brihanmumbai Municipal Corporation (BMC), Mumbai Fire Brigade, Mumbai Police, or Petroleum and Explosives Safety Organisation (PESO).",
+    "search_queries": [
+      "Mumbai Police fireworks display permission",
+      "Mumbai Fire Brigade fireworks NOC rules",
+      "PESO fireworks display license Maharashtra"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_1f0336bee16787d8e22966087d601776",
+    "results": [
+      {
+        "url": "https://mumbaipolice.gov.in/Rel",
+        "title": "Procession Permission | Mumbai Police",
+        "publish_date": null,
+        "excerpts": [
+          "# Procession Permission\n## Terms & Conditions\n* Applicants should submit the application at least 07 days before the mentioned date of the procession / walk.\n* This permission is being given only up to the Brihanmumbai boundary under the jurisdiction of the Commissioner of Police, Brihanmumbai.\n\n...\n\n* It should be noted that under Section 37 (3) of the Mumbai Police Act, the police have the power to revoke the procession license at any time in view of the prevailing law and order situation."
+        ]
+      },
+      {
+        "url": "https://lsda.peso.gov.in/LSDA/FAQLSDAALL",
+        "title": "Licensing System for District Authorities (LSDA) :: FAQ - PESO",
+        "publish_date": null,
+        "excerpts": [
+          "We cannot provide a description for this page right now"
+        ]
+      },
+      {
+        "url": "https://www.aninews.in/news/national/general-news/mumbai-police-bans-firecrackers-from-may-11-to-june-920250510180852/",
+        "title": "Mumbai Police bans firecrackers from May 11 to June 9",
+        "publish_date": "2025-05-10",
+        "excerpts": [
+          "Commissioner of Police (Operations), Brihan Mumbai hereby make the following order. No persons shall let off or throw any fire crackers/firework or send up any rocket including a chidi in or upon any place in the limits of Brihan Mumbai for the period from 11th May, 2025 to 09th June, 2025 (Both days inclusive),&quot; Akbar Pathan, Deputy Commissioner of Police (operations), Brihan Mumbai stated in a letter."
+        ]
+      },
+      {
+        "url": "https://storage.googleapis.com/juniper-media-library/476/2026/01/FIREWORKS_DISPLAY_PERMIT-1.pdf",
+        "title": "FIREWORKS DISPLAY PERMIT",
+        "publish_date": "2024-08-08",
+        "excerpts": [
+          "# **FIREWORKS DISPLAY PERMIT**\n## **Applicant and Agent Information**\n### **Display Information**\nDate of Display Time of Display Location of Display on Property Set-up Time Supervising Operator*\nRain Date Rain Date Time Rain Date Set-up Time\nRain Dates must be selected at time of application.\nStreet Address of Display Location Place and manner of storage of fireworks prior to display\nLargest Firework Diameter Fallout Perimeter Fallout Perimeter Enforcement**\nType and Number of Fireworks *The Town of Rome requires that the fireworks display be conducted under the direct supervision of a pyrotechnic operator trained in their use.\n\n...\n\n### ☐\n1. Copy of U.S. Bureau of Alcohol, Tobacco, Firearms, and Explosives license\n2. Proof of U.S. Department of Transportation (DOT) trucking insurance\n3. Proof the driver transporting holds a current Certified Driver’s License (CDL) with hazardous materials endorsement\n\n### letter of permission to display fireworks from the property owner.\n**As the** ☐ **Applicant/** ☐ **Agent (Check One), I understand and agree to comply with all provisions of this application and requirements of the issuing authority and will ensure that the fireworks/pyrotechnic special effects are discharged in a manner that will not\n\n...\n\nI understand that fireworks may not be discharged without a site visit from the Fire Chief or a designee the day of the fireworks display. Name of Authorized Agent Agent Signature Date\nThe Chief of the Town of Rome Fire Department, or a designee, has reviewed the application and the discharge of the listed fireworks as specified in this application has been ☐ Approved ☐ Disapproved\n\n### ☐ Fire Chief\nOR Designee:\nSignature Date\n☐ Approved permit cc’d to the Police Chief"
+        ]
+      },
+      {
+        "url": "https://peso.gov.in/web/en",
+        "title": "Home | Petroleum & Explosive Safety Organisation - PESO",
+        "publish_date": null,
+        "excerpts": [
+          "Chief Controller of Explosives and his team shall constantly endeavor to render efficient, and courteous service to all licensees, public and industry to complete transparency in their prompt working"
+        ]
+      },
+      {
+        "url": "https://www.agileregulatory.com/service/peso-license",
+        "title": "PESO License Registration – Apply Online with Expert Help",
+        "publish_date": null,
+        "excerpts": [
+          "The PESO License, under the Petroleum and Explosives Safety Organisation, <strong>acts as a statutory permission granted to entities that manufacture, store, transport, or deal with hazardous materials</strong>."
+        ]
+      },
+      {
+        "url": "https://mbmc.gov.in/en/mbmc/fire-brigade",
+        "title": "Fire Service - Mira Bhayandar Municipal Corporation",
+        "publish_date": null,
+        "excerpts": [
+          "|- Conduct inspections, training, and awareness |Mumbai Provincial Municipal Corporation Act |\n|- Coordinate emergency services | |\n|- Approve and process fire safety certificates | |\n|- Implement government circulars | |\n|- Attend external fire-related meetings | |\n\n...\n\nTo keep the Mira Bhayandar Municipal Corporation's fire brigade in a state of readiness as the head of the fire department. |  |  |  |\n| 2. To exercise the powers vested in the Chief Fire Officer under various sections of the Mumbai Provincial Municipal Corporations Act. |  |  |  |  |\n| 3.\n\n...\n\n| ****CHECK LIST**** |\n| ****1. Provisional N.O.C.**** |\n| **Required Documents:** |\n1. Application from the Architect / Developer\n2. Proposed Building Plans (2 Sets, as per N.B.C.), showing:\nOverhead Water Tank capacity (for Fire)\nFire Duct\nFire Brigade Inlet\nElectrical Substation\nUnderground Water Tank (if required)\nOpen Space Measurements\n3. Commencement Certificate (if obtained)\n4. Sanctioned Plan (if Commencement Certificate is taken)\n5. Previous Provisional N.O.C. (if applicable)\n6. Built-up Area Certificate |\n|****2. Final N.O.C.**** |\n|**Required Documents:**\n1. Application from the Architect / Developer\n2. Commencement Certificate\n3. Sanctioned Plan\n4. Built-up Area Certificate\n5. Provisional N.O.C. (if obtained earlier)\n6. Structural Stability Certificate\n7. Building Completion Certificate\n8. Lift License (from P.W.D.)\n9. Fire Fighting System Installation Certificate in Form “A”\nIssued by a Licensed Agency of MBMC or the Government of Maharashtra |\n|****3. Shop / Small Business N.O.C.**** |\n|**Required Documents:**\n1. Application from the Owner / Occupier\n2. Commencement Certificate\n3. Current Year Property Tax Receipt\n4. Corporation Parwana (Trade License)\n5. Licensed License (Industry or Business License)\n6. LBT Certificate\n7. Fire Extinguisher Certificate\nFrom a Licensed Agency of the MBMC or the Government of Maharashtra |\n|****4. Fire Report**** |\n|**Required Documents:**\n1. Application from the Owner\n2. Police Report (Panchanama) |\n|****5. Renewal of Final N.O.C.**** |\n|**Required Documents:**\n1. Application from the Architect / Developer / Occupier\n2. Fire Fighting System Installation Certificate in Form “B”\nFrom a Licensed Agency of the MBMC or the Government of Maharashtra |\n\n...\n\n| Work Orders :- |\n| >> [Order No. 165:](https://www.mbmc.gov.in/downloads/fire/Work%20Order.pdf) [For installation of firefighting system in the main office building of Mira‑Bhayandar Municipal Corporation](https://www.mbmc.gov.in/downloads/fire/Work%20Order.pdf) |\n\n...\n\n447 for the purchase of robotic water rescue craft and water craft for the Mira Bhayandar Municipal Corporation Fire Department](https://www.mbmc.gov.in/assets/uploads/file-8674.pdf) |"
+        ]
+      },
+      {
+        "url": "https://www.welingkar.org/downloads/Provisional_Fire_NOC_Certificate%20%29.pdf",
+        "title": "BRIHANMUMBAI MUNICIPAL CORPORATION MUMBAI FIRE BRIGADE Office ...",
+        "publish_date": null,
+        "excerpts": [
+          "BRIHANMUMBAI MUNICIPAL CORPORATION MUMBAI FIRE BRIGADE Office ...\nAny additional fire safety requirements for proposed building recommended in future from Mumbai Fire Brigade Officer before final occupation shall be complied with."
+        ]
+      },
+      {
+        "url": "https://corpbiz.io/learning/peso-approval-for-industries-in-india",
+        "title": "PESO Certification for Industries: Process, Documents and Fees",
+        "publish_date": "2026-06-22",
+        "excerpts": [
+          "# PESO Approval for Industries in India: Process, Requirements, Fees & Benefits\n## Industries That Require PESO Approval\n* LPG Bottling Plant\n* LPG Distributor\n* CNG Station\n* Industrial Gas Unit\n* Cryogenic Storage Facility\n**Explosives and Fireworks Industry**\nIf working with explosives or fireworks, the regulations of PESO must be followed.\n* Fireworks Manufacturer\n* Explosives Depot\n* Mining Company\n* Ammunition Manufacturer\n* Blasting Service Provider\n**Manufacturing and Processing Industries**\n\n...\n\n## What are the Essential Documents for PESO Approval?\n* [**Fire NOC**](https://corpbiz.io/fire-department-noc-in-india)\n* Consent from the Pollution Control Board\n* Municipal NOC\n* Electrical Safety Certificate\n**Technical Documents**\n\n...\n\n* Check that the name and address match in all the documents.\n* Upload a clear and legible scanned copy.\n* Do not use an expired NOC or certificate.\n* Get the layout plan and technical drawing prepared by an experienced person.\n\n...\n\n## Step-by-Step PESO Approval Process\nAppropriate approval from the fire department, pollution control board, city/town hall, and other appropriate departments must be secured.\n**Step 4: Register for the PESO Online Portal**\n\n...\n\n## Approval Timeline\n* Get all documents in advance when applying.\n* Choose the correct license type.\n* Arrange the Fire NOC and pollution clearance in advance.\n* Ensure error-free layout plans and technical documents.\n* If you are receiving any notification from PESO, take immediate action.\n\n...\n\n## Common Reasons for PESO Application Rejection\n● **Incorrect License Category**\nApplying for the wrong license is a very common mistake.\n● **Fire NOC Issues**\nThe application may be blocked when there is no Fire NOC or a problem with the document.\n● **Electrical Safety Non-Compliance**\n\n...\n\n## Helpful Questions About PESO Approval\n**Which industries are required to ob** t **ain a PESO license?**\nBusinesses that use petroleum, LPG, CNG, gas cylinders, or explosives usually must obtain a PESO license. Such as a petrol pump, LPG plant, gas storage unit, fireworks factory, or mining company."
+        ]
+      },
+      {
+        "url": "https://mahafireservice.gov.in/e-fire.php",
+        "title": "E-Approval | Maharashtra Fire & Emergency Services",
+        "publish_date": null,
+        "excerpts": [
+          "# Government of Maharashtra\n## Maharashtra Fire & Emergency Services\nMFS Logo\nE-Approval\n[E-Approval Online Application. click here](https://mahafireservice.com/Login)\nDocuments Required for Obtaining Fire Approval or Provisional No-Objection Certificate\n| Sr. No. | Description |\n| 1 | Application shall be addressed to “ The Director Maharashtra Fire & Emergency Services-Mumbai ” |\n| 2 | Application from the Individual/Company/ Society on letterhead duly stamped and signed by authorized signatory or the Architect/ Civil Engineers appointed by the company along with authorization letter issued by the company.\nIt should also indicate detailed address of site and the Development Control Rules made applicable for proposed development i.e. Municipal Corporation, Municipal Councils, and nearest fire service available. |\n| 3 | Two set of all architectural drawings in metric system which should include Block Plan, Typical Floor Plan, Section & Elevation Plan etc.\nand floor wise area calculation certificate duly signed by Architect/ Civil Engineer.(Including free of FSI areas like basement, underground tanks, under ground solvent storage areas etc.) If the drawing are already approved by any competent authority such as Town Planning etc, the One Set of True\n\n...\n\n| 8 | Details of Centralized Air Conditioning System, Provision of Fire Dampers, Ventilation systems etc., If |\n| 9 | If handling, processed or storage of any materials which requires permission from Govt. Agencies then, Copies of approvals taken from Govt.\nagencies like Chief Controller of Explosives (CCE), Excise Deptt. Gas Authority, MPCB, DISH, FDA, etc. In case of high rise building falling around airport, NOC from Civil Aviation Authority is required. |\n\n...\n\n| 13 | Fire Protection Fund Fees Receipt. (This shall be issued by the Director’s Office after first submission of file) |\n| 14 | Provisional NOC issued within 7 working days after receipt of online payment UTR Number. |\n\n...\n\n* Locate Us\nMAHARASHTRA FIRE & EMERGENCY SERVICES ACADEMY,\nHANS BHUGRA MARG, KALINA, SANTACRUZ (EAST),\nMUMBAI- 400098\nPhone: [022 69820555](tel: 022 69820555)\n* Services\n+ Training\n+ Fire Approval\n+ License\n+ Technical Specs\n+ Support\n* The Industry\n+ List of License Agency\n+ Seminar & Conferences"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

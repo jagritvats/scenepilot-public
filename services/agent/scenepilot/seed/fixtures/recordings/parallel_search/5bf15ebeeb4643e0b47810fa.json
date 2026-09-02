@@ -1,0 +1,97 @@
+{
+  "request": {
+    "objective": "Find the specific lead times for Mumbai Police drone NOC, and DGCA rules/clearances for flying drones over urban/residential/commercial structures.",
+    "search_queries": [
+      "Mumbai Police drone permission lead time days",
+      "DGCA drone flying over residential commercial buildings rules",
+      "Mumbai airspace Digital Sky yellow red zone drone clearance"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_b41c9f2e762b66d29b5a8f9e54eb2f1c",
+    "results": [
+      {
+        "url": "https://mumbaipolice.gov.in/Dronepermission?ps_id=2",
+        "title": "Application for permission to fly a drone",
+        "publish_date": null,
+        "excerpts": [
+          "# Application for permission to fly a drone\n## Applicant Details\n### Terms and Conditions:\n1) Drone flight permission is granted only for the requested flight location.\n2) The flight radius of the application is also limited to the application site.\n3) The drone flight will be limited to the application program only and should be done on schedule and on scheduled day.\n\n...\n\n9) When flying the drone, inform the concerned police station and in coordination with them.\n10) Drone flight permits will be restricted to the area within the limits of Hon'ble Police Commissioner, Greater Mumbai."
+        ]
+      },
+      {
+        "url": "https://www.mavdrones.com/understand-the-digital-sky-airspace-map-drone-blog/",
+        "title": "Understand The Digital Sky Airspace Map In India",
+        "publish_date": null,
+        "excerpts": [
+          "<strong>The red zone represents airspace with defined dimensions</strong>. This area is above land or territorial waters of India. It also includes installations or notified ports specified by the Central Government."
+        ]
+      },
+      {
+        "url": "https://www.kodainya.com/blogs/drone-airspace-zone-map",
+        "title": "Drone Airspace Zones in India: Green, Yellow & Red Zone Map 2026",
+        "publish_date": "2026-08-07",
+        "excerpts": [
+          "# How to Read India's Drone Airspace Zone Map Before Every Flight\nUnder Rule 19 of the Drone Rules 2021, operators must verify whether a flight location falls inside a green, yellow, or red zone before takeoff begins. The map became more important after 3 July 2025.\n\n...\n\nUnder current DGCA rules, green zones generally allow flights up to 400 feet or 120 metres above ground level (AGL) without prior permission. Yellow and red zones require additional approvals or prohibit operations entirely (Ministry of Civil Aviation, 24 September 2021).\n\n...\n\n## Reading the three operational zones\n### Yellow zone restrictions\nYellow zones cover controlled airspace requiring coordination with aviation authorities. These zones appear near airports, airbases, [controlled corridors](https://www.kodainya.com/blogs/india-s-drone-corridors) , and dense urban regions.\nThe most misunderstood aspect of yellow zones is vertical segmentation. The Drone Rules 2021 define the yellow zone vertically. It covers airspace above 400 feet in a designated green zone, and above 200 feet in the area between 8 and 12 kilometres from an airport perimeter.\nIt also covers airspace above ground in the area between 5 and 8 kilometres from an airport perimeter. [Yellow zone permissions](https://www.kodainya.com/blogs/yellow-zone-permission-on-digital-sky) must come from the concerned air traffic control authority.\n\n...\n\n## Common Indian locations and their typical zone classification\n* **Marine Drive, Mumbai** — typically yellow zone because of proximity to Mumbai International Airport airspace; verify on DigitalSky.\n\n...\n\n## How digital airspace verification changes drone operations in India\nIndia's drone ecosystem will depend less on broad permission categories and more on real-time operational compliance verified before every takeoff against the DGCA drone map.\nCategory Drones\n\n...\n\n## More in _Drones_\nBill 2025. Operators register on eGCA for a ₹100 UIN, hold a Remote Pilot Certificate for commercial flight, and receive per-flight permission via DigitalSky under NPNT."
+        ]
+      },
+      {
+        "url": "https://mumbaipolice.gov.in/Dronepermission?ps_id=0",
+        "title": " Application for permission to fly a drone |\nMumbai Police ",
+        "publish_date": null,
+        "excerpts": [
+          "# Application for permission to fly a drone\n## Applicant Details\n### Terms and Conditions:\n1) Drone flight permission is granted only for the requested flight location.\n2) The flight radius of the application is also limited to the application site.\n3) The drone flight will be limited to the application program only and should be done on schedule and on scheduled day.\n\n...\n\n9) When flying the drone, inform the concerned police station and in coordination with them.\n10) Drone flight permits will be restricted to the area within the limits of Hon'ble Police Commissioner, Greater Mumbai."
+        ]
+      },
+      {
+        "url": "https://www.dgca.gov.in/digigov-portal?page=jsp%2Fdgca%2FInventoryList%2Fheaderblock%2Fdrones%2FRPAS.html",
+        "title": "drone rules 2021 - Directorate General of Civil Aviation",
+        "publish_date": null,
+        "excerpts": [
+          "# DGCA\n## Welcome to DGCA AI Assistant\n### Recording...\n#### Sit Environment\n##### Unmanned Aircraft System(UAS)\n| [DRONE RULES 2021](https://www.dgca.gov.in/jsp/dgca/InventoryList/headerblock/drones/Drone Rules 2021.pdf) |\n| [AMENDMENT RULES 2022](https://www.dgca.gov.in/jsp/dgca/InventoryList/headerblock/drones/Drone (Amendment) Rules 2022.pdf) |\n| TYPE CERTIFICATE |\n| [RPCS DETAILS](https://digitalsky.dgca.gov.in/remote_pilots) |\n| LIST OF RPTOS |\n| [UIN DETAILS](https://digitalsky.dgca.gov.in/issued_uins) |\nEnvironment\nTo provide feasible solutions to mitigate emissions from aviation and to reduce the noise due to aircraft movements in the airport vicinity.\nSSP\nState Safety Programme\nDrones Flying Drones\nAerosports\nRegulations and Guidelines\nKnow Your Rights\nProtecting Passengers and the Public\n\n...\n\n### Highlights\nDGCA grants Aerodrome License to Navi Mumbai International Airport\n30.09.2025\n| Download (Type : jpg) | 0.24 MB\nNavi Mumbai International Airport was granted Aerodrome license on 30/09/2025 for Aerodrome Reference code “4F” with Runway length of 3700m and CAT-I Instrument Landing System (ILS) for All Weather Operations."
+        ]
+      },
+      {
+        "url": "https://dronevex.in/dgca-drone-rules-india-2026-complete-guide",
+        "title": "DGCA Drone Rules in India 2026: What You Need to Know Dronevex https://dronevex.in › Drones",
+        "publish_date": null,
+        "excerpts": [
+          "DGCA Drone Rules in India 2026: What You Need to Know"
+        ]
+      },
+      {
+        "url": "https://www.ndtv.com/mumbai-news/mumbai-bans-drones-hot-air-balloons-paragliders-till-january-18-prohibitory-orders-issued-4710780",
+        "title": "Mumbai Bans Drones, Hot Air Balloons, Paragliders Till January 18 Prohibitory Orders Issued",
+        "publish_date": "2023-12-21",
+        "excerpts": [
+          "The Mumbai police have banned the flying of drones, remote-controlled microlight aircraft, paragliders, para motors, hand gliders and hot air balloons over the city for <strong>30 days</strong>, an official said on Wednesday."
+        ]
+      },
+      {
+        "url": "https://www.thehindu.com/news/cities/mumbai/mumbai-police-bans-flying-of-drones-for-security-reasons/article69409262.ece",
+        "title": "Mumbai police bans flying of drones for security reasons - The Hindu",
+        "publish_date": "2025-04-04",
+        "excerpts": [
+          "# Mumbai police bans flying of drones for security reasons\n## Prohibitory order effective from April 4 to May 3; Mumbai police aerial surveillance to be exempted\nMumbai Police issued a prohibitory order, banning the flying of drones, remote-controlled microlight aircraft, and hot air balloons for a month to prevent any sabotage attempt, officials said on Thursday (April 3, 2025)."
+        ]
+      },
+      {
+        "url": "https://zbotic.in/drone-regulations-india-2026-dgca-rules-for-hobbyists/",
+        "title": "Drone Regulations India 2026: DGCA Rules for Hobbyists - Zbotic",
+        "publish_date": null,
+        "excerpts": [
+          "# Drone Regulations India 2026: DGCA Rules for Hobbyists\n## 4. Digital Sky Platform and NPNT\nDigital Sky is India’s unified drone traffic management (UTM) system. It implements **No Permission No Takeoff (NPNT)** — a technical and regulatory framework where your drone’s flight computer checks airspace permission before allowing motors to arm.\n\n...\n\n## 5. Airspace Zones: Green, Yellow, Red\n### Yellow Zone — Prior Permission Required\n* Controlled airspace around airports (8–12 km from ATZ boundary)\n* Areas above 120m AGL in most zones\n* Requires Digital Sky flight permission application (usually approved within 24 hours for low-risk flights)\n* Specific altitude restrictions vary by distance from airport\n\n### Red Zone — Prohibited Airspace\n* Permanent Red: Within 3 km of airports, military installations, Rashtrapati Bhavan, Parliament, nuclear plants, research labs\n* Temporary Red: Declared during VIP movements, sporting events, elections\n* **Flying in Red Zone = criminal offence** under Aircraft Act 1934, Section 11 — penalty up to ₹1 lakh and/or imprisonment\n**Always check the DGCA Interactive Airspace Map before every flight** at _interactive.dgca.gov.in_. Red zone boundaries are frequently updated, especially during elections, cricket matches (IPL), and Republic Day/Independence Day periods.\n\n...\n\n## 8. Special Rules for Hobbyists\n### What You MUST Do\n* Register on Digital Sky if your drone weighs over 250g\n* Display UIN on the drone\n* Carry third-party insurance\n* Fly only in Green Zone or get Yellow Zone permission\n* Stay within VLOS — you must be able to see your drone with naked eye at all times\n* Fly below 120m AGL in Green Zone\n\n...\n\n## 10. 2025–2026 Policy Updates\n### Urban Air Mobility (UAM) Policy\nMinistry of Civil Aviation released the UAM policy framework covering air taxis and cargo drones in urban centres. This will affect hobbyists in Mumbai, Delhi, Bengaluru, Hyderabad, and Chennai as temporary Red zones may be extended around UAM corridors.\n\n...\n\n## FAQs\nA: Registration through Digital Sky typically takes 3–7 working days. In practice, most straightforward registrations are approved within 48–72 hours as of 2026 with the improved Digital Sky platform.\n**Q: Can minors fly drones in India?**"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

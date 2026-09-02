@@ -1,0 +1,97 @@
+{
+  "request": {
+    "objective": "Find the permitting process, safety guidelines, and lead times for launching pyrotechnics or fireworks from rooftops in Mumbai, including Mumbai Fire Brigade, PESO, and Mumbai Police requirements.",
+    "search_queries": [
+      "Mumbai Fire Brigade fireworks NOC permission",
+      "PESO public display of fireworks rules",
+      "Mumbai police permission rooftop fireworks pyrotechnics"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_aba108bc02",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_cf9e2888cef6ac18ac5618f139b685bc",
+    "results": [
+      {
+        "url": "https://mumbaipolice.gov.in/Rel",
+        "title": "Procession Permission | Mumbai Police",
+        "publish_date": null,
+        "excerpts": [
+          "# Procession Permission\n## Terms & Conditions\n* It should be noted that under Section 37 (3) of the Mumbai Police Act, the police have the power to revoke the procession license at any time in view of the prevailing law and order situation."
+        ]
+      },
+      {
+        "url": "https://www.peso.gov.in/web/en/dos-donts-fireworks",
+        "title": "‘Do’s & Don’ts (Fireworks) | Petroleum & Explosive Safety Organisation",
+        "publish_date": null,
+        "excerpts": [
+          "# ‘Do’s & Don’ts (Fireworks)\n## ‘Do’s & Don’ts (Fireworks)\nDos & Don'ts - Fireworks Display\nDo's\n* Buy fireworks of authorized/reputed manufacturers only.\n* Light only one firework at a time, by one person. Others should watch from a safe distance.\n* Keep the fireworks to be used at a safer place.\n* Organize a community display of fireworks rather than individuals handling crackers.\n* Always use a long candle/'phooljhari' for igniting fire crackers and keep elbow joint straight to increase the distance between the body and the crackers.\n* Keep two buckets of water handy. In the event of fire, extinguish flame by pouring water from the buckets. Every major fire is small when it starts.\n* In case of burns, pour large quantity of water on the burnt area.\n* In case of major burns, after extinguishing the fire, remove all smoldering clothes. Wrap the victim in a clean bedsheet.\n* The patient should be taken to a burns specialist or a major hospital. Don't panicky.\n\n...\n\n## Accordion\nWebsite Content Managed by **Petroleum & Explosives Safety Organization (PESO)** Designed and Developed by **[WES](https://www.wes.co.in)** and Hosted by **[National Informatics Centre( NIC )](https://www.nic.in/)**"
+        ]
+      },
+      {
+        "url": "https://mahafireservice.gov.in/e-fire.php",
+        "title": "E-Approval | Maharashtra Fire & Emergency Services",
+        "publish_date": null,
+        "excerpts": [
+          "# Government of Maharashtra\n## Maharashtra Fire & Emergency Services\nMFS Logo\nE-Approval\n[E-Approval Online Application. click here](https://mahafireservice.com/Login)\nDocuments Required for Obtaining Fire Approval or Provisional No-Objection Certificate\n| Sr. No. | Description |\n| 1 | Application shall be addressed to “ The Director Maharashtra Fire & Emergency Services-Mumbai ” |\n| 2 | Application from the Individual/Company/ Society on letterhead duly stamped and signed by authorized signatory or the Architect/ Civil Engineers appointed by the company along with authorization letter issued by the company.\nIt should also indicate detailed address of site and the Development Control Rules made applicable for proposed development i.e. Municipal Corporation, Municipal Councils, and nearest fire service available. |\n| 3 | Two set of all architectural drawings in metric system which should include Block Plan, Typical Floor Plan, Section & Elevation Plan etc.\nand floor wise area calculation certificate duly signed by Architect/ Civil Engineer.(Including free of FSI areas like basement, underground tanks, under ground solvent storage areas etc.) If the drawing are already approved by any competent authority such as Town Planning etc, the One Set of True\n\n...\n\n| 8 | Details of Centralized Air Conditioning System, Provision of Fire Dampers, Ventilation systems etc., If |\n| 9 | If handling, processed or storage of any materials which requires permission from Govt. Agencies then, Copies of approvals taken from Govt.\n\n...\n\n| 13 | Fire Protection Fund Fees Receipt. (This shall be issued by the Director’s Office after first submission of file) |\n| 14 | Provisional NOC issued within 7 working days after receipt of online payment UTR Number. |\n\n...\n\nDuring the inspection the recommendations given in the Provisional NOC will be checked. |\n\n...\n\n* Locate Us\nMAHARASHTRA FIRE & EMERGENCY SERVICES ACADEMY,\nHANS BHUGRA MARG, KALINA, SANTACRUZ (EAST),\nMUMBAI- 400098\nPhone: [022 69820555](tel: 022 69820555)\n* Services\n+ Training\n+ Fire Approval\n+ License\n+ Technical Specs\n+ Support\n* The Industry\n+ List of License Agency\n+ Seminar & Conferences"
+        ]
+      },
+      {
+        "url": "https://www.thehindu.com/news/cities/mumbai/mumbai-police-ban-firecrackers-in-the-city-from-may-11-to-june-9/article69567980.ece",
+        "title": "Mumbai Police ban firecrackers in the city from May 11 to June 9 - The Hindu",
+        "publish_date": "2025-05-12",
+        "excerpts": [
+          "# Mumbai Police ban firecrackers in the city from May 11 to June 9\n## The directive prohibits individuals from lighting or throwing any form of firecrackers or fireworks, including rockets or chidi (sky lanterns), within city limits.\nThe Mumbai Police have imposed a temporary ban on the use of firecrackers and the launching of rockets, effective from May 11 to June 9, 2025.\n| Photo Credit: PTI"
+        ]
+      },
+      {
+        "url": "https://peso.gov.in/web/en/forms-and-certificates-list?page=1&tid=All&tid_1=All",
+        "title": "Forms and Certificates | Petroleum & Explosive Safety Organisation ",
+        "publish_date": null,
+        "excerpts": [
+          "# Forms and Certificates\n## Breadcrumb\n| Explosives Rules, 2008 | Form AE-3 (37.37 KB) | Application for approval or grant or amendment or transfer of licence for possession and sale of explosives; for possession and use of explosives; or for possession of fireworks or safety fuse in a store house | Application Form |\n\n...\n\n| Explosives Rules, 2008 | Form AE-6 (17.89 KB) | Application for approval or grant of licence for public display of fireworks | Application Form |\n| Explosives Rules, 2008 | Form AE-7 (17.17 KB) | Application for approval or grant or amendment or transfer of licence for transport of explosives in road van | Application Form |"
+        ]
+      },
+      {
+        "url": "https://www.nsws.gov.in/portal/approval-details/ministry-of-commerce-and-industry/dpiit/peso-lsda-explosives-rules-2008-form-le-1-licence-to-manufacture-fireworks-or-gunpowder-or-both-not-exceeding-15-kilogrammes-at-any-one-time",
+        "title": "PESO (LSDA) - Explosives Rules, 2008 - FORM LE-1",
+        "publish_date": null,
+        "excerpts": [
+          "# PESO (LSDA) - Explosives Rules, 2008 - FORM LE-1 - Licence to manufacture fireworks or gunpowder or both not exceeding 15 kilogrammes at any one time.\nPESO has been serving as a nodal agency for regulating the safety of hazardous substances such as explosives, compressed gases and petroleum.\nThis approval is required to manufacture fireworks or gunpowder or both not exceeding 15 kilogrammes at any one time.\nFireworks mean low hazard explosives comprising of any composition or device manufactured with a view to producing coloured fire or flame, light effect, sound effect, smoke effect (coloured\nor natural), or a combination of such effects and including fog-signals, fuses, rockets, shells, percussion caps.\n\n...\n\nExplosives can be manufactured only at a licensed factory with the manufacturing process duly approved by the licensing authority.\n* Documents required\n1. Form AE-1;\n2.\nPlans of the proposed (buildings or sheds and the site showing approach road to the factory, all buildings in and around, and safety distances maintained;\n3.\nParticulars of competent persons and their experience in related fields;\n4. Passport size photographs of the occupier along with documentary evidence of nomination as occupier as per rule 2;\n5. Completion certificate;\n6. Indemnity bond in CE-3;\n7. Licence fee and Scrutiny fee as per Schedule IV, part-2.\n* Act and Rules\nActThe Explosives Act, 1884RuleExplosive Rules, 2008\n\n...\n\n## Application Fee\n### Others\nDepartment for Promotion of Industry and Internal Trade, Ministry of Commerce and Industry, Government of India.\nBharatAssist"
+        ]
+      },
+      {
+        "url": "https://www.aninews.in/news/national/general-news/mumbai-police-bans-firecrackers-from-may-11-to-june-920250510180852/",
+        "title": "Mumbai Police bans firecrackers from May 11 to June 9",
+        "publish_date": "2025-05-10",
+        "excerpts": [
+          "# Mumbai Police bans firecrackers from May 11 to June 9\nMumbai ( Maharashtra ) [India], May 10 (ANI): The Mumbai Police on Saturday issued an order prohibiting the use of firecrackers , fireworks , and rockets within the limits of Brihanmumbai from May 11 to June 9 due to tensions between India and Pakistan in the aftermath of Pahalgam\n\n...\n\nNo persons shall let off or throw any fire crackers/firework or send up any rocket including a chidi in or upon any place in the limits of Brihan Mumbai for the period from 11th May, 2025 to 09th June, 2025 (Both days inclusive),\" Akbar Pathan, Deputy Commissioner of Police\n(operations), Brihan Mumbai stated in a letter.\n\"I, further direct that this order shall be promulgated in Brihan Mumbai by affixing copies thereof at prominent public places and by announcing the same on loudspeakers/megaphones,\" it added.\n\n...\n\n## Tags\nMumbai Police\nMaharashtra\nfirecrackers\nfireworks\nDeputy Commissioner of Police\nBrihanmumbai"
+        ]
+      },
+      {
+        "url": "https://www.india.com/maharashtra/before-diwali-mumbai-police-bans-sale-flying-of-sky-lanterns-fireworks-banned-in-these-areas-7342661/",
+        "title": "Before Diwali, Mumbai Police bans sale, flying of sky lanterns. Fireworks banned in 'these' areas",
+        "publish_date": "2024-10-22",
+        "excerpts": [
+          "* [India News](https://www.india.com \"India News\")\n* [News](https://www.india.com/news/)\n* [India](https://www.india.com/news/india/)\n* Before Diwali, Mumbai Police bans sale, flying of sky lanterns. Fireworks banned in these areas\n\n...\n\n# Before Diwali, Mumbai Police bans sale, flying of sky lanterns. Fireworks banned in ‘these’ areas\n## The Mumbai Police have issued prohibitory orders under section 163 of the Bharatiya Nagarik Suraksha Sanhita.\n### Share Article\nApart from this, the Mumbai Police have issued prohibitory orders under section 163 of the Bharatiya Nagarik Suraksha Sanhita, keeping the ban in place for a month from October 23 to November 21, said the official adding that as per the order, the sale, storage, and flying of sky lanterns is prohibited, considering the\nsafety and security of the public to prevent activities of anti-social elements.\n\n...\n\n“Reports have been received that due to the situation prevailing in the areas under the jurisdiction of Mumbai Police, it is noticed that use, sale and storage of lanterns and flying them between October 23, 2024, to November 21, 2024, in the Mumbai Police jurisdiction may cause grave danger to human life, safety and injury\nto public property,” Mumbai Police said in its preventive order, as quoted by Mid-Day.\n\n...\n\nAccording to the report, the order was issued by Akbar Pathan, DCP (Operations), Mumbai Police.\n“It is a routine preventive order that is reviewed and issued every 30 days,” said an official.\n\n...\n\n“No person shall let off or throw any firecrackers/fireworks or send up any rocket upon any place within a distance of 500 meters beyond the buffer zones of bottling plant and the following areas of Bharat Petroleum Corporation Ltd., and Hindustan Petroleum Corporation Ltd,” says the order says as reported by Mid-Day."
+        ]
+      },
+      {
+        "url": "https://ssrana.in/articles/fireworks-law-in-india/",
+        "title": "Fireworks law in India - S.S. Rana & Co.",
+        "publish_date": "2024-06-19",
+        "excerpts": [
+          "# Fireworks law in India\n## License for fireworks\nThe power of granting such temporary or permanent license is generally vested with the Deputy Commissioner of Police and Additional Commissioner of Police respectively with different guidelines for every region.\n\n...\n\nLicense applications must be submitted to the Petroleum and Explosive Safety Office (PESO), a department under the Ministry of Commerce and Industry responsible for overseeing the manufacture, import, export, transportation, storage, and usage of explosive materials, fireworks, and other hazardous substances. ³\n\n...\n\n* Before commencing the business of fireworks shop, it shall obtain the license for selling fireworks from the Deputy Commissioner’s office by furnishing the application along with the required forms and mandatory documents as notified by the Police or local government.\n* The applicant has to deposit the stipulated fee along with the application and the documents in the PESO (Petroleum and Explosives Safety Organisation) office\n* For verification, the officer concerned from PESO will visit the site for the inspection of the completed facilities.\n* Once the above-mentioned procedure is successfully completed, the applicant may be granted a license.\n**As per Delhi Police’s general guidelines for obtaining temporary fireworks license following conditions have been notified:**\n* Grant of temporary fireworks licences shall be granted in accordance with the provisions of The Explosives Act, 1884, The Explosives Substances Act, 1908, The Explosives Rules, 2008, directions & guidelines of Hon’ble Supreme Court of India, the Explosives Department, Government of India (PESO), the Fire Department\nand the Environment Department, Government of NCT of Delhi.\n* No person below the age of 18 years and no person who is addicted to intoxication or of unsound mind shall be granted a licence.\n* The shop must be located on a minimum of six (06) meters wide clear motorable road (excluding obstructions like electric poles, kerbs, covered drains, pillars, raised pavements etc) with entry and exit facing the road, thus making it accessible for firefighting. [[4]]()\n\n...\n\n### More Articles\n[Khan Market’s Fire NOC Dispute: How the Delhi High Court Balanced Safety and Structural Limits](https://ssrana.in/articles/khan-markets-fire-noc-dispute-how-the-delhi-high-court-balanced-safety-and-structural-limits/)\n6."
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

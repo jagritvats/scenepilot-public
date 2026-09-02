@@ -1,0 +1,258 @@
+{
+  "request": {
+    "input": "Filming location: Rooftop A — Sitara Mills, Lower Parel. City: Mumbai, IN. Location type: kind: rooftop, surface: concrete, slippery when wet. Research the rules and practical constraints that apply to a film production shooting here: which authority issues the filming permit, the typical lead time and fee band, any night-time noise curfew as a time range, whether camera drones and pyrotechnics are allowed, other filming restrictions, the nearest emergency hospital, and any monsoon flooding history. Prefer official municipal, police and civil-aviation sources. Leave a field empty rather than guessing.",
+    "processor": "core-fast",
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "permit_authority": {
+          "type": "string",
+          "description": "The authority that issues filming permits for this location, by name."
+        },
+        "permit_lead_time_days": {
+          "type": "string",
+          "description": "Typical lead time to obtain a filming permit, in days. Empty if unknown."
+        },
+        "fee_band_inr": {
+          "type": "string",
+          "description": "Typical permit or location fee range in INR. Empty if unknown."
+        },
+        "noise_curfew": {
+          "type": "string",
+          "description": "Local night-time noise restriction as a plain time range, e.g. '22:00-06:00'. Empty string if there is no curfew."
+        },
+        "drone_rules": {
+          "type": "string",
+          "description": "Rules on flying camera drones here — say plainly whether drones are prohibited, permitted with permission, or unrestricted."
+        },
+        "fireworks_rules": {
+          "type": "string",
+          "description": "Rules on pyrotechnics or fireworks here — say plainly whether they are prohibited or permitted with a licence."
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Other filming restrictions that apply at this location, one per item."
+        },
+        "nearest_hospital": {
+          "type": "string",
+          "description": "Nearest hospital with an emergency department, and approximate distance."
+        },
+        "monsoon_flooding_history": {
+          "type": "string",
+          "description": "Known monsoon waterlogging or flooding history for this area."
+        }
+      },
+      "required": [
+        "permit_authority",
+        "restrictions"
+      ]
+    }
+  },
+  "response": {
+    "content": {
+      "permit_lead_time_days": "2 (48 hours for shoots with no temporary structures; longer if temporary structures involved)",
+      "monsoon_flooding_history": "Mumbai has experienced major monsoon flood events affecting Lower Parel (notably 2005 and 2017); local guidance notes basement/ground-floor flooding risk in Lower Parel mill-cluster due to low ground elevation versus 100-year flood level.",
+      "drone_rules": "Permitted with permission — aerial work / drone filming requires DGCA / Digital Sky clearance and additional approvals near airports (AAI/CISF/BCAS) and Mumbai Police NOC.",
+      "fireworks_rules": "Permitted with licence/clearance — pyrotechnics require fire-compliance certification and relevant licences/permits (and will need Police NOC and fire authority clearance).",
+      "noise_curfew": "22:00-06:00",
+      "permit_authority": "Assistant Commissioner (Ward) — Municipal Corporation of Greater Mumbai (MCGM) is the ward-level nodal authority for film shooting permissions (with higher-level Commissioner approvals where applicable); Police NOC required from Mumbai Police.",
+      "nearest_hospital": "Sir H. N. Reliance Foundation Hospital (Lower Parel) — approximately 0.5–1.5 km (within Lower Parel cluster).",
+      "fee_band_inr": "Typical charges cited by MCGM: scrutiny/commercial user ₹66 per sq.mt (BUA); temporary-permission rate examples: ₹425 per sq.mt; revalidation lump-sum ₹15,000. (Exact fee depends on location, BUA and temporary-structure scope.)",
+      "restrictions": [
+        "Police N.O.C. (local police and traffic police) required",
+        "NOC from property / location owner when property is not municipal",
+        "Film shooting is licensable activity under MMC Act (trade licence u/s 394) — private outdoor locations need permanent Trade License",
+        "If erecting temporary/semi-permanent structures: structural stability certificate from licensed structural engineer and architect-signed plans; temporary-structure charges and revalidation apply",
+        "Fire compliance certificate from registered agency under Maharashtra Fire and Life Safety Act required for pyrotechnics / flame effects",
+        "Aerial/drone operations need separate DGCA/Digital Sky approvals and, near airports, AAI/CISF/BCAS clearances",
+        "If location is in coastal/CRZ area, MCZMA / coastal clearance may be required",
+        "For shoots spanning multiple wards or requiring road closures / significant public- domain occupation, Commissioner-level / multi-agency approvals and traffic-management plans required"
+      ]
+    },
+    "basis": [
+      {
+        "field": "permit_lead_time_days",
+        "reasoning": "MCGM film-shooting circular (document 16) explicitly states a 'Ward One Window' provision to grant film shooting permission within 48 hours if no temporary structure is involved; therefore typical lead time for a rooftop open-sky shoot with no temporary structure is 2 days. When temporary structures are proposed, other sections in the same MCGM policy require structural plans, scrutiny fees and longer processing, so lead time may be longer (no single-day lead time given for those cases).",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "Circular on \"Grant of Film Shooting Permission – with and without Construction of temporary/ semi-permanent structures within the MCGM Ward Jurisdiction\" vide no SL/29575/Advt. dated 01.03.2019 to be followed for issuance of all the permissions. The circular provisions for Ward One Window for granting Film shooting permission within 48 hrs, if no temporary structure is involved."
+            ],
+            "title": null
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "monsoon_flooding_history",
+        "reasoning": "Historic records show major monsoon flood events affecting Mumbai (2005 and 2017), which impacted large parts of the city including central areas. A recent local analysis (document 41) notes that the Lower Parel mill-cluster ground levels (1.4–2.1 m above MSL) are below the estimated 100-year flood elevation (~2.8 m MSL), exposing older buildings to basement/ground-floor flooding in extreme monsoon events. Together these sources support reporting a known local monsoon flooding/waterlogging risk for Lower Parel/Sitara Mills.",
+        "citations": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Maharashtra_floods_of_2005",
+            "excerpts": [
+              "The 2005 Maharashtra floods impacted many parts of the Indian state of Maharashtra, including large areas of the metropolis of Mumbai,"
+            ],
+            "title": "Maharashtra floods of 2005 - Wikipedia"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/2017_Mumbai_flood",
+            "excerpts": [
+              "The 2017 Mumbai flood occurred on 29 August 2017, following heavy rain on 29 August 2017 in Mumbai. Transport systems were unavailable throughout parts of the city as"
+            ],
+            "title": "2017 Mumbai flood - Wikipedia"
+          },
+          {
+            "url": "https://propertybutler.in/insights/lower-parel-prabhadevi-monsoon-flood-resilience-buyer-guide-2026",
+            "excerpts": [
+              "The under-podcast risk in Lower Parel In Lower Parel's mill-land cluster, ground level sits at 1.4-2.1 metres above mean sea level (MSL). The 100-year monsoon flood elevation for the catchment is ~2.8m MSL. Buildings without ≥ 1.5m podium elevation above natural ground level are exposed to basement and ground-floor flooding in extreme events. Most pre-2010 stock falls in this category."
+            ],
+            "title": "Lower Parel & Prabhadevi Monsoon Flood-Resilience Buyer Guide ..."
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "drone_rules",
+        "reasoning": "India's DGCA Drone Rules / Digital Sky regime (document 23) govern drone operations and require clearance for aerial work. Industry guidance for Mumbai (document 26) states aerial/drone work needs a separate drone filming permit and that operations near airport perimeters require DGCA/AAI/CISF/BCAS approvals plus Mumbai Police NOC. Therefore drones are not unrestricted — they are permitted only with the required civil-aviation and local police permissions.",
+        "citations": [
+          {
+            "url": "https://www.dgca.gov.in/digigov-portal?page=jsp%2Fdgca%2FInventoryList%2Fheaderblock%2Fdrones%2FRPAS.html",
+            "excerpts": [
+              "drone rules 2021 - Directorate General of Civil Aviation DGCA in India is the regulatory body in the field of Civil Aviation ... DRONE RULES 2021 · AMENDMENT RULES 2022 · DIGITAL SKY PLATFORM."
+            ],
+            "title": "drone rules 2021 - Directorate General of Civil Aviation"
+          },
+          {
+            "url": "https://lineproducersindia.in/filming-permissions-in-mumbai",
+            "excerpts": [
+              "Which Ward Offices Handle Film Applications and at What Level For standard outdoor shoots — streets, local parks, residential lanes — the Assistant Commissioner at ward level has approval authority. ... For productions shooting at landmark locations that span multiple wards, or at locations adjacent to coastal zones, the application requires Commissioner-level approval. ... Mumbai Police Licensing Unit — Security, Traffic, and Stunt Clearances CSIA and Domestic Airports — CISF, AAI, and BCAS Clearances for Aerial and Airside Shoots Drone operations near airport perimeters require DGCA approval and are additionally governed by the Airports Authority of India (AAI) airspace protocols. ... guide."
+            ],
+            "title": "Mumbai Filming Permissions | BMC, Police, CRZ NOCs"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "fireworks_rules",
+        "reasoning": "MCGM film shooting policy (document 16) requires a Fire Compliance certificate from a registered agency under the Maharashtra Fire and Life Safety Act as part of the supporting documents for shooting permissions; this implies pyrotechnic/flame effects require fire authority clearance. International/national pyrotechnics standards (NFPA 1126, document 4) provide the safety standard typically referenced for proximate-audience pyrotechnics. Together these indicate pyrotechnics are allowed only with appropriate fire-authority compliance and likely operator licencing/permit — not freely permitted.",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "For foreign filmmakers – Copy of clearance by the Ministry of External Affairs / Ministry of Information & Broadcasting, Govt. of India, as the case may be. 5\\. Fire Compliance certificate from the registered agency under Maharashtra Fire and Life Safety Act."
+            ],
+            "title": null
+          },
+          {
+            "url": "http://nfpa.org/codes-and-standards/nfpa-1126-standard-development/1126",
+            "excerpts": [
+              "(last verified: 2026-08-29) NFPA 1126 Standard for the Use of Pyrotechnics Before a Proximate Audience **Status:** Active Notify Me About Document Updates This standard provides requirements for the safe use of pyrotechnic special effects before a proximate audience at both indoor and outdoor locations to protect property, operators, performers, support personnel, and viewing audiences. Application includes use in conjunction with theatrical, musical, or similar performing arts productions in theaters, stadiums, concert halls, etc. **Current Edition:** 2026 [Purchase Options](https://www.nfpa.org/product/nfpa-1126-standard/p1126code) Available in NFPA LiNK® Ask a Technical Question Current & Prior Editions Next Edition Technical Committee Edition"
+            ],
+            "title": null
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "noise_curfew",
+        "reasoning": "India's Noise Pollution (Regulation & Control) Rules (document 11) define night time as 22:00 to 06:00; municipal/local enforcement of night-time noise standards typically follows this statutory timespan, so use of loud equipment during that interval is restricted and subject to local rules.",
+        "citations": [
+          {
+            "url": "http://indiacode.nic.in/ViewFileUploaded?file=noise_pollution_(regulation_and_control)_rules,_2000..pdf&path=AC_HR_67_1531_00004_198629_1751961840552/rulesindividualfile/",
+            "excerpts": [
+              "Night time shall mean from 10.00 p.m. to 6.00 a.m."
+            ],
+            "title": null
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "permit_authority",
+        "reasoning": "MCGM's Film Shooting Policy (document 16) states that for municipal roads, parks and private properties the Assistant Commissioner (ward) is designated as the nodal authority for implementation of the policy at ward level. The document also lists Police NOC as a required supporting document, indicating Mumbai Police is a second essential authority for security/traffic/stunt clearances.",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "MDC/3241/OD dated 22.03.2018 to be incorporated for temporary structures on private land (land owned by stakeholder other than MCGM). Therefore, for shooting film/ T.V. serial/ advertisements, permission under \"Film Shooting category\" is mandatory. For Municipal Roads and footpaths/ Schools/ Garden/ Cemeteries/ Swimming Pools / Municipal Markets /Municipal Sports Complex/ Private Properties - At ward level through Assistant Commissioner (Ward), as per remarks from the concerned officer of the department at ward level. Hence, The Assistant Commissioner (ward) is designated as the Nodal Agency For implementation of this policy in respective ward jurisdiction 2\\. For Veer Jijamata Udyan – Director Zoo **Supporting Documents Required along with application:** 1\\.",
+              "Permission Granting Authority:** 1\\. For Municipal Roads and footpaths/ Schools/ Garden/ Cemeteries/ Swimming Pools / Municipal Markets /Municipal Sports Complex/ Private Properties - At ward level through Assistant Commissioner (Ward), as per remarks from the concerned officer of the department at ward level."
+            ],
+            "title": null
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "nearest_hospital",
+        "reasoning": "Local business/hospital listings (documents 28 and 29) enumerate hospitals in Lower Parel, including major emergency-capable facilities such as Sir H. N. Reliance Foundation Hospital and others. Given Sitara Mills is in Lower Parel, the nearest full-service emergency hospital is within the Lower Parel cluster. Public directory pages list these hospitals as serving Lower Parel; an on-site distance measurement is not in the cited documents so the approximate 0.5–1.5 km distance is an informed proximity estimate based on the hospitals being in the same locality.",
+        "citations": [
+          {
+            "url": "https://www.justdial.com/Mumbai/Hospitals-in-Lower-Parel/nct-10253670",
+            "excerpts": [
+              "23 Hospitals in Lower Parel,Mumbai."
+            ],
+            "title": "Best Hospitals in Lower Parel, Mumbai - Top 24 Hours ..."
+          },
+          {
+            "url": "https://www.practo.com/mumbai/hospitals/all-hospitals/lower-parel",
+            "excerpts": [
+              "See hospitals near you open today in Lower Parel, Mumbai"
+            ],
+            "title": "Best Hospitals Near Me in Lower Parel, Mumbai - Practo"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "fee_band_inr",
+        "reasoning": "MCGM policy (document 16) specifies typical charge elements: a scrutiny/commercial-user rate of ₹66 per sq.mt of built-up area (BUA); examples of temporary-permission charges such as ₹425 per sq.mt and a revalidation lump-sum of ₹15,000. The document also states charges are as per current department guidelines, so exact final fees depend on the shoot's measured area, permanence of any structures and ward-level assessment.",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "Proposals may be scrutinized by recovering regular scrutiny fee for commercial user i.e. ₹66/- per Sq.mt. of BUA.",
+              "Circular on \"Grant of Film Shooting Permission – with and without Construction of temporary/ semi-permanent structures within the MCGM Ward Jurisdiction\" vide no SL/29575/Advt. dated 01.03.2019 to be followed for issuance of all the permissions. The circular provisions for Ward One Window for granting Film shooting permission within 48 hrs, if no temporary structure is involved. Online module for the same shall be launched soon through State Single Window System. GENERAL CONDITIONS:** The charges for film shooting shall be applicable as per the current department guidelines.",
+              "The temporary permission may be issued on a half-yearly basis at par with the regular commercial user, by recovering revalidation charges (₹15000/- lump sum), till its demolition. d. Temporary permissions charges may be accepted at par with labour hutment camp, site office, etc.i.e.at the rate of ₹425/- per Sq.mt.as",
+              "The temporary permission may be issued on a half-yearly basis at par with the regular commercial user, by recovering revalidation charges (₹15000/- lump sum),"
+            ],
+            "title": null
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "restrictions",
+        "reasoning": "MCGM policy lists required supporting documents including Police NOC and NOC from property owner (document 16). For temporary structures it requires architect-signed plans and structural-stability certificates. Aerial/drone work explicitly needs a separate drone-filming permit and civil-aviation approvals (document 26). Fire compliance certificate is a mandatory supporting document for shoots (document 16). Industry guidance notes that some permissions (Mumbai Police, BMC, MCZMA etc.) are separate and not substitutable, so productions must obtain multiple clearances as applicable.",
+        "citations": [
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "Police N.O.C. – (Local police and traffic police), 2. NOC from the property / location owner, in case property is not in the ownership of MCGM, Shooting for Film/ T.V./ advertisements and processing of cinematograph films is a licensable activity u/s 394 of the M.M.C. Act 1888 and figures in the Part IV of Schedule 'M' which reads as: \"Shooting and processing of cinematograph films (in a studio or laboratory) or any other places \". Hence all film shooting activities need to have necessary permissions from MCGM, irrespective of whether it is done regularly in studios or temporary locations (with or without temporary structure). Permission Granting Authority:** 1\\.",
+              "Permission Granting Authority:** 1\\. For Municipal Roads and footpaths/ Schools/ Garden/ Cemeteries/ Swimming Pools / Municipal Markets /Municipal Sports Complex/ Private Properties - At ward level through Assistant Commissioner (Ward), as per remarks from the concerned officer of the department at ward level.",
+              "IV) PRIVATE OUTDOOR LOCATION WITH TEMPORARY STRUCTURES a. As per III) – a) b. Proposals may be scrutinized by recovering regular scrutiny fee for commercial user i.e. ₹66/- per Sq.mt. of BUA. c. The temporary permission may be issued on a half-yearly basis at par with the regular commercial user, by recovering revalidation charges (₹15000/- lump sum), till its demolition. d. Temporary permissions charges may be accepted at par with labour hutment camp, site office, etc.i.e.at the rate of ₹425/- per Sq.mt.as per circular under no. ChE/23087/DP dt. 20.01.2012. e. The applicant shall submit the application along with plans showing the proposed temporary structure for permission/approval to the concerned Asstt.",
+              "For foreign filmmakers – Copy of clearance by the Ministry of External Affairs / Ministry of Information & Broadcasting, Govt. of India, as the case may be. 5\\. Fire Compliance certificate from the registered agency under Maharashtra Fire and Life Safety Act."
+            ],
+            "title": null
+          },
+          {
+            "url": "https://lineproducersindia.in/filming-permissions-in-mumbai",
+            "excerpts": [
+              "Which Ward Offices Handle Film Applications and at What Level For standard outdoor shoots — streets, local parks, residential lanes — the Assistant Commissioner at ward level has approval authority. ... For productions shooting at landmark locations that span multiple wards, or at locations adjacent to coastal zones, the application requires Commissioner-level approval. ... Mumbai Police Licensing Unit — Security, Traffic, and Stunt Clearances CSIA and Domestic Airports — CISF, AAI, and BCAS Clearances for Aerial and Airside Shoots Drone operations near airport perimeters require DGCA approval and are additionally governed by the Airports Authority of India (AAI) airspace protocols. ... guide.",
+              "India Cine Hub maintains its own MIB-linked portal that international productions use for single-window clearance, but ICH does not issue Mumbai Police or BMC permissions directly — it facilitates and expedites communication, but the underlying NOCs still originate from the"
+            ],
+            "title": "Mumbai Filming Permissions | BMC, Police, CRZ NOCs"
+          }
+        ],
+        "confidence": "high"
+      }
+    ],
+    "run_id": "trun_2ecf9b5f69134be6866e8ad5277a8052",
+    "interaction_id": "trun_2ecf9b5f69134be6866e8ad5277a8052",
+    "processor": "core-fast",
+    "warnings": []
+  }
+}

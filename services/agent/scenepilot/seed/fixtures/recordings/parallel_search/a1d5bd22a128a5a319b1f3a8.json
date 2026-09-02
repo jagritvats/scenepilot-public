@@ -1,0 +1,97 @@
+{
+  "request": {
+    "objective": "Find historical wind speeds, maximum gusts, lightning risks, and safety hazards for outdoor rooftop activities/stunts in Mumbai during late August.",
+    "search_queries": [
+      "Mumbai monsoon wind gusts August",
+      "Mumbai monsoon lightning hazard August",
+      "Mumbai rooftop wind speed monsoon"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_aba108bc02",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_ac1ec625b7a283ca2064e26697bf9e30",
+    "results": [
+      {
+        "url": "https://www.freepressjournal.in/mumbai/mumbai-weather-update-light-rain-gusty-winds-as-imd-forecasts-moderate-showers-aqi-remains-good-mumbai-news",
+        "title": "Mumbai Weather Update: Light Rain, Gusty Winds As IMD Forecasts Moderate Showers; AQI Remains ‘Good’",
+        "publish_date": "2026-08-23",
+        "excerpts": [
+          "# Mumbai Weather Update: Light Rain, Gusty Winds As IMD Forecasts Moderate Showers; AQI Remains ‘Good’\n## Mumbai experienced light drizzle, cloudy skies and gusty winds on Sunday, with the IMD forecasting moderate rain at several places and isolated heavy showers. Winds may r\n[Prathamesh Kharade](https://www.freepressjournal.in/author/prathamesh-kharade) **Updated:** Sunday, August 23, 2026, 10:23 AM IST\n\n...\n\n**Mumbai:** Mumbai woke up to light drizzle, overcast skies and gusty winds on Sunday as monsoon conditions continued across the city. The India Meteorological Department\n\n...\n\nWind speeds are expected to remain between 40 and 50 kmph, with gusts potentially reaching 50–60 kmph during intense spells of rain. The maximum temperature is likely to \nMumbai and the Mumbai Metropolitan Region witnessed several moderate to heavy spells of rain during the opening days of August. The weather department has forecast light \n\n...\n\nWith moderate rain and gusty winds expected at intervals, residents have been advised to remain cautious, particularly while travelling during intense spells of rainfall."
+        ]
+      },
+      {
+        "url": "https://windy.app/forecast2/spot/4921819/mumbai",
+        "title": "mumbai Wind Forecast: wind speed & gusts — Windy.app",
+        "publish_date": null,
+        "excerpts": [
+          "# mumbai, Wind forecast\n* ⚠️ Rain detected – challenging conditions\n* ℹ️ Unlikely breeze — 7% probability\n* ℹ️ Significant gusts forecast (9.4 m/s)\n* ℹ️ Wave height – experience required (1.4 m)\n* ℹ️ Caution – short wave period (6.4 s)\n* ℹ️ High water temp – risk of overheating (29.5°C)\n⚠️ 22.08.2026 (Saturday)\n* ⚠️ Rain detected – challenging conditions\n* ℹ️ Unlikely breeze — 5% probability\n* ℹ️ Significant gusts forecast (10.2 m/s)\n* ℹ️ Wave height – experience required (1.5 m)\n* ℹ️ Caution – short wave period (6.6 s)\n* ℹ️ High water temp – risk of overheating (29.4°C)\n⚠️ 23.08.2026 (Sunday)\n* ⚠️ Rain detected – challenging conditions\n* ℹ️ Unlikely breeze — 7% probability\n* ℹ️ Significant gusts forecast (9.9 m/s)\n* ℹ️ Wave height – experience required (1.5 m)\n* ℹ️ Caution – short wave period (6.7 s)\n* ℹ️ High water temp – risk of overheating (29.4°C)\n⚠️ 24.08.2026 (Monday)\n* ⚠️ Rain detected – challenging conditions\n* ℹ️ Unlikely breeze — 2% probability\n* ℹ️ Significant gusts forecast (9.6 m/s)\n* ℹ️ Wave height – experience required (1.6 m)\n* ℹ️ Caution – short wave period (6.8 s)\n* ℹ️ High water temp – risk of overheating (29.4°C)\n⚠️ 25.08.2026 (Tuesday)\n* ⚠️ Rain detected – challenging conditions\n* ℹ️ Unlikely breeze — 2% probability\n* ℹ️ Significant gusts forecast (9.1 m/s)\n* ℹ️ Wave height – experience required (1.5 m)\n* ℹ️ Caution – short wave period (6.6 s)\n* ℹ️ High water temp – risk of overheating (29.4°C)\n⚠️ 26.08.2026 (Wednesday)\n* ⚠️ Rain detected – challenging conditions\n* ℹ️ Unlikely breeze — 1% probability\n* ℹ️ Significant gusts forecast (10.0 m/s)\n* ℹ️ Wave height – experience required (1.5 m)\n* ℹ️ Caution – short wave period (6.8 s)\n* ℹ️ High water temp – risk of overheating (29.5°C)\n*Experimental\nNew feature: Breeze Index! See how likely a breeze is to form, right in the forecast. Available in weather alerts and the meteogram.\nHow do you like it?\nLeave feedback\n[Forecast](https://windy.app/forecast2/spot/4921819/mumbai) [Statistics](https://windy.app/forecast2/spot/4921819/mumbai/statistics)\nGet the full weather\nforecast in the app\n[Install](https://windyapp.onelink.me/VcDy/2nk1q8jz)\n[windyapp in app-store](https://windyapp.onelink.me/VcDy/2nk1q8jz) [windyapp in google-play](https://windyapp.onelink.me/VcDy/2nk1q8jz) [WINDY APP Huawei store](https://appgallery.huawei.com/app/C110281657)\n\n...\n\n## Nearby spots\n[News](https://windy.app/news) [Blog](https://windy.app/blog) [Guide](https://windy.app/guide) [Textbook](https://windy.app/textbook) [Activities](https://windy.app/activities) [Features](https://windy.app/features)\n* EN\nLanguage ES DE FR IT JA KO PT ZH TR RU"
+        ]
+      },
+      {
+        "url": "https://mausam.imd.gov.in/mumbai/mcdata/district.pdf",
+        "title": "Date: 26-08-2026 Time of Issue: 10:00 AM (Morning)",
+        "publish_date": "2026-08-24",
+        "excerpts": [
+          "Light to\nmoderate rain\nLight to moderate\nrain\nProbability Very Likely Very Likely Very Likely Very Likely Very Likely\n**MUMBAI**\nIntensity Light to\nmoderate rain\nLight to\nmoderate rain\nLight to\nmoderate rain\nLight to\nmoderate rain\nLight to moderate\nrain\nProbability Very Likely Very Likely Very Likely Very Likely Very Likely\n**RAIGAD**\n\n...\n\n**CH.SAMBHAJINAGAR**\nIntensity Light rain/\nThundershowers\nThunderstorm accompanied with lightning ,\nlight to moderate rainfall & gusty\nwinds (30- 40kmph) at\nisolated places. तुरळक ठिकाणी ठिजाांच्या\nकडकडाटासह िादळे, हलका ते मध्यम पाऊस आठण सोसाट्याचा िारा\n(30-40 ठकमी प्रठततास)\nयेण्याची शक्यता आहे\nLight to\nmoderate rain / Thundershowers\nLight rain Light rain\nProbability Very Likely Very Likely Very Likely Very Likely Very Likely\n**JALNA**\nIntensity\nLight to\nmoderate rain / Thundershowers\nThunderstorm accompanied with lightning ,\nlight to moderate rainfall & gusty\nwinds (30- 40kmph) at\nisolated places. तुरळक ठिकाणी ठिजाांच्या\nकडकडाटासह िादळे, हलका ते मध्यम पाऊस आठण सोसाट्याचा िारा\n(30-40 ठकमी प्रठततास)\nयेण्याची शक्यता आहे\nLight to\nmoderate rain / Thundershowers\nLight rain Light rain\nProbability Very Likely Very Likely Very Likely Very Likely Very Likely\n**PARBHANI**\nIntensity\nThunderstorm accompanied with lightning ,\nlight to moderate rainfall & gusty\nwinds (30- 40kmph) at\nisolated places. तुरळक ठिकाणी ठिजाांच्या\nकडकडाटासह िादळे, हलका ते मध्यम पाऊस आठण सोसाट्याचा िारा\n(30-40 ठकमी प्रठततास)\nयेण्याची शक्यता आहे\nThunderstorm accompanied with lightning ,\nlight to moderate rainfall & gusty\nwinds (30- 40kmph) at\nisolated places. तुरळक ठिकाणी ठिजाांच्या\nकडकडाटासह िादळे, हलका ते मध्यम पाऊस आठण सोसाट्याचा िारा\n(30-40 ठकमी प्रठततास)\nयेण्याची शक्यता आहे\nLight rain/\n\n...\n\n(30-40 ठकमी प्रठततास)\nयेण्याची शक्यता आहे\nThunderstorm accompanied with lightning ,\nlight to moderate rainfall & gusty\nwinds (30- 40kmph) at\nisolated places. तुरळक ठिकाणी ठिजाांच्या\nकडकडाटासह िादळे, हलका ते मध्यम पाऊस आठण सोसाट्याचा िारा\n(30-40 ठकमी प्रठततास)\nयेण्याची शक्यता आहे\nLight to\nmoderate rain / Thundershowers\nLight to\n\n...\n\n# **WARNINGS**\n**Thunderstorm IBF**\n**Impact Expected:** • Possibility of cloud to ground lightning at isolated places.\n• Fall of weak trees or weak structures due to gusty winds.\n• Localized and short-term disruption of power.\n• Damage to crops due to unseasonal rainfall.\n• Strong wind/hail may damage plantation, horticulture, and standing crops.\n• Minor damage to kutcha houses/walls and huts.\n**Action Suggested:** • Avoid working in open areas and fields while thunderstorms are taking place.\n• Avoid taking shelter under tall trees and structures when a thunderstorm is occurring.\n\n...\n\n**Agromet Advisory:** • As there is a possibility of thunderstorm activity accompanied by gusty winds (30 to 40 kmph), lightning, and light to moderate rainfall, harvesting of matured crops should be done.\n• Harvest the matured crops as early as possible and keep them in safe places."
+        ]
+      },
+      {
+        "url": "https://mausam.imd.gov.in/mumbai/",
+        "title": "RMC Mumbai - IMD - India Meteorological Department",
+        "publish_date": "2026-08-14",
+        "excerpts": [
+          "# प्रादेशिक मौसम केंद्र मुंबई\n## Mumbai\n* [उपग्रह](https://mausam.imd.gov.in/imd_latest/contents/satellite.php)\n* [रडार](https://mausam.imd.gov.in/mumbai/index_radar.php)\n* [उपग्रहसहआकाशीय बिजली](https://mausam.imd.gov.in/lightning/Converted/BT.gif \"Current Weather\")\n\n...\n\n## हमारी सेवाएं\n| [साप्ताहिक](https://mausam.imd.gov.in/mumbai/mcdata/weekly.pdf) | [मासिक](https://mausam.imd.gov.in/mumbai/mcdata/monthly.pdf) | [मॉनसून रिपोर्ट](https://mausam.imd.gov.in/mumbai/monsoon.php) | [प्रेस बुलेटिन](https://mausam.imd.gov.in/mumbai/mcdata/press.pdf) | [अनुमान](https://mausam.imd.gov.in/mumbai/mcdata/inference.pdf)\n\n...\n\n[चक्रवात](https://mausam.imd.gov.in/imd_latest/contents/cyclone.php)\n* कृषि मौसम सेवाएं\n[पंजीकरण](https://www.imdagrimet.gov.in/newfarmer/FarmerRegistrationFrontpage/welcome.php) | [बुलेटिन](https://mausam.imd.gov.in/imd_latest/contents/agromet/advisory/indiadistrictforecast.php) | [कृषि मौसम परामर्शीय सेवाएं (मराठी)](https://mausam.imd.gov.in/mumbai/mcdata/advisory-marathi.pdf)\n* मुंबई मॉनसून"
+        ]
+      },
+      {
+        "url": "https://www.thehindu.com/news/national/india-monsoon-live-mumbai-rains-yamuna-river-flood-alert-delhi-kashmir-cloudburst-updates-august-18/article69946105.ece",
+        "title": "India monsoon updates: Heavy to very heavy rainfall at few places in Mumbai; residents told to ‘avoid unnecessary travel’ - The Hindu",
+        "publish_date": "2025-08-18",
+        "excerpts": [
+          "# India monsoon updates: Heavy rains lash Mumbai; red alert issued, Vihar Lake overflows, CM urges caution\n## Heavy rainfall in Karnataka and Maharashtra, Almatti dam outflow increases\n### Yamuna likely to cross ‘danger level’ in Delhi\nOwing to heavy rain and lightning strikes on August 16 and 17, 2025, crops, cattle and houses have been damaged and on a large scale in various talukas of Jalgaon district and the administration has started immediate relief work."
+        ]
+      },
+      {
+        "url": "https://www.meteoblue.com/en/weather/historyclimate/climatemodelled/mumbai_india_1275339",
+        "title": "Simulated historical climate & weather data for Mumbai - meteoblue",
+        "publish_date": null,
+        "excerpts": [
+          "# Simulated historical climate & weather data for Mumbai\n## Average temperatures and precipitation\n### Wind speed\nThe diagram for Mumbai shows the days per month, during which the wind reaches a certain speed. An interesting example is the Tibetan Plateau , where the monsoon creates steady strong winds from December to April, and calm winds from June to October.\nWind speed units can be changed in the settings (top right)."
+        ]
+      },
+      {
+        "url": "https://mumbai-eyed.blogspot.com/search/label/wind",
+        "title": "Mumbai Daily: wind",
+        "publish_date": null,
+        "excerpts": [
+          "# Tuesday, July 19, 2022\n## [Feel the wind](https://mumbai-eyed.blogspot.com/2022/07/feel-wind.html)\nGusts of wind and rain making it difficult to walk with an open umbrella in Mumbai.\nLinking to a blog hop [here](http://image-in-ing.blogspot.com/)\n\n...\n\n## Sunday, July 5, 2015\n### [Worli seaface](https://mumbai-eyed.blogspot.com/2015/07/worli-seaface.html)\nWorli seaface in the monsoons.\n[Older Posts](https://mumbai-eyed.blogspot.com/search/label/wind?updated-max=2015-07-05T06:00:00%2B05:30&max-results=20&start=20&by-date=false \"Older Posts\") [Home](https://mumbai-eyed.blogspot.com/)"
+        ]
+      },
+      {
+        "url": "https://weather-and-climate.com/average-monthly-Wind-speed,mumbai,India",
+        "title": "Average monthly wind speed in Mumbai - Weather and Climate",
+        "publish_date": null,
+        "excerpts": [
+          "Wind speeds reach an average of <strong>3 m/s (6 knots) in July and August</strong>; these are statistically the windiest months. This means that on some days, the air is a fair and normal breeze."
+        ]
+      },
+      {
+        "url": "https://indianexpress.com/article/cities/mumbai/high-speed-winds-and-dust-storms-hit-parts-of-mumbai-8659641/",
+        "title": "High-speed winds and dust storms hit parts of Mumbai | Mumbai News - The Indian Express",
+        "publish_date": "2023-06-15",
+        "excerpts": [
+          "According to India Meteorological ... that the average speed of wind in Mumbai is between 15 and 20 kmph, which goes upto <strong>30 kmph</strong> during monsoon."
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

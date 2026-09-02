@@ -1,0 +1,33 @@
+{
+  "request": {
+    "role": "rescue_planner",
+    "user_text": "SHOOT DAY 5 (@DATE@): unit call 06:30, standard day 12 h (overtime after 18:30 at ₹5,000/h), hard wrap 22:00, golden hour 17:45–19:15\nDISRUPTION: Vikram Rao delayed until 15:00 — window 06:30–15:00 (+0 min dry-out), affects exteriors=False, affected resources=['cast_vikram']\nBASELINE SCHEDULE:\n  19:30–21:30 Sc 55 INT. STAIRWELL — NIGHT [INT/NIGHT, 120 min] cast=Aarav Mehta equipment=Lighting package\nCOVER SCENES (unscheduled, can be pulled forward): Sc 27 INT APARTMENT KITCHEN — MORNING [INT, 75 min] cast=Meera Iyer\nAVAILABILITY WINDOWS TODAY:\n  CAST Aarav Mehta (Rider / lead): \n  CAST Meera Iyer (Zoya):  — evening flight — hard out 19:00\n  CAST Vikram Rao (Inspector Dalvi):  — arrives from second unit\n  CAST Stunt double (Rider): \n  LOCATION Rooftop A — Sitara Mills, Lower Parel:  — owner permission + rooftop access\n  LOCATION Service alley — Kala Ghoda: \n  LOCATION Market street — Bhuleshwar:  — traffic police permit window only\n  LOCATION Apartment set — Film City Stage 3: \n  EQUIPMENT FPV drone unit:  (weather-sensitive)\n  EQUIPMENT 30 ft telescopic crane:  — one-day rental\n  EQUIPMENT Hero motorcycle + camera rig: \n  EQUIPMENT Fireworks rig (licensed pyrotechnician):  (weather-sensitive)\nTRAVEL (min): Service alley↔Apartment set 30, Apartment set↔Market street 40, Market street↔Rooftop A 25, Service alley↔Market street 20, Service alley↔Rooftop A 35, Apartment set↔Rooftop A 45\n\nIMPACT: 0 scheduled scene(s) directly affected during 06:30–15:00: none. 0 requirement(s) violated, 0 resource(s) implicated, 0 item(s) pinned, 1 movable, 1 cover scene(s) available.\n\n\nALREADY EVALUATED ORDERINGS (do not repeat):\nOPTION A (FEASIBLE, origin deterministic): defer Sc 55\n  schedule: \n  carried over: Sc 55\n  score: total 60 | preservation 0, cost 60 (₹60,000 extra), overtime 100 (0 min), moves 100 (+0), resources 100, creative 90, confidence 50\n  violations: soft: Scene 55 carried over to another day (≈₹60,000)\nOPTION B (REJECTED, origin deterministic): Shoot through as planned\n  schedule: Sc 55 19:30–21:30\n  carried over: none\n  score: total 0 | preservation 100, cost 87 (₹20,000 extra), overtime 0 (180 min), moves 100 (+0), resources 20, creative 100, confidence 50\n  violations: HARD: Aarav Mehta (Rider / lead) unavailable for Scene 55 at 19:30–21:30 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 55 at 19:30–21:30 (window not on this day); soft: 180 min overtime beyond 18:30 wrap (≈₹15,000); soft: No 30-min lunch gap near 12:30 (call + 6 h) - meal-penalty exposure (≈₹5,000)\nOPTION C (REJECTED, origin deterministic): pull cover Sc 27 into 07:00; move Sc 55 19:30→19:15 (earlier)\n  schedule: Sc 27 07:00–08:15, Sc 55 19:15–21:15\n  carried over: none\n  score: total 0 | preservation 100, cost 91 (₹13,750 extra), overtime 8 (165 min), moves 100 (+0), resources 0, creative 100, confidence 50\n  violations: HARD: Meera Iyer (Zoya) unavailable for Scene 27 at 07:00–08:15 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 27 at 07:00–08:15 (window not on this day); HARD: Aarav Mehta (Rider / lead) unavailable for Scene 55 at 19:15–21:15 (available not on this day); HARD: Apartment set — Film City Stage 3 not available for Scene 55 at 19:15–21:15 (window not on this day); soft: 165 min overtime beyond 18:30 wrap (≈₹13,750)\n\nPropose up to 2 additional orderings using scene numbers only."
+  },
+  "response": {
+    "output": {
+      "proposals": [
+        {
+          "title": "Prioritize Cover Scene 27 and Defer Scene 55",
+          "strategy": "Shoot only the cover scene 27 during the day before Meera Iyer's departure flight, deferring the unavailable Scene 55.",
+          "order_scene_numbers": [
+            "27"
+          ],
+          "deferred_scene_numbers": [
+            "55"
+          ]
+        },
+        {
+          "title": "Reverse Order: Scene 55 followed by Cover Scene 27",
+          "strategy": "Attempt to shoot Scene 55 first in the afternoon, followed by Cover Scene 27 before Meera Iyer's evening flight.",
+          "order_scene_numbers": [
+            "55",
+            "27"
+          ],
+          "deferred_scene_numbers": []
+        }
+      ],
+      "reasoning": "Since the baseline Scene 55 faces major talent and location availability issues, we propose either focusing solely on the cover Scene 27 before Meera Iyer's evening flight, or attempting a reverse sequence of both scenes to see if a different time window resolves the resource conflicts."
+    },
+    "tool_calls": []
+  }
+}

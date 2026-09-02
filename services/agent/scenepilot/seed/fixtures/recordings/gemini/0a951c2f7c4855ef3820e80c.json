@@ -1,0 +1,82 @@
+{
+  "request": {
+    "role": "evidence_analyst",
+    "user_text": "RESEARCH QUESTION rq_@@@@@@_1: What are the historical monsoon weather risks, wind speeds, and safety implications for outdoor rooftop stunts in Mumbai during late August?\nWHY IT MATTERS: Determine historical rainfall, wind patterns, and monsoon safety risks in Mumbai during late August, preferring official India Meteorological Department (IMD) data and local weather advisories.\nSCENE: EXT. MUMBAI ROOFTOP — SUNSET\nREQUIREMENTS SERVED:\n- req_sc_42_1: Two structurally sound, adjoining flat rooftops in Mumbai capable of supporting a motorcycle, ramps, and crew.\n- req_sc_42_4: Professional stunt rider experienced in high-speed motorcycle jumps and wet-surface maneuvers.\n- req_sc_42_6: SFX rain machines and overhead truss systems to simulate localized rain starting mid-scene without damaging electrical equipment.\n- req_sc_42_8: Strict scheduling to shoot during the limited 30-40 minute sunset window for matching skyline lighting.\n\nSEARCH RESULTS (Parallel Search API):\n### SearchRun search_@0 — objective: What are the historical monsoon weather risks, wind speeds, and safety implications for outdoor rooftop stunts in Mumbai during late August? — Determine historical rainfall, wind patterns, and monsoon safety risks in Mumbai during late August, preferring official India Meteorological Department (IMD) data and local weather advisories.\nqueries: ['Mumbai monsoon weather late August', 'IMD Mumbai rainfall statistics August', 'Mumbai wind speed August rooftop']\n[search_@0#1] Average monthly wind speed in Mumbai - Weather and Climate — https://weather-and-climate.com/average-monthly-Wind-speed,mumbai,India — published: unknown\n    > Wind speeds reach an average of <strong>3 m/s (6 knots)</strong> in July and August; these are statistically the windiest months. This means that on some days, the air is a fair and normal breeze.\n[search_@0#2] Subdued Rains for Mumbai: August to End With Below Normal Rainfall — https://www.skymetweather.com/content/monsoon-update/subdued-rains-for-mumbai-august-to-end-with-below-normal-rainfall — published: @DATE@\n    > * Forecast Map  * Resources  * Satellite  * Live Map  * Advertise with us  * Contact Us  * English हिन्दी मराठी বাংলা ગુજરાતી தமிழ் తెలుగు ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ  X Temperature Humidity (%) Rain Probability (%) ##### Advertisement  # Subdued Rains for Mumbai: August to End With Below Normal Rainfall By: **AVM GP Sharma** | Edited By: **Arti Kumari**  Aug 19, 2026, 12:43 PM WhatsApp icon  thumbnail image  Key Takeaways:  * Santacruz has recorded only 286 mm of rainfall between August 1 and 19, against the August monthly normal of 560.9 mm. * Mumbai has not witnessed any three-digit 24-hour rainfal\n[search_@0#3] Mumbai Rainfall - IMD - India Meteorological Department — https://mausam.imd.gov.in/mumbai/rainfall_info.php — published: unknown\n    > © Copyright Regional Met Centre Mumbai India Meteorological Department Ministry of Earth Sciences, New Delhi, India\n[search_@0#4] Rainfall Information | India Meteorological Department - मौसम — https://mausam.imd.gov.in/responsive/rainfallinformation_msd.php — published: unknown\n    > Press Release Dated: 24th August 2026 <strong>Subdued rainfall activity likely to continue over Peninsular India during next one week</strong>.\n[search_@0#5] Monsoon Information | India Meteorological Department - मौसम — https://mausam.imd.gov.in/responsive/monsooninformation.php — published: @DATE@\n    > [](https://www.facebook.com/India.Meteorological.Department/) [](https://www.youtube.com/channel/UC_qxTReoq07UVARm87CuyQw/featured?view_as=subscriber) [](https://twitter.com/Indiametdept) [](https://instagram.com/mausam_nwfc/) [](https://imdweather1875.wordpress.com/) हिन्दी वेबसाईट  EMBLEM  #### India Meteorological Department  #### Ministry of Earth Sciences  #### Government of India  IMD_LOGO ESSO [IMD_150](https://mausam.imd.gov.in/event/) [IYC 2025](https://2025.coop/)  ESSO [IMD_150](https://mausam.imd.gov.in/event/)  ### Forecasts  * [Urban Meteorological Services](http://internal.imd.g\n[search_@0#6] As rain activity eases, IMD warns of temperature rise in Mumbai; Thane, Palghar off alerts — https://indianexpress.com/article/cities/mumbai/imd-mumbai-weather-forecast-braces-temperature-heat-rise-rain-clears-thane-palghar-10817058/ — published: @DATE@\n    > According to IMD’s climatological records, during August, the city receives an average of <strong>561 mm rainfall at the Santacruz station and 472 mm at Colaba</strong>. ... Previously, in July, Mumbai surpassed its monthly average rainfall quota by an\n[search_@0#7] Rainfall Information | India Meteorological Department — https://mausam.imd.gov.in/responsive/rainfallinformation_swd.php — published: @DATE@\n    > Press Release Dated: 25th August 2026 <strong>Subdued rainfall activity likely to continue over Peninsular India during next one week</strong>.\n[search_@0#8] Rainfall Statistics | India Meteorological Department - मौसम — https://mausam.imd.gov.in/responsive/rainfall_statistics.php?PAGE=1 — published: unknown\n    > Press Release: Current Weather Status and Extended Range Forecast for the next two weeks (06 to 19 August 2026) Statewise distribution of districts with large excess, excess, normal, deficient, large deficient and <strong>no rainfall</strong>\n\n"
+  },
+  "response": {
+    "output": {
+      "status": "SUPPORTED",
+      "assessment": "Historical weather data from the India Meteorological Department (IMD) and local advisories establish that late August in Mumbai is characterized by active monsoon conditions, with high rainfall averages (561 mm monthly normal at Santacruz) and frequent gusty winds. While average wind speeds are mild at around 3 m/s (11 km/h), active monsoon spells regularly bring sudden gusty winds of 30–40 km/h and up to 50 km/h, alongside lightning risks. These conditions present severe safety hazards for outdoor rooftop stunts, including slippery surfaces, wind shear affecting motorcycle jumps, and lightning hazards for overhead metal trusses.",
+      "evidence": [
+        {
+          "claim": "According to the India Meteorological Department (IMD) climatological records, Mumbai receives an average of 561 mm of rainfall at the Santacruz station and 472 mm at the Colaba station during the month of August.",
+          "source_ref": "search_@0#6",
+          "relevance": 0.9,
+          "confidence": 1.0,
+          "production_implication": "The high likelihood of natural rainfall in late August means the rooftop surfaces will likely be wet, which will compound the wet conditions simulated by the SFX rain machines (req_sc_42_6) and increase the risk of hydroplaning or slipping for the stunt rider (req_sc_42_4)."
+        },
+        {
+          "claim": "While average wind speeds in August are around 3 m/s (6 knots), the IMD frequently forecasts occasional gusty winds reaching speeds of 40–50 km/h during active monsoon periods.",
+          "source_ref": "search_@2#6",
+          "relevance": 0.95,
+          "confidence": 0.95,
+          "production_implication": "Gusty winds of 40–50 km/h pose a severe hazard to high-speed motorcycle jumps (req_sc_42_4) by destabilizing the rider mid-air and threatening the structural integrity of overhead truss systems and SFX rain machines (req_sc_42_6)."
+        },
+        {
+          "claim": "IMD forecasts for the Mumbai region in late August include warnings for thunderstorms accompanied by lightning, light to moderate rainfall, and gusty winds of 30–40 km/h at isolated places.",
+          "source_ref": "search_@1#3",
+          "relevance": 0.9,
+          "confidence": 0.95,
+          "production_implication": "Rooftops are highly exposed to lightning strikes. A strict safety protocol must be in place to evacuate the crew and ground all electrical equipment, truss systems, and metal ramps (req_sc_42_1, req_sc_42_6) immediately if lightning is detected."
+        },
+        {
+          "claim": "August weather in Mumbai typically features a 70% to 75% chance of rain, high humidity (84%), and frequent overcast skies.",
+          "source_ref": "search_@2#4",
+          "relevance": 0.85,
+          "confidence": 0.9,
+          "production_implication": "Frequent overcast skies and sudden downpours make shooting during the limited 30-40 minute sunset window (req_sc_42_8) highly unpredictable, requiring flexible scheduling and backup shoot days."
+        }
+      ],
+      "follow_up_objective": "",
+      "follow_up_queries": []
+    },
+    "tool_calls": [
+      {
+        "name": "parallel_search",
+        "args": {
+          "question_id": "rq_@@@@@@_1",
+          "objective": "Find historical wind speeds, maximum gusts, lightning risks, and safety hazards for outdoor rooftop activities/stunts in Mumbai during late August.",
+          "search_queries": [
+            "Mumbai monsoon wind gusts August",
+            "Mumbai monsoon lightning hazard August",
+            "Mumbai rooftop wind speed monsoon"
+          ]
+        }
+      },
+      {
+        "name": "parallel_search",
+        "args": {
+          "question_id": "rq_@@@@@@_1",
+          "search_queries": [
+            "Mumbai average wind speed August kmh",
+            "Mumbai monsoon gusty winds kmph",
+            "Mumbai monsoon lightning hazard August"
+          ],
+          "objective": "Find historical wind speeds, gust speeds, lightning risks, and safety hazards for outdoor activities in Mumbai during late August."
+        }
+      },
+      {
+        "name": "parallel_search",
+        "args": {
+          "objective": "Find historical wind speeds, gust speeds, lightning risks, and safety hazards for outdoor activities in Mumbai during late August.",
+          "question_id": "rq_@@@@@@_1",
+          "search_queries": [
+            "Mumbai weather late August gusty winds",
+            "Mumbai monsoon lightning strikes August",
+            "Mumbai wind speed August kmh"
+          ]
+        }
+      }
+    ]
+  }
+}

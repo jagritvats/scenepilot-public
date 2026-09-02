@@ -1,0 +1,105 @@
+{
+  "request": {
+    "objective": "Find historical wind speeds, gust speeds, lightning risks, and safety hazards for outdoor activities in Mumbai during late August.",
+    "search_queries": [
+      "Mumbai average wind speed August kmh",
+      "Mumbai monsoon gusty winds kmph",
+      "Mumbai monsoon lightning hazard August"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_aba108bc02",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_20c3ee2ceac06c84921fc70418dc267d",
+    "results": [
+      {
+        "url": "https://www.freepressjournal.in/mumbai/mumbai-weather-update-overcast-skies-gusty-winds-continue-light-rain-likely-today",
+        "title": "Mumbai Weather Update: Overcast Skies, Gusty Winds Continue; Light Rain Likely Today",
+        "publish_date": "2026-08-20",
+        "excerpts": [
+          "# Mumbai Weather Update: Overcast Skies, Gusty Winds Continue; Light Rain Likely Today\n## Mumbai is likely to experience light showers and gusty winds on Thursday as monsoon conditions continue, according to IMD. The weather department has issued no rain alert\n[Prathamesh Kharade](https://www.freepressjournal.in/author/prathamesh-kharade) **Updated:** Thursday, August 20, 2026, 09:39 AM IST\n\n...\n\n**Mumbai:** Mumbai woke up to overcast skies and gusty winds on Thursday as monsoon conditions continued across the city and its suburbs. The India Meteorological Departm\n\n...\n\nWind speeds are expected to remain around 40-50 kmph, with gusts potentially reaching 50-60 kmph during intense spells of rain. The maximum temperature is likely to hover\n\n...\n\nWith no rain alert currently in place, Mumbai is expected to see intermittent light showers and cloudy conditions rather than widespread heavy rainfall over the next few "
+        ]
+      },
+      {
+        "url": "https://mausam.imd.gov.in/mumbai/mcdata/district.pdf",
+        "title": "Date: 26-08-2026 Time of Issue: 10:00 AM (Morning)",
+        "publish_date": "2026-08-24",
+        "excerpts": [
+          "Light to\nmoderate rain\nLight to moderate\nrain\nProbability Very Likely Very Likely Very Likely Very Likely Very Likely\n**MUMBAI**\nIntensity Light to\nmoderate rain\nLight to\nmoderate rain\nLight to\nmoderate rain\nLight to\nmoderate rain\nLight to moderate\nrain\nProbability Very Likely Very Likely Very Likely Very Likely Very Likely\n**RAIGAD**\n\n...\n\nProbability Very Likely Very Likely Very Likely Very Likely Very Likely\n**KOLHAPUR**\nIntensity Light rain Light to\nmoderate rain\nLight to\nmoderate rain\nLight to\nmoderate rain\nLight to moderate\nrain\nProbability Very Likely Very Likely Very Likely Very Likely Very Likely\n**SATARA**\nIntensity Light rain Light rain Light rain Light rain Light rain\n\n...\n\n(30-40 ठकमी प्रठततास)\nयेण्याची शक्यता आहे\nLight to\nmoderate rain / Thundershowers\nLight rain Light rain\nProbability Very Likely Very Likely Very Likely Very Likely Very Likely\n**PARBHANI**\nIntensity\nThunderstorm accompanied with lightning ,\nlight to moderate rainfall & gusty\nwinds (30- 40kmph) at\nisolated places. तुरळक ठिकाणी ठिजाांच्या\nकडकडाटासह िादळे, हलका ते मध्यम पाऊस आठण सोसाट्याचा िारा\n(30-40 ठकमी प्रठततास)\nयेण्याची शक्यता आहे\nThunderstorm accompanied with lightning ,\nlight to moderate rainfall & gusty\nwinds (30- 40kmph) at\nisolated places. तुरळक ठिकाणी ठिजाांच्या\nकडकडाटासह िादळे, हलका ते मध्यम पाऊस आठण सोसाट्याचा िारा\n(30-40 ठकमी प्रठततास)\nयेण्याची शक्यता आहे\nLight rain/\n\n...\n\n# **WARNINGS**\n• Possibility of cloud to ground lightning during thunderstorm events.\n**Action Suggested:** • Check for traffic congestion on your route before leaving for your destination.\n• Follow any traffic advisories that are issued in this regard.\n• Avoid staying in vulnerable structures.\n• Avoid working in open areas and fields while thunderstorms are taking place.\n• Avoid taking shelter under tall trees and structures when a thunderstorm is occurring.\n• Unplug electrical/electronic appliances.\n• Immediately get out of water bodies.\n• Keep away from all objects that conduct electricity.\n\n...\n\n**Thunderstorm IBF**\n**Impact Expected:** • Possibility of cloud to ground lightning at isolated places.\n• Fall of weak trees or weak structures due to gusty winds.\n• Localized and short-term disruption of power.\n• Damage to crops due to unseasonal rainfall.\n• Strong wind/hail may damage plantation, horticulture, and standing crops.\n• Minor damage to kutcha houses/walls and huts.\n**Action Suggested:** • Avoid working in open areas and fields while thunderstorms are taking place.\n• Avoid taking shelter under tall trees and structures when a thunderstorm is occurring.\n\n...\n\n**Agromet Advisory:** • As there is a possibility of thunderstorm activity accompanied by gusty winds (30 to 40 kmph), lightning, and light to moderate rainfall, harvesting of matured crops should be done.\n• Harvest the matured crops as early as possible and keep them in safe places."
+        ]
+      },
+      {
+        "url": "https://weather-and-climate.com/average-monthly-Wind-speed,mumbai,India",
+        "title": "Average Wind Speed in Mumbai by Month",
+        "publish_date": null,
+        "excerpts": [
+          "... forecast,mumbai,India) [July ▸](https://weather-and-climate.com/mumbai-July-averages) [August ▸](https://weather-and-climate.com/mumbai-August-averages)\n\n# Average monthly wind speed in Mumbai\n\nThe mean monthly wind speed over the year in Mumbai "
+        ]
+      },
+      {
+        "url": "https://weather-and-climate.com/mumbai-August-averages",
+        "title": "Mumbai Weather in August: Temperature & Rainfall",
+        "publish_date": null,
+        "excerpts": [
+          "# Mumbai Weather in August\n## **Rainfall in Mumbai in August**\n### **Wind Speed in Mumbai in August**\nAverage wind speeds reach 3 m/s ( 6 knots ) in August, creating light breezes that feel pleasant throughout the day. Some days are calmer, while others bring slightly more active breezes.\n\n...\n\n## Mumbai Temperature in August\nMin Temperature Min Temperature 26°C ( 79°F )\nMax Temperature Max Temperature 29°C ( 84°F )\nWater Temperature Water Temperature 27°C ( 81°F )\nChance of Rain Chance of Rain 70%\nPrecipitation Precipitation 432 mm ( 17 in )\nRainy days Rainy days 21 days\nHumidity Humidity 84%\nWindspeed Windspeed 3 m/s ( 6 knots )\nSunshine Sunshine 76 hours\nPercentage Sunshine Percentage Sunshine\n\n## Daily Historical Temperatures\n49-year average (1976-2025)\nBased on our historical records, temperatures in Mumbai typically stay consistent throughout August, with daily highs averaging around 29°C ( 84°F ) . Nights are warm, with lows around 26°C ( 79°F ) .\n\n...\n\n## Mumbai historical weather extremes in August\n* On August 10, 2017, temperatures climbed to 39°C ( 102°F ) , marking the warmest August day on record.\n* The coldest August day was on August 19, 2021, with a maximum of 26°C ( 79°F ) .\n* The lowest overnight temperature recorded in August was 23°C ( 73°F ) (August 20, 2017).\n\n...\n\n## What To Do in Mumbai in August\nWe rated the following activities from **1** (least suitable) to **10** (best) to do.\nCycling **7** /10\nWalking **7** /10\nCamping **7** /10\nOutdoor sports **7** /10\n\n...\n\n[Humidity](https://weather-and-climate.com/average-monthly-Humidity-perc,mumbai,India) [Wind Speed](https://weather-and-climate.com/average-monthly-Wind-speed,mumbai,India) [Water Temp](https://weather-and-climate.com/average-monthly-water-Temperature,mumbai,India)"
+        ]
+      },
+      {
+        "url": "https://wanderlog.com/weather/25/8/mumbai-weather-in-august",
+        "title": "Mumbai, India weather in August: average temperature & climate",
+        "publish_date": null,
+        "excerpts": [
+          "# Mumbai, India weather in August\n## Historical temperature average in August\n* Itinerary + map in one view\n* Live collaboration\n* Auto-import hotels and reservations\n* Optimize your route\n* Offline access on mobile\n* Optimize your route\n* See time and distance between all your places\nStart planning Learn more\n\n...\n\n### General weather summary\nVery warm, slightly windy\nFeels like\n75%\nChance of rain\n0.439 in\nAmount\n16.4 mph\nWind speed\n87%\nHumidity\n12.8 hrs\nDaylight length\n6:18 AM\nSunrise\n7:05 PM\nSunset\n23%\nCloud cover\nSleeveless shirt, rain coat and rain boots\nWhat to wear\nYour itinerary and your map in one view\n\n...\n\n### What is the average temperature in August\nThe average temperature in Mumbai in August for a typical day ranges from a high of 83°F (28°C) to a low of 78°F (26°C).Some would describe the temperature to be very warm. The general area may also feel slightly windy.\n\n...\n\n### How windy is it in August\nHistorically, the wind in Mumbai during August blows at an average speed of 16.4 mph (26.4 kph). The windiest month is July with an average wind speed of 18.2 mph (29.2 kph), while the calmest month is October with an average wind speed of 9.1 mph (14.7 kph).\nThis graph shows the average wind speed in Mumbai in August based on historical data.\nAverage monthly wind speed in Mumbai\n\n### What to wear in August\nWith an average high of 83°F (28°C) and a low of 78°F (26°C), it generally feels very warm and slightly windy.There might also be a very high chance of rain.With that in mind, most people would dress in something very light like a sleeveless shirt and top it off with a rain coat and rain boots\n\n...\n\n### Where does this data come from\nFor all data based on historical data, we've averaged the data from the past 11 years (2010-2020). For example, for the hourly temperature at 10am, we've looked at the temperature at 10am on every day in August (e.g., August 1, August 2, etc. in 2010, 2011, etc.) and took the arithmetic mean.\nWe did not smooth the data, so for example, our daily temperature line will have some randomness due to the fact that weather is random in the first place."
+        ]
+      },
+      {
+        "url": "https://www.mid-day.com/mumbai/mumbai-news/article/mumbai-weather-update-imd-predicts-moderate-to-heavy-showers-winds-up-to-50-kmph-today-23642528",
+        "title": "Mumbai weather update: IMD forecasts moderate to heavy rain, gusty winds across city",
+        "publish_date": "2026-07-31",
+        "excerpts": [
+          "# Mumbai weather update: IMD issues yellow alert, predicts moderate to heavy showers\nThe weather department has also predicted occasional gusty winds reaching speeds of 40–50 kmph, urging residents to exercise caution while travelling, especially in areas prone to waterlogging and falling tree branches\n\n...\n\nThe weather department has issued a yellow alert for Mumbai, predicting occasional gusty winds reaching speeds of 40–50 kmph, urging residents to exercise caution while travelling, especially in areas prone to waterlogging and falling tree branches.\n\n...\n\nFor the latest Mumbai Monsoon coverage, including weather forecasts, rain alerts, transport disruptions, lake levels, and civic advisories, visit our Mumbai Monsoon News hub.\nRead Next Story"
+        ]
+      },
+      {
+        "url": "https://wanderlog.com/weather/7865/8/mumbai-weather-in-august",
+        "title": "Mumbai, India weather in August: average temperature & climate",
+        "publish_date": null,
+        "excerpts": [
+          "# Mumbai, India weather in August\n## Historical temperature average in August\n* Itinerary + map in one view\n* Live collaboration\n* Auto-import hotels and reservations\n* Optimize your route\n* Offline access on mobile\n* Optimize your route\n* See time and distance between all your places\nStart planning Learn more\n\n...\n\n### General weather summary\nVery warm, slightly windy\nFeels like\n81%\nChance of rain\n0.495 in\nAmount\n15.9 mph\nWind speed\n88%\nHumidity\n12.8 hrs\nDaylight length\n6:18 AM\nSunrise\n7:05 PM\nSunset\n23%\nCloud cover\nSleeveless shirt, rain coat and rain boots\nWhat to wear\nYour itinerary and your map in one view\n\n...\n\n### What is the average temperature in August\nThe average temperature in Mumbai in August for a typical day ranges from a high of 83°F (28°C) to a low of 77°F (25°C).Some would describe the temperature to be very warm. The general area may also feel slightly windy.\n\n...\n\n### How windy is it in August\nHistorically, the wind in Mumbai during August blows at an average speed of 15.9 mph (25.6 kph). The windiest month is July with an average wind speed of 17.5 mph (28.2 kph), while the calmest month is October with an average wind speed of 9.2 mph (14.8 kph).\nThis graph shows the average wind speed in Mumbai in August based on historical data.\nAverage monthly wind speed in Mumbai\n\n### What to wear in August\nWith an average high of 83°F (28°C) and a low of 77°F (25°C), it generally feels very warm and slightly windy.There might also be a very high chance of rain.With that in mind, most people would dress in something very light like a sleeveless shirt and top it off with a rain coat and rain boots\n\n...\n\n### Where does this data come from\nFor all data based on historical data, we've averaged the data from the past 11 years (2010-2020). For example, for the hourly temperature at 10am, we've looked at the temperature at 10am on every day in August (e.g., August 1, August 2, etc. in 2010, 2011, etc.) and took the arithmetic mean.\nWe did not smooth the data, so for example, our daily temperature line will have some randomness due to the fact that weather is random in the first place."
+        ]
+      },
+      {
+        "url": "https://www.thehindu.com/news/national/india-rainfall-live-updates-southwest-monsoon-imd-heavy-rain-forecast-mumbai-tamil-nadu-kerala-telangana-karnataka-june-22-2026/article71131946.ece",
+        "title": "\n\tMonsoon tracker highlights: Shimla Met issues yellow warning for thunderstorms, lightning, gusty winds; orange alert for Mumbai  - The Hindu\n",
+        "publish_date": "2026-06-22",
+        "excerpts": [
+          "# Monsoon tracker highlights: Shimla Met issues yellow warning for thunderstorms, lightning, gusty winds; orange alert for Mumbai\n## The IMD will announce the monsoon only when all parameters for monsoon onset are met\nThe Weather Department also predicted isolated thunderstorms accompanied by lightning and gusty winds with speeds reaching 40-50 kmph, gusting up to 60 kmph, over Konkan and Goa and Marathwada during June 22-25, while isolated heavy rainfall is likely"
+        ]
+      },
+      {
+        "url": "https://www.republicworld.com/india/imd-issues-orange-alert-for-mumbai-raigad-bmc-issues-advisory-amid-thunderstorms-lightning-and-gusty-wind-warning-2026-06-23-129506",
+        "title": "IMD Issues Orange Alert For Mumbai, Raigad; : BMC Issues Advisory Amid Thunderstorms, Lightning, and Gusty Wind Warning | Republic World",
+        "publish_date": "2026-06-23",
+        "excerpts": [
+          "# IMD Issues Orange Alert For Mumbai, Raigad; : BMC Issues Advisory Amid Thunderstorms, Lightning, and Gusty Wind Warning\n## With the southwest monsoon expected to fully cover Mumbai within 48 hours, widespread heavy rainfall is forecast for the Konkan and Madhya Maharashtra regions through June 26.\n**Mumbai:** Residents in Mumbai and Raigad have been urged to exercise caution on Tuesday following a fresh nowcast warning issued by the Brihanmumbai Municipal\n\n...\n\nThe alert warns of thunderstorms accompanied by lightning and moderate rain spells, with gusty winds expected to reach speeds between 30 and 40 kmph in isolated\n\n...\n\nAccording to the India Meteorological Department (IMD), an orange alert has been activated for Mumbai and Raigad as of 7:00 am today and will be in effect for the\n\n...\n\n### Advertisement\n#### Advertisement\nThe IMD has also issued a fishermen's warning for the South Maharashtra-Goa coast, advising fishermen not to venture into the sea from June 22 to June 26 due to squally weather conditions and wind speeds of 40-50 kmph, gusting up to 60 kmph.\n\n...\n\nEarlier on Monday, the Brihanmumbai Municipal Corporation (BMC), citing the India Meteorological Department (IMD), also issued an Orange warning for Mumbai, forecasting thunderstorms accompanied by lightning, moderate to intense spells of rainfall and gusty winds reaching speeds of 30-40 kmph at isolated places over the next"
+        ]
+      },
+      {
+        "url": "https://www.aqi.in/weather/in/india/maharashtra/mumbai",
+        "title": "Mumbai Weather Conditions: Temperature | 30 Days Forecast",
+        "publish_date": "2026-08-26",
+        "excerpts": [
+          "Here is a complete overview of Mumbai&#x27;s current weather conditions as of 04:00 PM 26 August 2026: Condition : Patchy rain nearby Temperature : 28°C Pleasant (Feels like 33°C) Humidity : 78% Wind Speed : <strong>25.6 km/h</strong> from W (259 degrees), Gust"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

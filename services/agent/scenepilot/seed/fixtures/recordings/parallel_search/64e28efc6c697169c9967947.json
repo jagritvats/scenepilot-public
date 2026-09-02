@@ -1,0 +1,89 @@
+{
+  "request": {
+    "objective": "Find specific load limits (in kg/m2) for roofs under IS 875 Part 2 and exact NOC requirements for rooftop filming stunts from Mumbai Police and CFO.",
+    "search_queries": [
+      "IS 875 Part 2 roof load capacity kg",
+      "Mumbai Police NOC film shooting rooftop",
+      "BMC CFO NOC temporary structure filming"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_58ba22d21e04ec822d765c57d71cb925",
+    "results": [
+      {
+        "url": "https://testbook.com/question-answer/as-per-is-875-part-2-in-the-analysis-of-industria--64b24bcfc44ba8cdb5f2df0b",
+        "title": "[Solved] As per IS 875 part-2, in the analysis of industrial building",
+        "publish_date": "2026-04-29",
+        "excerpts": [
+          "* [Home](https://testbook.com)\n* [Design of Steel Structures](https://testbook.com/objective-questions/mcq-on-design-of-steel-structures--5eea6a0b39140f30f369dd82 \"Design of Steel Structures\")\n* [Roof Truss](https://testbook.com/objective-questions/mcq-on-roof-truss--5eea6a0b39140f30f369dd83 \"Roof Truss\")\n\n...\n\n# As per IS 875 part-2, in the analysis of industrial building the imposed loads on flat, sloping or curved roof with slopes up to and including 10 degrees shall be_______ Consider that access is provided to roof\n[View all JSSC JE Papers >](https://testbook.com/jssc-je/previous-year-papers)\n1. 0.75 kN/m ²\n2. 1.5 kN/m 2\n3. 3.0 kN/m 2\n4. 5.0 kN/m 2\n\n## Answer (Detailed Solution Below)\nOption 2 : 1.5 kN/m 2\n[Crack JSSC JE with India's Super Teachers FREE Demo Classes Available* Explore Supercoaching For FREE](https://testbook.com/jssc-je-coaching?productFirst=1&utm_source=QuestionBank&utm_medium=QuestionBankRecommendation&referrer=QnA&referrerType=QnA)\n**Free Tests**\nView all Free tests >\n\n...\n\n## Detailed Solution\nType of Roof: Flat, sloping, or curved with slopes up to and including 10°\n(a) Access provided\nLive load measured on plan: 150 kg/m 2 or 1.5 kN/m 2\nMinimum live load measured on plan\n* 375 kg (3750 N) uniformly distributed over any span of one meter and 900 kg (9000 N) uniformly distributed over any span in the case of all beams.\n(b) Access not provided except for maintenance\nLive load measured on plan: 75 kg/m 2 or 0.75 kN/m 2\n\n...\n\nTestbook Edu Solutions Pvt. Ltd.\n1st & 2nd Floor, Zion Building,\nPlot No. 273, Sector 10, Kharghar,\nNavi Mumbai - 410210\n[support@testbook.com](mailto:support@testbook.com)\nToll Free: [1800 833 0800](tel:18008330800)\nOffice Hours: 10 AM to 7 PM (all 7 days)\nCompany"
+        ]
+      },
+      {
+        "url": "https://testbook.com/question-answer/the-live-load-to-be-considered-for-an-inaccessible--5e8cb0d7f1b5d40d27d0b600",
+        "title": "The live load to be considered for an inaccessible roof is",
+        "publish_date": "2026-08-19",
+        "excerpts": [
+          "# The live load to be considered for an inaccessible roof is\n[View all UPPSC AE Papers >](https://testbook.com/uppsc-ae/previous-year-papers)\n1. 0\n2. 75 kg/m ²\n3. 150 kg/m ²\n4. 250 kg/m ²\n\n## Answer (Detailed Solution Below)\nShare\nOption 2 : 75 kg/m ²\n[Crack All AE & JE Exams with India's Super Teachers FREE Demo Classes Available* Explore Supercoaching For FREE](https://testbook.com/all-ae-je-exams-coaching?productFirst=1&utm_source=QuestionBank&utm_medium=QuestionBankRecommendation&referrer=QnA&referrerType=QnA)\n\n...\n\n## Detailed Solution\n**Concept:**\nThe live load considered for an inaccessible roof is 75 kg/m ² . This is obtained from is 875 – Part – 2.\n| **Type of Roof** | **Uniformly Distributed Imposed load Measured on Plan area** | **Minimum Imposed Load Measured on Plan** |\n| 1. Flat, sloping or curved roof with slopes up to and including to degrees. |  |  |\n| (a) Access provided | 1.5 kN/m ² | 3.75 kN uniformly distributed over any span of one metre width of the roof slab and 9 kN uniformly distributed over the span of any beam or truss or wall |\n| (b) Access not provided except for maintenance | **0.75 kN/m ²** | 1.9 kN uniformly distributed over any span of one metre width of the roof slab and 4.5 kN uniformly distributed over the span of any beam or truss or wall |\n| 2. Sloping roof with slope greater than 10 degrees |  |  |\n|  | For roof membrane sheets or put-line 0.75 kN/m ² less 0.02 kN/m ² for every degree increase in slope over 10 degrees | Subject to a minimum of 0.4 kN/m ² |\n**Important Point:**\nVarious parts of IS 875\nIS 875 – part 1 → Dead load\nIS 875 – part 2 → Imposed load\nIS 875 – part 3 → wind load\nIS 875 – part 4 → show load"
+        ]
+      },
+      {
+        "url": "https://www.slideshare.net/slideshow/875-2-24345738/24345738",
+        "title": "875 2 | PDF",
+        "publish_date": "2022-11-29",
+        "excerpts": [
+          "# 875 2\nThis document outlines Indian Standard IS: 875 (Part 2) - 1987 regarding imposed loads for buildings and structures. It provides terminology, specifies minimum imposed loads on floors and roofs for different occupancies, and addresses other loading considerations like impact, vibration, parapets, and balustrades.\nThe standard was revised to rationalize imposed load values based on recent studies and foreign standards, allow for a 50% reduction in loads for multi-story column design, and require posting of floor load capacities.\n\n...\n\nIndian Standard\nIS : 875 ( Part 2 ) - 1987\n(Reaffirmed 1997)\nCODE OF PRACTICE FOR\nDESIGN LOADS (OTHER THAN EARTHQUAKE)\nFOR BUILDINGS AND STRUCTURES\nPART 2 IMPOSED LOADS\n(Second Revision)~-\nSixtll Reprint JUNE 1998\nUDC 624~042.3 : 006.76\n\n...\n\nReduction in Imposed Loads on Floors\nPosting of Floor Capacities . . .\nIMPOSED LOADS ON ROOFS . . .\nImposed Loads on Various Types of Roofs\nConcentrated Load on Roof Coverings\nLoads Due to Rain . . .\nDust Load ...\nLoads on Members Supporting Roof Coverings\n. . .\n. . .\n. . .\n. . .\n. . .\n. . .\n. . .\n. . .\n. . .\n. . .\n\n...\n\npersons but also due to nature of occu-\npancy, the furniture and other equipments\nwhich are a part of the character of the\noccupancy.\nb) The imposed loads on floors and roofs\nhave been rationalized based on the\ncodified data available in large number\nof latest foreign national standards, and\nother literature. Further, these values\n\n...\n\nIS : 875 ( Part 2 ) - 1987\nTABLE 1 IMPOSED FLOOR LOADS FOR DlFFERENT OCCUPANCIES\n(Clauses 3.1, 3.1.1 and4.1.1 )\nSL\nNo.\n(1)\nOCCYJPANCY CLASSIFICATION\n( 2 )\nUNIFORMLY\nDISTRIBUTED\nLOAD ( UDL )\n( 3 )\nkNlma\ni ) RESIDENTIAL BUILDINS\na) Dwelling houses:\n\n...\n\n## IS : 875 ( Part 2 ) - 1987\nTABLE 1 IMPOSED FLOOR LOADS FOR DIFFERENT OCCUPANCIES - Contd\nSL OCCUPANCY CLASSIFICATION UNTFORMLY CONCENTRATED\nNo. DISTRIBUTED LOAD\nLOAD ( UD\nBureau of Indian Standards\nBIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote\nharmonious development of the activities o"
+        ]
+      },
+      {
+        "url": "https://www.mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+        "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI",
+        "publish_date": "2019-05-22",
+        "excerpts": [
+          "# **MUNICIPAL CORPORATION OF GREATER MUMBAI**\n## Contents\n### GENERAL CONDITIONS:............................................................................................................ 11\nSPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO: ..................................... 12\n\n...\n\n## **SPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO:**\n### a. Two Nos. of Water type extinguisher of 9 litres capacity & One ABC Dry\nPowder extinguisher of 9 kgs capacity, per 100 m ² of floor space shall be\n\n### Building / permanent structure where fire prevention and fire-fighting arrangements are not provided, then following minimum fire safety measures shall be provided. (Addi\n1) Four Nos. of Water type extinguisher, 9 litres capacity, per 100 m ² of floor space\n\n### **Building and Factory Department Codified Requirements for Temporary structure on Private Property:**\n\n\n...\n\n### Events, which are organized on private land, shall also invariably be accompanied with NOC from landowner.\n\n\n### All mandatory NOC’s such as Local Police Station, Traffic Police Department, as the case may be, shall be upload along with the application form.\n\n\n### The application form along with all the valid NOC’s shall be uploaded 15 days in advance from the date of commencement of Exhibitions/Events\n"
+        ]
+      },
+      {
+        "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+        "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI",
+        "publish_date": "2019-05-22",
+        "excerpts": [
+          "# **MUNICIPAL CORPORATION OF GREATER MUMBAI**\n## Contents\n### GENERAL CONDITIONS:............................................................................................................ 11\nSPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO: ..................................... 12\n\n...\n\n## **SPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO:**\n### a. Two Nos. of Water type extinguisher of 9 litres capacity & One ABC Dry\nPowder extinguisher of 9 kgs capacity, per 100 m ² of floor space shall be\n\n### Building / permanent structure where fire prevention and fire-fighting arrangements are not provided, then following minimum fire safety measures shall be provided. (Addi\n1) Four Nos. of Water type extinguisher, 9 litres capacity, per 100 m ² of floor space\n\n### **Building and Factory Department Codified Requirements for Temporary structure on Private Property:**\n\n\n...\n\n### Events, which are organized on private land, shall also invariably be accompanied with NOC from landowner.\n\n\n### All mandatory NOC’s such as Local Police Station, Traffic Police Department, as the case may be, shall be upload along with the application form.\n\n\n### The application form along with all the valid NOC’s shall be uploaded 15 days in advance from the date of commencement of Exhibitions/Events\n"
+        ]
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mumbai_Police_(film)",
+        "title": "Mumbai Police (film) - Wikipedia",
+        "publish_date": "2026-05-29",
+        "excerpts": [
+          "# Plot\nFarhan tells Antony about his past and the tragedy that befell their friend Aaryan. Together, the trio had been known as the 'Mumbai Police' owing to their earlier presence in the Mumbai police department. Given Antony's impressive capabilities as a police officer, Farhan reassigns him to the case despite his condition.\n\n...\n\nAaryan was upset—not because of Antony's sexuality but because Antony had hidden this part of his life from him despite their close friendship. The two had a heated argument, after which Aaryan stormed out.\n\n...\n\nHaving uncovered the motive behind Aaryan's murder, Antony deduces that he himself was the killer. His past self had premeditated the murder, installing a remote-controlled automatic rifle on a rooftop overlooking the stage and shooting his friend with a tap on his phone during the gallantry awards ceremony.\n\n...\n\n## References\n↑ [Review: Umubail Police](http://www.sify.com/movies/mumbai-police-review-malayalam-15028048.html) _Sify_ Star Star Star Star ] [Archived](https://web.archive.org/web/20130509001132/http://www.sify.com/movies/mumbai-police-review-malayalam-15028048.html) 9 May 2013 at the [Wayback\nMachine](https://en.wikipedia.org/wiki/Wayback_Machine \"Wayback Machine\")\n6. ↑ [Star Star Star Review: Mumbai Police is impressive – Rediff.com Movies](http://www.rediff.com/movies/review/south-review-mumbai-police-is-impressive/20130506.htm) . Rediff.com (6 May 2013). Retrieved 19 August 2013.\n7.\n↑ [Star Star Star](http://timesofindia.indiatimes.com/entertainment/regional/malayalam/movie-reviews/Mumbai-Police/movie-review/19893068.cms) [Archived](https://web.archive.org/web/20130508093636/http://timesofindia.indiatimes.com/entertainment/regional/malayalam/movie-reviews/Mumbai-Police/movie-review/19893068.cms) 8 May 2013"
+        ]
+      },
+      {
+        "url": "https://law.resource.org/pub/in/bis/S03/is.875.2.1987.pdf",
+        "title": "IS 875-2 (1987): Code of Practice for Design Loads (Other Than Earthquake) For Buildings And Structures, Part 2: Imposed Loads",
+        "publish_date": "2013-09-05",
+        "excerpts": [
+          "# **FORBUILDINGSANDSTRUCTURES**\n## _(Second_ **_Rev’sion)_**\nReduction in Imposed Loads on Floors Posting of Floor Capacities . . .\nIMPOSED LOADS ON ROOFS . . .\nImposed Loads on Various Types of Roofs\nConcentrated Load on Roof Coverings\nLoads Due to Rain . . .\nDust Load . . .\nLoads on Members Supporting Roof Coverings\n. . .\n. . .\n. . .\n. . .\n. . .\n. . .\n. . .\n. . .\n. . .\n\n...\n\n## -\n### 4\n**4.1 Imposed Loads on Various Types of Roofs -** On flat roofs, sloping roofs and curved roofs, the imposed loads due to use or occupancy of the buildings and the geometry of the types of roofs shall be as given in Table 2.\n4.1.1 Roofs of buildings used for promenade or\n\n...\n\n4.2 **Concentrated Load on Roof Coverings - To** provide for loads Incidental to maintenance, unless otherwise, specified by the Engineer-in-Charge, all roof coverings ( other than glass or transparent sheets made of fibre glass ) shall be capable of carrying an incidental load of 0.90 kN concen- trated on an area of 12.5 cm* so placed\n\n...\n\n**TABLE 2 IMPOSED LOADS ON VARIOUS TYPES OF ROOFS**\nSL TYPE OF ROOF No.\n(1) (2)\ni) Flat, sloping or curved roof\nwith slopes up to and includ- ing 10 degrees\na) Access provided\n**( Clause 4.1** )\nUNIFORMLY DISTRIBUTED IMPOSED LOAD MEASUKED ON PLAN AREA\n(3)\n1’5 kN/m’\nb) Access not provided 0.75 kN/m2\nexcept for maintenance\nii) Sloping roof with slope greater than 10 degrees\niii) Curved roof with slope of line obtained by joining spring- ing point to the crown with the horizontal, greater than 10 degrees\nFor roof membrane sheets or pur-\nlins-0.75 kN/mZ less 0.02 kN/m’ for every degree increase in slope over 10 degrees\n( O;le; 0.52 ya ) kN/m”\ny = **_h/l h =_** the height of the highest point of the structure measured from its spring- ing; and I = ;hord width of the roof singly curved and shorter of the two sides if doubly curved"
+        ]
+      },
+      {
+        "url": "https://mumbaipolice.gov.in/Filming?ps_id=0",
+        "title": "Filming | Mumbai Police",
+        "publish_date": null,
+        "excerpts": [
+          "I certify that the information provided by me in above form is accurate and correct as per best of my knowledge. I understand that withholding of information or giving false information is a criminal offense and may result in legal action against me"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

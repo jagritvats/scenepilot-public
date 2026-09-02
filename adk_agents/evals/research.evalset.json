@@ -1,0 +1,43 @@
+{
+  "eval_set_id": "scenepilot_research_v1",
+  "name": "ScenePilot research agent — Parallel-grounded answers",
+  "description": "Three producer questions about the Project Nightfall rooftop sequence. Each must be answered by calling the Parallel Search tool first (3 keyword queries, no site: operators) and citing returned URLs, with FACT / INFERENCE / RECOMMENDATION / UNKNOWN separated.",
+  "eval_cases": [
+    {
+      "eval_id": "drone_permission_mumbai",
+      "conversation": [
+        {
+          "invocation_id": "inv_1",
+          "user_content": {"role": "user", "parts": [{"text": "We want to fly a camera drone over adjoining mill rooftops in Lower Parel, Mumbai, at sunset for a motorcycle stunt. What permissions do we need and how long do they take?"}]},
+          "final_response": {"role": "model", "parts": [{"text": "FACTS: Drone operations in India are governed by the DGCA Drone Rules 2021 via the Digital Sky platform, which classifies airspace into green, yellow and red zones; Mumbai Police handles local aerial-photography permissions. INFERENCES: dense urban rooftops near sensitive installations are likely yellow/red zones needing advance clearance. RECOMMENDATION: apply through Digital Sky and Mumbai Police well ahead of the shoot. UNKNOWN: the exact zone of the specific rooftop and current processing time."}]},
+          "intermediate_data": {"tool_uses": [{"name": "parallel_search", "args": {"objective": "Drone filming permission over urban rooftops in Mumbai; prefer official DGCA and Mumbai Police documentation", "search_queries": ["Mumbai drone permission filming", "DGCA Digital Sky red zone", "Mumbai Police aerial photography NOC"]}}], "tool_responses": []}
+        }
+      ],
+      "session_input": {"app_name": "scenepilot_research", "user_id": "eval", "state": {}}
+    },
+    {
+      "eval_id": "rooftop_fireworks_rules",
+      "conversation": [
+        {
+          "invocation_id": "inv_1",
+          "user_content": {"role": "user", "parts": [{"text": "Can we fire real fireworks from a rooftop in Mumbai for a film shoot? What rules and safety distances apply?"}]},
+          "final_response": {"role": "model", "parts": [{"text": "FACTS: Public fireworks displays in India fall under the Explosives Rules 2008 (PESO licensing) and need police / fire brigade permission; safety distances from spectators and buildings are prescribed. INFERENCES: a dense rooftop location is unlikely to satisfy the prescribed distances. RECOMMENDATION: use a licensed pyrotechnician and consider VFX fireworks. UNKNOWN: the current fee and lead time for the Mumbai Fire Brigade NOC."}]},
+          "intermediate_data": {"tool_uses": [{"name": "parallel_search", "args": {"objective": "Rules and safety distances for fireworks displays at film shoots in Mumbai; prefer PESO, Mumbai Fire Brigade and police sources", "search_queries": ["PESO fireworks display licence", "Mumbai fire brigade fireworks permission", "fireworks safety distance India rules"]}}], "tool_responses": []}
+        }
+      ],
+      "session_input": {"app_name": "scenepilot_research", "user_id": "eval", "state": {}}
+    },
+    {
+      "eval_id": "monsoon_weather_window",
+      "conversation": [
+        {
+          "invocation_id": "inv_1",
+          "user_content": {"role": "user", "parts": [{"text": "How risky is scheduling an exterior sunset shoot in Mumbai in late August, and what weather pattern should we plan around?"}]},
+          "final_response": {"role": "model", "parts": [{"text": "FACTS: late August is within Mumbai's southwest monsoon; IMD data shows frequent rainy days and gusty winds. INFERENCES: exterior sunset windows are unreliable and rooftop surfaces may stay wet. RECOMMENDATION: schedule a cover set and monitor IMD nowcasts on the day. UNKNOWN: the specific day's forecast."}]},
+          "intermediate_data": {"tool_uses": [{"name": "parallel_search", "args": {"objective": "Late August monsoon weather pattern and rain risk in Mumbai for exterior filming; prefer IMD data", "search_queries": ["Mumbai late August monsoon rainfall", "IMD Mumbai August rainy days", "Mumbai wind speed August"]}}], "tool_responses": []}
+        }
+      ],
+      "session_input": {"app_name": "scenepilot_research", "user_id": "eval", "state": {}}
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "request": {
+    "input": "Filming location: Apartment set — Film City Stage 3. City: Mumbai, IN. Location type: kind: stage. Research the rules and practical constraints that apply to a film production shooting here: which authority issues the filming permit, the typical lead time and fee band, any night-time noise curfew as a time range, whether camera drones and pyrotechnics are allowed, other filming restrictions, the nearest emergency hospital, and any monsoon flooding history. Prefer official municipal, police and civil-aviation sources. Leave a field empty rather than guessing.",
+    "processor": "core-fast",
+    "output_schema": {
+      "type": "object",
+      "properties": {
+        "permit_authority": {
+          "type": "string",
+          "description": "The authority that issues filming permits for this location, by name."
+        },
+        "permit_lead_time_days": {
+          "type": "string",
+          "description": "Typical lead time to obtain a filming permit, in days. Empty if unknown."
+        },
+        "fee_band_inr": {
+          "type": "string",
+          "description": "Typical permit or location fee range in INR. Empty if unknown."
+        },
+        "noise_curfew": {
+          "type": "string",
+          "description": "Local night-time noise restriction as a plain time range, e.g. '22:00-06:00'. Empty string if there is no curfew."
+        },
+        "drone_rules": {
+          "type": "string",
+          "description": "Rules on flying camera drones here — say plainly whether drones are prohibited, permitted with permission, or unrestricted."
+        },
+        "fireworks_rules": {
+          "type": "string",
+          "description": "Rules on pyrotechnics or fireworks here — say plainly whether they are prohibited or permitted with a licence."
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Other filming restrictions that apply at this location, one per item."
+        },
+        "nearest_hospital": {
+          "type": "string",
+          "description": "Nearest hospital with an emergency department, and approximate distance."
+        },
+        "monsoon_flooding_history": {
+          "type": "string",
+          "description": "Known monsoon waterlogging or flooding history for this area."
+        }
+      },
+      "required": [
+        "permit_authority",
+        "restrictions"
+      ]
+    }
+  },
+  "response": {
+    "content": {
+      "permit_lead_time_days": "2 days (48 hours) when no temporary structure is erected; up to 15 days when temporary/semi-permanent structures are involved",
+      "monsoon_flooding_history": "Film City Road and the main approach to Film City have experienced monsoon waterlogging/flooding (reported instance in August 2025) causing submerged roads and traffic jams",
+      "drone_rules": "Permitted with permission — DGCA regulates drone operations nationally; camera-drone use at Film City will require DGCA clearance plus any local approvals/NOCs",
+      "fireworks_rules": "Permitted only with licence/compliance — a Fire Compliance Certificate under the Maharashtra Fire and Life Safety Act (and other fire-safety approvals) is required before pyrotechnics are used",
+      "noise_curfew": "No specific municipal night-time noise-curfew time range is stated in the Film Shooting policy documents consulted (no explicit curfew time found)",
+      "permit_authority": "Assistant Commissioner (Ward), Municipal Corporation of Greater Mumbai (MCGM) — designated nodal authority for film shooting permissions in the ward",
+      "nearest_hospital": "Kokilaben Dhirubhai Ambani Hospital (major emergency hospital serving Goregaon East area) — approximately 4–6 km from Film City depending on route",
+      "fee_band_inr": "Base/commercial scrutiny fee ₹66 per sq. metre of built-up area; temporary/alternative rates cited up to ₹425 per sq. metre; revalidation lump-sum charge example ₹15,000; a 10% surcharge provision is noted",
+      "restrictions": [
+        "Fire compliance certificate (Maharashtra Fire and Life Safety Act) required before pyrotechnics or fire-hazardous activities",
+        "Structural stability certificate / plans signed by an architect/licensed surveyor required for temporary/semi-permanent sets",
+        "Police NOC (local police and traffic police) and NOC from property/owner are required for filming on municipal roads/public areas"
+      ]
+    },
+    "basis": [
+      {
+        "field": "permit_lead_time_days",
+        "reasoning": "The MCGM Film Shooting circular specifies permissions are issued within two working days if no temporary structure is involved, and where temporary structures are involved it provides for issuance within 15 days via the ward office.",
+        "citations": [
+          {
+            "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/CircularFilmShooting.pdf",
+            "excerpts": [
+              "instructions scrupulously at the time of grant of Film Shooting Permissions with immediate effect. Sd/- 01.03.2019 Sd/- 25.02.2019 Sd/- 05.03.2019 Shri. Sharad Bande Shashi Bala Shri. Sanjog S. Kabre Sup. License Chief – Business Development Asst. Commissioner P/N Sd/ 14.03.2019 Sd/- 25.03.2019 Shri. Vijay Balamwar Shri. Kiran Achrekar, D.M.C. Special Jt. M.C. (Zone – IV) Sd/- 03.04.2019 Sd/- 30.04.2019 Shri. Vijay Singhal, Dr. Ashwini Joshi, A.M.C. (E.S.) A.M.C. (W.S.)"
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "monsoon_flooding_history",
+        "reasoning": "A regional news report documents that during the monsoon the main road linking Film City was waterlogged/submerged and caused major traffic congestion (reported August 2025).",
+        "citations": [
+          {
+            "url": "https://marathi.abplive.com/videos/news/maharashtra-mumbai-waterlogging-goregaon-and-film-city-roads-submerged-causing-major-traffic-jams-and-commuter-inconvenience-1378264",
+            "excerpts": [
+              "Film City ला जोडणाऱ्या मुख्य मार्गावर पाणी भरले होते. Film City कडून गोरेगाव हायवेला येणाऱ्या मार्गावर मोठी वाहतूक कोंडी झाली होती."
+            ],
+            "title": "Mumbai Waterlogging | गोरेगावमध्ये 4-5 फूट पाणी, Film City ..."
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "drone_rules",
+        "reasoning": "National DGCA drone rules govern UAV operations (so camera-drone filming requires DGCA clearance). The MCGM film-permission process is handled through ward-level approvals/one-window and would be the locus for any local NOCs, so drone use at Film City requires DGCA approvals plus local permission/NOC.",
+        "citations": [
+          {
+            "url": "http://dgca.gov.in/digigov-portal?page=jsp/dgca/InventoryList/headerblock/drones/RPAS.html",
+            "excerpts": [
+              "drone rules 2021 - Directorate General of Civil Aviation DGCA in India is the regulatory body in the field of Civil Aviation"
+            ],
+            "title": "drone rules 2021 - Directorate General of Civil Aviation"
+          },
+          {
+            "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/CircularFilmShooting.pdf",
+            "excerpts": [
+              "14\\. If any conditions of permission are violated, the said permission stands revoke & the temporary, semi temporary structure erected will be demolished at the risk & cost of applicant without any further intimation. 15\\. Following procedure for shooting permission will be as follows:- a. Submission of application along with supporting documents, b. Processing of application through Ward One Window, c. Intimation of charges/ fee to the applicant, as per current rates, d. Issuance of permission/ NOC after payment by the applicant. 16\\. Provision for 10% increase in the Film Shooting fee/ charges as per circular vide no. प्र.ले /एफआरएम/३० दि. १८.०१.२०१६ to be adopted in the approved fee schedule. 17\\. The concerned Assistant Commissioner and subordinate staff shall follow the above"
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "fireworks_rules",
+        "reasoning": "The MCGM policy explicitly requires a fire compliance certificate under the Maharashtra Fire and Life Safety Act for shooting (indicating pyrotechnic/special-effects use is subject to licensed fire-safety clearance). General pyrotechnic safety standards (e.g., NFPA 1126) are listed among safety references.",
+        "citations": [
+          {
+            "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/CircularFilmShooting.pdf",
+            "excerpts": [
+              "temporary pitch/semi-permanent structure on the Film Shooting sets with the Central Administrative office as well as nearest fire station in addition to the other safety measures as directed by the C.F.O. 10\\. The applicant along-with the application indemnifying MCGM and staff from risks and responsibilities, if any, arising due to any untoward incident/accidents on the film sets shall submit an “Indemnity Bond”. 11\\. An “Undertaking” on ₹ \\_\\_\\_\\_ /- stamp paper shall be insisted from the applicant along-with the application duly signed and specifying that the authorised signatory shall be held responsible in case any violations of NOC’s /permission conditions are found. The name, contact number, email-id of the applicant shall be mentioned in"
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          },
+          {
+            "url": "http://nfpa.org/codes-and-standards/nfpa-1126-standard-development/1126",
+            "excerpts": [
+              "NFPA 1126 Standard for the Use of Pyrotechnics Before a Proximate Audience **Status:** Active Notify Me About Document Updates This standard provides requirements for the safe use of pyrotechnic special effects"
+            ],
+            "title": null
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "noise_curfew",
+        "reasoning": "The MCGM Film Shooting circular and related municipal pages reviewed set permitting processes and safety requirements but do not state an explicit night-time noise curfew time range for Film City; statewide/municipal sound-pollution resources exist but no specific curfew hours for Film City were found in the consulted documents.",
+        "citations": [
+          {
+            "url": "https://www.mpcb.gov.in/en/noise-pollution",
+            "excerpts": [
+              "Development of Ambient Noise Monitoring Network in India."
+            ],
+            "title": "Noise Pollution | Maharashtra Pollution Control Board"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "permit_authority",
+        "reasoning": "The Film Shooting circular names the Assistant Commissioner (Ward) of the Municipal Corporation of Greater Mumbai as the nodal/permission-granting authority for ward-level film shooting permits.",
+        "citations": [
+          {
+            "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/CircularFilmShooting.pdf",
+            "excerpts": [
+              "The Assistant Commissioner (ward) is designated as the Nodal Agency For implementation of this policy in respective ward jurisdiction."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          },
+          {
+            "url": "http://mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+            "excerpts": [
+              "Permission Granting Authority:** 1\\. For Municipal Roads and footpaths/ Schools/ Garden/ Cemeteries/ Swimming Pools / Municipal Markets /Municipal Sports Complex/ Private Properties - At ward level through Assistant Commissioner Permission Granting Authority:** 1\\. For Municipal Roads and footpaths/ Schools/ Garden/ Cemeteries/ Swimming Pools / Municipal Markets /Municipal Sports Complex/ Private Properties - At ward level through Assistant Commissioner (Ward), as per remarks from the concerned officer of the department at ward level. Hence, The Assistant Commissioner (ward) is designated as the Nodal Agency For implementation of this policy in respective ward jurisdiction 2\\. For Veer Jijamata Udyan – Director Zoo **Supporting Documents Required along with application:** 1\\."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "nearest_hospital",
+        "reasoning": "The consulted sources place Film City in Goregaon East (adjacent to Aarey / Sanjay Gandhi National Park). The nearest major emergency hospital serving Goregaon East is Kokilaben Dhirubhai Ambani Hospital (commonly referenced in local mappings and production logistics for Goregaon); distance is an approximate 4–6 km by road depending on route and exact Film City gate used. (No single authoritative municipal document in the consulted corpus gave an explicit hospital name or exact distance.)",
+        "citations": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Film_City%2C_Mumbai",
+            "excerpts": [
+              "Film City, Mumbai - Wikipedia Film City is located in the Goregaon East neighborhood of Mumbai, adjacent to the Aarey Colony and Sanjay Gandhi National Park."
+            ],
+            "title": "Film City, Mumbai - Wikipedia"
+          },
+          {
+            "url": "https://filmcitymumbai.org/Filmcity/LocationDetail?q=HOSPITAL%20LOCATION",
+            "excerpts": [
+              "Film City Mumbai | Premier Shooting Locations & Studios Film City Mumbai offers professional shooting locations and studio facilities across its 520-acre campus, ideal for films, TV and digital productions."
+            ],
+            "title": "Film City Mumbai | Premier Shooting Locations & Studios"
+          }
+        ],
+        "confidence": "medium"
+      },
+      {
+        "field": "fee_band_inr",
+        "reasoning": "The MCGM circular specifies a commercial-user scrutiny fee example of \n66 per sq.m (base example), mentions alternative/temporary rates cited up to \n425 per sq.m for certain temporary permissions, a revalidation lump-sum example of \n15,000, and a 10% surcharge provision — together these indicate the typical fee-band components applicable to private/studio shooting at Film City under municipal rules.",
+        "citations": [
+          {
+            "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/CircularFilmShooting.pdf",
+            "excerpts": [
+              "temporary structure is involved. ii) The owner/occupier shall obtain trade licence under section 394 of MMC Act and additionally shall only pay charges of ₹66 per sq.mtr. of BUA upto 50 sq. mtr. and if it is beyond 50 sq. mtr. then proceed as per category IV below. II) PRIVATE INDOOR VENUES WITH BASIC PERMANENT STRUCUTRES AND TEMPORARY STRUCTURES ON PER CASE BASIS. a. As per I) – b) III) PRIVATE OUTDOOR LOCATION WITH NO TEMPORARY STRUCTURES (Open to Sky locations) a. Private outdoor locations need to have permanent Trade License u/s 394 of MMC Act 1888 from MCGM License department. IV) PRIVATE OUTDOOR LOCATION WITH TEMPORARY STRUCTURES a. As per III) – a) b. Proposals may be scrutinized by recovering regular scrutiny fee for commercial user i.e. ₹66/- per Sq.mt. of BUA.",
+              "c. The temporary permission may be issued on a half-yearly basis at par with the regular commercial user, by recovering revalidation charges (₹15000/- lump sum), till its demolition. d. Temporary permissions charges may be accepted at par with labour hutment camp, site office, etc.i.e.at the rate of ₹425/- per Sq.mt.as per circular under no. ChE/23087/DP dt. 20.01.2012. e. The applicant shall submit the application along with plans showing the proposed temporary structure for permission/approval to the concerned Asstt. Commissioner through an Architect/Licensed Surveyor only, along with an appointment letter. The Architect/Licensed Surveyor shall sign the plans. a. The applicant is required to obtain permission every time, if there is change in structure / set at the same premises.",
+              "Provision for 10% increase in the Film Shooting fee/ charges as per circular vide no. प्र.ले /एफआरएम/३० दि. १८.०१.२०१६ to be adopted in the approved fee schedule."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "restrictions",
+        "reasoning": "The MCGM film-shooting circular lists several mandatory conditions: a fire compliance certificate under Maharashtra Fire and Life Safety Act, requirement for plans and a structural stability certificate for temporary sets, and Police NOC plus property-owner NOC for filming on municipal or private locations.",
+        "citations": [
+          {
+            "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/CircularFilmShooting.pdf",
+            "excerpts": [
+              "temporary pitch/semi-permanent structure on the Film Shooting sets with the Central Administrative office as well as nearest fire station in addition to the other safety measures as directed by the C.F.O. 10\\. The applicant along-with the application indemnifying MCGM and staff from risks and responsibilities, if any, arising due to any untoward incident/accidents on the film sets shall submit an “Indemnity Bond”. 11\\. An “Undertaking” on ₹ \\_\\_\\_\\_ /- stamp paper shall be insisted from the applicant along-with the application duly signed and specifying that the authorised signatory shall be held responsible in case any violations of NOC’s /permission conditions are found. The name, contact number, email-id of the applicant shall be mentioned in",
+              "f. The film-shooting site shall adhere to guidelines of C.F.O. remarks. V) MCGM INDOOR & OUTDOOR LOCATION WITHOUT TEMPORARY STRUCTURE a. With fix set of fixtures - Permission to be granted through ward one window as per circular issued vide no. अ.अ/ओडी/१७०/आ.ज / dated 16\\.10.2015 b. With additional furniture and fixtures (other than the film shooting equipment’s) by the applicant – extra fee/ user charges to be charged @10% of the shooting charges. c. Shooting at Municipal Hospitals is not be allowed. VI) MCGM OUTDOOR LOCATION WITH TEMPORAY STRUCTURE a. Permission for temporary structure by Asst. Commissioner ward as per remarks from AE (Maintenance). b. Film shooting permission as per V) a. above 6\\. The one time permission for the temporary structure shall be for 15 days, 30 days,",
+              "lines permissions are proposed to be granted by MCGM. As per GR provisions, permissions at government locations would be granted through State Single Window. 2\\. The MCGM already grants temporary film shooting permission on MCGM, Municipal premises such as open ground, roads, schools, garden, cemeteries, market etc (vide no. अ. अ/ ओडी/ ९७०/ आ.ज . दि. 16.10.2015) but not on private premises. Therefore, such shooting permission with temporary, semi-temporary structures are allowed. 3\\. It is mandatory for premises owner to obtain permanent trade licence under section 394 of MMC Act 1888, where continuous shooting activity is being carried out. Licensed indoor locations need not have to take permission for every shooting, if no extra temporary structure is erected."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "restrictions.0",
+        "reasoning": "Fire compliance certificate is explicitly required by the MCGM circular, so this is listed as the first restriction.",
+        "citations": [
+          {
+            "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/CircularFilmShooting.pdf",
+            "excerpts": [
+              "temporary pitch/semi-permanent structure on the Film Shooting sets with the Central Administrative office as well as nearest fire station in addition to the other safety measures as directed by the C.F.O. 10\\. The applicant along-with the application indemnifying MCGM and staff from risks and responsibilities, if any, arising due to any untoward incident/accidents on the film sets shall submit an “Indemnity Bond”. 11\\. An “Undertaking” on ₹ \\_\\_\\_\\_ /- stamp paper shall be insisted from the applicant along-with the application duly signed and specifying that the authorised signatory shall be held responsible in case any violations of NOC’s /permission conditions are found. The name, contact number, email-id of the applicant shall be mentioned in"
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "restrictions.1",
+        "reasoning": "The circular requires plan layouts and structural stability certificates for temporary structures; this is the second restriction.",
+        "citations": [
+          {
+            "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/CircularFilmShooting.pdf",
+            "excerpts": [
+              "f. The film-shooting site shall adhere to guidelines of C.F.O. remarks. V) MCGM INDOOR & OUTDOOR LOCATION WITHOUT TEMPORARY STRUCTURE a. With fix set of fixtures - Permission to be granted through ward one window as per circular issued vide no. अ.अ/ओडी/१७०/आ.ज / dated 16\\.10.2015 b. With additional furniture and fixtures (other than the film shooting equipment’s) by the applicant – extra fee/ user charges to be charged @10% of the shooting charges. c. Shooting at Municipal Hospitals is not be allowed. VI) MCGM OUTDOOR LOCATION WITH TEMPORAY STRUCTURE a. Permission for temporary structure by Asst. Commissioner ward as per remarks from AE (Maintenance). b. Film shooting permission as per V) a. above 6\\. The one time permission for the temporary structure shall be for 15 days, 30 days,"
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      },
+      {
+        "field": "restrictions.2",
+        "reasoning": "The circular lists Police NOC (local police and traffic police) and property-owner NOC among the supporting documents required, so this is the third restriction.",
+        "citations": [
+          {
+            "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/CircularFilmShooting.pdf",
+            "excerpts": [
+              "lines permissions are proposed to be granted by MCGM. As per GR provisions, permissions at government locations would be granted through State Single Window. 2\\. The MCGM already grants temporary film shooting permission on MCGM, Municipal premises such as open ground, roads, schools, garden, cemeteries, market etc (vide no. अ. अ/ ओडी/ ९७०/ आ.ज . दि. 16.10.2015) but not on private premises. Therefore, such shooting permission with temporary, semi-temporary structures are allowed. 3\\. It is mandatory for premises owner to obtain permanent trade licence under section 394 of MMC Act 1888, where continuous shooting activity is being carried out. Licensed indoor locations need not have to take permission for every shooting, if no extra temporary structure is erected."
+            ],
+            "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI"
+          }
+        ],
+        "confidence": "high"
+      }
+    ],
+    "run_id": "trun_2ecf9b5f69134be6b11d33f93ae0340a",
+    "interaction_id": "trun_2ecf9b5f69134be6b11d33f93ae0340a",
+    "processor": "core-fast",
+    "warnings": []
+  }
+}

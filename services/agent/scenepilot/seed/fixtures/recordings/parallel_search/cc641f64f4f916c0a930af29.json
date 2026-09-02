@@ -1,0 +1,105 @@
+{
+  "request": {
+    "objective": "Retrieve official DGCA Drone Rules 2021, Digital Sky zone clearances, and Mumbai Police drone permission lead times and requirements for commercial filming over urban areas.",
+    "search_queries": [
+      "DGCA Drone Rules 2021 commercial filming urban",
+      "Digital Sky green yellow red zone clearance rules",
+      "Mumbai Police drone permission lead time guidelines"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_00f24a434bec448cf9d1a8e3ccec2a91",
+    "results": [
+      {
+        "url": "https://mumbaipolice.gov.in/Dronepermission?ps_id=2",
+        "title": "Application for permission to fly a drone",
+        "publish_date": null,
+        "excerpts": [
+          "# Application for permission to fly a drone\n## Applicant Details\n### Shooting Details\nNature of Shooting*\nCommercial Industrial Construction Film Shoot Wedding Event Others\nPeriod of Shooting\nFrom*\nTo*\nSchedule for Shooting\nFrom*\nTo*\nIf Film shooting, attach permission document.*\n_Max 2 MB_\nSelect Files to Upload\nUpload work order for shooting.*\n_Max 2 MB_\nSelect Files to Upload\n\n...\n\n### Terms and Conditions:\n9) When flying the drone, inform the concerned police station and in coordination with them.\n10) Drone flight permits will be restricted to the area within the limits of Hon'ble Police Commissioner, Greater Mumbai.\n\n...\n\n* [Digital India](https://www.digitalindia.gov.in/)\n* [](https://www.startupindia.gov.in/)\n* [not set](http://pib.gov.in/)\n* [Aaple Sarkar](https://aaplesarkar.mahaonline.gov.in/)\n* [CCTNS](http://www.mhpolice.maharashtra.gov.in/Citizen/MH/Index.aspx)\n* [Maharastra Police](http://mahapolice.gov.in/)"
+        ]
+      },
+      {
+        "url": "https://www.dgca.gov.in/digigov-portal?page=jsp%2Fdgca%2FInventoryList%2Fheaderblock%2Fdrones%2FRPAS.html",
+        "title": "drone rules 2021 - Directorate General of Civil Aviation",
+        "publish_date": null,
+        "excerpts": [
+          "# DGCA\n## Welcome to DGCA AI Assistant\n### Recording...\n#### Sit Environment\n##### Unmanned Aircraft System(UAS)\n| [DRONE RULES 2021](https://www.dgca.gov.in/jsp/dgca/InventoryList/headerblock/drones/Drone Rules 2021.pdf) |\n| [AMENDMENT RULES 2022](https://www.dgca.gov.in/jsp/dgca/InventoryList/headerblock/drones/Drone (Amendment) Rules 2022.pdf) |\n| TYPE CERTIFICATE |\n| [RPCS DETAILS](https://digitalsky.dgca.gov.in/remote_pilots) |\n| LIST OF RPTOS |\n| [UIN DETAILS](https://digitalsky.dgca.gov.in/issued_uins) |"
+        ]
+      },
+      {
+        "url": "https://www.mavdrones.com/understand-the-digital-sky-airspace-map-drone-blog",
+        "title": "Understand The Digital Sky Airspace Map In India",
+        "publish_date": "2024-09-06",
+        "excerpts": [
+          "Understand The Digital Sky Airspace Map In India\nSep 6, 2024 — The red zone represents airspace with defined dimensions. territorial waters of India. The green zone represents airspace with defined"
+        ]
+      },
+      {
+        "url": "https://insidefpv.com/blogs/blogs/new-drone-rules-and-regulations-2021",
+        "title": "New Drone Rules and Regulations ,2021",
+        "publish_date": "2024-11-16",
+        "excerpts": [
+          "# New Drone Rules and Regulations ,2021\nThe yellow zone has been shrunk from 45 kilometres to 12 kilometres from air terminal perimeters whereas all permissions that were earlier required for flying drones under green zones have been dissolved stretching upto 200 feet inside the area 8-12 km from airport (map will be displayed within 30\n\n...\n\nThere will be minimal human interface and most permissions will be self-generated.\n8. Interactive airspace map with green, yellow and red zones shall be displayed on the digital sky platform within 30 days of publication of these rules.\n9. No permission required for operating drones in green zones.\nGreen zone means the airspace upto a vertical distance of 400 feet or 120 metre that has not been designated as a red zone or yellow zone in the airspace map; and the airspace upto a vertical distance of 200 feet or 60 metre above the area located between a lateral distance of 8 and 12 kilometre from\nthe perimeter of an operational airport.\n10. Yellow zone reduced from 45 km to 12 km from the airport perimeter.\n11. No remote pilot licence required for micro drones (for non-commercial use) and nano drones.\n12. No requirement for security clearance before issuance of any registration or licence.\n13.\n\n...\n\nRemote pilot licence to be issued by DGCA within 15 days of pilot receiving the remote pilot certificate from the authorised drone school through the digital sky platform.\n20.\n\n...\n\nDrones present in India on or before 30 Nov 2021 will be issued a unique identification number through the digital sky platform provided, they have a DAN, a GST-paid invoice and are part of the list of DGCA-approved drones.\n26.\nStandard operating procedures (SOP) and training procedure manuals (TPM) will be prescribed by DGCA on the digital sky platform for self-monitoring by users. No approvals required unless there is a significant departure from the prescribed procedures.\n27.\nMaximum penalty for violations reduced to INR 1 lakh.\n28. Safety and security features like ‘No permission – no takeoff’ (NPNT), real-time tracking beacon, geo-fencing etc. to be notified in future. A six-month lead time will be provided to the industry for compliance.\n29.\n\n...\n\nNote that the revision is only a week old from the central permission, of one year for drone use, to 10 organisations including Mahindra and SAIL."
+        ]
+      },
+      {
+        "url": "https://www.civilsdaily.com/news/liberalized-drone-rules-2021",
+        "title": "Liberalized Drone Rules, 2021 - Civilsdaily",
+        "publish_date": "2022-01-31",
+        "excerpts": [
+          "# Liberalized Drone Rules, 2021\n## Key features of Drone Rules 2021\nFor instance, the fee for a remote pilot license fee has been reduced from INR 3000 (for large drone) to INR 100 for all categories of drones; and is valid for 10 years.\n* **Digital sky platform:** It shall be developed as a user-friendly single-window system.\nThere will be minimal human interface and most permissions will be self-generated.\n* **Interactive airspace map:** with green, yellow and red zones shall be displayed on the digital sky platform within 30 days of publication of these rules.\n* **No permission required in green zones:** Green zone means the airspace upto a vertical distance of 400 feet or 120 metre that has not been designated as a red zone or yellow zone in the airspace map; and the airspace upto a vertical distance of 200 feet or 60 metre above the area located between a\nlateral distance of 8 and 12 kilometre from the perimeter of an operational airport.\n* **De-licensing:** No remote pilot licence required for micro drones (for non-commercial use) and nano drones. No requirement for security clearance before issuance of any registration or licence.\n\n...\n\n* **Permission:** Safety and security features like ‘No permission – no takeoff’ (NPNT), real-time tracking beacon, geo-fencing etc. to be notified in future. A six-month lead time will be provided to the industry for compliance.\n* **Drone corridors:** will be developed for cargo deliveries."
+        ]
+      },
+      {
+        "url": "https://www.thequint.com/tech-and-auto/indias-drone-rules-2021-here-is-what-the-new-rules-say-about-drone-policy",
+        "title": "India’s Drone Rules 2021: Here Is What The New Rules Say About Drone Policy",
+        "publish_date": "2021-08-26",
+        "excerpts": [
+          "# Drone Rules 2021: Here Is What the New Rules Say About India’s Policy\n## Key Features of Drone Rules 2021\n* Digital Sky platform shall be developed as a user-friendly single-window system. There will be minimal human interface and most permissions will be self-generated.\n* Interactive airspace map with green, yellow, and red zones shall be displayed on the Digital Sky platform within 30 days of publication of these rules.\n* No permission required for operating drones in green zones.\nGreen zone means the airspace up to a vertical distance of 400 feet, or 120 metres, that has not been designated as a red or yellow zone in the airspace map; and the airspace up to a vertical distance of 200 feet or 60 metres above the area located between a lateral distance of 8 and 12 kilometres from the\nperimeter of an operational airport.\n* Yellow zone reduced from 45 km to 12 km from the airport perimeter.\n* No remote pilot licence required for micro drones (for non-commercial use) and nano drones.\n* No requirement of security clearance before issuance of any registration or licence.\n\n...\n\n* Drones present in India on or before 30 Nov 2021 will be issued a unique identification number through the Digital Sky platform provided, they have a DAN, a GST-paid invoice and are part of the list of DGCA-approved drones.\n\n...\n\n* Safety and security features like ‘No Permission, No Takeoff’ (NPNT), real-time tracking beacon, geo-fencing, etc to be notified in future. A six-month lead period will be provided to the industry for compliance.\n* Drone corridors will be developed for cargo deliveries."
+        ]
+      },
+      {
+        "url": "https://dronemap.com/in/mh/mumbai/rules",
+        "title": "Permission Required: Mumbai – Mumbai, MH",
+        "publish_date": "2026-05-31",
+        "excerpts": [
+          "# Drone Rules for Mumbai\nMuch of South Mumbai falls within the Indian Navy's 3 km designated “No-fly Zone”\nSo Permission is required to fly drones\nAny lawful drone flight in India requires clearance on the official DGCA Digital Sky Platform. For Mumbai, you must also submit an application to the Greater Mumbai Police and coordinate with the local police station before flying.\nMap is not loaded yet\nLoad the map only when you need to view the rule outline."
+        ]
+      },
+      {
+        "url": "https://thinkrobotics.com/blogs/learn/drone-photography-regulations-india-complete-legal-guide-for-safe-and-compliant-aerial-photography-in-2025",
+        "title": "Drone Photography Regulations India: Complete Legal Guide for Safe and – ThinkRobotics.com",
+        "publish_date": null,
+        "excerpts": [
+          "# Drone Photography Regulations India: Complete Legal Guide for Safe and Compliant Aerial Photography in 2025\n## No-Fly Zones and Restricted Areas\n### Critical Infrastructure\nAirport Restrictions:\n* Delhi Indira Gandhi International Airport: Within 5 km radius restricted\n* Mumbai Chhatrapati Shivaji Airport: 5 km radius no-fly zone\n* Chennai International Airport: 5 km radius restriction\n* All airports nationwide maintain similar restricted perimeters\nMilitary Facilities: Military Bases & Cantonments: Locations across India are red zones on Digital Sky platform requiring special clearances.\n\n### Airspace Classification\nGreen Zones: Unrestricted flying up to 400 feet with no prior permission required.\nYellow Zones: Controlled airspace requiring prior permission through Digital Sky Platform with approval typically required 24-48 hours in advance.\n\n...\n\n## Permissions and Clearance Procedures\n### Digital Sky Platform Process\nFlight Permission Application:\n* Submit detailed flight plan including location, duration, and purpose\n* Specify equipment details and operator credentials\n* Allow 24-48 hours for approval processing\nSample Permission Request: \"I am requesting permission to operate a registered micro-category drone in the Yellow Zone at [Location] on [Date] between [Time]. UIN: [Drone UIN]. Purpose: [Photography/Survey]\"\n\n### Special Location Permissions\nFor travel vlogging, films, or promotional shoots, you must apply for additional clearances from relevant authorities including tourism departments. For example, Gangasagar, Sikkim, and Ladakh require written permits from local authorities beyond standard DGCA clearances.\n\n...\n\n## Frequently Asked Questions\n### 2. Can I fly my drone for photography in popular tourist destinations like Goa or Kerala?\nYes, but you must check the Digital Sky Platform for specific location restrictions. Tourist areas may fall under yellow zones requiring prior permission, and some heritage sites need additional clearances from local authorities or ASI."
+        ]
+      },
+      {
+        "url": "https://zbotic.in/drone-regulations-india-2026-dgca-rules-for-hobbyists/",
+        "title": "Drone Regulations India 2026: DGCA Rules for Hobbyists - Zbotic",
+        "publish_date": "2026-03-11",
+        "excerpts": [
+          "# Drone Regulations India 2026: DGCA Rules for Hobbyists\n## Drone Regulations India 2026: Complete DGCA Rules Guide for Hobbyists\nThe Drone Rules 2021, updated through 2024–2025 amendments and the Digital Sky Platform, have significantly streamlined compliance compared to the old UAS Policy. But the rules remain complex, especially for hobbyists and first-time builders.\n\n...\n\n## 1. Overview of Drone Rules 2021\nIndia replaced the old UAS (Unmanned Aircraft Systems) Rules 2021 — itself a replacement of the 2018 Civil Aviation Requirement — with the simplified **Drone Rules 2021** notified on August 25, 2021 (GSR 589(E)). Key changes from the previous policy:\n* **Trust-based governance:** Self-certification replaced mandatory third-party inspection for most drones\n* **No security clearance** required for Indian citizens and companies\n* **No import clearance** for DGCA-approved drones (removed for most categories)\n* **Nano and Micro drones** have significantly simplified requirements\n* **Digital Sky** is the single window for all permissions, registration, and logs\n\n...\n\n## 5. Airspace Zones: Green, Yellow, Red\n### Green Zone — Fly with Basic Compliance\n* Altitude up to 120m AGL (400 feet)\n* No prior permission required for Micro and below\n* Must be VLOS (visual line of sight)\n* No flying over crowds, highways, or sensitive infrastructure\n* Most rural and suburban areas fall here\n\n### Yellow Zone — Prior Permission Required\n* Controlled airspace around airports (8–12 km from ATZ boundary)\n* Areas above 120m AGL in most zones\n* Requires Digital Sky flight permission application (usually approved within 24 hours for low-risk flights)\n* Specific altitude restrictions vary by distance from airport\n\n...\n\n## 8. Special Rules for Hobbyists\n### What You MUST Do\n* Register on Digital Sky if your drone weighs over 250g\n* Display UIN on the drone\n* Carry third-party insurance\n* Fly only in Green Zone or get Yellow Zone permission\n* Stay within VLOS — you must be able to see your drone with naked eye at all times\n* Fly below 120m AGL in Green Zone\n\n...\n\n## 10. 2025–2026 Policy Updates\n### Urban Air Mobility (UAM) Policy\nMinistry of Civil Aviation released the UAM policy framework covering air taxis and cargo drones in urban centres. This will affect hobbyists in Mumbai, Delhi, Bengaluru, Hyderabad, and Chennai as temporary Red zones may be extended around UAM corridors."
+        ]
+      },
+      {
+        "url": "https://indiacinehub.gov.in/permission/aerial-filming",
+        "title": "Aerial Filming | India Cine Hub",
+        "publish_date": "2026-08-17",
+        "excerpts": [
+          "# Aerial Filming\n## Filming In Airports\nApply here ( https://www.dgca.gov.in/digigov-portal/jsp/dgca/common/login.jsp )\n**For Aerial filming** (drone filming) – Apply here ( https://digitalsky.dgca.gov.in/home )\n\n...\n\n### Nodal Officer\nThe Drone Rules, 2021\npause\n[Investment India](https://www.investindia.gov.in/ \"Investment India\")\n[Ministry of Information and Broadcasting](https://www.mib.gov.in/ \"Ministry of Information and Broadcasting\")\n[NFDC](https://www.nfdcindia.com/ \"NFDC\")\n[AFCI](https://afci.org/ \"AFCI\")"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

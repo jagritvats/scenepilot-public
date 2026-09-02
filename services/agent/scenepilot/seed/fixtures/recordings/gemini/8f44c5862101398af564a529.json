@@ -1,0 +1,78 @@
+{
+  "request": {
+    "role": "research_planner",
+    "user_text": "PRODUCTION: Project Nightfall (fictional). Base city: Mumbai, IN. Planned shoot window: @DATE@ to @DATE@.\nSCENE 42: EXT. MUMBAI ROOFTOP — SUNSET\nSYNOPSIS: A motorcycle tears across adjoining rooftops. A drone follows while fireworks explode over the skyline. Rain begins as the rider jumps to an adjacent building.\n\nREQUIREMENTS:\n- req_sc_42_1 [LOCATION/CRITICAL] Two structurally sound, adjoining flat rooftops in Mumbai capable of supporting a motorcycle, ramps, and crew.\n- req_sc_42_2 [SAFETY/CRITICAL] Structural engineering assessment and reinforcement of the rooftops to safely handle the impact of the motorcycle jump.\n- req_sc_42_3 [REGULATORY/HIGH] DGCA drone flight permits and local police clearance for operating a camera drone over urban Mumbai rooftops at sunset.\n- req_sc_42_4 [CAST/CRITICAL] Professional stunt rider experienced in high-speed motorcycle jumps and wet-surface maneuvers.\n- req_sc_42_5 [REGULATORY/HIGH] Pyrotechnics permit and clearance from Mumbai fire department for launching fireworks over the skyline.\n- req_sc_42_6 [TECHNICAL/HIGH] SFX rain machines and overhead truss systems to simulate localized rain starting mid-scene without damaging electrical equipment.\n- req_sc_42_7 [SAFETY/CRITICAL] Non-slip surface treatment applied to the motorcycle takeoff and landing zones to ensure traction when wet.\n- req_sc_42_8 [SCHEDULE/HIGH] Strict scheduling to shoot during the limited 30-40 minute sunset window for matching skyline lighting.\n- req_sc_42_9 [LOGISTICS/MEDIUM] Coordination with local neighborhood associations regarding noise control for the motorcycle engine and fireworks.\n- req_sc_42_10 [SAFETY/CRITICAL] Rooftop edge protection, safety harnesses for crew, and specialized catch nets/airbags for the stunt jump gap.\n"
+  },
+  "response": {
+    "output": {
+      "questions": [
+        {
+          "ref": "Q1",
+          "question": "What are the historical monsoon weather risks, wind speeds, and safety implications for outdoor rooftop stunts in Mumbai during late August?",
+          "rationale": "The planned shoot window (August 25-27) falls during the active Indian monsoon season. Heavy rain, high winds, and lightning pose severe safety risks for motorcycle stunts, rigging, and SFX rain machines on rooftops.",
+          "priority": "CRITICAL",
+          "requirement_refs": [
+            "req_sc_42_1",
+            "req_sc_42_4",
+            "req_sc_42_6",
+            "req_sc_42_8"
+          ],
+          "objective": "Determine historical rainfall, wind patterns, and monsoon safety risks in Mumbai during late August, preferring official India Meteorological Department (IMD) data and local weather advisories.",
+          "search_queries": [
+            "Mumbai monsoon weather late August",
+            "IMD Mumbai rainfall statistics August",
+            "Mumbai wind speed August rooftop"
+          ]
+        },
+        {
+          "ref": "Q2",
+          "question": "What is the current regulatory process, lead time, and restriction list for flying commercial camera drones over urban Mumbai rooftops?",
+          "rationale": "Operating a drone over urban rooftops requires strict clearances from the DGCA and local police, especially in a dense city like Mumbai which has extensive airspace restrictions.",
+          "priority": "HIGH",
+          "requirement_refs": [
+            "req_sc_42_3"
+          ],
+          "objective": "Identify the current application process, lead times, and restrictions for obtaining DGCA Digital Sky permits and Mumbai Police NOCs for commercial drone filming, preferring official DGCA and Mumbai Police documentation.",
+          "search_queries": [
+            "Mumbai police drone permission filming",
+            "DGCA Digital Sky permission Mumbai",
+            "commercial drone permit India process"
+          ]
+        },
+        {
+          "ref": "Q3",
+          "question": "What are the permitting requirements and safety guidelines for launching pyrotechnics/fireworks from rooftops in Mumbai?",
+          "rationale": "Launching fireworks over the Mumbai skyline requires clearances from the Mumbai Fire Brigade and potentially the Petroleum and Explosives Safety Organisation (PESO) to prevent fire hazards in dense urban areas.",
+          "priority": "HIGH",
+          "requirement_refs": [
+            "req_sc_42_5",
+            "req_sc_42_9"
+          ],
+          "objective": "Determine the permitting process, safety regulations, and lead times for launching commercial pyrotechnics from rooftops in Mumbai, preferring official Mumbai Fire Brigade and PESO guidelines.",
+          "search_queries": [
+            "Mumbai Fire Brigade pyrotechnics NOC",
+            "PESO fireworks permit Mumbai",
+            "rooftop fireworks permission Mumbai"
+          ]
+        },
+        {
+          "ref": "Q4",
+          "question": "What are the municipal structural certification requirements for temporary stunt structures and vehicle loads on Mumbai rooftops?",
+          "rationale": "Rooftops must be structurally certified to handle the dynamic impact of a motorcycle jump. Municipal authorities (BMC) typically require structural stability certificates for temporary filming setups.",
+          "priority": "HIGH",
+          "requirement_refs": [
+            "req_sc_42_2",
+            "req_sc_42_10"
+          ],
+          "objective": "Research the structural safety guidelines, load-bearing requirements, and engineering certification processes required by the Municipal Corporation of Greater Mumbai (BMC) for temporary stunt structures, preferring BMC building bylaws.",
+          "search_queries": [
+            "BMC structural stability certificate temporary",
+            "Mumbai building load capacity rooftop",
+            "stunt safety regulations filming India"
+          ]
+        }
+      ]
+    },
+    "tool_calls": []
+  }
+}

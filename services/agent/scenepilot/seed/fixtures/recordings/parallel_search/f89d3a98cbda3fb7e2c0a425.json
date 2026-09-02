@@ -1,0 +1,73 @@
+{
+  "request": {
+    "objective": "Find the permitting process, safety guidelines, and lead times for launching aerial fireworks or pyrotechnics in Mumbai, specifically from the Brihanmumbai Municipal Corporation (BMC), Mumbai Fire Brigade, or Mumbai Police.",
+    "search_queries": [
+      "Mumbai Fire Brigade fireworks NOC",
+      "Mumbai Police pyrotechnics permission display",
+      "BMC aerial fireworks permit guidelines"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_4779ae031cd6927e19b3663fa7c9aadf",
+    "results": [
+      {
+        "url": "https://autodcr.mcgm.gov.in/BPAMSClient2/Downloads/Forms/Document%20Checklist%20for%20Occupancy%20NOC.pdf",
+        "title": "MUMBAI FIRE BRIGADE Documents required for NOC for ...",
+        "publish_date": null,
+        "excerpts": [
+          "We cannot provide a description for this page right now"
+        ]
+      },
+      {
+        "url": "https://www.mcgm.gov.in/irj/portal/anonymous/qlMumFireBrigadeAnon",
+        "title": "Mumbai Fire Brigade - MyBMC - Welcome to BMC's Website",
+        "publish_date": null,
+        "excerpts": [
+          "Welcome to BMC\nप्रतिक्रिया\n| This page is best viewed in Mozilla Firefox, Google Chrome and IE8. For IE9 and above follow these [settings](https://www.mcgm.gov.in/irj/go/km/docs/documents/HomePage%20Data/Folder%20Guideline.pdf) |\n|  |\n\n...\n\n# कार्यालय शोधणे\n## संपर्क\n### माहिती\nYou are being directed to an external website\noutside of BMC Website.\nPlease check that your administrator\nhas granted the requisite rights."
+        ]
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Mumbai_Fire_Brigade",
+        "title": "Mumbai Fire Brigade - Wikipedia",
+        "publish_date": "2026-05-13",
+        "excerpts": [
+          "# History\nFire protection in Bombay began in 1777, when locals were allotted Rs. 4 per day for handling carts and horse chariots which were used to extinguish fires. [[ 3 ]]() The Bombay fire brigade started as a part-time police function in 1855.\nA regular fire service with horse-drawn fire engines began under control of the Commissioner of Police. In 1864, a commission was appointed to report the organisation of fire service and a police officer was sent to England to qualify himself as captain of the fire brigade.\n\n...\n\nIn 1888 Bombay Municipal Corporation Act was enacted and protection of life and properties from fire become the duty of the corporation. W. Nicholls of the [London Fire Brigade](https://en.wikipedia.org/wiki/London_Fire_Brigade \"London Fire Brigade\") was appointed Chief Officer in 1890.\n\n...\n\n## Jurisdiction and duties\ndoes not exist)\") , [[ 9 ]](:0-9) which designates the [Municipal Corporation of Greater Mumbai](https://en.wikipedia.org/wiki/Brihanmumbai_Municipal_Corporation \"Brihanmumbai Municipal Corporation\") (MCGM) as the local authority for meeting the needs of fire services in Mumbai.\n\n...\n\n[[ 9 ]](:0-9) The MCGM is responsible, under Chapter XIV of the Mumbai Municipal Corporation Act, 1888, for the following functions and duties: [[ 10 ]]()\n\n...\n\n## Equipment, training, and budget\n### Equipment\nThese include trucks with aerial ladder platforms, turntable ladders and hydraulic platforms. [[ 15 ]](:3-15) The Mumbai Fire Brigade's fleet currently consists of 56 fire engines, 21 jumbo tankers, and 18 specialised vehicles including 6 hydraulic platforms.\n\n...\n\n## Major and notable incidents\n[[ 29 ]](:6-29) The Mumbai Fire Brigade was assisted in fire relief efforts by the [Indian Navy](https://en.wikipedia.org/wiki/Indian_Navy \"Indian Navy\") , and the Mumbai Police's anti-terror forces.\n\n...\n\n[[ 37 ]]() There were 50 fire trucks, from every station of [South Mumbai](https://en.wikipedia.org/wiki/South_Mumbai \"South Mumbai\") , which included jumbo-tanker aerial-ladder platforms, turn-table ladders, and regular fire trucks.\n\n...\n\n[[ 40 ]]() Following this report, a number of persons were arrested and charged by the Mumbai Police, including Fire Officer Rajendra Patil, who had certified the restaurants for compliance with fire safety regulations a week before the fire. [[ 41 ]]()\n\n...\n\n## See also\n* [History of Mumbai](https://en.wikipedia.org/wiki/History_of_Mumbai \"History of Mumbai\")\n* [Maharashtra Police](https://en.wikipedia.org/wiki/Maharashtra_Police \"Maharashtra Police\")\n* [Mumbai Police](https://en.wikipedia.org/wiki/Mumbai_Police \"Mumbai Police\")"
+        ]
+      },
+      {
+        "url": "https://www.hindustantimes.com/cities/mumbai-news/mumbai-police-issue-prohibitory-order-banning-possession-of-weapons-explosives-cite-peace-safety-101787655331585.html",
+        "title": "Mumbai Police issue prohibitory order banning possession of weapons, explosives; cite peace, safety | Mumbai news",
+        "publish_date": "2026-08-25",
+        "excerpts": [
+          "# Mumbai Police issue prohibitory order banning possession of weapons, explosives; cite peace, safety\n## Mumbai Police issue prohibitory order banning possession of weapons, explosives; cite peace, safety\nspecifically permitted by the competent authority, an official said on Tuesday."
+        ]
+      },
+      {
+        "url": "https://www.codepublishing.com/WA/Bremerton/html/Bremerton09/Bremerton0948.html",
+        "title": "Chapter 9.48 FIREWORKS (Effective until June 22, 2024)",
+        "publish_date": null,
+        "excerpts": [
+          "<strong>It shall not be legal to use or discharge fireworks at any other time, specifically including, without limitation, from 6:00 p.m. on December 31st of any year until 1:00 a.m. on January 1st of the subsequent year</strong>. Only &quot;common fireworks&quot; as defined in BMC 9.48.030(a)."
+        ]
+      },
+      {
+        "url": "https://ecode360.com/47229175",
+        "title": "Chapter 9.48: FIREWORKS - City of Bremerton, WA - eCode360",
+        "publish_date": null,
+        "excerpts": [
+          "<strong>It shall not be legal to use or discharge fireworks at any other time, specifically including, without limitation, from 6:00 p.m. on December 31st of any year until 1:00 a.m. on January 1st of the subsequent year</strong>."
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

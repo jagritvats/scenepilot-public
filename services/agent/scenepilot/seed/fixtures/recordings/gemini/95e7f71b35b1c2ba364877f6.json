@@ -1,0 +1,94 @@
+{
+  "request": {
+    "role": "evidence_analyst",
+    "user_text": "RESEARCH QUESTION rq_@@@@@@_4: What are the municipal structural certification requirements for temporary stunt structures and vehicle loads on Mumbai rooftops?\nWHY IT MATTERS: Research the structural safety guidelines, load-bearing requirements, and engineering certification processes required by the Municipal Corporation of Greater Mumbai (BMC) for temporary stunt structures, preferring BMC building bylaws.\nSCENE: EXT. MUMBAI ROOFTOP — SUNSET\nREQUIREMENTS SERVED:\n- req_sc_42_2: Structural engineering assessment and reinforcement of the rooftops to safely handle the impact of the motorcycle jump.\n- req_sc_42_10: Rooftop edge protection, safety harnesses for crew, and specialized catch nets/airbags for the stunt jump gap.\n\nSEARCH RESULTS (Parallel Search API):\n### SearchRun search_@0 — objective: What are the municipal structural certification requirements for temporary stunt structures and vehicle loads on Mumbai rooftops? — Research the structural safety guidelines, load-bearing requirements, and engineering certification processes required by the Municipal Corporation of Greater Mumbai (BMC) for temporary stunt structures, preferring BMC building bylaws.\nqueries: ['BMC structural stability certificate temporary', 'Mumbai building load capacity rooftop', 'stunt safety regulations filming India']\n[search_@0#1] All hoardings need structural stability certificate, says BMC Commissioner | India News - Business Standard — https://www.business-standard.com/india-news/all-hoardings-need-structural-stability-certificate-says-bmc-commissioner-124051600302_1.html — published: @DATE@\n    > The BMC Commissioner stated that Maharashtra Chief Minister Eknath Shinde has ordered all hoardings to be checked. &quot;All the hoardings need a structural stability certificate. They need to follow the specifications of size, foundation and the wind velocity that passes through to provide the\n[search_@0#2] All hoardings need structural stability certificate, says BMC Commissioner on Ghatkopar tragedy — https://www.aninews.in/news/national/general-news/all-hoardings-need-structural-stability-certificate-says-bmc-commissioner-on-ghatkopar-tragedy20240516102538/ — published: @DATE@\n    > Toggle navigation  हिंदी खबर  *  *  *  *   BMC Commissioner Bhushan Gagrani (Photo/ANI)  _BMC Commissioner Bhushan Gagrani (Photo/ANI)_  # All hoardings need structural stability certificate, says BMC Commissioner on Ghatkopar tragedy  ANI | Updated: May 16, 2024 10:25 IST  [ani-trusted-source](https://google.com/preferences/source?q=aninews.in)  [ANI News Join our Whatsapp channel](https://whatsapp.com/channel/0029Va7q7004dTnMVl9H9r0o)  Mumbai ( Maharashtra ) [India], May 16 (ANI): Expressing grief over the hoarding collapse incident in Ghatkopar , Brihanmumbai Municipal Corporation ( BMC ) C\n[search_@0#3] Structural Audit - PUNARNAVA TECHNOSYSTEM — https://redevelopment.info/redevpmain.php?inmenu=5&main=1 — published: unknown\n    > a) Structural Audit of buildings ... thereafter. 3. Stability Certificate (Certificate of fitness of building for human habitation) <strong>must be submitted to BMC within 1 year</strong>.\n[search_@0#4] INDUSTRY WIDE LABOR-MANAGEMENT SAFETY COMMITTEE — https://sftvproductionhandbook.lmu.build/wp-content/uploads/2023/01/X-04-STUNTS.pdf — published: @DATE@\n    > **Revised: January 26, 2005 Page 1 of 2**  SAFETY BULLETINS ARE RECOMMENDED GUIDELINES ONLY; CONSULT ALL APPLICABLE RULES AND REGULATIONS  **SAFETY BULLETINS MAY BE VIEWED OR DOWNLOADED FROM THE WEBSITE WWW.CSATF.ORG**  _C:\\\\Documents and Settings\\\\Dhoward\\\\Local Settings\\\\Temporary Internet Files\\\\OLK45\\\\SftyBull #04 STUNTS.doc_  ### INDUSTRY WIDE LABOR-MANAGEMENT SAFETY COMMITTEE  **SAFETY BULLETIN #4**  ### **STUNTS**  ### The following recommendations and guidelines are intended to give general guidance on the preparation, safe set-up, and performance of stunt sequences. You should also re\n[search_@0#5] Structural Stability & Completion Certificate by the ... — https://isse.org.in/wp-content/uploads/2021/04/form15.pdf — published: unknown\n    > Structural Stability & Completion Certificate by the ... Two sets of final structural drawings executed along with the design data are enclosed herewith. Sincerely. Signature of the structural Design Consultant.\n[search_@0#6] Structural Stability Certificate - Advanced Engineering — https://advancedengg.com/structural-stability-certificate — published: @DATE@\n    > Skip to content Skip to sidebar Skip to footer  ## [Structural Stability Certificate](https://www.advancedengg.com/structural-stability-certificate/)  # Structural Stability Certificate by Licensed Structural Engineer  A **Structural Stability Certificate** is an official document issued by a **licensed structural engineer** confirming that a building or structure is safe, stable, and fit for continued use as per applicable **IS Codes, National Building Code (NBC)** and local authority requirements.  At **Advanced Engineering Solutions** , we provide **Structural Stability Certificates in Kera\n[search_@0#7] Structure Stability Certificate — https://dhalahore.org/wp-content/uploads/2025/12/Structure-Stability-Certificate.pdf — published: unknown\n    > Structure Stability Certificate I, Engineer. , M.Sc. Structure Engineer here by submit that: The structure of proposed house/ building at plot No. ______, Sector ______, Phase ______,.\n[search_@0#8] Structural Stability Certificate Format | PDF — https://www.scribd.com/document/337287655/Structural-Stability-Certificate — published: unknown\n    > Skip to main content  Open navigation menu Scribd  Close suggestions Search Search  en Change Language, English Upload Sign in Sign in  0% (1) 0% found this document useful (1 vote)  3K views 1 page  Structural Stability Certificate Format  The document is a form for a Structural Stability Certificate. The form certifies that a building on a specific plot and street has been erected, re-erected, altered, or added to according t…  Full description  ## Uploaded by  [kumar](https://www.scribd.com/user/297954200/kumar)  AI-enhanced title and description  * Download * Save Save Structural Stability\n\n"
+  },
+  "response": {
+    "output": {
+      "status": "WEAK",
+      "assessment": "The evidence establishes that filming permissions and temporary structures in Mumbai are regulated under the BMC Film Shooting Policy (No. SL/29575/Advt.) and the Development Control and Promotion Regulations (DCPR) 2034. Any temporary structure or stunt setup requires a Structural Stability Certificate issued by a BMC-licensed structural engineer, confirming safety under Indian Standards (IS Codes) and the National Building Code (NBC). However, specific municipal load-bearing limits or codified guidelines specifically for rooftop vehicle stunts are not detailed in the available bylaws and must be custom-certified by the licensed engineer.",
+      "evidence": [
+        {
+          "claim": "The Municipal Corporation of Greater Mumbai (MCGM/BMC) regulates film shooting permissions and temporary structures under its Film Shooting Policy (No. SL/29575/Advt. dated 01.03.2019), which includes codified requirements from the Building and Factory Department for temporary structures.",
+          "source_ref": "extract_@2#1",
+          "relevance": 0.95,
+          "confidence": 0.9,
+          "production_implication": "The production must submit an application for the temporary stunt structure and rooftop filming through the State Single Window system as per BMC's codified requirements."
+        },
+        {
+          "claim": "The BMC has issued notifications to amend Mumbai's Development Control and Promotion Regulations (DCPR) 2034 to formalize and allow the construction of temporary sets for films, TV serials, and advertisements in Mumbai.",
+          "source_ref": "search_@1#2",
+          "relevance": 0.9,
+          "confidence": 0.9,
+          "production_implication": "The temporary stunt ramp and safety structures on the rooftop fall under these formalized DCPR 2034 provisions for temporary film sets."
+        },
+        {
+          "claim": "To assess the stability of a temporary or permanent structure, a Structural Stability Certificate must be issued by a licensed engineer who evaluates the structure on various parameters to certify it is stable for its intended purpose.",
+          "source_ref": "search_@1#3",
+          "relevance": 0.95,
+          "confidence": 0.9,
+          "production_implication": "A BMC-licensed structural engineer must inspect the rooftop and the temporary stunt structures (ramps, catch nets, and edge protection) to issue a formal Structural Stability Certificate before the stunt can proceed."
+        },
+        {
+          "claim": "A Structural Stability Certificate is an official document confirming that a structure is safe, stable, and fit for its intended use in accordance with applicable Indian Standards (IS Codes) and the National Building Code (NBC).",
+          "source_ref": "search_@0#6",
+          "relevance": 0.85,
+          "confidence": 0.9,
+          "production_implication": "The structural engineering assessment and reinforcement of the rooftop to handle the dynamic impact of the motorcycle jump must comply with IS Codes and NBC guidelines as certified by the engineer."
+        }
+      ],
+      "follow_up_objective": "Identify the specific load-bearing requirements, structural safety guidelines, and engineering certification processes for temporary rooftop structures and vehicle loads under the BMC Building and Factory Department's codified requirements.",
+      "follow_up_queries": [
+        "BMC Building Factory Department temporary structure guidelines",
+        "Mumbai rooftop load capacity structural stability",
+        "BMC film shooting policy temporary structure requirements"
+      ]
+    },
+    "tool_calls": [
+      {
+        "name": "parallel_search",
+        "args": {
+          "objective": "Find BMC (Brihanmumbai Municipal Corporation) building bylaws, DCPR 2034, or filming guidelines regarding structural stability certificates and load requirements for temporary structures or rooftop activities in Mumbai.",
+          "search_queries": [
+            "BMC DCPR 2034 temporary structures",
+            "Mumbai rooftop filming structural certificate",
+            "BMC licensed structural engineer certificate temporary"
+          ],
+          "question_id": "rq_@@@@@@_4"
+        }
+      },
+      {
+        "name": "parallel_extract",
+        "args": {
+          "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+          "question_id": "rq_@@@@@@_4",
+          "objective": "Find the specific codified requirements, structural stability certificate requirements, and guidelines for temporary structures, film shooting, and rooftop/stunt setups in Mumbai."
+        }
+      },
+      {
+        "name": "parallel_search",
+        "args": {
+          "search_queries": [
+            "\"Building and Factory Department Codified Requirements for Temporary structure\"",
+            "\"FilmShootingPolicy.pdf\" \"temporary structure\"",
+            "\"SPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING\" BMC"
+          ],
+          "objective": "Find the specific codified requirements for temporary structures, structural stability certificates, and film shooting permissions from the BMC Film Shooting Policy or related BMC circulars.",
+          "question_id": "rq_@@@@@@_4"
+        }
+      },
+      {
+        "name": "parallel_search",
+        "args": {
+          "objective": "Find the exact text of the Building and Factory Department Codified Requirements for Temporary structures from the BMC Film Shooting Policy.",
+          "question_id": "rq_@@@@@@_4",
+          "search_queries": [
+            "\"Building and Factory Department Codified Requirements\"",
+            "\"FilmShootingPolicy.pdf\" \"Building and Factory\"",
+            "\"Codified Requirements for Temporary structure\" BMC"
+          ]
+        }
+      }
+    ]
+  }
+}

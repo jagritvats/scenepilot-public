@@ -1,0 +1,97 @@
+{
+  "request": {
+    "objective": "Find specific safety guidelines, distances, and restrictions for public display of fireworks under PESO Explosives Rules 2008, and whether rooftop launching is permitted in Mumbai.",
+    "search_queries": [
+      "public display of fireworks PESO rules",
+      "Explosives Rules 2008 public display distance",
+      "rooftop fireworks permission India safety"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_aba108bc02",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_8ec570fe9cc338e383bb25df4dac584a",
+    "results": [
+      {
+        "url": "https://peso.gov.in/web/sites/default/files/2023-10/Dos%20and%20Donts%20Fire%20Crackers%20Eng.pdf",
+        "title": "PETROLEUM & EXPLOSIVES SAFETY ORGANISATION (PESO)",
+        "publish_date": "2023-10-17",
+        "excerpts": [
+          "# PETROLEUM & EXPLOSIVES SAFETY ORGANISATION (PESO)\n## **WARNING**\nIt is brought to the notice of all Public that Government of India vide Notification No. G.S.R. 682(E), dated 05-10-1999 has prohibited the manufacture, sale or use of Fire Crackers generating noise level exceeding 125 dB(A1) including joint fire crackers (garland).\nThe manufacture, sale or use of such fire crackers is illegal and anyone found violating is liable for necessary action under the Statutory Rules.\n\n...\n\n## Dont’s\n Manufacture, Sale or use of Fireworks generating noise exceeding 125dB(A1) or 145 PK at 4 mtr distance from point to bursting is prohibited. For individual fire crackers constituting the series (joint crackers) the above mentioned limit to be reduced by 5 log 10 (N) dB where N is equal number of crackers joined together.\n Do not burst sound emitting fire crackers between 10 pm to 6 am.\n Never ignite fireworks while holding them. Keep the fireworks at ground level, ignite and walk away.\n Don’t light fireworks by keeping them inside any containers.\n Never ignite aerial fireworks where overhead obstructions, viz, trees, leaves, wires, etc. may distracts the trajectory into open air space.\n Never ignite aerial fireworks close to a building, so as to avoid entry of fireworks though the door, window, etc., which may cause fire inside the building.\n Never use fireworks inside the house.\n Do not use fireworks on the public thoroughfare.\n Never experiment or make your own fireworks.\n Never re-light a ‘dud’ firework (wait 15 to 20 minutes and then soak it in a bucket of water).\n Do not use spurious / illegal fireworks.\n Do not allow children to use fireworks alone."
+        ]
+      },
+      {
+        "url": "https://www.peso.gov.in/web/en/dos-donts-fireworks",
+        "title": "‘Do’s & Don’ts (Fireworks) | Petroleum & Explosive Safety Organisation",
+        "publish_date": null,
+        "excerpts": [
+          "# ‘Do’s & Don’ts (Fireworks)\n## ‘Do’s & Don’ts (Fireworks)\nDos & Don'ts - Fireworks Display\nDo's\n* Buy fireworks of authorized/reputed manufacturers only.\n* Light only one firework at a time, by one person. Others should watch from a safe distance.\n* Keep the fireworks to be used at a safer place.\n* Organize a community display of fireworks rather than individuals handling crackers.\n* Always use a long candle/'phooljhari' for igniting fire crackers and keep elbow joint straight to increase the distance between the body and the crackers.\n* Keep two buckets of water handy. In the event of fire, extinguish flame by pouring water from the buckets. Every major fire is small when it starts.\n\n...\n\n## Accordion\n[](https://www.facebook.com/pages/category/Government-Organization/Petroleum-Explosives-Safety-Organisation-PESO-1821181324808543/) [](https://twitter.com/PesoNagpur)\n[cmf_logo](http://cmf.gov.in/)\nWebsite Content Managed by **Petroleum & Explosives Safety Organization (PESO)** Designed and Developed by **[WES](https://www.wes.co.in)** and Hosted by **[National Informatics Centre( NIC )](https://www.nic.in/)**"
+        ]
+      },
+      {
+        "url": "https://peso.gov.in/web/en/taxonomy/term/144?page=1",
+        "title": "Explosives Rules, 2008 | Petroleum & Explosive Safety Organisation",
+        "publish_date": null,
+        "excerpts": [
+          "# Explosives Rules, 2008\n## TABLE-I\n* Read more about TABLE-I\nTable of safety distances\n\n## TABLE-2\n* Read more about TABLE-2\nSafety distances to be observed in a factory licensed under Explosives Rules for manufacture of Sparklers only.\n\n...\n\n## Form DE-2\nDeclaration to be made by the master of a ship carrying explosives before entering a port or by the ship’s agent.Distance Form to be attached to the licence Safety distances required to be kept clear around magazine for high explosives or fire works or factory licence number……………in form ………….granted to……………….\n\n## Form CE-2\n* Read more about Form CE-2\nDeclaration to be made by the master of a ship carrying explosives before entering a port or by the ship’s agent.\n\n...\n\n## Form DE-1\n* Read more about Form DE-1\nDistance form to be submitted by the applicant indicating the clear distances available around proposed storage magazine for explosives or fire works or proposed explosives factory"
+        ]
+      },
+      {
+        "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=160455&reg=48&lang=2",
+        "title": "\n\tDirectives under Rule 126 of Explosives Rules 2008 \n",
+        "publish_date": null,
+        "excerpts": [
+          "unauthorized chemicals i.e. potassium chlorate in fireworks, unauthorized\nstorage of fireworks at public display site and non-adherence of prescribed\nsafety distances between display site and spectators,\netc.\nTo prevent such\nincidents in future, there is an urgent need of tightening of enforcement of\nthe Explosives Rules 2008 by District Authorities. For the same, following\ndirectives are issued under Rule 126 of the Explosives Rules 2008 to be\nimplemented by District Authorities for safe public display of fireworks:-\n\n...\n\n(vi) The District Magistrate shall ascertain that 100 meters safety distance between\nthe fireworks display site and spectators and 250 meters from hospitals,\nschools and nursing home shall be strictly complied. Barricading shall be\nprovided at 100 meters around the display site to prevent entry of general\npublic in the display area _(conditions 3 and 11 of licence in Form LE-6 of\nthe Explosives Rules 2008_ );\n(vii) Wherever these safety distances are not available, the display site\nshould be shifted to a suitable area.  Even if safety distances are available\nbut the display site is congested, that may make evacuation of people in case\nof an accident difficult/ problematic, it should be shifted to an open area;\n\n...\n\nshall not be used for public display ( _Rule 128 (c) and condition 6 of\nlicence in Form LE-6 of the Explosives Rules 2008)_ ;"
+        ]
+      },
+      {
+        "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=160455",
+        "title": "\n\tDirectives under Rule 126 of Explosives Rules 2008 \n",
+        "publish_date": null,
+        "excerpts": [
+          "unauthorized chemicals i.e. potassium chlorate in fireworks, unauthorized\nstorage of fireworks at public display site and non-adherence of prescribed\nsafety distances between display site and spectators,\netc.\nTo prevent such\nincidents in future, there is an urgent need of tightening of enforcement of\nthe Explosives Rules 2008 by District Authorities. For the same, following\ndirectives are issued under Rule 126 of the Explosives Rules 2008 to be\nimplemented by District Authorities for safe public display of fireworks:-\n\n...\n\n(vi) The District Magistrate shall ascertain that 100 meters safety distance between\nthe fireworks display site and spectators and 250 meters from hospitals,\nschools and nursing home shall be strictly complied. Barricading shall be\nprovided at 100 meters around the display site to prevent entry of general\npublic in the display area _(conditions 3 and 11 of licence in Form LE-6 of\nthe Explosives Rules 2008_ );\n(vii) Wherever these safety distances are not available, the display site\nshould be shifted to a suitable area.  Even if safety distances are available\nbut the display site is congested, that may make evacuation of people in case\nof an accident difficult/ problematic, it should be shifted to an open area;\n\n...\n\nshall not be used for public display ( _Rule 128 (c) and condition 6 of\nlicence in Form LE-6 of the Explosives Rules 2008)_ ;"
+        ]
+      },
+      {
+        "url": "https://www.peso.gov.in/sites/default/files/2024-08/Revised%20FAQ%20ER%202008%20AN%202012.pdf",
+        "title": "frequently asked questions under explosives rules, 2008 - PESO",
+        "publish_date": null,
+        "excerpts": [
+          "authority. Premises are inspected after the grant of license and may also be\ninspected before grant of license.\n**14. What are the Safety Distances prescribed for Explosives manufacturing factory**\n**and magazines** **of category “ZZ” (High Explosives) under Explosives Rules,**\n**2008?**\nThe distances mentioned in Table 1 under Schedule VIII of Explosives Rules, 2008\nshall be maintained all the time.\n**15. What are the Inside Safety Distances (ISD) for High Explosives manufacturing**\n**factory and storage magazines?**\nInside safety distances are the distances between two process buildings / between\n\n...\n\nThe explosives magazines shall be constructed as per specification 2 of Schedule VII\nof Explosives Rules, 2008.\n**25. What is the specification of fireworks manufacturing factory, storehouse and**\n**magazines?**\nThe fireworks magazines shall be constructed as per specification 3 of Schedule VII\nof Explosives Rules, 2008.\n\n...\n\nexplosives for use or sale from a magazine. In case of licenses for manufacture of\nAdirvertus, transport of explosives in tractor compressor, possession in shops, public\ndisplay of fireworks, import and export of explosives, prior approval is not mandatory.\n**43. What are the documents to be submitted for prior approval of license to**\n**possess for use or sale in form LE-3 under Explosives Rules, 2008?**\nThe details of the documents to be submitted for prior approval are\n(i) Form AE-3 (ii) Plans of the proposed magazine and site & layout plan with\nconstruction details including approach roads, mounds, safety distances & licensed\n\n...\n\nThe details of the documents to be submitted for prior approval are;\n(i)\nForm AE-3\n(ii)\nPlans of the constructed magazine and site & layout plan with construction\ndetails including approach roads, mounds, safety distances & licensed capacity\n(iii)\nDistance form DE-1\n(iv)\nSigned passport size photographs of the occupier along with documentary"
+        ]
+      },
+      {
+        "url": "https://indiankanoon.org/doc/60892116/",
+        "title": "The Explosives Rules, 2008",
+        "publish_date": null,
+        "excerpts": [
+          "# The Explosives Rules, 2008\n## Rule THE-EXPLOSIVES-RULES-2008 of 2008\n### 4. Classification of explosives\n(iii) Display fireworks .-Any product of fireworks assembled at the site for the purpose of display including shell of diameter exceeding 25 mm, multiple shots or cake products of any diameter exceeding 25 nos., of shots in a product and lance network or other products as approved by the Chief Controller;\n\n...\n\n### 84. Temporary shops for possession and sale of fireworks during festivals\n(5) Display of fireworks shall not be allowed within fifty metres of any shed.\n(6) In one cluster not more than fifty shops shall be permitted.\n\n...\n\n### 106. Period of validity of licence\n.-The licensing authority may grant a licence for the period deemed necessary but not exceeding-\n(1) six months for import or export of explosives;\n(2) one month for public display of fireworks;\n(3) five financial years or part thereof in case of manufacture of explosives or storage magazine;\n\n...\n\n## Part 1 – (See rule 99)\n### 7. This licence shall remain valid till...........day of.............20....... (maximum one month)\n(2) The fireworks shall be stored and displayed only at the places shown in the plan attached with the licence.\n(3) A minimum distance of 100 meter shall be maintained between the spectators and the area where the display is carried out.\n\n...\n\n### 9. This licence shall remain valid till 31st day of March.....................20.....................\ndwelling house, other building, another licensed premises, highway, street, public thoroughfare or public place by a distance of 45 metres.\n\n...\n\n## Part 1\n(2) The storehouse shall maintain open safety distance of 3 metres on all sides, which shall be protected by 1.8 metres high boundary wall or fencing.\n(3) The storehouse shall have a floor area of not less than 12 square metres and not more than 40 square metres for storage of fireworks."
+        ]
+      },
+      {
+        "url": "https://www.atf.gov/explosives/tools-services-explosives-industry/current-licensees/table-distances",
+        "title": "Table of Distances | ATF",
+        "publish_date": null,
+        "excerpts": [
+          "# Table of Distances\n## Fireworks\n### § 555.222 Table of distances between fireworks process buildings and between fireworks process and fireworks non-process buildings\nall pyrotechnic compositions, explosive materials and fuse only** | **Display fireworks (feet) - barricaded; double distance if unbarricaded** | **Consumer fireworks (feet) - process buildings where consumer\n\n...\n\nall pyrotechnic compositions, explosive materials and fuse only**** 0-100 | ****Display fireworks (feet) - barricaded; double distance if unbarricaded**** 57 | ****Consumer fireworks (feet) - process buildings\n\n...\n\nall pyrotechnic compositions, explosive materials and fuse only**** 101-200 | ****Display fireworks (feet) - barricaded; double distance if unbarricaded**** 69 | ****Consumer fireworks (feet) - process\n\n...\n\nall pyrotechnic compositions, explosive materials and fuse only**** Above 500 | ****Display fireworks (feet) - barricaded; double distance if unbarricaded**** Not permitted | ****Consumer fireworks (feet) -\n\n...\n\n### § 555.223 Table of distances between fireworks process buildings and other specified areas\nall pyrotechnic compositions, explosive materials and fuse only**** 0-100 | ****Display fireworks (feet)**** 200 | ****Consumer fireworks (feet) - process buildings where consumer fireworks or articles pyrotechnic are processed**** 25 |"
+        ]
+      },
+      {
+        "url": "https://www.atf.gov/explosives/explosives-storage-requirements-tables-distances",
+        "title": "Explosives Storage Requirements - Tables of Distances | Bureau of Alcohol, Tobacco, Firearms and Explosives",
+        "publish_date": null,
+        "excerpts": [
+          "# Explosives Storage Requirements - Tables of Distances\n## What's in This Document\n### Tables of Distances\neach magazine. These tables of distances are designed to protect the public in the event of a magazine explosion.\n\n...\n\n+ [27 CFR § 555.218](https://atf-eregs.18f.gov/555-218/2019-24570) – Storage of high explosives, blasting agents, bulk salutes and more than 10,000 pounds of display fireworks.\n+ [27 CFR § 555.219](https://atf-eregs.18f.gov/555-219/2019-24570) – Storage of low explosives.\n+ [27 CFR § 555.220](https://atf-eregs.18f.gov/555-220/2019-24570) – Storage of high explosives and blasting agents from ammonium nitrate and blasting agents.\n+ [27 CFR § 555.224](https://atf-eregs.18f.gov/555-224/2019-24570) – Storage of 10,000 pounds or less of display fireworks (except bulk salutes).\n\n...\n\nATF Table of Distance-Related Rulings\n[ATF Ruling 75-20](https://www.atf.gov/explosives/docs/ruling/1975-20-meaning-terms-inhabited-building/download) : Clarifies that offices or repair shops used in connection with the manufacture, transportation, storage, or use of explosive materials are not inhabited buildings.\n\n...\n\nTo be properly barricaded, a straight line from the top of any sidewall of the magazine containing explosive materials to the eave line of any other magazine or building, or to a point 12 feet above the center of a railway or highway, will pass through the natural or artificial barricade.\nLast Reviewed June 5, 2023"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

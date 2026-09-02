@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0f1218;
+  --bg-elev: #151a23;
+  --bg-card: #1a2029;
+  --line: #262e3b;
+  --line-strong: #364155;
+  --fg: #e9edf3;
+  --fg-muted: #a1abbf;
+  --fg-dim: #6c7690;
+  --accent: #f2b544;          /* call-sheet amber */
+  --accent-soft: rgba(242, 181, 68, 0.14);
+  --ok: #58d68d;  --ok-soft: rgba(88, 214, 141, 0.14);
+  --warn: #f2c14e; --warn-soft: rgba(242, 193, 78, 0.16);
+  --bad: #f0716b;  --bad-soft: rgba(240, 113, 107, 0.16);
+  --info: #6fa8ff; --info-soft: rgba(111, 168, 255, 0.14);
+  --parallel: #b39cff; --parallel-soft: rgba(179, 156, 255, 0.16);
+  --gemini: #4fc3f7;   --gemini-soft: rgba(79, 195, 247, 0.14);
+  /* strip-board colours (industry convention) */
+  --strip-ext-day: #f2d45c;
+  --strip-int-day: #eef1f5;
+  --strip-ext-night: #74d29a;
+  --strip-int-night: #86b6ff;
+  --strip-dusk: #f2a35e;
+  --strip-ink: #14171d;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-elev: var(--bg-elev);
+  --color-card: var(--bg-card);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-fg: var(--fg);
+  --color-foreground: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-dim: var(--fg-dim);
+  --color-accent: var(--accent);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-bad: var(--bad);
+  --color-info: var(--info);
+  --color-parallel: var(--parallel);
+  --color-gemini: var(--gemini);
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: var(--font-barlow), "Arial Narrow", Impact, sans-serif;
+}
+
+html { background: var(--bg); color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-sans); font-feature-settings: "tnum" 1; overflow-x: hidden; }
+::selection { background: var(--accent-soft); }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+.display { font-family: var(--font-display); letter-spacing: 0.01em; }
+.mono { font-family: var(--font-mono); }
+.kicker { font-family: var(--font-display); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg-dim); font-weight: 600; }
+.card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 10px; }
+.chip { display: inline-flex; align-items: center; gap: 4px; padding: 1px 8px; border-radius: 4px; font-family: var(--font-display); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; border: 1px solid transparent; }
+.chip-ok { background: var(--ok-soft); color: var(--ok); }
+.chip-warn { background: var(--warn-soft); color: var(--warn); }
+.chip-bad { background: var(--bad-soft); color: var(--bad); }
+.chip-info { background: var(--info-soft); color: var(--info); }
+.chip-dim { background: rgba(255,255,255,0.05); color: var(--fg-muted); border-color: var(--line); }
+.chip-accent { background: var(--accent-soft); color: var(--accent); }
+.chip-parallel { background: var(--parallel-soft); color: var(--parallel); }
+.chip-gemini { background: var(--gemini-soft); color: var(--gemini); }
+
+.stamp { display: inline-block; font-family: var(--font-display); font-weight: 700; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; padding: 4px 12px; border: 2px solid currentColor; border-radius: 4px; transform: rotate(-2deg); opacity: 0.95; }
+
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 6px; font-family: var(--font-display); font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--line-strong); background: var(--bg-elev); color: var(--fg); transition: border-color .15s, filter .15s, transform .1s; cursor: pointer; }
+.btn:hover { border-color: var(--accent); }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #1a1405; border-color: var(--accent); }
+.btn-primary:hover { filter: brightness(1.07); }
+.btn-ghost { background: transparent; }
+
+/* Busy is not the same as unavailable: a button held while its work runs keeps full ink,
+   so "Analyzing..." stays readable instead of fading out with the disabled treatment. */
+.btn:disabled:has(.spinner) { opacity: 1; cursor: progress; }
+
+.spinner { color: var(--fg-muted); }
+.spinner-dot { background: var(--accent); }
+/* Inside a button the spinner is button ink — on .btn-primary that is dark on amber,
+   not muted grey on amber. */
+.btn .spinner { color: inherit; }
+.btn .spinner-dot { background: currentColor; }
+
+.strip { position: absolute; top: 0; height: 100%; border-radius: 3px; color: var(--strip-ink); overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0,0,0,.18); transition: left .9s cubic-bezier(.2,.8,.2,1), width .9s cubic-bezier(.2,.8,.2,1), opacity .5s; }
+.strip-ext-day { background: var(--strip-ext-day); }
+.strip-int-day { background: var(--strip-int-day); }
+.strip-ext-night { background: var(--strip-ext-night); }
+.strip-int-night { background: var(--strip-int-night); }
+.strip-dusk { background: var(--strip-dusk); }
+.strip-risk { box-shadow: inset 0 0 0 2px var(--bad); }
+/* The same outline, held back while the engine re-validates: the verdict on screen is the one from
+   the previous cut of the schedule, so it is shown as a fading claim rather than a current one. */
+.strip-risk-stale { box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--bad) 28%, transparent); }
+.strip-edge { box-shadow: inset 0 0 0 1px rgba(0,0,0,.18); }
+.hatch { background-image: repeating-linear-gradient(135deg, rgba(240,113,107,.28) 0 6px, transparent 6px 12px); border-left: 1px dashed var(--bad); border-right: 1px dashed var(--bad); }
+.golden { background: linear-gradient(90deg, rgba(242,163,94,0) 0%, rgba(242,163,94,.22) 50%, rgba(242,163,94,0) 100%); }
+
+.scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 8px; }
+
+@keyframes pulse-soft { 0%,100% { opacity: 1 } 50% { opacity: .4 } }
+.pulse { animation: pulse-soft 1.4s ease-in-out infinite; }
+@keyframes rise { from { opacity: 0; transform: translateY(5px) } to { opacity: 1; transform: none } }
+.rise { animation: rise .28s ease-out both; }
+@keyframes shimmer-sweep { from { background-position: -140% 0 } to { background-position: 240% 0 } }
+.shimmer { background-image: linear-gradient(100deg, transparent 18%, rgba(233,237,243,.05) 38%, var(--accent-soft) 50%, rgba(233,237,243,.05) 62%, transparent 82%); background-size: 220% 100%; background-repeat: no-repeat; animation: shimmer-sweep 1.7s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .strip, .rise, .pulse, .shimmer { transition: none; animation: none; } .shimmer { background-position: 50% 0; } }
+
+/* ---------------------------------------------------------------------------
+   Print.
+
+   The call sheet is the one screen in this product whose whole point is to leave
+   the screen, and until now nothing here said so: the before/after grid is
+   `lg:grid-cols-2`, and a portrait A4 content box is ~739px, so the two sheets
+   printed stacked — the comparison the page exists to make, lost on paper. The
+   dark chrome printed as white-on-white with a visible rule under it, and the
+   amber "this row changed" highlight vanished entirely, because browsers drop
+   backgrounds by default while the sheet's own footer went on asserting that
+   highlighted rows had changed.
+
+   So: force the two-up, drop the app around it, and let the markup's ink-based
+   change markers — the margin asterisk and the rule beside it — carry the diff.
+   --------------------------------------------------------------------------- */
+@media print {
+  /* Paper is white and short. Both sheets have to fit across it. */
+  @page { size: A4 landscape; margin: 10mm; }
+
+  /* …except the documents that are portrait in the trade and would read as
+     forgeries in landscape: a daily production report, a movement order, sides.
+     `@page` cannot be scoped by selector, so they claim a *named* page box and
+     opt into it with `.print-portrait` on their outermost printed element. */
+  @page portrait-doc { size: A4 portrait; margin: 12mm; }
+  .print-portrait { page: portrait-doc; }
+
+  html, body {
+    background: #fff !important;
+    color: #14171d !important;
+  }
+
+  /* The application around the document: navigation, the global footer, and the
+     page's own controls, which are already marked `print:hidden`. */
+  body > header, body > footer { display: none !important; }
+  body > main { max-width: none !important; padding: 0 !important; margin: 0 !important; }
+
+  /* The before/after pair, side by side, the way the screen shows it. Tailwind's
+     `lg:` breakpoint never matches a page box, so this is stated for print. */
+  .print-sheets { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 6mm !important; align-items: start; }
+  .print-sheets > * { break-inside: avoid-page; }
+  /* A single sheet gets the whole width rather than half of it. */
+  .print-sheets:has(> *:only-child) { grid-template-columns: 1fr !important; }
+
+  /* Nothing in the document should be cut across a page break mid-block. */
+  section, table, tfoot, footer { break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr { break-inside: avoid; }
+
+  /* Links print as text; a URL a reader cannot click is noise on paper. */
+  a { color: inherit !important; text-decoration: none !important; }
+
+  /* The revision tint is the one background worth spending ink on: it is the
+     status of the document, and a blue page that prints white is a lie. */
+  .print-tint { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+
+  /* A dark-theme surface that has to become paper.
+
+     Forcing white on `body` is not enough for a panel built out of the app's own
+     chrome: its text is `--fg-muted`, a pale grey chosen to sit on near-black, and
+     browsers drop the dark background behind it while keeping the pale ink — so the
+     document prints as almost nothing on white. The insurance packet is the case
+     that matters: it is the most "real document" screen in the product and an
+     underwriter reads it on paper.
+
+     So this repaints a subtree in the same ink the call sheet uses, and lifts the
+     overlay out of the viewport-sized scroll box a modal needs on screen and a
+     printer cannot follow past its first page. */
+  .print-paper { position: static !important; inset: auto !important; overflow: visible !important; max-height: none !important; background: #fff !important; backdrop-filter: none !important; padding: 0 !important; display: block !important; }
+  .print-paper * { color: #14171d !important; border-color: #c9ced8 !important; box-shadow: none !important; overflow: visible !important; max-height: none !important; }
+}

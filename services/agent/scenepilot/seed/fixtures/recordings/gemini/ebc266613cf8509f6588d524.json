@@ -1,0 +1,215 @@
+{
+  "request": {
+    "role": "production_planner",
+    "user_text": "PRODUCTION: Project Nightfall (fictional). Base city: Mumbai, IN. Planned shoot window: @DATE@ to @DATE@.\nSCENE 42: EXT. MUMBAI ROOFTOP — SUNSET (EXT, SUNSET, ≈150 min)\nSYNOPSIS: A motorcycle tears across adjoining rooftops. A drone follows while fireworks explode over the skyline. Rain begins as the rider jumps to an adjacent building.\n\nREQUIREMENTS:\n- req_sc_42_1 [LOCATION/CRITICAL] Two structurally sound, adjoining flat rooftops in Mumbai capable of supporting a motorcycle, ramps, and crew.\n- req_sc_42_2 [SAFETY/CRITICAL] Structural engineering assessment and reinforcement of the rooftops to safely handle the impact of the motorcycle jump.\n- req_sc_42_3 [REGULATORY/HIGH] DGCA drone flight permits and local police clearance for operating a camera drone over urban Mumbai rooftops at sunset.\n- req_sc_42_4 [CAST/CRITICAL] Professional stunt rider experienced in high-speed motorcycle jumps and wet-surface maneuvers.\n- req_sc_42_5 [REGULATORY/HIGH] Pyrotechnics permit and clearance from Mumbai fire department for launching fireworks over the skyline.\n- req_sc_42_6 [TECHNICAL/HIGH] SFX rain machines and overhead truss systems to simulate localized rain starting mid-scene without damaging electrical equipment.\n- req_sc_42_7 [SAFETY/CRITICAL] Non-slip surface treatment applied to the motorcycle takeoff and landing zones to ensure traction when wet.\n- req_sc_42_8 [SCHEDULE/HIGH] Strict scheduling to shoot during the limited 30-40 minute sunset window for matching skyline lighting.\n- req_sc_42_9 [LOGISTICS/MEDIUM] Coordination with local neighborhood associations regarding noise control for the motorcycle engine and fireworks.\n- req_sc_42_10 [SAFETY/CRITICAL] Rooftop edge protection, safety harnesses for crew, and specialized catch nets/airbags for the stunt jump gap.\n\nRESEARCH QUESTIONS (graded):\n- rq_@@@@@@_1 [SUPPORTED] What are the historical monsoon weather risks, wind speeds, and safety implications for outdoor rooftop stunts in Mumbai during late August?\n  assessment: Historical weather data from the India Meteorological Department (IMD) and local advisories establish that late August in Mumbai is characterized by active monsoon conditions, with high rainfall averages (561 mm monthly normal at Santacruz) and frequent gusty winds. While average wind speeds are mild at around 3 m/s (11 km/h), active monsoon spells regularly bring sudden gusty winds of 30–40 km/h and up to 50 km/h, alongside lightning risks. These conditions present severe safety hazards for outdoor rooftop stunts, including slippery surfaces, wind shear affecting motorcycle jumps, and lightning hazards for overhead metal trusses.\n- rq_@@@@@@_2 [SUPPORTED] What is the current regulatory process, lead time, and restriction list for flying commercial camera drones over urban Mumbai rooftops?\n  assessment: The evidence establishes that flying commercial camera drones over urban Mumbai rooftops requires a dual-clearance process: a DGCA Digital Sky flight plan approval and a local Mumbai Police NOC. Much of Mumbai's airspace is highly restricted due to Chhatrapati Shivaji Maharaj International Airport (5 km Red Zone) and Indian Navy installations in South Mumbai (3 km No-Fly Zone), while other areas fall under Yellow Zones requiring ATC clearance (up to 24-hour lead time). Additionally, the Mumbai Police frequently issues 30-day prohibitory orders banning all drone flights, which must be monitored closely.\n- rq_@@@@@@_3 [SUPPORTED] What are the permitting requirements and safety guidelines for launching pyrotechnics/fireworks from rooftops in Mumbai?\n  assessment: The permitting process and safety guidelines for public fireworks displays in Mumbai are strictly regulated under Rule 126 of the Explosives Rules, 2008, overseen by the District Magistrate (DM) and PESO. Obtaining a Form LE-6 license requires a 2-month lead time and a strict 100-meter safety clearance from spectators, which highly restricts rooftop launches in congested urban areas. While the general framework is clear, the specific internal clearance policies of the Mumbai Fire Brigade for rooftop-specific structures remain subject to individual site inspections.\n- rq_@@@@@@_4 [WEAK] What are the municipal structural certification requirements for temporary stunt structures and vehicle loads on Mumbai rooftops?\n  assessment: The current evidence establishes that temporary structures for film shoots in Mumbai require a layout plan and a Structural Stability Certificate issued by a BMC-licensed structural engineer. However, specific municipal bylaws or numerical load-bearing requirements for vehicle loads and stunt structures on rooftops are not detailed in the retrieved documents.\n\nEVIDENCE:\n- ev_@0 (NEWS, CURRENT, conf 0.92) for rq_@@@@@@_1: According to the India Meteorological Department (IMD) climatological records, Mumbai receives an average of 561 mm of rainfall at the Santacruz station and 472 mm at the Colaba station during the month of August. — As rain activity eases, IMD warns of temperature rise in Mumbai; Thane, Palghar off alerts\n  implication: The high likelihood of natural rainfall in late August means the rooftop surfaces will likely be wet, which will compound the wet conditions simulated by the SFX rain machines (req_sc_42_6) and increase the risk of hydroplaning or slipping for the stunt rider (req_sc_42_4).\n- ev_@1 (NEWS, CURRENT, conf 0.91) for rq_@@@@@@_1: While average wind speeds in August are around 3 m/s (6 knots), the IMD frequently forecasts occasional gusty winds reaching speeds of 40–50 km/h during active monsoon periods. — Mumbai weather update: IMD forecasts moderate to heavy rain, gusty winds across city\n  implication: Gusty winds of 40–50 km/h pose a severe hazard to high-speed motorcycle jumps (req_sc_42_4) by destabilizing the rider mid-air and threatening the structural integrity of overhead truss systems and SFX rain machines (req_sc_42_6).\n- ev_@2 (OFFICIAL, CURRENT, conf 0.94) for rq_@@@@@@_1: IMD forecasts for the Mumbai region in late August include warnings for thunderstorms accompanied by lightning, light to moderate rainfall, and gusty winds of 30–40 km/h at isolated places. — Date: 26-08-2026 Time of Issue: 10:00 AM (Morning)\n  implication: Rooftops are highly exposed to lightning strikes. A strict safety protocol must be in place to evacuate the crew and ground all electrical equipment, truss systems, and metal ramps (req_sc_42_1, req_sc_42_6) immediately if lightning is detected.\n- ev_@3 (UNKNOWN, UNKNOWN, conf 0.74) for rq_@@@@@@_1: August weather in Mumbai typically features a 70% to 75% chance of rain, high humidity (84%), and frequent overcast skies. — Mumbai Weather in August: Temperature & Rainfall\n  implication: Frequent overcast skies and sudden downpours make shooting during the limited 30-40 minute sunset window (req_sc_42_8) highly unpredictable, requiring flexible scheduling and backup shoot days.\n- ev_@4 (INDUSTRY, CURRENT, conf 0.91) for rq_@@@@@@_2: Commercial drone operations in India require the drone to be registered on the DGCA Digital Sky platform to obtain a Unique Identification Number (UIN), and small drones (250g to 2kg) require a Remote Pilot Certificate (RPC) and an Unmanned Aircraft Operator Permit (UAOP). — India DGCA Drone Rules 2026: Remote Pilot Certificate, Digital Sky, and FPV Operations - UAVMODEL Insights\n  implication: The production must hire a DGCA-certified drone pilot with a valid RPC and ensure the camera drone is registered with a UIN on the Digital Sky platform.\n- ev_@5 (OFFICIAL, UNKNOWN, conf 0.93) for rq_@@@@@@_2: Mumbai Police provides an online application portal (mumbaipolice.gov.in/Dronepermission) where applicants must submit details including applicant info, local police station selection, purpose (e.g., 'Film Shoot'), and drone handler details. — Application for permission to fly a drone\n  implication: The production team must submit an online application to the specific local police station jurisdiction covering the rooftop location.\n- ev_@6 (OFFICIAL, UNKNOWN, conf 0.93) for rq_@@@@@@_2: Mumbai Police drone permission is strictly limited to the requested flight location, flight radius, and scheduled day/time, and the applicant is responsible for ensuring the drone is not misused for harmful activities or unauthorized photography. — Application for permission to fly a drone\n  implication: The shoot must strictly adhere to the approved schedule, location, and altitude limits specified in the police permit.\n- ev_@7 (UNKNOWN, CURRENT, conf 0.78) for rq_@@@@@@_2: Under DGCA rules, Yellow Zones (controlled airspace) require manual approval from the concerned Air Traffic Control (ATC) authority, which can take up to 24 hours, while Red Zones are strictly prohibited without Central Government permission. — Is Drone Photography Allowed in India? Complete DGCA Rules & Permit Guide for 2026\n  implication: Since much of Mumbai is controlled airspace, the production must obtain ATC clearance via Digital Sky, allowing at least 24 hours for Yellow Zone approvals.\n- ev_@8 (UNKNOWN, UNKNOWN, conf 0.82) for rq_@@@@@@_2: Mumbai Chhatrapati Shivaji Airport has a 5 km radius no-fly zone (Red Zone), and much of South Mumbai falls within the Indian Navy's 3 km designated 'No-fly Zone' requiring Navy clearance. — Drone Photography Regulations India: Complete Legal Guide for Safe and – ThinkRobotics.com\n  implication: Rooftop shoots within 5 km of the airport or 3 km of naval bases in South Mumbai are highly restricted and likely prohibited unless extraordinary Central Government/Navy clearances are secured.\n- ev_@9 (NEWS, DATED, conf 0.84) for rq_@@@@@@_2: Mumbai Police frequently issues 30-day prohibitory orders under Section 163 of the BNSS (formerly Section 144 of the CrPC) banning drones, paragliders, and other aerial devices over the city due to security concerns. — Mumbai Police ban flying of drones, paragliders for 30 days\n  implication: The production must monitor active prohibitory orders in Mumbai, as a blanket ban could temporarily halt all drone filming regardless of existing permits.\n- ev_@10 (OFFICIAL, DATED, conf 0.87) for rq_@@@@@@_3: The District Magistrate’s office is the single window for granting licenses in Form LE-6 of the Explosives Rules, 2008 for the public display of fireworks. — \n\tDirectives under Rule 126 of Explosives Rules 2008 \n\n  implication: The production must submit its primary application for the rooftop fireworks display to the Mumbai District Magistrate/Collector's office rather than attempting to get separate piecemeal approvals first.\n- ev_@11 (OFFICIAL, DATED, conf 0.87) for rq_@@@@@@_3: Applications for a public display license must be submitted to the District Magistrate's office two months prior to the scheduled display date, and if approved, permission is granted at least one month prior. — \n\tDirectives under Rule 126 of Explosives Rules 2008 \n\n  implication: The production must factor in a strict 60-day lead time for the permitting process before the scheduled shoot date.\n- ev_@12 (OFFICIAL, DATED, conf 0.87) for rq_@@@@@@_3: A strict safety distance of 100 meters must be maintained between the fireworks display site and spectators (with barricading), and 250 meters from hospitals, schools, and nursing homes. — \n\tDirectives under Rule 126 of Explosives Rules 2008 \n\n  implication: The selected Mumbai rooftop must have a 100-meter clear radius from any spectators or public areas, and must not be within 250 meters of any school, hospital, or nursing home.\n- ev_@13 (OFFICIAL, DATED, conf 0.87) for rq_@@@@@@_3: If safety distances are not available or if the display site is congested (making evacuation difficult in case of an accident), the display site must be shifted to an open area. — \n\tDirectives under Rule 126 of Explosives Rules 2008 \n\n  implication: Standard rooftops in congested areas of Mumbai will likely be rejected by authorities. The production must select a highly isolated rooftop with clear evacuation routes to pass the safety inspection.\n- ev_@14 (OFFICIAL, DATED, conf 0.85) for rq_@@@@@@_3: Organizers must conduct a formal risk assessment by a reputable organization to identify potential hazards prior to applying for a display license. — \n\tDirectives under Rule 126 of Explosives Rules 2008 \n\n  implication: The production must hire a certified safety agency or licensed pyrotechnics vendor to draft a professional risk assessment report to accompany the permit application.\n- ev_@15 (OFFICIAL, DATED, conf 0.83) for rq_@@@@@@_3: The manufacture, sale, or use of fireworks generating noise levels exceeding 125 dB(A) or 145 dB(C) peak at a 4-meter distance is prohibited. — PETROLEUM & EXPLOSIVES SAFETY ORGANISATION (PESO)\n  implication: The pyrotechnics team must ensure that the selected fireworks comply with these noise limits, which will also assist in coordinating with local neighborhood associations.\n- ev_@16 (NEWS, DATED, conf 0.80) for rq_@@@@@@_3: The Mumbai Police can impose temporary bans on the use of firecrackers, rockets, and sky lanterns within city limits under the Mumbai Police Act. — Mumbai Police ban firecrackers in the city from May 11 to June 9 - The Hindu\n  implication: The production team must actively monitor Mumbai Police orders to ensure no temporary bans are active during the scheduled filming window.\n- ev_@17 (NEWS, RECENT, conf 0.87) for rq_@@@@@@_4: For temporary structures, a layout plan signed by the applicant's authorised signatory, along with a Structural Stability certificate from a licensed structural engineer, is required by the BMC. — Dhurandhar's Bangkok shoot shows there is no Ease of Filming in Mumbai for Bollywood\n  implication: The production must hire a BMC-licensed structural engineer to inspect the rooftop and issue a formal Structural Stability Certificate for the temporary stunt ramp and motorcycle load.\n- ev_@18 (UNKNOWN, UNKNOWN, conf 0.74) for rq_@@@@@@_4: The safety of temporary structures must be ensured by licensed structural consultants under the Development Control and Promotion Regulations (DCPR) 2034. — MUNICIPAL CORPORATION OF GRETER MUMBAI DEVELOPMENT CONTROL\n  implication: Any reinforcement or temporary structures erected on the rooftop for the stunt must comply with DCPR 2034 safety standards and be certified by a licensed consultant.\n- ev_@19 (OFFICIAL, UNKNOWN, conf 0.84) for rq_@@@@@@_4: The Building & Factories Department is the administrative department of the BMC that issues permits for temporary structures and activities in consultation with other technical advisory departments. — Building And Factory - MyBMC - Welcome to BMC's Website\n  implication: Permits for the rooftop stunt setup must be routed through the BMC's Building & Factories Department.\n- ev_@20 (UNKNOWN, RECENT, conf 0.71) for rq_@@@@@@_4: A Structural Stability Certificate is an official document issued by a licensed structural engineer confirming that a structure is safe and stable as per Indian Standard (IS) Codes and the National Building Code (NBC). — Structural Stability Certificate - Advanced Engineering\n  implication: The structural engineer's assessment of the rooftop's capacity to handle the motorcycle's impact load must reference applicable IS Codes and NBC guidelines.\n"
+  },
+  "response": {
+    "output": {
+      "key_facts": [
+        {
+          "statement": "Late August in Mumbai is characterized by active monsoon conditions, with a high monthly rainfall average of 561 mm at Santacruz and frequent gusty winds reaching 30 to 50 km/h, alongside lightning risks.",
+          "evidence_ids": [
+            "ev_@0",
+            "ev_@1",
+            "ev_@2",
+            "ev_@3"
+          ]
+        },
+        {
+          "statement": "Commercial drone operations in India require registration on the DGCA Digital Sky platform (UIN), a Remote Pilot Certificate (RPC), and local Mumbai Police NOC, with strict no-fly zones within 5 km of the airport and 3 km of South Mumbai naval bases.",
+          "evidence_ids": [
+            "ev_@4",
+            "ev_@5",
+            "ev_@6",
+            "ev_@7",
+            "ev_@8"
+          ]
+        },
+        {
+          "statement": "Mumbai Police frequently issues 30-day prohibitory orders under Section 163 of the BNSS banning drones and other aerial devices due to security concerns.",
+          "evidence_ids": [
+            "ev_@9"
+          ]
+        },
+        {
+          "statement": "Public fireworks displays require a Form LE-6 license from the District Magistrate under Rule 126 of the Explosives Rules, 2008, which has a strict 2-month lead time, a 100-meter safety distance from spectators, and a 250-meter distance from schools and hospitals.",
+          "evidence_ids": [
+            "ev_@10",
+            "ev_@11",
+            "ev_@12",
+            "ev_@13",
+            "ev_@14",
+            "ev_@15",
+            "ev_@16"
+          ]
+        },
+        {
+          "statement": "Temporary structures for film shoots in Mumbai require a layout plan and a Structural Stability Certificate from a BMC-licensed structural engineer under DCPR 2034 and NBC guidelines, routed through the BMC Building and Factories Department.",
+          "evidence_ids": [
+            "ev_@17",
+            "ev_@18",
+            "ev_@19",
+            "ev_@20"
+          ]
+        }
+      ],
+      "inferences": [
+        "Shooting a practical motorcycle jump and launching fireworks on a real Mumbai rooftop in late August is extremely high-risk due to monsoon rain, high winds, and lightning hazards.",
+        "The 2-month lead time for pyrotechnics permits means the production must have initiated the DM application by late June 2026 for an August 25 shoot.",
+        "Finding a rooftop that meets the 100m spectator clearance and 250m school/hospital buffer in congested Mumbai is highly difficult, making a practical rooftop fireworks launch nearly impossible in most urban neighborhoods.",
+        "A drone shoot during the 30-40 minute sunset window requires precise coordination with ATC and is highly vulnerable to sudden monsoon cloud cover or rain."
+      ],
+      "candidates": [
+        {
+          "title": "Fully Practical Rooftop Shoot with Real Fireworks and Drone",
+          "description": "Shoot on two real adjoining rooftops in an isolated, non-congested area of Mumbai. Execute the motorcycle jump practically with a stunt rider, launch real fireworks from the rooftop, and fly a licensed camera drone.",
+          "pros": [
+            "Maximum realism and authentic Mumbai skyline and sunset lighting.",
+            "Organic interaction between the motorcycle, real rain, and the physical environment."
+          ],
+          "cons": [
+            "Extremely high risk of permit rejection for fireworks in congested areas.",
+            "High risk of weather delays or cancellations due to late August monsoons.",
+            "Severe safety hazards for the stunt rider on wet surfaces with gusty winds."
+          ],
+          "evidence_ids": [
+            "ev_@0",
+            "ev_@1",
+            "ev_@2",
+            "ev_@12",
+            "ev_@13"
+          ]
+        },
+        {
+          "title": "Hybrid Practical Rooftop Shoot with VFX Fireworks and Drone",
+          "description": "Shoot the motorcycle jump practically on a certified, reinforced Mumbai rooftop with strict safety rigging. Eliminate practical fireworks entirely, adding them in post-production (VFX). Fly the camera drone under strict DGCA and Police permits.",
+          "pros": [
+            "Eliminates the complex 2-month DM pyrotechnics permit and 100m/250m safety buffer issues.",
+            "Significantly safer for the crew and stunt rider.",
+            "Reduces noise complaints from local neighborhood associations."
+          ],
+          "cons": [
+            "Still vulnerable to late August monsoon weather affecting the motorcycle jump and drone flight.",
+            "Requires high-quality VFX for the fireworks and skyline integration."
+          ],
+          "evidence_ids": [
+            "ev_@0",
+            "ev_@1",
+            "ev_@2",
+            "ev_@12",
+            "ev_@17"
+          ]
+        },
+        {
+          "title": "Studio Backlot / Virtual Production with Plate Shots",
+          "description": "Build the adjoining rooftop sets on a secure studio backlot or stage with green screen or LED volume. Shoot the motorcycle jump in a controlled environment with SFX rain. Capture drone plate shots of the Mumbai skyline during a clear weather window and composite the fireworks.",
+          "pros": [
+            "100% weather-proof and absolute safety control for the stunt rider and crew.",
+            "No complex rooftop structural reinforcement or pyrotechnic permits needed.",
+            "No risk of drone flight bans or sunset window misses."
+          ],
+          "cons": [
+            "Higher studio construction and VFX compositing costs.",
+            "Potential loss of organic interaction between the motorcycle and the physical Mumbai environment."
+          ],
+          "evidence_ids": [
+            "ev_@0",
+            "ev_@1",
+            "ev_@2",
+            "ev_@12"
+          ]
+        }
+      ],
+      "recommended_candidate_index": 1,
+      "recommendation": "We recommend Candidate 2 (Hybrid Practical Rooftop Shoot with VFX Fireworks and Drone). This approach preserves the authentic Mumbai skyline and sunset lighting while eliminating the highly restrictive 2-month, 100m-clearance pyrotechnics permit process by moving fireworks to VFX. It manages the critical safety risks of the motorcycle jump through rigorous BMC-certified structural engineering, non-slip treatments, and strict weather monitoring, with a backup day built into the August 25-27 window.",
+      "risks": [
+        {
+          "title": "Monsoon Weather and Lightning Hazards",
+          "description": "Late August monsoons bring heavy rain, lightning, and gusty winds (30-50 km/h) which can cause the stunt rider to slip, destabilize the jump, or damage overhead truss systems.",
+          "severity": "CRITICAL",
+          "likelihood": 0.75,
+          "confidence": 0.95,
+          "kind": "FACT",
+          "mitigations": [
+            "Install real-time lightning detection systems and evacuate the rooftop immediately if lightning is within 10 km.",
+            "Apply specialized non-slip surface treatments to takeoff and landing zones.",
+            "Establish a hard wind limit (e.g., 20 km/h) above which the stunt jump is postponed.",
+            "Utilize the 3-day shoot window to wait for a safe weather gap."
+          ],
+          "evidence_ids": [
+            "ev_@0",
+            "ev_@1",
+            "ev_@2"
+          ],
+          "requirement_ids": [
+            "req_sc_42_4",
+            "req_sc_42_6",
+            "req_sc_42_7",
+            "req_sc_42_8"
+          ]
+        },
+        {
+          "title": "Drone Flight Ban or Permit Denial",
+          "description": "Mumbai Police frequently issue 30-day prohibitory orders banning drone flights, or the selected rooftop may fall within the 5km airport or 3km naval no-fly zones, preventing drone filming.",
+          "severity": "HIGH",
+          "likelihood": 0.4,
+          "confidence": 0.9,
+          "kind": "FACT",
+          "mitigations": [
+            "Select a rooftop location outside the 5km airport and 3km naval Red Zones.",
+            "Apply for DGCA Digital Sky and Mumbai Police NOC at least 30 days in advance.",
+            "Prepare a backup camera plan using a high-speed cable cam or a crane-mounted camera if drone permits are denied or suspended."
+          ],
+          "evidence_ids": [
+            "ev_@4",
+            "ev_@5",
+            "ev_@7",
+            "ev_@8",
+            "ev_@9"
+          ],
+          "requirement_ids": [
+            "req_sc_42_3"
+          ]
+        },
+        {
+          "title": "Rooftop Structural Failure under Impact Load",
+          "description": "The impact load of a landing motorcycle and stunt ramps could exceed the structural capacity of the selected rooftops, leading to structural damage or collapse.",
+          "severity": "CRITICAL",
+          "likelihood": 0.15,
+          "confidence": 0.85,
+          "kind": "INFERENCE",
+          "mitigations": [
+            "Hire a BMC-licensed structural engineer to perform load-bearing calculations and issue a Structural Stability Certificate.",
+            "Install temporary under-slab scaffolding or shoring on the floors directly beneath the takeoff and landing zones.",
+            "Ensure compliance with DCPR 2034 and NBC guidelines."
+          ],
+          "evidence_ids": [
+            "ev_@17",
+            "ev_@18",
+            "ev_@19",
+            "ev_@20"
+          ],
+          "requirement_ids": [
+            "req_sc_42_1",
+            "req_sc_42_2"
+          ]
+        }
+      ],
+      "unresolved": [
+        {
+          "question": "What are the exact load-bearing capacities of the selected rooftops?",
+          "why_it_matters": "Essential for the BMC-licensed structural engineer to design the necessary reinforcement and shoring for the motorcycle landing impact."
+        },
+        {
+          "question": "Are there active Mumbai Police Section 163 BNSS prohibitory orders scheduled for late August 2026?",
+          "why_it_matters": "A blanket drone ban would completely block the planned camera drone flight, requiring an immediate transition to a cable-cam or crane setup."
+        },
+        {
+          "question": "Does the selected rooftop location fall within a DGCA Yellow Zone or a Red Zone?",
+          "why_it_matters": "If it is in a Red Zone, drone flights are strictly prohibited without extraordinary Central Government clearance, which is highly unlikely to be approved."
+        }
+      ]
+    },
+    "tool_calls": []
+  }
+}

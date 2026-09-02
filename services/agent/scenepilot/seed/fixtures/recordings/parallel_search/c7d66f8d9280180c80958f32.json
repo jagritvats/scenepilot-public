@@ -1,0 +1,97 @@
+{
+  "request": {
+    "objective": "Find BMC DCPR 2034 rooftop regulations, IS 875 roof load standards, and Mumbai filming stunt permission requirements.",
+    "search_queries": [
+      "BMC DCPR 2034 rooftop structural stability certificate",
+      "IS 875 Part 2 roof live load capacity India",
+      "Mumbai police BMC filming permission rooftop stunt NOC"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_78e0685ab7409c56e88494e778b01129",
+    "results": [
+      {
+        "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+        "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI - BMC",
+        "publish_date": "2019-05-22",
+        "excerpts": [
+          "# **MUNICIPAL CORPORATION OF GREATER MUMBAI**\n## Contents\n### GENERAL CONDITIONS:............................................................................................................ 11\nSPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO: ..................................... 12\n\n...\n\n## **CURRENT PROCESS:**\n### temporary structures. Requirements for erection of temporary structure and any other special requirement shall be captured in the common application form. Many a times th\n2016/प्र.क्र.189/स ां.क -1 dt. 22.05.2018. MCGM is only involved in the grant of permission for Film\nshooting as per the scope defined in the circular vide no. अ. अ/ ओडी/ ९७०/आ.ज . दि. 16.10.2015.\n\n...\n\n## **SPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO:**\n### a. Two Nos. of Water type extinguisher of 9 litres capacity & One ABC Dry\nPowder extinguisher of 9 kgs capacity, per 100 m ² of floor space shall be\n\n### Building / permanent structure where fire prevention and fire-fighting arrangements are not provided, then following minimum fire safety measures shall be provided. (Addi\n1) Four Nos. of Water type extinguisher, 9 litres capacity, per 100 m ² of floor space\n\n### **Building and Factory Department Codified Requirements for Temporary structure on Private Property:**\n\n\n...\n\n### In case any temporary structure is to be set-up involving occupation by people, Structural Stability Certificate from Registered Structural Engineer shall also be enclosed with the application.\n\n\n### Events, which are organized on private land, shall also invariably be accompanied with NOC from landowner.\n\n\n### All mandatory NOC’s such as Local Police Station, Traffic Police Department, as the case may be, shall be upload along with the application form.\n\n\n...\n\n### Permissions are required for indoor events in premises which are not approved as “Exhibition Centre or Welfare Centre” at ward level.\no Permanent permissions can be granted only to authorized “Exhibition Centre,"
+        ]
+      },
+      {
+        "url": "https://infralens.in/code/IS-875-Part-2-1987",
+        "title": "IS 875 Part 2:1987 PDF · Imposed Loads on Buildings",
+        "publish_date": "2026-05-11",
+        "excerpts": [
+          "🏗 BOQ Builder · Auto-BOQ from dimensions, DSR rates NEW → [📋 BidEasy · Government tenders, searchable LIVE →](https://tenders.infralens.in) [▶ InfraLens App · Free on Play Store, offline-ready NEW →](https://play.google.com/store/apps/details?id=in.infralens.app)"
+        ]
+      },
+      {
+        "url": "https://www.mcgm.gov.in/irj/go/km/docs/documents/EODB/Construction%20Permit/Related%20Circulars/DCPR-%202034%20and%20Notification.pdf",
+        "title": "DCPR- 2034 and Notification.pdf - Mumbai",
+        "publish_date": "2018-06-10",
+        "excerpts": [
+          "# y--z,~\n## **PART VIII GENERAL BUILDING REQUIREMENTS**\n### **Height of Habitable Room/s**\ndepartmental stores, malls, entrance halls and lobbies to departmental stores and assembly, Data Centre, Data ware house, Large/ Big Box Retailors ii) IT buildings, office buildings (e)i) Exhibition cum Convention Centre, Sport facility requiring more height ii) Sound Recording/Film Studio, Warehouse (f)\n\n...\n\n2.75\n2.2\n2.4\n3.6\n2.75\n4.2\n4.2\n2.75\n3.9 4.2\n3.9 4.2\n3.9 4.2\n4.2 6.0*\n4.2*\n8.8*\n12*\n3.9 4.2\n2. Pitched roof – (a) Any habitable room\n2.75\n(average with 2.4 m at the lowest point)\n3.9 4.2\n(Average with 2.8 m at the lowest\npoint).\n\n...\n\n### (25) **_(23) Parapet:_** Parapet walls and hand-rails provided on the edges of the roof terrace, balcony, etc. shall not be less than 1.15 1.50 m from the finished floor level and shall not more than 1.30m in height above the finished floor level. Parapet wall\n347\n**PART - VIII GENERAL BUILDING REQUIRMENTS** **DCPR-2034**\n\n...\n\n### (I)For structure, installations or buildings including installations in the vicinity of aerodromes, a) The height shall be restricted to permissible top elevation as mentioned on Colour Coded Zoning Maps (CCZM) prepared by the Airport Authority of India (AAI) published on its web site.\n**DCPR-2034**\n\n...\n\n**Development Control and Promotion Regulation-2034**\n\n...\n\n## **PART XI MISCELLANEOUS PROVISIONS**\n### **categorization**\npermissibility in above\nland use zone shall be\nas per respective\nDCR/DCPR.\n4\n**Type of building** Residential and other\nbuildings as per\nDCR/DCPR\nResidential and other\nbuildings as per\nDCR/DCPR\n5 **Proposed**\n**Structure of**\n**Building/Storey**\n**G.F. / P+1**\nRCC./Load Bearing\n**G.F.+1/P+2**\nRCC./Load Bearing\n\n...\n\n## **PART- XII ENVIRONMENTAL SUSTAINABILITY**\n### 466\n**_Draft Development Plan 2034_**\n**_Municipal Corporation of Greater Mumbai_**\n**APPENDICES AND ANNEXURES**\n**Development Control and Promotion Regulation-2034**\n**DCPR-2034**\n**ANNEXURE 21**\n**(Regulation 11(8)**\nForm of Indemnity for Part Occupancy Certificate\nTo\n………………………………………..\nMunicipal Corporation of Greater Mumbai\nMumbai."
+        ]
+      },
+      {
+        "url": "https://www.scribd.com/document/402921230/DCPR-2034-Note-I-Regulations-1-29-docx",
+        "title": "DCPR 2034: Mumbai Development Regulations | PDF | Architect | Business",
+        "publish_date": null,
+        "excerpts": [
+          "# DCPR 2034 NOTE\n## There are 8 Regulations in this chapter.\nRegulation no. 1 consists of Short title, extent and commencement.\n(I) Title: These Regulations shall be called the “Development Control and Promotion\nRegulations (DCPR) for Greater Mumbai, 2034”\n\n...\n\n## No permission shall be required for provision of safety grills to window/ventilator.\nNo permission shall be required for internal light weight partitions/cabins up to height of 2.2 in\nthe Residential/ Commercial building/establishment subject to structural stability from the\nLicensed Structural Engineer.\nFurther internal light weight partitions/cabins up to floor height\nwill be permissible if it satisfies the criteria for light & ventilation and other requirements of\nthese regulations certified by the Architect/Licensed Surveyor/Town Planner, fire safety\nrequirements certified by fire safety consultant and subject to structural stability from the\nLicensed Structural Engineer.\n\n...\n\n(1) Notice of intention: Every person who intends to carry out development or redevelopment,\nerect or re-erect a building or alter any building or part of a building shall give notice in writing\n\n...\n\n## (v) Sub-division/Lay-out Plan -Where development is proposed in a sub-division o involves a\ndetails of parking spaces, loading and un-loading spaces, if required to be provided\naround and within the building, as also the access ways and appurtenant open spaces with\n\n...\n\nbasement wall, wall construction, size and spacing of framing members, floor slabs and\nroof slabs with their materials. The section shall indicate the heights of the building and\nrooms and also the height of the parapet and the drainage and the slope of the roof. At\nleast one section should be taken through the staircase & Lift well. The certified\nstructural plan by Structural Engineer/Consultant giving details of all structural elements\nand materials used along with structural calculations can be submitted separately, but"
+        ]
+      },
+      {
+        "url": "https://www.godbolemukadam.com/pdfs/mumbai/MUBAI-DCPR.pdf",
+        "title": "MUNICIPAL CORPORATION OF GRETER MUMBAI DEVELOPMENT CONTROL",
+        "publish_date": null,
+        "excerpts": [
+          "# REGULATION 2034\n## **DEVELOPMENT**\n### with subject to NOC from CFO and NOC from controller of\nRSA 7.1\nFilm Studio/ TV Studio\nFilm Studio/ TV\nStudio/Dubbing &\nRecording Studio/\nPreview Theater with administrative office, Art and culture\nrelated uses\nATM, shops,\nDispensary, Canteen,\n1 or 2\nZb=10\n9 RSA 8.1\nAnimal shelter\nAnimal shelter, shed for animals with\nanimal eating &\n\n...\n\n## **PART V- FLOOR SPACE INDEX**\n### ii) Maximum permissible TDR loading as mentioned above on any plot shall be exclusive of FSI allowed for inclusive housing if any. iii) The quantum of maximum permissible TDR loading mentioned above shall include slum TDR at least 20 % and maximum to the extent of 50% of column\nno. 6 of Table No. 12 regulation 30(A) or as decided by Govt.\n\n...\n\n## **PART VIII GENERAL BUILDING REQUIREMENTS**\n### **Height of Habitable Room/s**\nSr. No.\nOccupancy\nMinimum\nheight\nin meters (m)\nMaximum height\nin meters (m)\n(1)\n(2)\n(3)\n(4)\n1. Flat roof. (a) Any habitable room (b) Bathrooms, Water Closets,\n\n...\n\nCentre, Sport facility requiring more height ii) Sound Recording/Film Studio, Warehouse (f) Shops.\n2.75\n2.2\n2.4\n3.6\n2.75\n4.2\n4.2\n2.75\n4.2\n4.2\n4.2\n6.0*\n4.2*\n8.8*\n12*\n4.2\n2. Pitched roof – (a) Any habitable room\n2.75\n(average with 2.4 m at the lowest point)\n4.2\n(Average with 2.8 m at the\nlowest point).\n\n...\n\n## **PART IX URBAN SAFETY REQUIREMENTS**\n### (b) The structural design shall comply with Indian Standard Codes of structural design for structural safety, seismic safety and against cyclone/wind storms as listed below and as amended upto date:\na. Indian Standard Code of Practice for Earthquake Resistant Design\n\n...\n\n### The supervision certificate and the completion certificate of every such building shall contain a certificate recorded by the Structural Engineer that the norms of IS: 18\n**PART** **–** **IX URBAN SAFETY REQUIREMENTS** **DCPR-2034**\n\n...\n\n## **PART X SPECIAL PROVISIONS**\n### such building shall be termed as Grade-II (B).\nshould not be a pastiche/ tasteless imitation of it. **ii** ) Essential structural\nand non-structural\nrepairs shall be allowed for structural stability while retaining the original\narchitectural features.\niii) Reconstruction /\nredevelopment shall be\nallowed with the\npermission of\n\n...\n\n### The land owned by Forest Department and reserved for public purpose shall have to be developed with the special permission of the Municipal Commissioner as per the provisions of Forest Act.\n**Building/Storey**\n**G.F. / P+1** RCC./Load Bearing\n**G.F.+1/P+2** RCC./Load Bearing\n6 **Front and side**\n**open spaces,**\n**Provision of**"
+        ]
+      },
+      {
+        "url": "https://www.mcgm.gov.in/irj/go/km/docs/documents/Estates-Dept/33(12)(B)%20circular%20no%2030.pdf",
+        "title": "BRIHANMUMBAI MUNICIPAL CORPORATION - No. AC",
+        "publish_date": "2023-06-20",
+        "excerpts": [
+          "# I\n## While preparing the priority list of roads / junctions to be cleared of encroachment / encumbrances, necessity of the same from public point of view shall be considered and approval of Zonal DMC / Jt.MC for this priority list alongwith name of occupant of structures on each road as per format \"A-1\" and \"A-2\" shall be obtained. There after Asstt. Commissioner of concerned ward will issue Annexure-II from this priority list only within period of one month. This priority list of road along with name of occupan\n### redevelopment scheme viz 33(10), 33(12)(A) or under any other regulation of DCPR-2034 so as to avoid dual benefit.\n**k)** It shall be responsibility of the scheme owner / developer who wishes"
+        ]
+      },
+      {
+        "url": "https://www.mcgm.gov.in/irj/go/km/docs/documents/EODB/Construction%20Permit/Related%20Circulars/Transitional_Policy_ongoing_proposals_04122018.pdf",
+        "title": ")c chE\\DP Ge\"., a-O \\8-\\\\ Municipal Corporation of Greater Mumbai",
+        "publish_date": null,
+        "excerpts": [
+          "2034, the utilisation of balance additional FSI on payment of premium may\nbe allowed as per the shortfall in permissibility as per column no 5, of\nTable 12 of Regulation 30(A) of DCPR 2034 keeping the total permissible\nFSI as per column no. 7 of Table 12 of Regulation 30(A) of DCPR 2034.\n9"
+        ]
+      },
+      {
+        "url": "https://www.cracindia.in/admin/uploads/IS-875---2.pdf",
+        "title": "IS 875-2 (1987): Code of Practice for Design Loads (Other ...",
+        "publish_date": null,
+        "excerpts": [
+          "IS 875-2 (1987): Code of Practice for Design Loads (Other ...\nPractice for Design Loads. For Buildings And Structures, Part 2: Imposed Loads. Part I: Code of Practice for Dead and Imposed Loads. This standard ( Part 2)"
+        ]
+      },
+      {
+        "url": "https://resources.housiey.com/admin/uploads/project_legal_docs/3925_1771403415066-924459883.pdf",
+        "title": "BRIHANMUMBAI MUNICIPAL CORPORATION Intimation of Disapproval under Section 346 of the Mumbai Municipal Corporation Act, as amended up to date.",
+        "publish_date": "2025-05-29",
+        "excerpts": [
+          "# **BRIHANMUMBAI MUNICIPAL CORPORATION**\n## **amended up to date.**\n### No.\nPage 1 of 12 On 29-May-2025\nThat the requisitions of Reg. 49 of DCPR 2034 shall not be complied with and records of quality of work, verification report, etc. shall not be maintained on site till completion of the entire work.\n7\n\n...\n\n26\nRUT for excess parking to be handed over to BMC if full FSI is not consumed will not be submitted before CC\n27\nThat the requisitions as per Reg. 11, 12(4) & 12(5) of DCPR shall not be complied with during tenure of project and Indemnity bond Indemnifying BMC to that effect shall not be submitted.\n28\n\n...\n\n### **C: CONDITIONS TO BE COMPLIED BEFORE FURTHER C.C**\nThat the plinth/stilt height completion certificate from Architect/ Structural Engineer/Site Supervisor shall not be submitted as per annexure 14 of DCPR 2034 & Plinth shall not be got checked by this office staff\n1\nAll the requisite payments as intimated by various departments of BMC shall not be paid. 2\nThat the Structural stability certificate through Regd. Structural Engineer regarding stability of constructed plinth shall not be submitted before asking for C.C. beyond plinth.\n3\n\n...\n\n### No.\nThat Structural Engineer’s final Structural Stability Certificate for proposed building & parking tower along with upto date License copy and R.C.C. design plan shall not be submitted.\n8"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

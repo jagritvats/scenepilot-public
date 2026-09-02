@@ -1,0 +1,6 @@
+# gcloud uploads this directory to Cloud Build before Docker ever sees it, and it does NOT read
+# .dockerignore for that step. Without this file 450 MB of node_modules and 480 MB of .next go up
+# with every deploy; both are rebuilt inside the image anyway.
+node_modules
+.next
+.git

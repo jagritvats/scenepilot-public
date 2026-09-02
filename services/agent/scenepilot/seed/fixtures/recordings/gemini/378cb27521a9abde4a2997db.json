@@ -1,0 +1,129 @@
+{
+  "request": {
+    "role": "breakdown_agent",
+    "user_text": "SCENE HEADING: EXT. MUMBAI ROOFTOP — SUNSET\n\nACTION / DESCRIPTION:\nEXT. MUMBAI ROOFTOP — SUNSET\n\nA motorcycle tears across adjoining rooftops.\nA drone follows while fireworks explode over the skyline.\nRain begins as the rider jumps to an adjacent building."
+  },
+  "response": {
+    "output": {
+      "scene_summary": "A high-octane motorcycle chase across Mumbai rooftops at sunset, featuring a dramatic building-to-building jump as rain begins to fall and fireworks light up the skyline.",
+      "elements": [
+        {
+          "category": "CAST",
+          "name": "The Rider",
+          "description": "The protagonist/rider navigating the rooftops on a motorcycle.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "To be replaced by a professional stunt double for all riding and jumping sequences."
+        },
+        {
+          "category": "STUNTS",
+          "name": "Motorcycle Rooftop Jump",
+          "description": "High-speed motorcycle jump from one rooftop to an adjacent building.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Requires ramp construction, structural engineering approval of both rooftops, catch-netting/airbags, and safety wire rigs for the rider and bike."
+        },
+        {
+          "category": "STUNTS",
+          "name": "Precision Rooftop Riding",
+          "description": "Riding a motorcycle at high speeds across narrow, adjoining rooftop paths.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Rooftop edges must be clearly marked. Stunt rider must wear low-profile body armor under wardrobe."
+        },
+        {
+          "category": "VEHICLES",
+          "name": "Hero Motorcycle",
+          "description": "Lightweight, high-performance dirt bike or dual-sport motorcycle modified for stunts and jumps.",
+          "count": 2,
+          "implied": false,
+          "safety_notes": "Requires daily mechanical inspection of brakes, suspension, and tires. One primary and one identical backup vehicle required."
+        },
+        {
+          "category": "SPECIAL_EQUIPMENT",
+          "name": "FPV Heavy-Lift Camera Drone",
+          "description": "High-speed tracking drone to follow the motorcycle jump and capture dynamic aerials.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Must be operated by a licensed pilot. Flight path must not cross directly over the stunt rider's trajectory."
+        },
+        {
+          "category": "SFX",
+          "name": "Practical Rain FX",
+          "description": "Rain towers or overhead spray bars to simulate rain starting during the jump.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": "Water must be carefully managed to avoid making the motorcycle launch ramp slick, unless specifically prepped for wet-stunt traction."
+        },
+        {
+          "category": "VFX",
+          "name": "CGI Skyline & Fireworks",
+          "description": "Digital enhancement of the Mumbai skyline at sunset, adding explosive fireworks in the background.",
+          "count": 1,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "VFX",
+          "name": "Stunt Rig & Ramp Removal",
+          "description": "Digital removal of safety wires, launch/landing ramps, and safety catch equipment.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "WARDROBE",
+          "name": "Rider's Tactical Outfit",
+          "description": "Weatherproof, durable riding gear designed to accommodate low-profile stunt harness and protective pads.",
+          "count": 4,
+          "implied": false,
+          "safety_notes": null
+        },
+        {
+          "category": "WARDROBE",
+          "name": "Wet Wardrobe Duplicates",
+          "description": "Identical duplicates of the rider's outfit to maintain continuity between dry and wet takes.",
+          "count": 4,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "MAKEUP",
+          "name": "Sweat and Dirt Continuity",
+          "description": "Grime, sweat, and minor road-dirt makeup for the rider/stunt double.",
+          "count": 2,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SOUND",
+          "name": "Motorcycle Engine & Rain SFX",
+          "description": "High-revving engine audio, tire screeches on concrete, and sudden onset of heavy rain patter.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": null
+        },
+        {
+          "category": "SAFETY",
+          "name": "Rooftop Edge Barriers",
+          "description": "Temporary safety railings and fall-protection systems for crew members working near rooftop edges.",
+          "count": 1,
+          "implied": true,
+          "safety_notes": "All crew working within 10 feet of the roof edge must wear safety harnesses attached to certified anchor points."
+        }
+      ],
+      "stop_conditions": [
+        "Wind gusts exceeding 25 km/h (unsafe for drone operation and motorcycle jump stability).",
+        "Unplanned wetness on the launch ramp or takeoff zone prior to the jump execution.",
+        "Loss of direct radio communication between the Stunt Coordinator, Rider, and Drone Pilot.",
+        "Loss of ambient sunset light (magic hour window closed)."
+      ],
+      "continuity_notes": [
+        "The transition from dry to wet: The motorcycle and rider's wardrobe must start completely dry and show progressive wetness as the rain begins.",
+        "Bike damage: Ensure any scuffs or dirt on the motorcycle match prior scenes.",
+        "Sunset lighting: The sky gradient and light direction must match across all coverage angles, requiring careful scheduling during the golden hour."
+      ]
+    },
+    "tool_calls": []
+  }
+}

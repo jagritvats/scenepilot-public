@@ -1,0 +1,105 @@
+{
+  "request": {
+    "objective": "Find the lead times, restrictions, and step-by-step process for obtaining Mumbai Police NOC and DGCA Digital Sky permits for commercial drone filming in Mumbai.",
+    "search_queries": [
+      "Mumbai police drone permission lead time",
+      "Mumbai drone filming NOC restrictions rules",
+      "Digital Sky drone flight permission Mumbai rooftop"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_aba108bc02",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_6dd7ca91dc20870716b275b504bd4ad0",
+    "results": [
+      {
+        "url": "https://mumbaipolice.gov.in/Dronepermission?ps_id=2",
+        "title": "Application for permission to fly a drone",
+        "publish_date": null,
+        "excerpts": [
+          "# Application for permission to fly a drone\n## Applicant Details\nमार्ग पुर्व प्रादेशिक विभाग सायबर गावदेवी घाटकोपर गोराई गोरेगाव गोवंडी जोगेश्वरी जुहू काळाचौकी कांदिवली कांजूर मार्ग कस्तुरबा मार्ग खार खेरवाडी कुरार कुर्ला एल.टी. मार्ग एम.एच.बी.कॉलनी एम.आय.डी.सी.\nएम.आर.ए.मार्ग माहिम मलबार हिल मालाड मालवणी मानखुर्द मरीन ड्राईव्ह माटुंगा मेघवाडी मुलुंड मुंबई सागरी -१ मुंबई सागरी -२ ना.म.जोशी मार्ग नागपाडा नवघर नेहरू नगर निर्मल नगर उत्तर प्रादेशिक विभाग सायबर ओशिवरा पंतनगर पार्कसाईट पवई पायधुनी आर.ए.के.मार्ग आर.सी.एफ.\n\n...\n\n### Drone Handler Details\nFull Name *\nMobile Number *\nPermanant Address *\nUnmanned Aircraft Operator Permit (UAOP). *\nName of UAOP issuing authority *\nUpload Aadhar card * _Max 2 MB_\nUpload Drone Flying Experience Certificate / Document * _Max 2 MB_\nRemove\nAdd Drone Handler\n\n...\n\n### Terms and Conditions:\n1) Drone flight permission is granted only for the requested flight location.\n2) The flight radius of the application is also limited to the application site.\n3) The drone flight will be limited to the application program only and should be done on schedule and on scheduled day.\n\n...\n\n6) All other equipment used during the drone flight should be obtained with appropriate government permission.\n7) Drone should not be flown to vital installations / restricted / prohibited places.\nSo that It shall be the responsibility of the Applicant to ensure that such locations are not misused for photographing and carrying out harmful activities.\n8) Care must be taken that the drone will not be flown at altitude higher than necessary. (Maximum 100m)\n9) When flying the drone, inform the concerned police station and in coordination with them.\n10) Drone flight permits will be restricted to the area within the limits of Hon'ble Police Commissioner, Greater Mumbai."
+        ]
+      },
+      {
+        "url": "https://digitalsky.aai.aero/",
+        "title": "Welcome to DigitalSky",
+        "publish_date": "2026-07-15",
+        "excerpts": [
+          "# Flight Planning\n## Know About Airspace Zones\n### Yellow Zone\nPermission Required\nRestricted airspace requiring permission from Air Traffic Control authority.\nYellow Zone definition: “Yellow Zone” means the airspace of defined dimensions above the land areas or territorial waters of India within which unmanned aircraft system operations are restricted and shall require permission from the concerned air traffic control authority.\n\n...\n\n### Red Zone\nNo Flying Allowed\nHighly restricted airspace where UAS operations require Central Government permission only.\n\n...\n\n## News and Flight Plan Information\n### What's New\n#### Minimum Criteria for Authorization of Remote Pilot\n##### AIRPORTS AUTHORITY OF INDIA\n###### Regulations\n* [Drone Rules, 2021](https://digitalsky.aai.aero/pdf/Drone_rule_2021.pdf)\n* [Amendment Rules, 2022](https://digitalsky.aai.aero/pdf/Drone_Rules_2022.pdf)\n* [UTM Policy Framework](https://digitalsky.aai.aero/pdf/UTM-Policy-Framework.pdf)\n* [PLI Scheme](https://digitalsky.aai.aero/pdf/230076.pdf)\n\n...\n\n## DGCA Information\nDirectorate General of Civil Aviation (DGCA) has migrated the services for applying D-1 to D-5 Forms services from the existing Digital Sky Platform to the eGCA Portal as per link mentioned here\nhttps://www.dgca.gov.in/digigov-portal/jsp/dgca/common/login.jsp\nApplicant is requested to kindly register themselves on eGCA and may apply for D-1 to D-5 Forms services on eGCA portal only."
+        ]
+      },
+      {
+        "url": "https://digitalprintingmumbai.in/is-drone-photography-allowed-in-india-complete-dgca-rules-permit-guide-for",
+        "title": "Is Drone Photography Allowed in India? Complete DGCA Rules & Permit Guide for 2026",
+        "publish_date": "2026-07-24",
+        "excerpts": [
+          "# Is Drone Photography Allowed in India? Complete DGCA Rules & Permit Guide for 2026\n## Drone Flight Zone & Compliance Checker\n### Flight Parameters\nDrone Weight (grams) Required for license determination.\nLocation Type Select a location... Rural Area / Open Field (Green Zone) Town Outskirts / Semi-Restricted (Yellow Zone) Airport / Military / Taj Mahal (Red Zone)\nPlanned Altitude (Feet)\nHas Camera?\nCheck Compliance\n\n...\n\n#### Airspace Zone Guide\n##### Green Zone\n###### Yellow Zone\nSemi-restricted. Requires manual approval (up to 24 hours).\n\n###### Red Zone\nNo-Fly Zone. Strictly prohibited without special waiver.\nYou’ve just landed your drone in the middle of a stunning landscape near Jaipur. The lighting is perfect. You’re about to capture the shot of a lifetime when a local police officer waves you over. Your heart sinks. Are you going to get fined? Confiscated? Or worse?\n\n...\n\n## Step-by-Step: How to Fly Legally for Photography\n**Apply for Flight Authorization:** Use the UTM System (Unmanned Traffic Management) within the Digital Sky app. You submit a flight plan including coordinates, altitude, time, and date. For most recreational and commercial photo shoots in green zones, this approval is automated and instant.\nFor yellow zones (semi-restricted), it might take 24 hours for manual review.\n5. **Display Your ID:** Ensure your drone’s UIN is visibly displayed on the aircraft. It should be legible from a distance of 30 meters. If it gets scratched off, fix it before you fly.\n\n...\n\n## Tech Tips for Better Shots Within the Rules\nFinally, always do a pre-flight check. Wind conditions in coastal cities like Mumbai or Chennai can change rapidly. A gust can push your drone out of VLOS, which is a violation. Stay aware of your surroundings, not just your screen."
+        ]
+      },
+      {
+        "url": "https://www.psrcompliance.com/blog/drone-registration-india-2026",
+        "title": "How to Register a Drone in India (2026) – DGCA Digital Sky Process Guide",
+        "publish_date": "2026-03-07",
+        "excerpts": [
+          "      ```\n          In recent years, drones have become very common in India. People use them for photography, farming, land surveys, construction work, security, and even wedding videos. In cities like Delhi, Jaipur, Gurugram, and Mumbai, many busin\n      ```\n\n...\n\n      ```\n          The DGCA introduced the **Digital Sky Platform** , which is an online system used for drone registration and approvals.\n          \n      ```\n\n...\n\n      ```\n          \n          #### Step 1 – Create an Account\n          \n          First, the drone owner needs to create an account on the Digital Sky portal. This account will be used to apply for registration and manage all drone-related approvals.\n      ```\n\n...\n\n      ```\n          #### Step 5 – Get Unique Identification Number (UIN)\n          \n          After verification, the government will issue a Unique Identification Number (UIN) for your drone. This number must be clearly displayed on the drone.\n          \n      ```\n\n...\n\n      ```\n          \n          These mistakes can lead to **fines or confiscation of the drone** .\n          \n          ### Time and Cost of Drone Registration\n          \n      ```\n\n...\n\n      ```\n          **11\\. Is Digital Sky the only legal platform for drone compliance in India?**  \n          Yes, the Digital Sky Platform is the official and legal portal for drone registration and compliance.\n          \n      ```"
+        ]
+      },
+      {
+        "url": "https://mumbaipolice.gov.in/Dronepermission?ps_id=0",
+        "title": " Application for permission to fly a drone |\nMumbai Police ",
+        "publish_date": null,
+        "excerpts": [
+          "# Application for permission to fly a drone\n## Applicant Details\nमार्ग पुर्व प्रादेशिक विभाग सायबर गावदेवी घाटकोपर गोराई गोरेगाव गोवंडी जोगेश्वरी जुहू काळाचौकी कांदिवली कांजूर मार्ग कस्तुरबा मार्ग खार खेरवाडी कुरार कुर्ला एल.टी. मार्ग एम.एच.बी.कॉलनी एम.आय.डी.सी.\nएम.आर.ए.मार्ग माहिम मलबार हिल मालाड मालवणी मानखुर्द मरीन ड्राईव्ह माटुंगा मेघवाडी मुलुंड मुंबई सागरी -१ मुंबई सागरी -२ ना.म.जोशी मार्ग नागपाडा नवघर नेहरू नगर निर्मल नगर उत्तर प्रादेशिक विभाग सायबर ओशिवरा पंतनगर पार्कसाईट पवई पायधुनी आर.ए.के.मार्ग आर.सी.एफ.\n\n...\n\n### Drone Handler Details\nFull Name *\nMobile Number *\nPermanant Address *\nUnmanned Aircraft Operator Permit (UAOP). *\nName of UAOP issuing authority *\nUpload Aadhar card * _Max 2 MB_\nUpload Drone Flying Experience Certificate / Document * _Max 2 MB_\nRemove\nAdd Drone Handler\n\n...\n\n### Terms and Conditions:\n1) Drone flight permission is granted only for the requested flight location.\n2) The flight radius of the application is also limited to the application site.\n3) The drone flight will be limited to the application program only and should be done on schedule and on scheduled day.\n\n...\n\nSo that It shall be the responsibility of the Applicant to ensure that such locations are not misused for photographing and carrying out harmful activities.\n8) Care must be taken that the drone will not be flown at altitude higher than necessary. (Maximum 100m)\n9) When flying the drone, inform the concerned police station and in coordination with them.\n10) Drone flight permits will be restricted to the area within the limits of Hon'ble Police Commissioner, Greater Mumbai."
+        ]
+      },
+      {
+        "url": "https://dronemap.com/in/mh/mumbai/rules",
+        "title": "Permission Required: Mumbai – Mumbai, MH",
+        "publish_date": "2026-05-31",
+        "excerpts": [
+          "# Drone Rules for Mumbai\nMumbai, Maharashtra (MH)\n• India\nMarine Drive\nLat: 19.0902 • Lng: 72.8628\n* Rules\n* Edit History\n* Discussion\n* Contributors\nAir Permission required Last updated: May 31, 2026\nSummary\n\n...\n\nMuch of South Mumbai falls within the Indian Navy's 3 km designated “No-fly Zone”\nSo Permission is required to fly drones\nAny lawful drone flight in India requires clearance on the official DGCA Digital Sky Platform. For Mumbai, you must also submit an application to the Greater Mumbai Police and coordinate with the local police station before flying.\nMap is not loaded yet\nLoad the map only when you need to view the rule outline."
+        ]
+      },
+      {
+        "url": "https://thinkrobotics.com/blogs/learn/drone-photography-regulations-india-complete-legal-guide-for-safe-and-compliant-aerial-photography-in-2025",
+        "title": "Drone Photography Regulations India: Complete Legal Guide for Safe and – ThinkRobotics.com",
+        "publish_date": null,
+        "excerpts": [
+          "# Drone Photography Regulations India: Complete Legal Guide for Safe and Compliant Aerial Photography in 2025\n## Understanding India's Drone Photography Legal Framework\n### Key Regulatory Bodies\nDirectorate General of Civil Aviation (DGCA): The primary regulatory authority responsible for drone safety and operational oversight throughout India.\nDigital Sky Platform: The central online platform for all drone-related registrations, permissions, and flight clearances managed by DGCA.\n\n## Mandatory Registration Requirements\n### Digital Sky Platform Registration\nYou must register your drone on the Digital Sky Platform by DGCA and get a Unique Identification Number (UIN). All drones except Nano drones used for personal purposes should be registered on the DGCA's Digital Sky Platform.\nRegistration Process:\n\n...\n\nUIN Requirements: Every drone above 250 grams (micro and above) must be registered on the Digital Sky Platform. The UIN must be prominently displayed on the drone before any flight operations.\n\n...\n\n## No-Fly Zones and Restricted Areas\n### Critical Infrastructure\nAirport Restrictions:\n* Delhi Indira Gandhi International Airport: Within 5 km radius restricted\n* Mumbai Chhatrapati Shivaji Airport: 5 km radius no-fly zone\n* Chennai International Airport: 5 km radius restriction\n* All airports nationwide maintain similar restricted perimeters\n\n...\n\n## Permissions and Clearance Procedures\n### Digital Sky Platform Process\nFlight Permission Application:\n* Submit detailed flight plan including location, duration, and purpose\n* Specify equipment details and operator credentials\n* Allow 24-48 hours for approval processing"
+        ]
+      },
+      {
+        "url": "https://www.medianama.com/2020/05/223-inside-the-deployment-of-drones-in-mumbai-coronavirus",
+        "title": "Inside the deployment of drones in Mumbai to contain COVID-19 - MEDIANAMA",
+        "publish_date": "2020-05-08",
+        "excerpts": [
+          "# Inside the deployment of drones in Mumbai to contain COVID-19\n## At the helm\nNone of these pilots have a drone flying licence because aviation regulator Directorate General of Civil Aviation (DGCA) hasn’t authorised any drone training agency in the country, according to Shah.\n\n...\n\n> Subject: Drone Pilot Authorisation for Drone Surveillance for Monitoring Coronavirus LockdownTo whomsoever it may concern,The Drone Federation of India (DFI) is authorised by the Mumbai Police to fly drones to monitor the Coronavirus Lockdown as per the permission letter attached.About Drone Federation of India\n\n...\n\n## Finding DGCA\nAccording to [current drone regulations](https://www.medianama.com/2018/12/223-drones-online-registration-india/) , a clearance is required from the DGCA before each drone takes flight. Called NPNT (no permission no takeoff), it is conceptually a green signal without which drones aren’t authorised to fly.\nShah said that the Digital Sky platform, which handles this clearance, hasn’t been given that functionality yet. “As of now, we can only register pilots and drones on the portal, and you can’t get permission,” Shah said.\nThe government has reacted to this now, however. It has [created a portal](https://www.medianama.com/2020/05/223-govt-can-deploy-coronavirus-drone-surveillance/) specifically for government bodies to deploy drones for COVID-19 related work such as aerial surveillance and photography and for public announcements."
+        ]
+      },
+      {
+        "url": "https://www.mavdrones.com/understand-the-digital-sky-airspace-map-drone-blog/",
+        "title": "Understand The Digital Sky Airspace Map In India",
+        "publish_date": null,
+        "excerpts": [
+          "Don’t hover your drone over private property without permission. Don’t hover your drone in controlled airspace near an airport without filing a flight plan. Get approval from · AAI/ADC at least 24 hours before the operation. Don’t drop or carry hazardous material. The Digital Sky Airspace Map in India consolidates all these categories."
+        ]
+      },
+      {
+        "url": "https://www.unmannedairspace.info/latest-news-and-information/mumbai-police-temporarily-ban-drone-flights/",
+        "title": "Mumbai Police temporarily bans drone flights - Unmanned airspace",
+        "publish_date": "2024-10-29",
+        "excerpts": [
+          "# Mumbai Police temporarily bans drone flights\nIndia’s Mumbai Police have issued a temporary ban on drone flights in the district, effective from October 31, citing terrorism concerns.\nThe operation of drones, remote-controlled microlight aircraft, paragliders and hot air balloons is prohibited until after November 29. The [order](https://mumbaipolice.gov.in/files/PressRelease/2737.pdf) states that “restrictions are necessary to prevent probable sabotage”.\nMumbai Police will be able to operate its own uncrewed aerial systems for surveillance and specific permission can be requested for flights."
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

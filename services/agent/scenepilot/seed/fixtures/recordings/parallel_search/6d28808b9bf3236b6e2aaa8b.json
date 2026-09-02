@@ -1,0 +1,97 @@
+{
+  "request": {
+    "objective": "Determine the exact live load requirements for accessible roofs under IS 875 Part 2, the specific BMC/MCGM NOC requirements for rooftop filming/stunts, and the role of BMC-licensed structural engineers in certifying temporary stunt structures.",
+    "search_queries": [
+      "IS 875 Part 2 roof live load accessible",
+      "BMC film shooting temporary structure NOC",
+      "Mumbai structural stability certificate licensed engineer"
+    ],
+    "mode": "advanced",
+    "session_id": "scenepilot_planning_run_63d2b83006",
+    "client_model": "gemini-3.5-flash"
+  },
+  "response": {
+    "search_id": "search_37829922833a9a453ae6bf77142b650b",
+    "results": [
+      {
+        "url": "https://infralens.in/code/IS-875-Part-2-1987",
+        "title": "IS 875 Part 2:1987 PDF · Imposed Loads on Buildings",
+        "publish_date": "2026-05-11",
+        "excerpts": [
+          "🏗 BOQ Builder · Auto-BOQ from dimensions, DSR rates NEW → [📋 BidEasy · Government tenders, searchable LIVE →](https://tenders.infralens.in) [▶ InfraLens App · Free on Play Store, offline-ready NEW →](https://play.google.com/store/apps/details?id=in.infralens.app)"
+        ]
+      },
+      {
+        "url": "https://yojoapp.com/en/blog/structural-stability-certificate-india-guide/",
+        "title": "Structural Stability Certificate in India — When, Who, and How to Get One | Yojo",
+        "publish_date": "2026-04-06",
+        "excerpts": [
+          "# Structural Stability Certificate in India — When, Who, and How to Get One\n## Table of Contents\n* Why This Matters for Contractors\n* Who Needs to Comply / What It Is\n* Step-by-Step Process\n* Step 1: Engage a Licensed Structural Engineer\n* Step 2: Visual Inspection\n* Step 3: Non-Destructive Testing (NDT)\n* Step 4: Core Testing (if required)\n* Step 5: Load Assessment and Structural Analysis\n\n...\n\n### Table of Contents\n* Why This Matters for Contractors\n* Who Needs to Comply / What It Is\n* Step-by-Step Process\n* Step 1: Engage a Licensed Structural Engineer\n* Step 2: Visual Inspection\n* Step 3: Non-Destructive Testing (NDT)\n* Step 4: Core Testing (if required)\n* Step 5: Load Assessment and Structural Analysis\n\n...\n\n## Who Needs to Comply / What It Is\n* Licensed structural engineer registered with the state Council of Engineers or Institution of Engineers (India)\n* Engineer must hold a minimum qualification of B.E./B.Tech in Civil or Structural Engineering with relevant experience (typically 5+ years)\n\n...\n\n## Step-by-Step Process\n### Step 5: Load Assessment and Structural Analysis\n* Compare actual loads (dead load + live load + imposed loads) with the design capacity\n* Check for any unauthorized floor additions or use changes that have increased loading\n* For buildings in seismic zones (Zones III, IV, V), evaluate earthquake resistance per IS 1893\n\n...\n\n## State-Wise Variations\n| State/City | Mandatory Age for Structural Audit | Frequency | Governing Rule |\n| **Maharashtra (Mumbai, Pune)** | 30 years | Every 10 years after first audit | Maharashtra Regional and Town Planning Act; BMC circular |\n| **Delhi** | 30 years (proposed, not universally enforced) | Advisory basis | MCD guidelines |\n\n...\n\n* MCGM categorizes old buildings as C1 (requires immediate repair) or C2 (habitable with repair)\n* BMC can issue eviction and demolition notice for buildings classified as dangerous (Section 354 of MMC Act)\n* Structural audit reports must be submitted by housing societies to BMC annually for buildings above 30 years\n\n...\n\n## Common Mistakes to Avoid\nMunicipal corporations in Mumbai, Delhi, and Chennai maintain specific empanelment lists. A certificate from a non-empanelled engineer will not be accepted for OC processing or BMC compliance."
+        ]
+      },
+      {
+        "url": "https://testbook.com/question-answer/the-live-load-taken-for-the-design-of-roof-of-an-i--61b8abeda818327a00638004",
+        "title": "[Solved] The live load taken for the design of roof of an industrial",
+        "publish_date": "2026-08-19",
+        "excerpts": [
+          "* [Home](https://testbook.com)\n* [Design of Steel Structures](https://testbook.com/objective-questions/mcq-on-design-of-steel-structures--5eea6a0b39140f30f369dd82 \"Design of Steel Structures\")\n* [Roof Truss](https://testbook.com/objective-questions/mcq-on-roof-truss--5eea6a0b39140f30f369dd83 \"Roof Truss\")\n\n...\n\n# The live load taken for the design of roof of an industrial building using truss which is accessible, is\n[View all UKPSC JE Papers >](https://testbook.com/ukpsc-je/previous-year-papers)\n1. 0.75 k N/m ²\n2. 1.5 k N/m ²\n3. 2.0 k N/m ²\n4. 5.0 k N/m ²\n\n...\n\n## Detailed Solution\nShare [Download Solution PDF](https://testbook.com/login?tile=signup&referrer=QnA&referrerType=QnA&headerText=Sign%20Up%20To%20Get%20Free%20Solution%20PDF&redirect_url=https%3A%2F%2Ftestbook.com%2Fquestion-answer%2Fpdf.php%3Fq%3D61b8abeda818327a00638004)\n**Concept:**\n**According to IS 875(part 2) - Imposed load**\n\n...\n\n| (a) **Access provided** | **1.5 kN/m ²** | 3.75 kN uniformly distributed over any span of one-meter width of the roof slab and 9 kN uniformly distributed over the span of any beam or truss or wall |\n| (b) Access not provided except for maintenance | 0.75 kN/m ² | 1.9 kN uniformly distributed over any span of one-meter width of the roof slab and 4.5 kN uniformly distributed over the span of any beam or truss or wall |\n| 2. Sloping roof with a slope greater than 10 degrees |  |  |\n|  | For roof membrane sheets or put-line, 0.75 kN/m ² less 0.02 kN/m ² for every degree increase in slope over 10 degrees | Subject to a minimum of 0.4 kN/m ² |\n**Hence, The live load taken for the design of the roof of an industrial building using a truss that is accessible is 1.5 kN/m 2**\n[Download Solution PDF](https://testbook.com/login?tile=signup&referrer=QnA&referrerType=QnA&headerText=Sign%20Up%20To%20Get%20Free%20Solution%20PDF&redirect_url=https%3A%2F%2Ftestbook.com%2Fquestion-answer%2Fpdf.php%3Fq%3D61b8abeda818327a00638004) Share\nLatest UKPSC JE Updates\nLast updated on Mar 26, 2025"
+        ]
+      },
+      {
+        "url": "https://indianexpress.com/article/cities/mumbai/bmc-razes-2-film-studios-in-madh-for-unauthorised-construction-8149433/",
+        "title": "BMC razes 2 film studios in Madh for unauthorised construction | Mumbai News - The Indian Express",
+        "publish_date": "2022-09-14",
+        "excerpts": [
+          "<strong>The sheds were given permissions from the ward office to erect temporary studio structures in 2020, and 2021, to boost film production industry post-pandemic. At the time, BMC checked if the applicants had MCZMA no-objection certificates. Both the BMC and MCZMA permissions are valid for a period of six months</strong>"
+        ]
+      },
+      {
+        "url": "https://www.hindustantimes.com/cities/mumbai-news/bmc-to-amend-rules-to-allow-temporary-film-studios-in-mumbai-101747422360003.html",
+        "title": "BMC to amend rules to allow temporary film studios in Mumbai | Mumbai news",
+        "publish_date": "2025-05-17",
+        "excerpts": [
+          "# BMC to amend rules to allow temporary film studios in Mumbai\n## When HT contacted the officials in question, a senior BMC officer said that the state government had directed them to make the change in the DCPR and allow studios on a temporary basis with the permission of the municipal commissioner for a minimum period of six months and a maximum of three years\nstructures in which a lot of steel and"
+        ]
+      },
+      {
+        "url": "https://thecivilstudies.com/structural-loads-is-875-is-1893/",
+        "title": "IS 875 Explained: Structural Loads As Per IS 875 & IS 1893",
+        "publish_date": "2025-12-30",
+        "excerpts": [
+          "# IS 875 Explained: Structural Loads as per IS 875 & IS 1893\n## **Types of Loads in Structures as per IS 875 & IS 1893**\n* **Dead Load** (IS 875 Part 1)\n* **Live or Imposed Load** (IS 875 Part 2)\n* **Wind Load** (IS 875 Part 3)\n* **Earthquake or Seismic Load** (IS 1893)\n\n...\n\n## **Live (Imposed) Load**\nFor example, Residential floors: **2.0 kN/m² (as per IS 875 Part 2),** office may be **3.0 kN/m²** , and shopping malls **4.0 kN/m²** **[(values from IS 875-2 tables).](https://thecivilstudies.com/is-code-assistant/)** **Roof loads** depend on access: I **S 875-2 specifies** **1.5 kN/m²** for accessible flat roofs\nor **0.75 kN/m²** if no access.\n_**Live load calculations follow the code procedure:**_\n* Use the **minimum characteristic value** from IS 875-2 for the given occupancy (e.g. offices, assembly, warehouse).\n* Assume live load as **_uniformly distributed load (UDL)_** unless concentrated loads are specified (e.g. machinery).\n\n...\n\nLive load due to people and furniture on residential floor as per IS 875 Part 2 **_Image: imposed load from occupants and furniture on a residential floor slab according to IS 875 Part 2_**\n\n...\n\n## **Load Combinations and Design Considerations**\n### Design and Code Terminology (IS 875 & IS 1893)\n1. **_Characteristic Load:_** The value of a load that is not expected to be exceeded during the life of a structure. For live loads, it’s typically taken as a representative value specified in IS 875 Part 2 based on occupancy.\n2.\n\n...\n\n## **FAQs: Structural Loads as per IS 875 & IS 189**\nLive load is **transient and variable** , such as the weight of occupants, furniture, or movable equipment. Unlike dead load, it **changes over time and location** , and is defined in **IS 875 Part 2** .\nHow do you calculate wind load as per IS 875 Part 3?\n\n...\n\nLive loads depend on occupancy:\nResidential floors: **2.0 kN/m² (IS 875 Part 2)**\nOffices: **3.0 kN/m²**\nShopping malls: **4.0 kN/m²**\nas per **IS 875 Part 2** .\nCan live loads be reduced in design?"
+        ]
+      },
+      {
+        "url": "https://www.mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+        "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI",
+        "publish_date": "2019-05-22",
+        "excerpts": [
+          "# **MUNICIPAL CORPORATION OF GREATER MUMBAI**\n## Contents\n### GENERAL CONDITIONS:............................................................................................................ 11\nSPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO: ..................................... 12\n\n...\n\n## **CURRENT PROCESS:**\n### temporary/ semi-permanent structures within the MCGM Ward Jurisdiction” vide no SL/29575/Advt. dated 01.03.2019 to be followed for issuance of all the permissions. The ci\nsoon through State Single Window System.\n\n### temporary structures. Requirements for erection of temporary structure and any other special requirement shall be captured in the common application form. Many a times th\nbe obtained through State Single Window as per Govt. Notification under no.गोचिन\n2016/प्र.क्र.189/स ां.क -1 dt. 22.05.2018. MCGM is only involved in the grant of permission for Film\nshooting as per the scope defined in the circular vide no. अ. अ/ ओडी/ ९७०/आ.ज . दि. 16.10.2015.\n\n### / Municipal Markets /Municipal Sports Complex/ Private Properties - At ward level through Assistant Commissioner (Ward), as per remarks from the concerned officer\nof the department at ward level. Hence, The Assistant Commissioner (ward) is designated as the Nodal Agency For implementation of this policy in respective ward jurisdiction\n\n...\n\n## **SPECIFIC CODIFIED REQUIREMENTS FOR SHOOTING/ FILM STUDIO:**\n### **Building and Factory Department Codified Requirements for Temporary structure on Private Property:**\n\n\n### A detail layout plan showing the size of the temporary structures, whether Indoor or Outdoor along with necessary sections shall be uploaded/submitted duly certified by a Licensed Architect.\n\n\n### In case any temporary structure is to be set-up involving occupation by people, Structural Stability Certificate from Registered Structural Engineer shall also be enclosed with the application.\n"
+        ]
+      },
+      {
+        "url": "https://www.cracindia.in/admin/uploads/IS-875---2.pdf",
+        "title": "IS 875-2 (1987): Code of Practice for Design Loads (Other ...",
+        "publish_date": null,
+        "excerpts": [
+          "IS 875-2 (1987): Code of Practice for Design Loads (Other ...\n1.1 This standard ( Part 2) covers imposed loads*. ( live loads ) to be assumed in the design of build- ings. The imposed !oads, specified herein, are minimum"
+        ]
+      },
+      {
+        "url": "https://portal.mcgm.gov.in/irj/go/km/docs/documents/Business/FilmShootingPolicy.pdf",
+        "title": "MUNICIPAL CORPORATION OF GREATER MUMBAI",
+        "publish_date": null,
+        "excerpts": [
+          "D. All applications for temporary Film Shooting permissions shall be accompanied with · Police and Traffic NOC through Ward One Window as per the circular vide no. अ.अ/ओडी/१७०/आ.ज / dated 16.10.2015. E. In case wherever temporary structure is required, the applicant needs"
+        ]
+      }
+    ],
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "warnings": []
+  }
+}

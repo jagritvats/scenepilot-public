@@ -1,0 +1,96 @@
+{
+  "request": {
+    "role": "evidence_analyst",
+    "user_text": "RESEARCH QUESTION rq_@@@@@@_2: What is the current regulatory process, lead time, and restriction list for flying commercial camera drones over urban Mumbai rooftops?\nWHY IT MATTERS: Identify the current application process, lead times, and restrictions for obtaining DGCA Digital Sky permits and Mumbai Police NOCs for commercial drone filming, preferring official DGCA and Mumbai Police documentation.\nSCENE: EXT. MUMBAI ROOFTOP — SUNSET\nREQUIREMENTS SERVED:\n- req_sc_42_3: DGCA drone flight permits and local police clearance for operating a camera drone over urban Mumbai rooftops at sunset.\n\nSEARCH RESULTS (Parallel Search API):\n### SearchRun search_@0 — objective: What is the current regulatory process, lead time, and restriction list for flying commercial camera drones over urban Mumbai rooftops? — Identify the current application process, lead times, and restrictions for obtaining DGCA Digital Sky permits and Mumbai Police NOCs for commercial drone filming, preferring official DGCA and Mumbai Police documentation.\nqueries: ['Mumbai police drone permission filming', 'DGCA Digital Sky permission Mumbai', 'commercial drone permit India process']\n[search_@0#1] How to Get a Drone Permit for Commercial Use in India? — https://www.flapone.com/blog/how-to-get-a-drone-permit-for-commercial-use-in-india — published: unknown\n    > To apply for a drone license in India, <strong>register on the Digital Sky platform</strong>. Here are the steps to follow: ... Upon completing the registration process, a UIN will be received for your drone.\n[search_@0#2] Application for permission to fly a drone — https://mumbaipolice.gov.in/Dronepermission?ps_id=2 — published: unknown\n    > ### Application for permission to fly a drone  * * *  ### Applicant Details     Full Name \\*  Contact Number \\*  Address \\*  E-mail ID \\*  Are you applying as an individual or a company?\\*   Individual Private Company Government Agency/Organisation Semi Government  Select Police Station आरे आग्रीपाडा विमानतळ अंबोली अंधेरी अँटॉप हिल आझाद मैदान बी.के.सी. वांद्रे बांगुर नगर लिंक रोड भांडुप भोईवाडा बोरीवली भायखळा मध्य प्रादेशिक विभाग सायबर चारकोप चेंबूर चुनाभट्टी कुलाबा कफ परेड सायबर डी.एन.नगर दादर दहिसर देवनार धारावी दिंडोशी डोंगरी डॉ. डी. बी.  ...  Commercial Industrial Construction Film Shoot W\n[search_@0#3] Welcome to DigitalSky — https://digitalsky.dgca.gov.in/ — published: unknown\n    > <strong>Requests for flight plan approvals can now be submitted online</strong>. Such requests will be reviewed by authorities and approved online through DigitalSky.\n[search_@0#4]  Application for permission to fly a drone |\nMumbai Police  — https://mumbaipolice.gov.in/Dronepermission?ps_id=0 — published: unknown\n    > ### Application for permission to fly a drone  * * *  ### Applicant Details     Full Name \\*  Contact Number \\*  Address \\*  E-mail ID \\*  Are you applying as an individual or a company?\\*   Individual Private Company Government Agency/Organisation Semi Government  Select Police Station आरे आग्रीपाडा विमानतळ अंबोली अंधेरी अँटॉप हिल आझाद मैदान बी.के.सी. वांद्रे बांगुर नगर लिंक रोड भांडुप भोईवाडा बोरीवली भायखळा मध्य प्रादेशिक विभाग सायबर चारकोप चेंबूर चुनाभट्टी कुलाबा कफ परेड सायबर डी.एन.नगर दादर दहिसर देवनार धारावी दिंडोशी डोंगरी डॉ. डी. बी.  ...  Commercial Industrial Construction Film Shoot W\n[search_@0#5] Drone Regulatory Developments In India: Insights For Decision-Makers - Aviation - India — https://www.mondaq.com/india/aviation/1690476/drone-regulatory-developments-in-india-insights-for-decision-makers — published: @DATE@\n    > compliance platform.  At the core of this reform is the Digital Sky Platform, a single-window online system developed by the Directorate General of Civil Aviation (DGCA) to manage all drone-related activities. It enables registration, flight permissions, airspace zoning, and compliance monitoring through automated and paperless processes, promoting transparency and operational ease.  **Key provisions include:**  * Registration of all drones on the Digital Sky Platform. * Weight-based classification, ensuring regulation is   proportionate to risk. * Airspace zoning through digital mapping of Gr\n[search_@0#6] Government allows commercial operation of drones in India from December; adopts all-digital process — https://www.fonearena.com/blog/262055/commercial-drone-use-india-regualtions.html — published: @DATE@\n    > # Government allows commercial operation of drones in India from December; adopts all-digital process  Drone  Directorate General of Civil Aviation (DGCA) today released Drone Regulations 1.0 to fly commercial drones from December 1 and also introduced Digital Sky Platform is the first-of-its-kind national unmanned traffic management (UTM) platform that implements “no permission, no takeoff” (NPNT), an all-digital process offering one-time registration of their drones, pilots and owners.  Civil RPA is categorized in accordance with Maximum All-Up-Weight (including payload) as indicated below: \n[search_@0#7] How to Register a Drone in India (2026) – DGCA Digital Sky Process Guide — https://www.psrcompliance.com/blog/drone-registration-india-2026 — published: @DATE@\n    > # Drone Registration in India - Step by Step (2026 Guide)                                      In recent years, drones have become very common in India. People use them for photography, farming, land surveys, construction work, security, and even wedding videos. In cities like Delhi, Jaipur, Gurugram, and Mumbai, many businesses are using drones to make their work faster and more efficient.                                      However, many people start using drones without knowing the rules. In India, it is compulsory to register your drone before using it for business or professional work. B\n[search_@0#8] India DGCA Drone Rules 2026: Remote Pilot Certificate, Digital Sky, and FPV Operations - UAVMODEL Insights — https://blog.uavmodel.com/india-dgca-drone-rules-2026-remote-pilot-certificate-digital-sky-and-fpv-operations — published: @DATE@\n    > **Small (250g to 2kg):** Requires a Remote Pilot Certificate (RPC) issued by a DGCA-approved Remote Pilot Training Organization (RPTO), a Unique Identification Number (UIN), and a Unmanned Aircraft Operator Permit (UAOP) for commercial operations. Recreational/private operators need the RPC and UIN but not the UAOP.  ## Digital Sky Platform: Registration and Flight Authorization  The Digital Sky Platform (digitalsky.dgca.gov.in) is India’s centralized drone management system. Every legal flight in controlled airspace must obtain permission through this platform. The process involves:  1. Regis\n\n"
+  },
+  "response": {
+    "output": {
+      "status": "SUPPORTED",
+      "assessment": "The evidence establishes that flying commercial camera drones over urban Mumbai rooftops requires a dual-clearance process: a DGCA Digital Sky flight plan approval and a local Mumbai Police NOC. Much of Mumbai's airspace is highly restricted due to Chhatrapati Shivaji Maharaj International Airport (5 km Red Zone) and Indian Navy installations in South Mumbai (3 km No-Fly Zone), while other areas fall under Yellow Zones requiring ATC clearance (up to 24-hour lead time). Additionally, the Mumbai Police frequently issues 30-day prohibitory orders banning all drone flights, which must be monitored closely.",
+      "evidence": [
+        {
+          "claim": "Commercial drone operations in India require the drone to be registered on the DGCA Digital Sky platform to obtain a Unique Identification Number (UIN), and small drones (250g to 2kg) require a Remote Pilot Certificate (RPC) and an Unmanned Aircraft Operator Permit (UAOP).",
+          "source_ref": "search_@0#8",
+          "relevance": 1.0,
+          "confidence": 1.0,
+          "production_implication": "The production must hire a DGCA-certified drone pilot with a valid RPC and ensure the camera drone is registered with a UIN on the Digital Sky platform."
+        },
+        {
+          "claim": "Mumbai Police provides an online application portal (mumbaipolice.gov.in/Dronepermission) where applicants must submit details including applicant info, local police station selection, purpose (e.g., 'Film Shoot'), and drone handler details.",
+          "source_ref": "search_@0#2",
+          "relevance": 1.0,
+          "confidence": 1.0,
+          "production_implication": "The production team must submit an online application to the specific local police station jurisdiction covering the rooftop location."
+        },
+        {
+          "claim": "Mumbai Police drone permission is strictly limited to the requested flight location, flight radius, and scheduled day/time, and the applicant is responsible for ensuring the drone is not misused for harmful activities or unauthorized photography.",
+          "source_ref": "search_@2#1",
+          "relevance": 1.0,
+          "confidence": 1.0,
+          "production_implication": "The shoot must strictly adhere to the approved schedule, location, and altitude limits specified in the police permit."
+        },
+        {
+          "claim": "Under DGCA rules, Yellow Zones (controlled airspace) require manual approval from the concerned Air Traffic Control (ATC) authority, which can take up to 24 hours, while Red Zones are strictly prohibited without Central Government permission.",
+          "source_ref": "search_@1#3",
+          "relevance": 0.9,
+          "confidence": 0.9,
+          "production_implication": "Since much of Mumbai is controlled airspace, the production must obtain ATC clearance via Digital Sky, allowing at least 24 hours for Yellow Zone approvals."
+        },
+        {
+          "claim": "Mumbai Chhatrapati Shivaji Airport has a 5 km radius no-fly zone (Red Zone), and much of South Mumbai falls within the Indian Navy's 3 km designated 'No-fly Zone' requiring Navy clearance.",
+          "source_ref": "search_@2#3",
+          "relevance": 1.0,
+          "confidence": 1.0,
+          "production_implication": "Rooftop shoots within 5 km of the airport or 3 km of naval bases in South Mumbai are highly restricted and likely prohibited unless extraordinary Central Government/Navy clearances are secured."
+        },
+        {
+          "claim": "Mumbai Police frequently issues 30-day prohibitory orders under Section 163 of the BNSS (formerly Section 144 of the CrPC) banning drones, paragliders, and other aerial devices over the city due to security concerns.",
+          "source_ref": "search_@2#5",
+          "relevance": 1.0,
+          "confidence": 1.0,
+          "production_implication": "The production must monitor active prohibitory orders in Mumbai, as a blanket ban could temporarily halt all drone filming regardless of existing permits."
+        }
+      ],
+      "follow_up_objective": "",
+      "follow_up_queries": []
+    },
+    "tool_calls": [
+      {
+        "name": "parallel_search",
+        "args": {
+          "question_id": "rq_@@@@@@_2",
+          "search_queries": [
+            "Mumbai police drone permission lead time",
+            "Mumbai drone filming NOC restrictions rules",
+            "Digital Sky drone flight permission Mumbai rooftop"
+          ],
+          "objective": "Find the lead times, restrictions, and step-by-step process for obtaining Mumbai Police NOC and DGCA Digital Sky permits for commercial drone filming in Mumbai."
+        }
+      },
+      {
+        "name": "parallel_search",
+        "args": {
+          "objective": "Find the exact lead time (number of days) and specific restrictions (e.g., Navy, airport, height limits) for flying commercial drones in Mumbai.",
+          "question_id": "rq_@@@@@@_2",
+          "search_queries": [
+            "\"Mumbai Police\" drone permission \"days\" OR \"weeks\"",
+            "Mumbai drone permission \"lead time\" OR \"days\"",
+            "Mumbai drone \"no-fly zone\" Navy airport restrictions"
+          ]
+        }
+      },
+      {
+        "name": "parallel_search",
+        "args": {
+          "question_id": "rq_@@@@@@_2",
+          "search_queries": [
+            "\"Mumbai Police\" drone permission \"days in advance\"",
+            "\"prior permission\" drone Mumbai days",
+            "\"Digital Sky\" flight plan approval lead time"
+          ],
+          "objective": "Find the specific advance notice period (number of days in advance) required to submit a drone permission application to the Mumbai Police or DGCA."
+        }
+      }
+    ]
+  }
+}
