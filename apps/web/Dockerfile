@@ -1,10 +1,10 @@
-FROM node:22-alpine AS deps
+FROM node:22.23.2-alpine AS deps
 WORKDIR /app
 RUN corepack enable
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
-FROM node:22-alpine AS build
+FROM node:22.23.2-alpine AS build
 WORKDIR /app
 RUN corepack enable
 COPY --from=deps /app/node_modules ./node_modules
@@ -12,7 +12,7 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN pnpm build
 
-FROM node:22-alpine AS run
+FROM node:22.23.2-alpine AS run
 WORKDIR /app
 ENV NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 PORT=8080 HOSTNAME=0.0.0.0
 COPY --from=build /app/.next/standalone ./

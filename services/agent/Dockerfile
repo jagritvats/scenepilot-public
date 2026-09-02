@@ -1,7 +1,9 @@
 FROM python:3.12-slim
 ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1 UV_SYSTEM_PYTHON=1
 WORKDIR /app
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+# Pinned, not :latest — a resolver change between now and submission would rebuild this image
+# differently from the one that was verified.
+COPY --from=ghcr.io/astral-sh/uv:0.12.9 /uv /usr/local/bin/uv
 COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-dev --no-install-project
 COPY scenepilot ./scenepilot

@@ -302,7 +302,10 @@ def reset_project(project_id: str) -> dict[str, Any]:
     cancelled, failed = _cancel_monitors(existing) if existing else ([], [])
     repo.delete_project_data(project_id)
     repo.save_project(build_project())
-    call_budget.reset()
+    # Cooldowns, not the ledger. This route has no auth and is a button on a public page, so
+    # zeroing what has been spent here would make SCENEPILOT_PAID_CALL_BUDGET unenforceable:
+    # reset, spend it, reset again. Resetting the *demo* does not un-spend the money.
+    call_budget.clear_cooldowns()
     fresh = repo.get_project(project_id)
     if cancelled:
         _log_project(fresh, "parallel", f"Cancelled {len(cancelled)} live Parallel monitor(s) before the reset — a discarded monitor keeps billing until it is cancelled at Parallel", {"monitor_ids": cancelled})
@@ -1184,6 +1187,11 @@ async def extract_source(run_id: str, body: ExtractRequest) -> dict[str, Any]:
     cached = repo.find_extract_run(run.id, body.url)
     if cached is not None:
         return {"extract_run": cached.model_dump(mode="json"), "cached": True}
+    # Charged after the cache check, like every other priced route: re-opening a source already
+    # fetched for this run costs nothing and must not cost a slot. Booked at all because the URL
+    # comes from the caller, so on a public deployment this is the one paid Parallel endpoint an
+    # anonymous visitor could otherwise drive without limit.
+    require_budget("extract", body.url, settings=settings)
     ctx = RunContext(repo, run, p)
     objective = _extract_objective(run, p, body)
     question_id = None

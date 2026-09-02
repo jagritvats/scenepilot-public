@@ -55,6 +55,7 @@ PRICED: dict[str, PricedCall] = {
     "monitors": PricedCall("A live monitor", "Parallel Monitor — ~$0.07/day per hourly lite monitor, billed until cancelled"),
     "plan": PricedCall("A scene planning run", "Gemini + Parallel Search — a few cents per run", recorded=True),
     "disruption": PricedCall("A rescue run", "Gemini + Parallel Search — a few cents per run", recorded=True),
+    "extract": PricedCall("A source extraction", "Parallel Extract API — ~$0.001 per URL", recorded=True),
 }
 
 
@@ -86,6 +87,19 @@ class CallBudget:
     def reset(self) -> None:
         with self._lock:
             self._spent.clear()
+            self._last.clear()
+
+    def clear_cooldowns(self) -> None:
+        """Forget who called what recently, without forgiving what was spent.
+
+        `reset()` is for a fresh process. A *demo* reset is different: it is reachable from an
+        unauthenticated button on a public URL, so clearing the spend ledger there would mean the
+        ceiling this deployment advertises is not a ceiling at all — reset, spend the budget, reset
+        again, for as long as anyone cares to. The cooldown is the half that exists to stop a
+        double-click, and a producer who has just reset the demo genuinely does want to re-run the
+        same dossier at once, so that half is cleared and the rolling cap is not.
+        """
+        with self._lock:
             self._last.clear()
 
     def charge(self, name: str, subject: str, units: int = 1, settings: Settings | None = None) -> dict[str, object] | None:

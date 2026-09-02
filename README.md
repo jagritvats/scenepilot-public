@@ -16,6 +16,8 @@ The differentiator is *external evidence + structured production state + constra
 
 ## Start here
 
+**Live demo:** https://scenepilot-web-483371182667.asia-south1.run.app — open straight on the hero day: https://scenepilot-web-483371182667.asia-south1.run.app/projects/proj_nightfall/days/day_4
+
 **The 60-second path.** Open the hosted URL → **Shoot Day 4** → click **Rain expected 13:00–17:00** →
 watch the activity feed verify it through Parallel Search → read the two options the engine
 **rejects** and why → **Approve recovery A** → the stripboard re-lays itself and the call sheet
