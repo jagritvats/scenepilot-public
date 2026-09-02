@@ -32,7 +32,7 @@ class ParallelSession:
         self.settings = settings or default_settings
         self.timeout = timeout
         self.max_retries = max_retries
-        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.mode, self.settings.record)
+        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.active_mode, self.settings.record)
         self.session_id = session_id or new_session_id("adhoc")
         self.client_model = client_model or self.settings.gemini_model
         # Task / Monitor / FindAll runs share a per-project memory scope (Search and Extract do not

@@ -33,6 +33,7 @@ from collections.abc import Callable
 from dataclasses import dataclass
 
 from ..config import Settings, settings as default_settings
+from ..tools.recorder import Recorder
 
 
 @dataclass(frozen=True)
@@ -42,21 +43,43 @@ class PricedCall:
     # Served from a committed recording outside `SCENEPILOT_MODE=live`, and therefore free there.
     # Conservatively false: an endpoint nobody has classified is assumed to spend real money.
     recorded: bool = False
+    # The recording namespaces this endpoint reads. A refusal can be answered from a recording only
+    # if there is one to answer from, and this is what makes that checkable before the refusal is
+    # softened — see `can_serve_from_recording`. Empty means it cannot, whatever `recorded` says.
+    namespaces: tuple[str, ...] = ()
 
 
 PRICED: dict[str, PricedCall] = {
-    "dossier": PricedCall("A location dossier", "Parallel Task API — ~$0.025 per location dossier, 1–5 min", recorded=True),
-    "preflight": PricedCall("A pre-flight re-check", "Parallel Task API — ~$0.025 per researched location on the day", recorded=True),
-    "weather": PricedCall("An hourly weather timeline", "Parallel Task API — ~$0.025 per shoot-day weather timeline, 1–5 min", recorded=True),
-    "substitutes": PricedCall("A substitute search", "Parallel FindAll / Entity Search — ~$0.005–$0.50 per run", recorded=True),
+    "dossier": PricedCall("A location dossier", "Parallel Task API — ~$0.025 per location dossier, 1–5 min", recorded=True, namespaces=("parallel_task",)),
+    "preflight": PricedCall("A pre-flight re-check", "Parallel Task API — ~$0.025 per researched location on the day", recorded=True, namespaces=("parallel_task",)),
+    "weather": PricedCall("An hourly weather timeline", "Parallel Task API — ~$0.025 per shoot-day weather timeline, 1–5 min", recorded=True, namespaces=("parallel_task",)),
+    "substitutes": PricedCall("A substitute search", "Parallel FindAll / Entity Search — ~$0.005–$0.50 per run", recorded=True, namespaces=("parallel_findall",)),
     # Not recorded, and it cannot be: a monitor is a stateful object created on Parallel's side that
     # bills every day until somebody cancels it. Replay mode does not make one free, so replay mode
     # does not exempt it.
     "monitors": PricedCall("A live monitor", "Parallel Monitor — ~$0.07/day per hourly lite monitor, billed until cancelled"),
-    "plan": PricedCall("A scene planning run", "Gemini + Parallel Search — a few cents per run", recorded=True),
-    "disruption": PricedCall("A rescue run", "Gemini + Parallel Search — a few cents per run", recorded=True),
-    "extract": PricedCall("A source extraction", "Parallel Extract API — ~$0.001 per URL", recorded=True),
+    "plan": PricedCall("A scene planning run", "Gemini + Parallel Search — a few cents per run", recorded=True, namespaces=("parallel_search", "gemini")),
+    "disruption": PricedCall("A rescue run", "Gemini + Parallel Search — a few cents per run", recorded=True, namespaces=("parallel_search", "gemini")),
+    "extract": PricedCall("A source extraction", "Parallel Extract API — ~$0.001 per URL", recorded=True, namespaces=("parallel_extract",)),
 }
+
+
+def can_serve_from_recording(name: str, s: Settings) -> bool:
+    """Could a refusal of `name` be answered from the repository instead of refused outright?
+
+    Three things have to hold, and the third is the one that stops this from being a promise the
+    service cannot keep: the endpoint has to be one whose calls are recorded, the deployment has to
+    have the live-failure fallback switched on (this is the same fallback, reached for a different
+    reason), and there has to be a recording present to serve. A namespace with nothing in it means
+    the honest answer is still the refusal.
+    """
+    if not s.fallback_to_recording:
+        return False
+    priced = PRICED.get(name)
+    if priced is None or not priced.recorded or not priced.namespaces:
+        return False
+    rec = Recorder(s.recordings_dir, s.mode, False)
+    return all(rec.has_any(ns) for ns in priced.namespaces)
 
 
 def _unknown(name: str) -> PricedCall:

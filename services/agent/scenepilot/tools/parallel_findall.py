@@ -166,7 +166,7 @@ class ParallelFindAllTool:
     ):
         self.settings = settings or default_settings
         self.project = project
-        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.mode, self.settings.record)
+        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.active_mode, self.settings.record)
         self._client = client
         self._on_event = on_event
         self.run_id = run_id

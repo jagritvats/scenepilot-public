@@ -7,6 +7,8 @@ and on Cloud Run (Postgres, Vertex AI / API key).
 from __future__ import annotations
 
 import os
+from contextlib import contextmanager
+from contextvars import ContextVar
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -28,6 +30,58 @@ def _bool(value: str | None, default: bool = False) -> bool:
 
 def _origins(value: str | None) -> tuple[str, ...]:
     return tuple(o.strip().rstrip("/") for o in (value or "").split(",") if o.strip())
+
+
+# --------------------------------------------------------------------------- #
+# Per-request mode degradation
+# --------------------------------------------------------------------------- #
+#
+# `mode` is what this deployment is configured to be, and it does not change. What can change, for
+# the length of one request, is whether that request is *allowed to spend*. The hosted demo runs
+# live on a public URL with a rolling budget and a per-endpoint cooldown, so two visitors clicking
+# the same button inside a minute is not an error condition — it is the expected traffic.
+#
+# Rather than refuse the second one, that request runs against the committed recording instead: the
+# same path `SCENEPILOT_FALLBACK_TO_RECORDING` already takes when a live call fails, with the same
+# `REPLAY` status and the same "(replayed)" labelling on every row it writes. The deployment is
+# still live and `/api/health` still says so; this one request simply did not spend.
+#
+# Set on the request's own context, so it propagates into the workflow task `asyncio.create_task`
+# spawns from it and reaches nothing else.
+_mode_override: ContextVar[str | None] = ContextVar("scenepilot_mode_override", default=None)
+_degraded_reason: ContextVar[dict[str, object] | None] = ContextVar("scenepilot_degraded_reason", default=None)
+
+
+@contextmanager
+def degraded_to_replay():
+    """Run this request against recordings. See `_mode_override`."""
+    token = _mode_override.set("replay")
+    try:
+        yield
+    finally:
+        _mode_override.reset(token)
+
+
+def degrade_to_replay(reason: dict[str, object] | None = None) -> None:
+    """Degrade for the rest of this request's context, with no scope to leave.
+
+    The refusal happens inside a handler that then spawns the workflow and returns; there is no
+    block to wrap, so this is the form that gets used. The context dies with the request.
+
+    `reason` is the refusal that caused it, carried so the run can say *why* it replayed. A replayed
+    row that does not say why reads as a demo that was always going to be a recording.
+    """
+    _mode_override.set("replay")
+    _degraded_reason.set(reason)
+
+
+def is_degraded() -> bool:
+    return _mode_override.get() is not None
+
+
+def degraded_reason() -> dict[str, object] | None:
+    """The refusal this request was degraded by, if it was. See `degrade_to_replay`."""
+    return _degraded_reason.get()
 
 
 @dataclass(frozen=True)
@@ -93,6 +147,17 @@ class Settings:
     # local clone owns its own database and is the product; the deployment is what closes them.
     allow_wrap: bool = True
     allow_commit_board: bool = False  # built, and off until a deployment says otherwise
+
+    @property
+    def active_mode(self) -> str:
+        """The mode *this request* runs in — `mode`, unless it was degraded to replay.
+
+        Every Recorder is built from this rather than from `mode`, which is what makes a degraded
+        request serve recordings. `/api/health` and the spend ledger deliberately keep reporting
+        `mode`: the deployment did not change, and saying it had would be the lie this whole
+        mechanism exists to avoid.
+        """
+        return _mode_override.get() or self.mode
 
     @property
     def gemini_configured(self) -> bool:

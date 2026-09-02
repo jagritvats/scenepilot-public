@@ -53,3 +53,20 @@ def _database_is_disposable():
     assert not settings.record, "the suite must never record: it would overwrite committed fixtures"
     yield
     shutil.rmtree(_TMP, ignore_errors=True)
+
+
+@pytest.fixture(autouse=True)
+def _mode_override_does_not_outlive_a_test():
+    """Undo any per-request replay degradation between tests.
+
+    `require_budget` degrades a *request* to replay rather than refusing it when the refused call is
+    one it can serve from a recording (see `config.degrade_to_replay`). In the service each request
+    runs in its own context, so the override dies with it. The suite is one long-lived context, so
+    without this a single test that trips the budget would put every test after it into replay — and
+    the ones that assert a live call reached their fake client would fail a long way from the cause.
+    """
+    from scenepilot.config import _degraded_reason, _mode_override
+
+    yield
+    _mode_override.set(None)
+    _degraded_reason.set(None)

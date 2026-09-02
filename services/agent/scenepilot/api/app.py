@@ -189,7 +189,12 @@ def health() -> dict[str, Any]:
         "parallel_configured": settings.parallel_configured,
         "parallel_search_mode": settings.parallel_search_mode,
         "parallel_client_model": settings.gemini_model,
-        "parallel_apis": ["search", "extract", *sorted(settings.parallel_features)],
+        # Search and Extract are always on; Task, FindAll and Memory are flagged; Monitor is gated on
+        # having a reachable webhook rather than on a flag, so it is not in `parallel_features` and
+        # used to be missing from this list entirely. It is called at runtime like the rest
+        # (`tools/parallel_monitor.py`), and the README's headline claim is that all six are — so the
+        # one payload a reader greps has to be able to say six, or the claim reads as inflated.
+        "parallel_apis": ["search", "extract", *sorted(settings.parallel_features | ({"monitor"} if feature_state(settings)["monitors"]["enabled"] else set()))],
         # Parallel only. `feature_state` also carries the irreversible-write capabilities, and this
         # key is what a reader takes as the list of Parallel APIs this deployment speaks — so a
         # shoot-day wrap appearing here would be a false claim about the integration.
@@ -414,7 +419,7 @@ async def plan_scene(project_id: str, scene_id: str, body: PlanRequest | None = 
     if active:
         return {"run_id": active[0].id, "already_running": True}
     require_budget("plan", scene.id, settings=settings)
-    run = WorkflowRun(project_id=p.id, kind=RunKind.PLANNING, mode=settings.mode, planning=PlanningState(scene_id=scene_id, used_memory=bool(body and body.use_memory)))
+    run = WorkflowRun(project_id=p.id, kind=RunKind.PLANNING, mode=settings.active_mode, planning=PlanningState(scene_id=scene_id, used_memory=bool(body and body.use_memory)))
     repo.save_project(p)
     repo.save_run(run)
     ctx = RunContext(repo, run, p)
@@ -1496,7 +1501,7 @@ def _start_rescue_for(p, day, d: Disruption) -> WorkflowRun:
     """
     _refuse_if_wrapped(day)
     _refuse_if_unreachable(day, d)
-    run = WorkflowRun(project_id=p.id, kind=RunKind.RESCUE, mode=settings.mode, rescue=RescueState(shoot_day_id=day.id, disruption_id=d.id))
+    run = WorkflowRun(project_id=p.id, kind=RunKind.RESCUE, mode=settings.active_mode, rescue=RescueState(shoot_day_id=day.id, disruption_id=d.id))
     repo.save_project(p)
     repo.save_run(run)
     ctx = RunContext(repo, run, p)

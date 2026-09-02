@@ -138,7 +138,7 @@ class ParallelSearchTool:
         self.project_id = project_id
         self.on_search_run = on_search_run or (lambda sr: None)
         self.on_event = on_event or (lambda kind, msg, meta: None)
-        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.mode, self.settings.record)
+        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.active_mode, self.settings.record)
         self.session = session or ParallelSession(self.settings, self.recorder, client_model=self.settings.gemini_model)
         self.calls: list[SearchRun] = []
 

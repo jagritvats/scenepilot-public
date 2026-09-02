@@ -123,25 +123,46 @@ def _api(monkeypatch, **over):
     return app_module, repo
 
 
-def test_a_second_dossier_click_is_refused_as_a_priced_call_not_an_error(monkeypatch):
+def test_a_second_dossier_click_replays_rather_than_failing_in_the_visitors_face(monkeypatch):
+    """The cooldown still stops the spend. What changed is what the visitor gets instead.
+
+    Refusing was right when the alternative was spending; it is wrong when the alternative is a
+    committed recording of the same question. On a public unauthenticated URL two people clicking
+    the same button inside a minute is ordinary traffic, and the second one being shown an error
+    teaches them nothing about the product. So the request runs, against recordings, and says so.
+    """
     app_module, _ = _api(monkeypatch)
     calls: list[str] = []
 
     def _dossier(self, resource, date=None, prior=None):
-        calls.append(resource.id)
+        # The tool is still entered — what it must not do is spend, which is the recorder's job and
+        # is asserted through `active_mode` below rather than through this stub.
+        calls.append(f"{resource.id}:{self.settings.active_mode}")
         return _ok_task_run(resource)
 
     monkeypatch.setattr(app_module.ParallelTaskTool, "dossier", _dossier)
 
     with TestClient(app_module.app) as c:
         assert c.post(f"/api/projects/{PROJECT_ID}/resources/loc_rooftop/dossier").status_code == 200
-        refused = c.post(f"/api/projects/{PROJECT_ID}/resources/loc_rooftop/dossier")
+        second = c.post(f"/api/projects/{PROJECT_ID}/resources/loc_rooftop/dossier")
 
-    assert refused.status_code == 501
-    detail = refused.json()["detail"]
-    assert detail["feature"] == "dossier" and detail["reason"] == "cooldown"
-    assert "$0.025" in detail["cost"] and detail["env"].startswith("SCENEPILOT_PAID_CALL_COOLDOWN_S=")
-    assert calls == ["loc_rooftop"]  # the refused click never reached Parallel
+    assert second.status_code == 200
+    # The first click spent; the second ran the same code against the recordings instead.
+    assert calls == ["loc_rooftop:live", "loc_rooftop:replay"]
+
+
+def test_a_priced_call_with_no_recording_behind_it_is_still_refused(monkeypatch):
+    """A live Monitor is the case that keeps the old behaviour, and it has to.
+
+    It is a stateful object created on Parallel's side that bills every day until somebody cancels
+    it. No recording can stand in for creating one, so `monitors` carries no namespaces and a
+    refusal there stays a refusal — the softening is bounded by whether the answer can honestly be
+    given, not by whether refusing is inconvenient.
+    """
+    from scenepilot.services.budget import can_serve_from_recording
+
+    assert can_serve_from_recording("monitors", _settings()) is False
+    assert can_serve_from_recording("dossier", _settings()) is True
 
 
 def test_a_request_that_was_going_to_fail_anyway_never_costs_a_slot(monkeypatch):
@@ -369,19 +390,31 @@ def test_re_triggering_the_rain_fixture_in_replay_mode_is_not_refused(monkeypatc
     assert spent == 0
 
 
-def test_the_guard_the_rescue_endpoint_calls_still_refuses_a_second_live_rescue():
+def test_the_guard_the_rescue_endpoint_calls_stops_the_second_live_rescue_from_spending():
     import pytest
     from fastapi import HTTPException
 
     from scenepilot.api.deps import require_budget
     from scenepilot.services.budget import call_budget
 
+    from scenepilot.config import _degraded_reason, _mode_override, is_degraded
+
     call_budget.reset()
     live = _settings(mode="live")
     require_budget("disruption", "day_4", settings=live)
+    assert is_degraded() is False  # the first one spent, and was allowed to
+
+    # The second is stopped from spending, but a rescue is recorded end to end, so it is degraded
+    # rather than refused — and it carries the reason, which is what the run feed prints.
+    require_budget("disruption", "day_4", settings=live)
+    assert is_degraded() is True
+    assert _degraded_reason.get()["reason"] == "cooldown"
+    _mode_override.set(None), _degraded_reason.set(None)
+
+    # Monitors have nothing to replay, so the guard still raises where it must.
     with pytest.raises(HTTPException) as raised:
-        require_budget("disruption", "day_4", settings=live)
-    assert raised.value.status_code == 501 and raised.value.detail["reason"] == "cooldown"
+        require_budget("monitors", "loc_rooftop", units=99, settings=live)
+    assert raised.value.status_code == 501
 
     call_budget.reset()
     replay = _settings(mode="replay")

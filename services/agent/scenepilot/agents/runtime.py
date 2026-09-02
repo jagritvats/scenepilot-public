@@ -42,7 +42,7 @@ class GeminiRuntime:
     def __init__(self, on_event: Callable[[str, str, dict], None] | None = None, recorder: Recorder | None = None, settings: Settings | None = None, prompt_version: str = prompts.DEFAULT_VERSION):
         self.settings = settings or default_settings
         self.on_event = on_event or (lambda kind, msg, meta: None)
-        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.mode, self.settings.record)
+        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.active_mode, self.settings.record)
         self.prompt_version = prompt_version
         self.calls = 0
         self.fallbacks = 0

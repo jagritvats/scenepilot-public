@@ -18,8 +18,8 @@ from __future__ import annotations
 
 from fastapi import HTTPException
 
-from ..config import Settings, settings as default_settings
-from ..services.budget import call_budget
+from ..config import Settings, degrade_to_replay, settings as default_settings
+from ..services.budget import call_budget, can_serve_from_recording
 
 # feature name → the env var that turns it on, and what it costs when it does
 FEATURE_ENV = {
@@ -123,14 +123,32 @@ def require_capability(name: str, settings: Settings | None = None) -> None:
 
 
 def require_budget(name: str, subject: str, units: int = 1, settings: Settings | None = None) -> None:
-    """Book a priced call against the deployment's budget, or refuse it the way a disabled feature is.
+    """Book a priced call against the deployment's budget, or stop it from spending.
 
     Called as late as possible in a handler — after the cheap validation, immediately before the
     spend — so a request that was going to 404 anyway never costs anyone a slot.
+
+    A refusal has two shapes, and which one a caller gets depends on whether this service can still
+    answer the question honestly:
+
+    * If the call is one whose results are recorded and a recording is present, the request is
+      **degraded to replay** rather than refused. It runs, it costs nothing, and every row it writes
+      is stamped `REPLAY` and labelled *replayed* by the same machinery that handles a live call
+      failing. The hosted demo is public and unauthenticated, so two visitors clicking the same
+      button inside the cooldown is ordinary traffic, not an error — and a judge who meets a dead end
+      there has been shown nothing, while a judge who meets a labelled recording has been shown both
+      the feature and the spend discipline around it.
+    * Otherwise — a live Monitor is the case that matters, because it is a billing object created on
+      Parallel's side and no recording can stand in for one — it is refused as before.
     """
-    refusal = call_budget.charge(name, subject, units, settings or default_settings)
-    if refusal is not None:
-        raise HTTPException(501, detail=refusal)
+    s = settings or default_settings
+    refusal = call_budget.charge(name, subject, units, s)
+    if refusal is None:
+        return
+    if can_serve_from_recording(name, s):
+        degrade_to_replay(refusal)
+        return
+    raise HTTPException(501, detail=refusal)
 
 
 def require_parallel_key(settings: Settings | None = None) -> None:

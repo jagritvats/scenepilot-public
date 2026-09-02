@@ -5,7 +5,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-from ..config import Settings, settings as default_settings
+from ..config import Settings, degraded_reason, settings as default_settings
 from ..domain.models import ActivityEvent, ExtractRun, Project, SearchRun, WorkflowRun
 from ..store.repo import Repo
 from ..tools.parallel_extract import ParallelExtractTool
@@ -23,12 +23,31 @@ class RunContext:
         self.run = run
         self.project = project
         self.settings = settings or default_settings
-        self.recorder = Recorder(self.settings.recordings_dir, self.settings.mode, self.settings.record)
+        self.recorder = Recorder(self.settings.recordings_dir, self.settings.active_mode, self.settings.record)
         # One Parallel session per task (shared by Search and Extract), tagged with the consuming model.
         self.parallel_session = ParallelSession(self.settings, self.recorder, session_id=new_session_id(run.kind.value.lower(), run.id), client_model=self.settings.gemini_model)
         self.parallel = ParallelSearchTool(run_id=run.id, project_id=project.id, session=self.parallel_session, on_search_run=self._on_search_run, on_event=self.log, recorder=self.recorder, settings=self.settings)
         self.extract = ParallelExtractTool(run_id=run.id, project_id=project.id, session=self.parallel_session, on_extract_run=self._on_extract_run, on_event=self.log, recorder=self.recorder, settings=self.settings)
         self.gemini = GeminiRuntime(on_event=self.log, recorder=self.recorder, settings=self.settings)
+        self._log_degradation()
+
+    def _log_degradation(self) -> None:
+        """Say, in the feed the producer is watching, why this run is not spending.
+
+        The tools already stamp every row they write as `REPLAY` and append "(replayed)" to what
+        they log, so a degraded run is never disguised. What they cannot say is *why* — a reader
+        seeing only the labels would reasonably conclude the deployment was a recording all along.
+        This is the one line that distinguishes "this deployment does not make live calls" from
+        "this deployment does, and declined to spend on this particular click".
+        """
+        reason = degraded_reason()
+        if reason is None:
+            return
+        self.log(
+            "warning",
+            f"Served from recordings, not live: {reason.get('message', 'a priced call was not made')}",
+            {"degraded": True, "reason": reason.get("reason"), "feature": reason.get("feature"), "cost": reason.get("cost")},
+        )
 
     # ----- observability -----
     def log(self, kind: str, message: str, meta: dict[str, Any] | None = None) -> None:

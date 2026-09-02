@@ -225,7 +225,7 @@ class ParallelTaskTool:
     ):
         self.settings = settings or default_settings
         self.project = project
-        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.mode, self.settings.record)
+        self.recorder = recorder or Recorder(self.settings.recordings_dir, self.settings.active_mode, self.settings.record)
         self._client = client
         self._on_event = on_event
         self._on_task_run = on_task_run

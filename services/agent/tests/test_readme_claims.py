@@ -76,27 +76,69 @@ def test_each_parallel_api_permalink_lands_on_the_call_it_claims():
     assert not missing, f"the README's runtime-call table no longer links these Parallel APIs: {missing}"
 
 
-@pytest.mark.skipif(not README.exists(), reason="README.md is not in this checkout")
-def test_the_test_count_the_readme_advertises_is_the_one_the_suite_reports():
-    """The number that has gone stale more often than any other in this project.
+# Every phrasing in which this repository states its *current* test count, and every file it says it
+# in. Six drifts happened under a guard that read one file and matched one phrasing, so the sites
+# that actually went stale were never looked at: a chip on the landing page a judge reads first, a
+# line in the tour modal, and a second sentence in the README's own test section. This is not a
+# README claim. It is a claim the project makes in four files, and the guard has to know all of them.
+#
+# Historical counts are deliberately left unmatched — "grew from 154 to 586" says something true
+# about the past in its first number — so only phrasings that assert what is true *now* appear here.
+CLAIM_PATTERNS = (
+    re.compile(r"\*\*(\d{3,4}) Automated Tests Passing\*\*"),  # README badge line
+    re.compile(r"All \*\*(\d{3,4}) tests\*\* pass"),  # README test section
+    re.compile(r"\*\*(\d{3,4}) passed in"),  # SUBMISSION metrics
+    re.compile(r"Engine: (\d{3,4}) Tests"),  # SUBMISSION architecture diagram
+    re.compile(r"to (\d{3,4}) tests during this build"),  # SUBMISSION "what we learned"
+    re.compile(r"(\d{3,4}) Tests Passing"),  # landing page chip
+    re.compile(r"(\d{3,4})/(\d{3,4}) Tests Passing"),  # tour modal, both halves
+)
 
-    Counted rather than run: collecting the suite from inside the suite is a recursion, and the point
-    is only to catch a docs number that stopped tracking reality.
-    """
-    claimed = {int(n) for n in re.findall(r"\*\*(\d{3,4}) Automated Tests Passing\*\*", _readme())}
-    if not claimed:
-        pytest.skip("the README no longer advertises a test count")
+CLAIM_SITES = (
+    "README.md",
+    "SUBMISSION.md",
+    "apps/web/src/app/page.tsx",
+    "apps/web/src/components/HackathonTourModal.tsx",
+)
+
+
+def _defined_tests() -> int:
     here = Path(__file__).resolve().parent
-    actual = sum(
+    return sum(
         len(re.findall(r"^def test_", f.read_text(encoding="utf-8"), re.M))
         for f in here.rglob("test_*.py")
     )
-    # Parametrised cases make the executed count higher than the count of test functions, so this is
-    # a floor with a tolerance rather than an equality — enough to catch a number that has drifted by
-    # a whole day's work, which is how it has always gone wrong.
-    assert claimed, "no claim to check"
-    for number in claimed:
-        assert abs(number - actual) <= 40, (
-            f"README advertises {number} tests; this suite defines {actual} test functions. "
-            "Re-verify from `uv run pytest -q` and sweep every claim site."
-        )
+
+
+def test_every_place_this_project_states_its_test_count_states_the_same_one():
+    """The number that has gone stale more often than any other here — checked everywhere it appears.
+
+    Counted rather than run: collecting the suite from inside the suite is a recursion, and the point
+    is only to catch a number that stopped tracking reality. Parametrised cases make the executed
+    count higher than the count of `def test_` functions, so each claim is checked with a tolerance —
+    wide enough not to fail on parametrisation, far narrower than a day's work.
+    """
+    actual = _defined_tests()
+    found: list[tuple[str, int]] = []
+    for site in CLAIM_SITES:
+        path = REPO_ROOT / site
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8")
+        for pattern in CLAIM_PATTERNS:
+            for match in pattern.finditer(text):
+                found.extend((site, int(g)) for g in match.groups() if g)
+
+    assert found, "no site states a test count any more — if that is deliberate, delete this test"
+    stale = [(site, n) for site, n in found if abs(n - actual) > 40]
+    assert not stale, (
+        f"this suite defines {actual} test functions, but these claim otherwise: "
+        + "; ".join(f"{site} says {n}" for site, n in stale)
+        + ". Re-verify with `uv run pytest -q` and sweep every site in CLAIM_SITES."
+    )
+
+
+def test_the_claim_sites_all_still_exist():
+    """A guard that silently skips a renamed file is how a drift gets through unnoticed."""
+    missing = [s for s in CLAIM_SITES if not (REPO_ROOT / s).exists()]
+    assert not missing, f"CLAIM_SITES points at files that no longer exist: {missing}"
