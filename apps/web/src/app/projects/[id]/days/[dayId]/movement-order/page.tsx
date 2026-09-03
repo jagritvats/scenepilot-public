@@ -75,7 +75,8 @@ export default function MovementOrderPage({ params }: { params: Promise<{ id: st
         ) : (
           <section className="mt-3">
             <SheetTitle>Legs</SheetTitle>
-            <table className="w-full text-[12px]">
+            <div className="overflow-x-auto scroll-thin print:overflow-visible">
+            <table className="w-full min-w-[19rem] text-[12px]">
               <thead>
                 <tr className="text-left text-[10px] uppercase tracking-wider text-[#5a6272] border-b border-[#c9ced8]">
                   <th className="py-1 pr-2 w-6">#</th>
@@ -129,6 +130,7 @@ export default function MovementOrderPage({ params }: { params: Promise<{ id: st
                 ))}
               </tbody>
             </table>
+            </div>
             {order.legs.some((l) => l.untimed) && (
               <p className="mt-1 text-[9px] text-[#5a6272]">
                 A leg reads <b>untimed</b> where this production holds no travel time between those two locations. No arrival

@@ -108,9 +108,11 @@ export default function CallSheetPage({ params }: { params: Promise<{ id: string
       </div>
       {/* `print-sheets` is what makes the before/after survive a page box: the `lg:` breakpoint
           never matches A4, so the two-up is stated for print in globals.css. */}
-      <div className={`print-sheets grid gap-4 ${mode === "side" ? "xl:grid-cols-2" : ""} ${insuranceOpen ? "print:hidden" : ""}`}>
-        {(mode === "before" || mode === "side") && data.baseline && <Sheet sheet={data.baseline} moved={moved} dim />}
-        {(mode === "after" || mode === "side") && <Sheet sheet={data.current} moved={hasBefore ? moved : new Set()} />}
+      <div className="overflow-x-auto scroll-thin print:overflow-visible">
+        <div className={`print-sheets grid gap-4 ${mode === "side" ? "xl:grid-cols-2" : ""} ${insuranceOpen ? "print:hidden" : ""}`}>
+          {(mode === "before" || mode === "side") && data.baseline && <Sheet sheet={data.baseline} moved={moved} dim />}
+          {(mode === "after" || mode === "side") && <Sheet sheet={data.current} moved={hasBefore ? moved : new Set()} />}
+        </div>
       </div>
 
       {/* The other half of the paperwork a production circulates when a schedule moves: the call

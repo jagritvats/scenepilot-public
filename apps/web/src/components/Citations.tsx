@@ -22,8 +22,8 @@ export function Citations({ citations }: { citations: BasisCitation[] }) {
   return (
     <>
       {citations.map((c) => (
-        <a key={c.url} href={c.url} target="_blank" rel="noopener noreferrer" className="chip chip-parallel hover:underline" title={c.excerpts[0] || c.url}>
-          {c.title || hostname(c.url)}
+        <a key={c.url} href={c.url} target="_blank" rel="noopener noreferrer" className="chip chip-parallel hover:underline max-w-full" title={c.excerpts[0] || c.url}>
+          <span className="truncate">{c.title || hostname(c.url)}</span>
         </a>
       ))}
     </>

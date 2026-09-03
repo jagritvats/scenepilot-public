@@ -54,11 +54,24 @@ body { background: var(--bg); color: var(--fg); font-family: var(--font-sans); f
 a { color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
 
+/* Everything below this line is unlayered CSS, and unlayered rules beat every Tailwind utility
+   regardless of specificity — utilities live in `@layer utilities`, and any unlayered rule
+   outranks a layered one. For the paint that is what we want: a chip's own colours should not
+   have to out-specify the ambient text utilities. `display` is the exception. `hidden
+   2xl:inline-flex` on a `.chip` was losing to `.chip`'s own `display: inline-flex`, so the
+   header's gemini, parallel, inbox and ⌘K chips rendered at *every* width — 166px of them past
+   the right edge of a phone, which is what made the whole page scroll sideways. Declaring only
+   `display` inside a layer hands those utilities back the win and changes nothing else. */
+@layer components {
+  .chip, .btn { display: inline-flex; }
+  .stamp { display: inline-block; }
+}
+
 .display { font-family: var(--font-display); letter-spacing: 0.01em; }
 .mono { font-family: var(--font-mono); }
 .kicker { font-family: var(--font-display); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg-dim); font-weight: 600; }
 .card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 10px; }
-.chip { display: inline-flex; align-items: center; gap: 4px; padding: 1px 8px; border-radius: 4px; font-family: var(--font-display); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; border: 1px solid transparent; }
+.chip { align-items: center; gap: 4px; padding: 1px 8px; border-radius: 4px; font-family: var(--font-display); font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; border: 1px solid transparent; }
 .chip-ok { background: var(--ok-soft); color: var(--ok); }
 .chip-warn { background: var(--warn-soft); color: var(--warn); }
 .chip-bad { background: var(--bad-soft); color: var(--bad); }
@@ -68,9 +81,9 @@ a { color: inherit; }
 .chip-parallel { background: var(--parallel-soft); color: var(--parallel); }
 .chip-gemini { background: var(--gemini-soft); color: var(--gemini); }
 
-.stamp { display: inline-block; font-family: var(--font-display); font-weight: 700; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; padding: 4px 12px; border: 2px solid currentColor; border-radius: 4px; transform: rotate(-2deg); opacity: 0.95; }
+.stamp { font-family: var(--font-display); font-weight: 700; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; padding: 4px 12px; border: 2px solid currentColor; border-radius: 4px; transform: rotate(-2deg); opacity: 0.95; }
 
-.btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 6px; font-family: var(--font-display); font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--line-strong); background: var(--bg-elev); color: var(--fg); transition: border-color .15s, filter .15s, transform .1s; cursor: pointer; }
+.btn { align-items: center; gap: 8px; padding: 9px 16px; border-radius: 6px; font-family: var(--font-display); font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--line-strong); background: var(--bg-elev); color: var(--fg); transition: border-color .15s, filter .15s, transform .1s; cursor: pointer; }
 .btn:hover { border-color: var(--accent); }
 .btn:active { transform: translateY(1px); }
 .btn:disabled { opacity: .45; cursor: not-allowed; }

@@ -136,7 +136,7 @@ export function DispatchDashboard({
           </p>
         </div>
 
-        <div className="flex items-center gap-2 flex-wrap shrink-0">
+        <div className="flex min-w-0 items-center gap-2 flex-wrap sm:shrink-0">
           {totalCount > 0 && ackCount < totalCount && (
             <button
               onClick={handleReping}

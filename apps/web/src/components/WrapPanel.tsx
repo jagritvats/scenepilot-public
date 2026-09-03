@@ -339,7 +339,7 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
 
 function RecordRow({ row, carried }: { row: CompletionRow; carried: boolean }) {
   return (
-    <li className="flex items-baseline gap-2 border-b border-line/60 py-1 text-[12px] last:border-0">
+    <li className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 border-b border-line/60 py-1 text-[12px] last:border-0">
       <span className={`chip ${carried ? "chip-warn" : "chip-ok"} shrink-0`}>{carried ? "carried" : "in the can"}</span>
       <span className="mono text-dim shrink-0">Sc {row.scene_number}</span>
       <span className="min-w-0 flex-1 truncate" title={row.note ? `${row.heading} — ${row.note}` : row.heading}>

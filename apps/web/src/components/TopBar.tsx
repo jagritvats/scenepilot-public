@@ -8,6 +8,16 @@ import { CommandPalette } from "./CommandPalette";
 import { HackathonTourModal } from "./HackathonTourModal";
 import { ParallelConsoleModal, type HealthWithFeatures } from "./ParallelConsoleModal";
 
+/** The leaf crumb for `/projects/:id/<section>`, by the section segment that names it. */
+const SECTIONS: Record<string, string> = {
+  scenes: "Scene readiness",
+  days: "Shoot day",
+  screenplay: "Screenplay studio",
+  log: "Production log",
+  risks: "Risk register",
+  inbox: "Inbox",
+};
+
 export function TopBar() {
   const [health, setHealth] = useState<HealthWithFeatures | null>(null);
   // What this production has spent on Parallel, read only while the console is open — it is a
@@ -36,6 +46,7 @@ export function TopBar() {
   }, []);
   const crumbs = path.split("/").filter(Boolean);
   const projectId = crumbs[0] === "projects" ? crumbs[1] : null;
+  const section = projectId ? SECTIONS[crumbs[2]] : undefined;
   // Advisory only, and read on navigation rather than on a timer: it is the same two endpoints the
   // inbox itself renders, so a stale count costs a click and never a wrong decision — and a number
   // in the corner is not worth a request every fifteen seconds. Re-read on every route change so
@@ -61,57 +72,46 @@ export function TopBar() {
   }, [consoleOpen, projectId]);
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-bg/90 backdrop-blur">
-      <div className="max-w-[1480px] mx-auto px-5 h-14 flex items-center gap-4">
-        <Link href="/" className="display text-[22px] font-bold tracking-wide leading-none shrink-0">
+      <div className="max-w-[1480px] mx-auto px-3 sm:px-5 h-14 flex items-center gap-2 sm:gap-4">
+        <Link href="/" className="display text-[19px] sm:text-[22px] font-bold tracking-wide leading-none shrink-0">
           SCENE<span className="text-accent">PILOT</span>
         </Link>
+        {/* A phone fits one crumb, and the one worth keeping is the leaf — where you are. A
+            left-aligned scroll strip shows the opposite: "Productions", with the current page off
+            the right edge and sliced mid-word by the scroll box. So the trail appears only at lg,
+            where the row has the width to hold all of it — the same breakpoint at which the
+            buttons on the right get their labels back — and below that the leaf stands alone and
+            ellipsizes rather than being cut. Shrinking the whole chain instead would just give
+            three crumbs reading "Pr… / Scr…". */}
         <nav className="flex items-center gap-1 text-[13px] text-muted overflow-x-auto scroll-thin whitespace-nowrap min-w-0">
-          <Link href="/" className={`px-2 py-1 rounded hover:text-fg ${crumbs.length === 0 ? "text-fg" : ""}`}>Productions</Link>
+          <Link href="/" className={`px-2 py-1 rounded hover:text-fg shrink-0 ${projectId ? "hidden lg:block" : ""} ${crumbs.length === 0 ? "text-fg" : ""}`}>Productions</Link>
           {projectId && (
             <>
-              <span className="text-dim">/</span>
-              <Link href={`/projects/${projectId}`} className={`px-2 py-1 rounded hover:text-fg ${crumbs.length === 2 ? "text-fg" : ""}`}>Project Nightfall</Link>
+              <span className="text-dim shrink-0 hidden lg:inline">/</span>
+              <Link
+                href={`/projects/${projectId}`}
+                className={`px-2 py-1 rounded hover:text-fg truncate min-w-0 ${section ? "hidden lg:block" : ""} ${crumbs.length === 2 ? "text-fg" : ""}`}
+              >
+                Project Nightfall
+              </Link>
             </>
           )}
-          {projectId && crumbs[2] === "scenes" && (
+          {section && (
             <>
-              <span className="text-dim">/</span>
-              <span className="px-2 py-1 text-fg">Scene readiness</span>
-            </>
-          )}
-          {projectId && crumbs[2] === "days" && (
-            <>
-              <span className="text-dim">/</span>
-              <span className="px-2 py-1 text-fg">Shoot day</span>
-            </>
-          )}
-          {projectId && crumbs[2] === "screenplay" && (
-            <>
-              <span className="text-dim">/</span>
-              <span className="px-2 py-1 text-fg">Screenplay studio</span>
-            </>
-          )}
-          {projectId && crumbs[2] === "log" && (
-            <>
-              <span className="text-dim">/</span>
-              <span className="px-2 py-1 text-fg">Production log</span>
-            </>
-          )}
-          {projectId && crumbs[2] === "risks" && (
-            <>
-              <span className="text-dim">/</span>
-              <span className="px-2 py-1 text-fg">Risk register</span>
-            </>
-          )}
-          {projectId && crumbs[2] === "inbox" && (
-            <>
-              <span className="text-dim">/</span>
-              <span className="px-2 py-1 text-fg">Inbox</span>
+              <span className="text-dim shrink-0 hidden lg:inline">/</span>
+              <span className="px-2 py-1 text-fg truncate min-w-0">{section}</span>
             </>
           )}
         </nav>
         <div className="ml-auto flex items-center gap-2 shrink-0">
-          {err && <span className="chip chip-bad">agent service offline</span>}
+          {/* The full phrase is what a producer needs to read, but it is also the widest thing in
+              this row — on a phone it is the difference between the bar fitting and the page
+              scrolling sideways, so below md only the word that carries the meaning stays. */}
+          {err && (
+            <span className="chip chip-bad" title="The agent service is not reachable">
+              <span className="hidden md:inline">agent service</span>offline
+            </span>
+          )}
           {!health && !err && (
             <>
               <span className="chip chip-dim" title="Asking the agent service how it is configured">checking…</span>
@@ -156,19 +156,25 @@ export function TopBar() {
               ⌘K search
             </button>
           )}
+          {/* Both of these are demo front doors, so neither is allowed to disappear on a phone the
+              way the chips above do — they collapse to their glyph instead. The label returns at lg,
+              where there is room for it beside the breadcrumbs; the title and aria-label carry the
+              name the rest of the time. */}
           <button
             onClick={() => setConsoleOpen(true)}
-            className="chip chip-parallel hover:brightness-110 font-semibold cursor-pointer text-xs py-1 px-2.5 shadow-sm transition shrink-0"
+            className="chip chip-parallel hover:brightness-110 font-semibold cursor-pointer text-xs py-1 px-2 lg:px-2.5 shadow-sm transition shrink-0"
             title="What ScenePilot uses each Parallel API for, and which are enabled here"
+            aria-label="Parallel Console"
           >
-            🌐 Parallel Console
+            🌐<span className="hidden lg:inline">Parallel Console</span>
           </button>
           <button
             onClick={() => setTourOpen(true)}
-            className="chip chip-accent hover:brightness-110 font-semibold cursor-pointer text-xs py-1 px-2.5 shadow-sm transition shrink-0"
+            className="chip chip-accent hover:brightness-110 font-semibold cursor-pointer text-xs py-1 px-2 lg:px-2.5 shadow-sm transition shrink-0"
             title="Open Hackathon Guided Tour"
+            aria-label="Hackathon Tour"
           >
-            ⚡ Hackathon Tour
+            ⚡<span className="hidden lg:inline">Hackathon Tour</span>
           </button>
         </div>
       </div>

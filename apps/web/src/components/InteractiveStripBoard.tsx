@@ -398,8 +398,8 @@ export function InteractiveStripBoard({
     <div className="card p-5 space-y-5">
       {/* Studio Header */}
       <div className="flex items-start justify-between flex-wrap gap-4 border-b border-line pb-4">
-        <div>
-          <div className="flex items-center gap-2">
+        <div className="min-w-0">
+          <div className="flex items-center gap-2 flex-wrap">
             <Kicker>Phase 2 Intelligence</Kicker>
             <span className="mono text-[10px] px-1.5 py-0.5 rounded bg-accent/20 text-accent font-semibold">
               Interactive Stripboard
@@ -419,7 +419,7 @@ export function InteractiveStripBoard({
         </div>
 
         {/* Labor Preset Switcher */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-wrap">
           <div>
             <div className="text-[10px] font-semibold text-dim uppercase tracking-wider">View</div>
             <div className="mt-1 inline-flex rounded overflow-hidden border border-line">
@@ -437,14 +437,14 @@ export function InteractiveStripBoard({
               ))}
             </div>
           </div>
-          <div className="text-right">
+          <div className="min-w-0 max-w-full text-left sm:text-right">
             <div className="text-[10px] font-semibold text-dim uppercase tracking-wider">
               Union Rule Pack
             </div>
             <select
               value={laborPreset}
               onChange={(e) => onLaborPresetChange(e.target.value)}
-              className="mt-0.5 bg-zinc-900 border border-line rounded px-2.5 py-1 text-xs text-foreground focus:outline-none focus:border-accent"
+              className="mt-0.5 w-full max-w-full sm:w-auto bg-zinc-900 border border-line rounded px-2.5 py-1 text-xs text-foreground focus:outline-none focus:border-accent"
             >
               {laborPacks ? (
                 Object.entries(laborPacks).map(([key, p]) => (
@@ -465,8 +465,8 @@ export function InteractiveStripBoard({
             </div>
           </div>
 
-          <div className="flex flex-col items-end gap-1">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-col items-start sm:items-end gap-1">
+            <div className="flex items-center gap-2 flex-wrap">
               {/* Nothing on a wrapped day can be edited, so there is never anything to reset back to. */}
               <button onClick={resetToBaseline} disabled={wrapped} className="btn text-xs" title={wrapped ? wrappedWhy : undefined}>
                 Reset Schedule
@@ -491,7 +491,7 @@ export function InteractiveStripBoard({
             {/* The reason, never the absence of the control: a closed capability that renders as a
                 missing button is indistinguishable from a feature nobody built. */}
             {commitOff ? (
-              <p className="text-[10px] text-muted text-right max-w-[26rem]">
+              <p className="text-[10px] text-muted text-left sm:text-right max-w-full sm:max-w-[26rem]">
                 Committing the board is off in this deployment. Enable it with{" "}
                 <span className="mono text-dim">{feature?.env || "SCENEPILOT_ALLOW_COMMIT_BOARD=1"}</span>. {feature?.cost}
               </p>
@@ -499,7 +499,7 @@ export function InteractiveStripBoard({
               /* The select above is this component's what-if; the server re-validates a commit under
                  the pack in force whatever it reads. Saying so on the control is the difference
                  between previewing a board under DGA/SAG and believing it committed under it. */
-              <p className="text-[10px] text-warn text-right max-w-[26rem]">
+              <p className="text-[10px] text-warn text-left sm:text-right max-w-full sm:max-w-[26rem]">
                 Commits under {enforcedName} — the agreement in force. {previewName} prices this board on screen only.
               </p>
             ) : null}
@@ -528,7 +528,7 @@ export function InteractiveStripBoard({
       {/* Solar Lighting Ephemeris Bar */}
       {ephemeris && (
         <div className="bg-zinc-950/60 border border-line/70 rounded p-3 text-xs flex items-center justify-between flex-wrap gap-3">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-x-4 gap-y-1 flex-wrap">
             <span className="font-semibold text-zinc-300 flex items-center gap-1.5">
               ☀️ <span>Astronomical Ephemeris</span>
             </span>

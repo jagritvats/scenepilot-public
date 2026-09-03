@@ -94,12 +94,24 @@ CLAIM_PATTERNS = (
     re.compile(r"(\d{3,4})/(\d{3,4}) Tests Passing"),  # tour modal, both halves
 )
 
-CLAIM_SITES = (
+# Split by whether the public export ships the file, because this suite runs in both checkouts and
+# a judge who clones the public repo runs the command the README documents. `scripts/export-public.ps1`
+# strips `SUBMISSION.md` and all of `docs/`, so asserting those exist unconditionally would fail
+# `pytest` on the published repository — for a file that is absent exactly as intended.
+PUBLIC_CLAIM_SITES = (
     "README.md",
-    "SUBMISSION.md",
     "apps/web/src/app/page.tsx",
     "apps/web/src/components/HackathonTourModal.tsx",
 )
+PRIVATE_CLAIM_SITES = (
+    "SUBMISSION.md",
+    "docs/devpost/project-story.md",
+)
+CLAIM_SITES = PUBLIC_CLAIM_SITES + PRIVATE_CLAIM_SITES
+
+# Present only in the private repository: the export strips it along with the rest of `scripts/`.
+# Used to tell the two checkouts apart, so the private one still gets the strict existence check.
+PRIVATE_REPO_SENTINEL = "scripts/export-public.ps1"
 
 
 def _defined_tests() -> int:
@@ -139,6 +151,16 @@ def test_every_place_this_project_states_its_test_count_states_the_same_one():
 
 
 def test_the_claim_sites_all_still_exist():
-    """A guard that silently skips a renamed file is how a drift gets through unnoticed."""
-    missing = [s for s in CLAIM_SITES if not (REPO_ROOT / s).exists()]
-    assert not missing, f"CLAIM_SITES points at files that no longer exist: {missing}"
+    """A guard that silently skips a renamed file is how a drift gets through unnoticed.
+
+    Checked in two tiers because this repository is published as a filtered copy of itself. The
+    exported sites must exist in *any* checkout; the private-only ones are asserted only when the
+    sentinel says we are in the source repository, so a judge running `pytest` on the public clone
+    does not get a failure for a file the export deliberately removed.
+    """
+    missing = [s for s in PUBLIC_CLAIM_SITES if not (REPO_ROOT / s).exists()]
+    assert not missing, f"exported claim sites that no longer exist: {missing}"
+
+    if (REPO_ROOT / PRIVATE_REPO_SENTINEL).exists():
+        missing = [s for s in PRIVATE_CLAIM_SITES if not (REPO_ROOT / s).exists()]
+        assert not missing, f"private claim sites that no longer exist: {missing}"

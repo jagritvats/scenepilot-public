@@ -241,7 +241,7 @@ export function DossierPanel({
       {note && <p className="mt-3 text-[12px] text-muted">{note}</p>}
       {error && <p className="mt-3 text-[12px] text-bad">{error}</p>}
 
-      <div className="mt-1 grid gap-4">
+      <div className="mt-1 grid gap-4 grid-cols-[minmax(0,1fr)]">
         {locations.map((loc) => {
           const facts = (data?.facts || []).filter((f) => f.resource_id === loc.id);
           const rules = facts.filter(constrains);
@@ -264,7 +264,7 @@ export function DossierPanel({
                 )}
                 {loc.fact_count > 0 && <span className="text-[11px] text-dim">{loc.fact_count} facts</span>}
 
-                <span className="ml-auto flex items-center gap-2">
+                <span className="flex items-center gap-2 flex-wrap sm:ml-auto">
                   <button
                     className="btn text-[11px]"
                     disabled={off || disabled || busyAll}
@@ -301,7 +301,7 @@ export function DossierPanel({
               {changes.length > 0 && (
                 <>
                   <SectionLabel note="a rule moved — your schedule may still be running on the old one">Changed since you looked</SectionLabel>
-                  <ul className="grid gap-2">
+                  <ul className="grid gap-2 grid-cols-[minmax(0,1fr)]">
                     {changes.map((c) => (
                       <ChangeCard key={c.id} change={c} busy={busyAll} onDecide={(d) => act(c.id, () => api.decideFactChange(projectId, c.id, d))} />
                     ))}
@@ -312,7 +312,7 @@ export function DossierPanel({
               {rules.length > 0 && (
                 <>
                   <SectionLabel note="the only facts that can reject a schedule option">Constrains the schedule</SectionLabel>
-                  <ul className="grid gap-2">
+                  <ul className="grid gap-2 grid-cols-[minmax(0,1fr)]">
                     {rules.map((f) => (
                       <ConstraintCard key={f.id} fact={f} busy={busyAll} onDecide={(d) => act(f.id, () => api.decideFact(projectId, f.id, d))} />
                     ))}

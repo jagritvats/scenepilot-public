@@ -502,7 +502,7 @@ export default function ShootDayPage({ params }: { params: Promise<{ id: string;
 
       {/* `xl:` not `lg:` — at 1024 the rail snapped on and cut the main column to 549px, a 42%
           loss from one pixel of viewport. The rail is worth having only where there is room for it. */}
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_400px]">
+      <div className="grid gap-5 grid-cols-[minmax(0,1fr)] xl:grid-cols-[minmax(0,1fr)_400px]">
         <div className="space-y-5 min-w-0">
           {/* strip board header, before/after diff & mode toggle.
               `id` is what lets the guided tour and the trailer runbook point at this section rather

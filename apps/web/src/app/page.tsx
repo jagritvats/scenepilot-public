@@ -159,7 +159,7 @@ export default function ProjectsPage() {
       {loading && !data && <div className="card p-8 shimmer h-40" />}
       <section className="space-y-3">
         <Kicker>Productions</Kicker>
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4 grid-cols-[minmax(0,1fr)] md:grid-cols-2">
           {data?.map((p) => (
             <Link key={p.id} href={`/projects/${p.id}`} className="card p-5 hover:border-accent transition block">
               <div className="flex items-start gap-4">
