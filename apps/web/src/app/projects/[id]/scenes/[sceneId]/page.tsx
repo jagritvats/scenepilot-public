@@ -189,7 +189,7 @@ export default function ScenePage({ params }: { params: Promise<{ id: string; sc
 
       <ParallelUsageStrip usage={data.parallel_usage} onOpen={() => setDrawer(true)} />
 
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_400px]">
+      <div className="grid gap-5 grid-cols-[minmax(0,1fr)] xl:grid-cols-[minmax(0,1fr)_400px]">
         <div className="space-y-5 min-w-0">
           {/* What this run stood on. Memory's whole value is the second time — a count told a
               producer that reuse happened and nothing about what was reused, or which earlier run
@@ -564,7 +564,8 @@ export default function ScenePage({ params }: { params: Promise<{ id: string; sc
                 {scene.requirements.length} · {scene.requirements.length === 0 ? "none on file" : run ? "extracted by Gemini" : "seeded (synthetic)"}
               </span>
             </div>
-            <table className="mt-2 w-full text-[12px]">
+            <div className="overflow-x-auto scroll-thin">
+              <table className="mt-2 w-full text-[12px]">
               <tbody>
                 {scene.requirements.length === 0 && (
                   <tr className="border-t border-line">
@@ -590,7 +591,8 @@ export default function ScenePage({ params }: { params: Promise<{ id: string; sc
                   </tr>
                 ))}
               </tbody>
-            </table>
+              </table>
+            </div>
           </section>
 
           {scene.breakdown_elements && scene.breakdown_elements.length > 0 && (

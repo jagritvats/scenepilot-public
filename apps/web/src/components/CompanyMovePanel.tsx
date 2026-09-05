@@ -295,7 +295,7 @@ export function CompanyMovePanel({
         {boardOnBaseline && <span className="chip chip-dim">stripboard is on &ldquo;before&rdquo; — this panel is not</span>}
       </div>
 
-      <div className="mt-3 grid gap-4 lg:grid-cols-[340px_minmax(0,1fr)]">
+      <div className="mt-3 grid gap-4 grid-cols-[minmax(0,1fr)] lg:grid-cols-[340px_minmax(0,1fr)]">
         <div className="rounded-lg border border-line bg-elev/60 p-1">
           <MoveMap locations={locations} moves={moves} />
           <div className="px-2 pb-1 text-[10px] text-dim">A dashed leg is a straight line between two locality centres, not a road route.</div>
