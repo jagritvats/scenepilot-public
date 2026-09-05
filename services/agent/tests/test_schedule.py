@@ -186,11 +186,16 @@ def test_the_pack_the_ui_names_is_the_pack_a_recovery_option_is_validated_under(
     with no pack at all, and scored against a loose 10 h / ±90 min fallback. There is now one
     resolution point, and this pins the two ends of it together.
     """
-    from scenepilot.api.app import app as api_app
+    from scenepilot.api.app import _ensure_seed, app as api_app
     from scenepilot.seed.nightfall import PROJECT_ID
     from scenepilot.services.labor_rules import active_pack
     from fastapi.testclient import TestClient
 
+    # `TestClient(app)` outside a `with` block never runs the lifespan, and the lifespan is where the
+    # seed runs — so on its own this asked an unseeded database for a project and read `active_preset`
+    # off a 404 body. It passed only when an earlier module in the same session had already seeded the
+    # shared temp database.
+    _ensure_seed()
     p, day, _ = _ctx()
     named = TestClient(api_app).get(f"/api/projects/{PROJECT_ID}/labor-rules").json()
     enforced = active_pack(p)

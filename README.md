@@ -1,7 +1,7 @@
 # ScenePilot — Production Intelligence & Resilient Field Coordination 🎬
 
 > Built with **Google ADK + Gemini 3.5** and the **Parallel Runtime API Suite (Search, Extract, Task, FindAll, Memory, Monitor)**.  
-> **588 Automated Tests Passing** · **Next.js 16 (Turbopack)** · **Deterministic Constraint Engine**
+> **591 Automated Tests Passing** · **Next.js 16 (Turbopack)** · **Deterministic Constraint Engine**
 
 ScenePilot is an intelligent production control room for film and television crews. It answers two connected operational questions:
 
@@ -59,8 +59,8 @@ That rule cost four panels and three hardcoded constants during the build, and i
 ## What ScenePilot Delivers
 
 - 🚀 **Phase 1: Creative & Script Intelligence**: Fountain & Final Draft XML (.fdx) parsers with a 1/8th-page estimator (line and word counts blended against standard screenplay layout — an approximation, not a rendered-page count), `CreativeBreakdownAgent` extracting 32 breakdown element categories with safety stop-conditions, Day-Out-Of-Days (DOOD) cast matrix, and Next.js Screenplay Studio.
-- ☀️ **Phase 2: Environmental Grounding & Interactive Scheduling**: NOAA Astronomical Ephemeris solar engine, pluggable DGA & FWICE labor rules with compounding meal penalties and 12-hour turnaround rest, multi-unit concurrency, `LocationScoutAgent` municipal curfew confidence gating, and the Interactive Stripboard Studio with live strip nudges.
-- 🚨 **Phase 3: Autonomous Multi-Day Rescue & Coordinated Field Dispatch**: Multi-day cascading ripple solver across downstream days (or synthesizing dedicated Pickup Unit days), AI 1st AD `RescueStrategistAgent`, DGA Call Sheet 2.0, and a multi-channel WhatsApp/SMS/Email dispatch log built from the call sheet — queued, never transmitted, with read/confirmed states marked by hand and labelled as simulated.
+- ☀️ **Phase 2: Environmental Grounding & Interactive Scheduling**: NOAA Astronomical Ephemeris solar engine, pluggable DGA & FWICE labor rules with compounding meal penalties and 12-hour turnaround rest, multi-unit concurrency, the municipal-curfew confidence gate that turns a cited Parallel fact into a HARD or SOFT constraint (`services/dossier.py`), and the Interactive Stripboard Studio with live strip nudges.
+- 🚨 **Phase 3: Autonomous Multi-Day Rescue & Coordinated Field Dispatch**: Multi-day cascading ripple solver across downstream days (or synthesizing dedicated Pickup Unit days), the AI 1st AD pair `rescue_planner` (proposes orderings) and `rescue_explainer` (writes the rationale), DGA Call Sheet 2.0, and a multi-channel WhatsApp/SMS/Email dispatch log built from the call sheet — queued, never transmitted, with read/confirmed states marked by hand and labelled as simulated.
 - 📄 **The paper a production actually runs on**: beside the call sheet, four more printable documents built from the same committed state — a **Daily Production Report** (issued only for a wrapped day; it refuses a day that has not happened, and says why), a **movement order** (legs, departures and arrivals from the production's own travel times, with no invented road route), a **sides packet** (the day's pages in shooting order, where a scene the Studio holds no text for prints as a *named gap* rather than a missing page), and a printable **force-majeure claim packet**.
 - 🔁 **Decisions that go both ways**: a producer can now **commit a downstream placement** or **materialise the synthesised pickup day** into the schedule — and **revert an applied recovery**, as its own audit-trailed change set, with the original approval left standing on the record. A committed pickup day is deliberately *uncleared*: it names the cast and locations nobody has booked onto it rather than inventing their availability.
 - 🌦️ **Hourly weather with per-hour citations**: a Parallel **Task** run whose every hour carries its own sources, reasoning and calibrated confidence, drawn over the disruption scrubber. An hour no source covered is left blank — a dry hour and an unresearched hour must never look alike.
@@ -273,20 +273,20 @@ cd services/agent && uv run python scripts/live_validate.py deep
 
 Without keys the rescue workflow still runs end-to-end on deterministic logic: the verification searches fail visibly (logged as warnings, shown as errored `SearchRun`s), the report is treated as unverified, and Gemini explanations fall back to deterministic text. The planning workflow needs Gemini and Parallel.
 
-### Automated Tests (588/588 Passing)
+### Automated Tests (591/591 Passing)
 
 ```bash
 cd services/agent && uv run pytest -q
 ```
 
-All **588 tests** pass in under a minute:
+All **591 tests** pass in under a minute:
 - **Orchestration**: both pipelines are ADK `Workflow` graphs — the follow-up loop is a routed cycle, the
   rescue graph is terminal at producer approval, node names match the stages a run reports, and a node that
   raises stops the graph while keeping its original exception (`test_graph.py`).
 - **Demo seed**: the pre-loaded state is a replay of real recordings, labelled as one, accepting nothing and
   rewriting no committed production state (`test_warm_seed.py`).
 - **Phase 1**: Screenplay parsers (Fountain & FDX), eighths math, Day-Out-Of-Days (DOOD) generator, and Gemini breakdown extraction (`test_parsers.py`, `test_dood.py`, `test_breakdown_agent.py`, `test_screenplay_api.py`).
-- **Phase 2**: NOAA astronomical ephemeris equations, DGA compounding meal penalties & turnaround rest, multi-unit concurrency, and LocationScout confidence gating (`test_ephemeris.py`, `test_labor_rules.py`, `test_location_scout.py`, `test_scheduling_api.py`).
+- **Phase 2**: NOAA astronomical ephemeris equations, DGA compounding meal penalties & turnaround rest, and multi-unit concurrency (`test_ephemeris.py`, `test_labor_rules.py`, `test_scheduling_api.py`).
 - **Phase 3**: Multi-day cascading ripple solver across downstream days, pickup day synthesis, and multi-channel WhatsApp/SMS call sheet field dispatch (`test_multiday_solver.py`, `test_delivery.py`, `test_phase3_api.py`).
 - **Deep Parallel integration** (76 tests): the confidence gate turning cited facts into HARD/SOFT/ADVISORY constraints (`test_dossier.py`), substitute-supplier discovery across Entity Search and FindAll (`test_findall.py`), the production brain (`test_memory.py`), snapshot monitors and pending fact changes — a binding change keeps constraining the schedule until the producer adopts it, and adopting clears the acceptance (`test_fact_watch.py`, `test_monitor.py`), and the Parallel tool layer with its fake SDK client double, query hygiene and record/replay keying (`test_parallel_tools.py`).
 - **Deployment safety**: the paid-call budget and per-endpoint cooldown that bound spend on a public hosted demo (`test_budget.py`), and the shoot-day re-anchor that keeps the hero day dated today on a long-lived instance (`test_seed_anchor.py`).

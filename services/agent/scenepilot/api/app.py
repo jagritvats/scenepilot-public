@@ -6,7 +6,7 @@ import asyncio
 import logging
 import time
 from contextlib import asynccontextmanager
-from typing import Any
+from typing import Any, Literal
 
 from fastapi import FastAPI, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
@@ -17,7 +17,7 @@ from ..domain.enums import DisruptionType, FactBinding, IntExt, ResourceType, Ri
 from ..domain.models import ActivityEvent, Availability, Disruption, FactChange, MonitorRecord, PlanningState, ProductionBrief, RescueState, Scene, ScheduleItem, WorkflowRun, utcnow
 from ..seed.migrate import migrate_seed_state
 from ..seed.nightfall import DAY4_ID, DISRUPTION_FIXTURES, PROJECT_ID, build_project, make_fixture_disruption, reanchor_shoot_days
-from ..seed.warm import warm_demo_state
+from ..seed.warm import warm_demo_state, warm_planning
 from ..services.callsheet import build_call_sheet
 from ..services.oneliner import build_one_liner, one_liner_moves
 from ..services.export_mmsx import generate_mmsx_xml
@@ -131,10 +131,26 @@ def _warm(p) -> list[str]:
     return notes
 
 
+async def _warm_plan(p) -> list[str]:
+    """The planning half of the warm seed; async because it replays a real workflow run.
+
+    Kept out of `_warm` deliberately. `_warm` is sync and is reachable from the read path, and a
+    read must never be able to start a workflow — this runs at startup and on an explicit reset,
+    which are the two moments the demo is meant to be rebuilt.
+    """
+    if p is None:
+        return []
+    notes = await warm_planning(repo, p, settings)
+    for note in notes:
+        _log_project(p, "info", note, {"seed": "warm"})
+    return notes
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     call_budget.reset()
     _ensure_seed()
+    await _warm_plan(repo.get_project(PROJECT_ID))
     yield
 
 
@@ -300,7 +316,7 @@ def _cancel_monitors(p, budget_s: float | None = None) -> tuple[list[str], list[
 
 
 @app.post("/api/projects/{project_id}/reset")
-def reset_project(project_id: str) -> dict[str, Any]:
+async def reset_project(project_id: str) -> dict[str, Any]:
     if project_id != PROJECT_ID:
         raise HTTPException(400, "only the seeded demo project can be reset")
     existing = repo.get_project(project_id)
@@ -316,7 +332,8 @@ def reset_project(project_id: str) -> dict[str, Any]:
         _log_project(fresh, "parallel", f"Cancelled {len(cancelled)} live Parallel monitor(s) before the reset — a discarded monitor keeps billing until it is cancelled at Parallel", {"monitor_ids": cancelled})
     if failed:
         _log_project(fresh, "warning", f"Could not cancel {len(failed)} Parallel monitor(s) before the reset — they may still be billing and can be cancelled by id: {', '.join(failed)}", {"monitor_ids": failed})
-    return {"ok": True, "cancelled_monitors": cancelled, "uncancelled_monitors": failed, "warmed": _warm(fresh)}
+    warmed = _warm(fresh) + await _warm_plan(repo.get_project(project_id))
+    return {"ok": True, "cancelled_monitors": cancelled, "uncancelled_monitors": failed, "warmed": warmed}
 
 
 # Free text that reaches a Gemini prompt, bounded before it gets there: roughly ten script pages for
@@ -1987,7 +2004,13 @@ def list_substitutes(project_id: str, resource_id: str | None = None) -> dict[st
 
 
 @app.post("/api/projects/{project_id}/resources/{resource_id}/substitutes")
-async def find_substitutes(project_id: str, resource_id: str, shoot_day_id: str | None = None, note: str | None = None, mode: str | None = None) -> dict[str, Any]:
+async def find_substitutes(project_id: str, resource_id: str, shoot_day_id: str | None = None, note: str | None = None,
+                           # Bounded at the boundary rather than inside the tool. This is a *paid* Parallel route on a
+                           # public, unauthenticated deployment, and `mode` picks between two objective builders with
+                           # different cost and latency profiles — an unconstrained string let a caller select the more
+                           # expensive branch and be recorded on the run as whatever they typed. A Literal makes FastAPI
+                           # answer 422 before any budget is spent.
+                           mode: Literal["entity_search", "findall"] | None = None) -> dict[str, Any]:
     """Ask Parallel for real suppliers who could replace a resource the production has lost."""
     require_feature("findall", settings)
     p = _project(project_id)

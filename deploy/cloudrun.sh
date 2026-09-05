@@ -46,7 +46,8 @@ MODE="${SCENEPILOT_MODE:-live}"
 
 # The hosted URL sits on a public Devpost page for weeks with no auth, and every one of those paid
 # features is one unauthenticated POST away. This is the ceiling the service will actually spend
-# against before it starts refusing (as a priced, explained refusal, not an error).
+# against. Past it, a call with a recording behind it degrades to replay (labelled as such, carrying
+# the refusal as its reason); a live Monitor, which no recording can stand in for, is refused 501.
 PAID_BUDGET="${SCENEPILOT_PAID_CALL_BUDGET:-80}"
 PAID_COOLDOWN="${SCENEPILOT_PAID_CALL_COOLDOWN_S:-60}"
 

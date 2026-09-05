@@ -11,6 +11,7 @@ from fastapi.testclient import TestClient
 from scenepilot.domain.enums import ClaimKind, Severity
 from scenepilot.domain.models import ProductionPlan, Risk
 from scenepilot.seed.nightfall import build_project
+from scenepilot.seed.warm import WARM_PLAN_SCENE_ID
 from scenepilot.services.risk_register import build_risk_register
 
 
@@ -92,5 +93,14 @@ def test_the_endpoint_serves_the_register(monkeypatch):
     monkeypatch.setattr(app_module, "repo", Repo(make_engine("sqlite:///:memory:")))
     with TestClient(app_module.app) as c:
         body = c.get("/api/projects/proj_nightfall/risk-register").json()
-        assert body["total"] == 0 and body["scenes_total"] == 9
+        # `with TestClient` runs the lifespan, and the lifespan warms the demo — which now includes
+        # replaying one recorded planning run (`seed/warm.py:WARM_PLAN_SCENE_ID`). So a freshly
+        # seeded instance is no longer register-empty: it holds exactly that scene's risks, and the
+        # other eight scenes are *named* as unplanned rather than counted as risk-free. That
+        # distinction is the whole point of this endpoint, so it is worth asserting both halves.
+        assert body["scenes_total"] == 9
+        assert body["total"] > 0, "the warm seed plans one scene, so the register is not empty"
+        unplanned = {s["scene_id"] for s in body["unplanned_scenes"]}
+        assert WARM_PLAN_SCENE_ID not in unplanned
+        assert len(unplanned) == 8
         assert c.get("/api/projects/nope/risk-register").status_code == 404

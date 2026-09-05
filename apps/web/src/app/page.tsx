@@ -49,6 +49,9 @@ const SURFACES = [
   { href: "/projects/proj_nightfall/scenes/sc_42", tone: "text-parallel", label: "Scene planning", detail: "Research questions, graded evidence, autonomous follow-ups" },
   { href: `${HERO_DAY}#stripboard`, tone: "text-amber-400", label: "Solar stripboard", detail: "NOAA ephemeris, union rule packs, live penalty math" },
   { href: `${HERO_DAY}/call-sheet`, tone: "text-ok", label: "Call sheet & dispatch", detail: "DGA sheet, WhatsApp / SMS log, simulated acks" },
+  // The card above deliberately links the report that refuses. Without this, the working document is
+  // never reachable from the home page and the refusal reads as the whole feature.
+  { href: "/projects/proj_nightfall/days/day_3/dpr", tone: "text-muted", label: "Daily production report", detail: "Day 3 wrapped, so Day 3 has one — with its measured cost" },
 ];
 
 export default function ProjectsPage() {
@@ -219,7 +222,7 @@ export default function ProjectsPage() {
       <div className="flex flex-wrap items-center gap-2 pt-1 text-[11px] text-dim">
         <span className="mono text-[10px] px-2 py-0.5 rounded bg-accent/15 text-accent font-semibold">Google Cloud Agentic Cinema</span>
         <span className="mono text-[10px] px-2 py-0.5 rounded bg-parallel/15 text-parallel font-semibold">Parallel partner track</span>
-        <span className="mono text-[10px] px-2 py-0.5 rounded bg-ok/15 text-ok font-semibold">588 Tests Passing</span>
+        <span className="mono text-[10px] px-2 py-0.5 rounded bg-ok/15 text-ok font-semibold">591 Tests Passing</span>
         <span>Google ADK · Gemini 3.5 Flash · Parallel Search, Extract, Task, FindAll, Memory, Monitor · Next.js 16</span>
       </div>
     </div>

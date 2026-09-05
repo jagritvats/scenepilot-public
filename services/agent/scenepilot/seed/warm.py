@@ -221,3 +221,84 @@ def warm_demo_state(repo: Repo, project: Project, settings: Settings | None = No
         repo.save_project(project)
         log.info("Warmed the demo project: %s", "; ".join(notes))
     return notes
+
+
+# The one seeded scene whose recorded planning run replays end to end. The other eight carry scene
+# text that no committed `scene_breakdown` recording matches, so attempting them would write a
+# FAILED run into the activity feed a judge reads first. `test_warm_planning.py` pins this: if the
+# recording ever stops matching, the suite fails here rather than the demo failing in front of
+# somebody.
+WARM_PLAN_SCENE_ID = "sc_42"
+
+
+async def warm_planning(repo: Repo, project: Project, settings: Settings | None = None) -> list[str]:
+    """Replay one recorded planning run, so a cold instance shows both halves of the product.
+
+    The warm seed already restored what *research* produced — dossiers, the weather timeline, the
+    screenplay. It did not restore what *planning* produced, and planning is the other half of the
+    argument: the graded evidence, the FACT / INFERENCE / RECOMMENDATION split, the risk register
+    and the readiness score exist only once a scene has been planned. So a cold instance opened on a
+    scene page with an empty plan, and the only way to fill it was a 60–90 second live run that
+    spends money — exactly the wait this module exists to remove everywhere else.
+
+    The same three rules hold. It is a *recording of a real run*, replayed through the ordinary
+    workflow rather than written in as state, so every row it leaves is one the live path leaves:
+    the searches as sent, the evidence grades, the follow-up round the analyst asked for. It is
+    forced into replay by `degraded_to_replay()`, so a live deployment does not spend on it and the
+    run is stored and chipped as replayed. And it decides nothing that is the producer's to decide —
+    a plan is a proposal; planning accepts nothing and applies nothing.
+
+    Verified not to move the hero beat: the Day 4 rain rescue proposes the same five options, three
+    feasible and two rejected, with and without this run.
+
+    **Call this after `warm_demo_state`, not before.** The evidence analyst is prompted with the
+    dossier facts location research produced, so the recorded prompt only matches once those facts
+    are on the project; against a bare seed this replays into a `ReplayMiss` and returns nothing.
+    """
+    settings = settings or default_settings
+    if not settings.warm_demo:
+        return []
+
+    # Imported here rather than at module scope: the workflow package pulls in the agent runtime and
+    # the Parallel tools, and the seed is imported by both of those on other paths.
+    from ..config import degraded_to_replay
+    from ..domain.models import PlanningState, RunKind, RunStatus, WorkflowRun
+    from ..workflows.context import RunContext
+    from ..workflows.planning import run_planning
+
+    try:
+        scene = project.scene(WARM_PLAN_SCENE_ID)
+    except KeyError:
+        return []
+
+    # Idempotent in the same sense as the dossiers: a scene that has already been planned is left
+    # alone, so this costs nothing on a warm instance and never stacks a second run onto a first.
+    for r in repo.list_runs(project.id, RunKind.PLANNING.value):
+        if r.planning and r.planning.scene_id == WARM_PLAN_SCENE_ID and r.status == RunStatus.COMPLETED:
+            return []
+
+    with degraded_to_replay():
+        run = WorkflowRun(
+            project_id=project.id,
+            kind=RunKind.PLANNING,
+            mode=settings.active_mode,
+            planning=PlanningState(scene_id=WARM_PLAN_SCENE_ID),
+        )
+        repo.save_run(run)
+        try:
+            await run_planning(RunContext(repo, run, project))
+        except Exception as exc:  # a stale recording must not take the service down with it
+            log.warning("Warm planning for %s did not replay: %s", WARM_PLAN_SCENE_ID, exc)
+            return []
+
+    saved = repo.get_run(run.id)
+    if saved is None or saved.status != RunStatus.COMPLETED or saved.planning is None:
+        return []
+    plan = saved.planning.plan
+    score = getattr(plan, "readiness_score", None)
+    return [
+        f"Scene {scene.number} pre-planned from a recorded run — {len(saved.planning.questions)} research "
+        f"question(s), {len(saved.planning.evidence)} graded evidence item(s)"
+        + (f", readiness {score}/100" if score is not None else "")
+        + ". Press Re-plan for a live run."
+    ]

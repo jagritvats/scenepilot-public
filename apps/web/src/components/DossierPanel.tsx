@@ -63,7 +63,17 @@ function ConstraintCard({ fact, busy, onDecide }: { fact: LocationFact; busy: bo
       <div className="mt-1.5 font-medium">{fact.value}</div>
       {fact.reasoning && <p className="mt-0.5 text-[12px] text-muted">{fact.reasoning}</p>}
 
+      {/* Named, because "Basis" is Parallel's own word for exactly this triple — the citation, the
+          reasoning above it and the calibrated confidence in the chip row — and the product was
+          rendering all three while calling them nothing. A reader who knows the term recognises what
+          they are looking at; a reader who does not gets a label that says where the claim comes
+          from either way. */}
       <div className="mt-2 flex items-center gap-2 flex-wrap">
+        {fact.citations.length > 0 && (
+          <span className="text-[10px] uppercase tracking-wider text-dim" title="Basis — Parallel's term for a claim's citation, reasoning and calibrated confidence">
+            Basis
+          </span>
+        )}
         <Citations citations={fact.citations} />
       </div>
 
