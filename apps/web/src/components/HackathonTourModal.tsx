@@ -264,7 +264,7 @@ export function HackathonTourModal({
         {/* Modal Footer */}
         <div className="p-4 sm:p-5 border-t border-line bg-zinc-900/60 flex items-center justify-between text-xs text-muted shrink-0">
           <div className="flex items-center gap-2">
-            <span className="mono text-ok font-semibold">591/591 Tests Passing</span>
+            <span className="mono text-ok font-semibold">604/604 Tests Passing</span>
             <span>·</span>
             <span>Google ADK Gemini 3.5 Flash</span>
             <span>·</span>

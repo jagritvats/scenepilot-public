@@ -886,7 +886,10 @@ SimulateStripMoveInput.model_rebuild()
 @app.get("/api/projects/{project_id}/shoot-days/{day_id}/ephemeris")
 def get_shoot_day_ephemeris(project_id: str, day_id: str) -> dict[str, Any]:
     p = _project(project_id)
-    day = p.shoot_day(day_id)
+    try:
+        day = p.shoot_day(day_id)
+    except KeyError:
+        raise HTTPException(404, "shoot day not found")
     profile = city_ephemeris(p.base_city, day.date)
     return {
         "day_id": day.id,
@@ -968,6 +971,13 @@ def get_multiday_ripple_plan(
     option_id: str = "opt_recovery",
 ) -> dict[str, Any]:
     p = _project(project_id)
+    # The solver tolerates a missing source day on purpose — a scene can be deferred from a day that
+    # was later removed — but that is an internal case, not a reason for this route to answer 200 for
+    # an id the production has never heard of. Guarded here so the tolerance stays where it belongs.
+    try:
+        p.shoot_day(day_id)
+    except KeyError:
+        raise HTTPException(404, "shoot day not found")
     scene_ids = [s.strip() for s in deferred_scene_ids.split(",") if s.strip()]
     plan = resolve_deferred_scenes_multiday(
         project=p,
