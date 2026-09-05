@@ -1,6 +1,6 @@
 {
   "request": {
-    "objective": "Current weather forecast and official rain or thunderstorm warnings for Mumbai, India on 2026-08-26, especially afternoon rain timing and wind; prefer IMD, Skymet and established news sources.",
+    "objective": "Current weather forecast and official rain or thunderstorm warnings for Mumbai, India on 2026-09-05, especially afternoon rain timing and wind; prefer IMD, Skymet and established news sources.",
     "search_queries": [
       "Mumbai weather forecast today",
       "IMD Mumbai rain warning",
@@ -14,26 +14,18 @@
         "max_chars_per_result": 1200
       },
       "source_policy": {
-        "after_date": "2026-07-27"
+        "after_date": "2026-08-06"
       },
       "fetch_policy": {
         "max_age_seconds": 3600
       }
     },
-    "session_id": "scenepilot_rescue_run_8ce6ed27cc",
+    "session_id": "scenepilot_rescue_run_66295de4f1",
     "client_model": "gemini-3.5-flash"
   },
   "response": {
-    "search_id": "search_062b7aa940acb4d081ff8ce4133aad0d",
+    "search_id": "search_05951eb8d7951fab5b430a779b664abe",
     "results": [
-      {
-        "url": "https://www.accuweather.com/en/in/mumbai/204842/weather-forecast/204842",
-        "title": "Mumbai, Maharashtra, India Weather Forecast | AccuWeather",
-        "publish_date": null,
-        "excerpts": [
-          "Mumbai, Maharashtra, India Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
-        ]
-      },
       {
         "url": "https://mumbairain.tropmet.res.in/",
         "title": "MUMBAI RAINFALL",
@@ -45,9 +37,41 @@
       {
         "url": "https://mausam.imd.gov.in/mumbai/",
         "title": "RMC Mumbai - IMD - India Meteorological Department",
-        "publish_date": "2026-08-14",
+        "publish_date": null,
         "excerpts": [
-          "[](https://mausam.imd.gov.in/survey_app/survey.php?survey=hw_gp)\n\nShare your feedback. Take the IMD Heat Wave Alert Survey (13 Aug 2026 to 13 Sept 2026).\n\n×\n\n# India Meteorological Department  \nRMC Mumbai\n\nSkip to main content (press enter)\n\nIndia Meteorological Department\n\n# पृथ्वी विज्ञान मंत्रालय\n\n# भारत मौसम विज्ञान विभाग\n\n# प्रादेशिक मौसम केंद्र मुंबई\n\n♦ [Monthly Outlook for Rainfall and Temperature during July 2026](https://mausam.imd.gov.in/Forecast/mcmarq/mcmarq_data/English Press Release July 2026.pdf)\n\nCity forecast\n\nवर्तमान मौसम\n\n### Mumbai\n\n29 o C\n\n79%\n\n* 18\\.5 km/h\n\nअवलोकन समय: 2026-08-25 23.30 IST\n\nसूर्योदय: 06:22 (IST)\n\nसूर्यास्त: 19:00 (IST)\n\nचंद्रोदय: 17:14 (IST)\n\nचंद्रास्त: 03:38 (IST)\n\n* [उपग्रह](https://mausam.imd.gov.in/imd_latest/contents/satellite.php)\n* [रडार](https://mausam.imd.gov.in/mumbai/index_radar.php)\n* [उपग्रहसहआकाशीय बिजली](https://mausam.imd.gov.in/lightning/Converted/BT.gif \"Current Weather\")\n*\n\n## हमारी सेवाएं\n\n* मौसम विवरण  \n  दैनिक"
+          "Skip to main content (press enter) · सूर्योदय: 06:24 (IST)"
+        ]
+      },
+      {
+        "url": "https://mausam.imd.gov.in/index_en.php",
+        "title": "IMD Mausam - India Meteorological Department",
+        "publish_date": "2026-08-13",
+        "excerpts": [
+          "Sh Sonam Lotus Scientist - F & Head Met Centre Leh Ladakh of IMD was honoured with the State AWARD LADAKH under Public Service Category by Sh Vinay Kumar Saxena Ji, the Hon’ble Lieutenant Governor for his dedicated services to the people and the administration of Life..The award carries a Cold Medal, Citation & cash pride Rs 51000\n\nnews\n\nDr. Mrutyunjay Mohapatra, Director General of Meteorology, India Meteorological Department (IMD), was invited as the Guest of Honour at the Foundation Day celebration of IREL (India) Limited, Mumbai, and delivered a lecture on the occasion.\n\nnews\n\nDr. Mrutyunjay Mohapatra, Director General of Meteorology, India Meteorological Department (IMD), was invited as the Guest of Honour at the Foundation Day celebration of IREL (India) Limited, Mumbai, and delivered a lecture on the occasion.\n\nnews\n\nDr. Mrutyunjay Mohapatra, Director General of Meteorology, India Meteorological Department (IMD), welcomes Dr. Srinivasa Kumar Tummala as he takes charge as Secretary, MOES.\n\nnews"
+        ]
+      },
+      {
+        "url": "https://mausam.imd.gov.in/responsive/rainfallinformation.php",
+        "title": "Rainfall Information - IMD - India Meteorological Department",
+        "publish_date": "2026-09-05",
+        "excerpts": [
+          "Mausam Bhawan, Lodhi Road  \nNew Delhi - 110003\n\n  \n### Weather related query for Media\n\n#### Query Time: 10:00am to 5:00pm\n\n1\\. Dr. Naresh Kumar, Sc. F  \nContact No: [\\+91 9968680077](tel:+919968680077) , naresh.nhac[at]gmail[dot]com  \n2\\. Dr. Akhil Srivastava, Sc. D  \nContact No: [\\+91 8285281968](tel:+918285281968) , akhil.srivastava[at]imd[dot]gov[dot]in\n\n[](https://www.facebook.com/India.Meteorological.Department/) [](https://www.youtube.com/channel/UC_qxTReoq07UVARm87CuyQw/featured?view_as=subscriber) [](https://twitter.com/Indiametdept) [](https://instagram.com/mausam_nwfc/)\n\nMinistry of Earth Sciences, New Delhi, India"
+        ]
+      },
+      {
+        "url": "https://timesofindia.indiatimes.com/weather/mumbai-weather-forecast-today/3258",
+        "title": "Mumbai Weather Today, Mumbai Temperature Hourly and Weekly Forecast | The Times of India",
+        "publish_date": "2026-08-29",
+        "excerpts": [
+          "There is a 76% probability of rain ... forecasts on Mumbai weather. ... The weather in Mumbai today is <strong>Rain Shower with a high of 28.5°C and a low of 27.9°C</strong>."
+        ]
+      },
+      {
+        "url": "https://www.bbc.com/weather/1275339",
+        "title": "Mumbai - BBC Weather",
+        "publish_date": null,
+        "excerpts": [
+          "14-day weather forecast for Mumbai."
         ]
       }
     ],

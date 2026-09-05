@@ -1,0 +1,42 @@
+{
+  "request": {
+    "role": "disruption_verifier",
+    "user_text": "DISRUPTION REPORT (received by the production office of a fictional production shooting in Mumbai, IN):\ntype: WEATHER\ntitle: Rain expected 13:00–17:00\ndetails: Nowcast for Mumbai city: moderate to heavy showers with gusty winds (40–50 km/h) between 13:00 and 17:00 IST. Exterior rooftop surfaces will need ~30 min to dry.\nwindow: 13:00–17:00 local time on @DATE@ (Shoot Day 4)\n\nSEARCH RESULTS (Parallel Search API):\n### SearchRun search_@0 — objective: Current weather forecast and official rain or thunderstorm warnings for Mumbai, India on @DATE@, especially afternoon rain timing and wind; prefer IMD, Skymet and established news sources.\nqueries: ['Mumbai weather forecast today', 'IMD Mumbai rain warning', 'Mumbai weather tomorrow']\n[search_@0#1] MUMBAI RAINFALL — https://mumbairain.tropmet.res.in/ — published: unknown\n    > <strong>Generally cloudy sky with intermittent light to moderate rainfall in city and suburbs</strong>. Heavy rainfall at isolated places. - (Source IMD) ... Background:: Mumbai, country&#x27;s financial capital with about 12 million people, weather plays a very important role especially during south west monsoon season.\n[search_@0#2] RMC Mumbai - IMD - India Meteorological Department — https://mausam.imd.gov.in/mumbai/ — published: unknown\n    > Skip to main content (press enter) · सूर्योदय: 06:24 (IST)\n[search_@0#3] IMD Mausam - India Meteorological Department — https://mausam.imd.gov.in/index_en.php — published: @DATE@\n    > Sh Sonam Lotus Scientist - F & Head Met Centre Leh Ladakh of IMD was honoured with the State AWARD LADAKH under Public Service Category by Sh Vinay Kumar Saxena Ji, the Hon’ble Lieutenant Governor for his dedicated services to the people and the administration of Life..The award carries a Cold Medal, Citation & cash pride Rs 51000  news  Dr. Mrutyunjay Mohapatra, Director General of Meteorology, India Meteorological Department (IMD), was invited as the Guest of Honour at the Foundation Day celebration of IREL (India) Limited, Mumbai, and delivered a lecture on the occasion.  news  Dr. Mrutyunj\n[search_@0#4] Rainfall Information - IMD - India Meteorological Department — https://mausam.imd.gov.in/responsive/rainfallinformation.php — published: @DATE@\n    > Mausam Bhawan, Lodhi Road   New Delhi - 110003     ### Weather related query for Media  #### Query Time: 10:00am to 5:00pm  1\\. Dr. Naresh Kumar, Sc. F   Contact No: [\\+91 9968680077](tel:+919968680077) , naresh.nhac[at]gmail[dot]com   2\\. Dr. Akhil Srivastava, Sc. D   Contact No: [\\+91 8285281968](tel:+918285281968) , akhil.srivastava[at]imd[dot]gov[dot]in  [](https://www.facebook.com/India.Meteorological.Department/) [](https://www.youtube.com/channel/UC_qxTReoq07UVARm87CuyQw/featured?view_as=subscriber) [](https://twitter.com/Indiametdept) [](https://instagram.com/mausam_nwfc/)  Ministry of\n[search_@0#5] Mumbai Weather Today, Mumbai Temperature Hourly and Weekly Forecast | The Times of India — https://timesofindia.indiatimes.com/weather/mumbai-weather-forecast-today/3258 — published: @DATE@\n    > There is a 76% probability of rain ... forecasts on Mumbai weather. ... The weather in Mumbai today is <strong>Rain Shower with a high of 28.5°C and a low of 27.9°C</strong>.\n[search_@0#6] Mumbai - BBC Weather — https://www.bbc.com/weather/1275339 — published: unknown\n    > 14-day weather forecast for Mumbai.\n\n### SearchRun search_@1 — objective: India Meteorological Department nowcast, warnings or district forecast for Mumbai for the next 24-48 hours.\nqueries: ['IMD Mumbai nowcast warning', 'Mumbai district forecast', 'Mumbai rainfall warning']\n[search_@1#1] RMC Mumbai - IMD - India Meteorological Department — https://mausam.imd.gov.in/mumbai/ — published: @DATE@\n    > Urban Area Forecast · City forecast · वर्तमान मौसम · 29oC · 79% 13 km/h अवलोकन समय: @DATE@ 16.30 IST · सूर्योदय: 06:24 (IST) सूर्यास्त: 18:51 (IST) चंद्रोदय: 00:08 (IST) चंद्रास्त: 14:07 (IST) उपग्रह ·\n[search_@1#2] Nowcast Warning - IMD - India Meteorological Department — https://mausam.imd.gov.in/imd_latest/contents/stationwise-nowcast-warning_mc.php?id=21 — published: unknown\n    > © Copyright Regional Met Centre Mumbai India Meteorological Department Ministry of Earth Sciences, New Delhi, India\n[search_@1#3] Date: 02-08-2026 Time of Issue: 13:00 HRS IST (MID DAY) DISTRICT FORECAST AND WARNING FOR THE NEXT FIVE DAYS. Forecast — https://mausam.imd.gov.in/mumbai/mcdata/district.pdf — published: @DATE@\n    > ... observations and numerical weather prediction model guidance available. Please be regularly updated with the latest warnings and forecasts issued by IMD in the coming days. Further details are available on websites of IMD HQ, IMD Mumbai and IMD N\n[search_@1#4] Mumbai - IMD - India Meteorological Department — https://mausam.imd.gov.in/mumbai/ums.php — published: unknown\n    > District Wise Station Wise · Daily AWS Met-Obs · Forecast · Local Forecast · City Forecast · District Forecast · Regional Forecast · National Forecast · Extended Range Forecast · Seasonal Forecast · Impact Based Forecast · Highway Forecast ·\n[search_@1#5] IMD | Nowcast Warning — https://mausam.imd.gov.in/imd_latest/contents/stationwise-nowcast-warning_mc.php — published: unknown\n    > Nowcast-warnings\n[search_@1#6] Mumbai Rainfall - IMD - India Meteorological Department — https://mausam.imd.gov.in/mumbai/rainfall_info.php — published: unknown\n    > © Copyright Regional Met Centre Mumbai India Meteorological Department Ministry of Earth Sciences, New Delhi, India\n\n"
+  },
+  "response": {
+    "output": {
+      "status": "PARTIALLY_CORROBORATED",
+      "summary": "External sources confirm a high probability of rain and intermittent light to moderate showers in Mumbai on September 5, 2026. However, official observations during the afternoon show much milder winds (13 km/h) than the reported 40–50 km/h gusts, and the exact 13:00–17:00 heavy downpour window is not explicitly detailed in the public forecasts.",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "claim": "Generally cloudy sky with intermittent light to moderate rainfall in city and suburbs, with heavy rainfall at isolated places.",
+          "source_ref": "search_@0#1",
+          "relevance": 0.9,
+          "confidence": 0.95,
+          "production_implication": "Confirms that wet conditions and rain are expected throughout the day, which will likely affect outdoor rooftop shoots."
+        },
+        {
+          "claim": "There is a 76% probability of rain showers in Mumbai today.",
+          "source_ref": "search_@0#5",
+          "relevance": 0.8,
+          "confidence": 0.85,
+          "production_implication": "Indicates a high likelihood of precipitation, supporting the need for contingency planning for exterior setups."
+        },
+        {
+          "claim": "Actual weather observation at 16:30 IST on 2026-09-05 shows a temperature of 29°C and wind speeds of 13 km/h.",
+          "source_ref": "search_@1#1",
+          "relevance": 0.85,
+          "confidence": 0.9,
+          "production_implication": "Suggests that while rain is occurring, the severe gusty winds of 40–50 km/h mentioned in the disruption report may not be materializing as intensely as feared."
+        }
+      ],
+      "notes_for_planning": [
+        "Expect intermittent light to moderate rain throughout the day rather than a single isolated heavy storm.",
+        "Wind speeds are observed at a manageable 13 km/h, reducing the risk of wind-related structural hazards on the rooftop.",
+        "Keep a 30-minute post-rain drying buffer active in the schedule, as damp rooftop surfaces remain highly probable due to high humidity (79%)."
+      ]
+    },
+    "tool_calls": []
+  }
+}

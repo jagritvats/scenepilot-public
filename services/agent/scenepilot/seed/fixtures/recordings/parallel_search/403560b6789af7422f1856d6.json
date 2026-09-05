@@ -24,18 +24,18 @@
         "max_age_seconds": 3600
       }
     },
-    "session_id": "scenepilot_rescue_run_8ce6ed27cc",
+    "session_id": "scenepilot_rescue_run_66295de4f1",
     "client_model": "gemini-3.5-flash"
   },
   "response": {
-    "search_id": "search_f43e748da74adf34c2e319036feb0c05",
+    "search_id": "search_ebd4ec6aa4c2ea0df8bca2477a269a1a",
     "results": [
       {
-        "url": "https://mausam.imd.gov.in/mumbai",
-        "title": "RMC Mumbai",
-        "publish_date": null,
+        "url": "https://mausam.imd.gov.in/mumbai/",
+        "title": "RMC Mumbai - IMD - India Meteorological Department",
+        "publish_date": "2026-08-14",
         "excerpts": [
-          "[](https://mausam.imd.gov.in/survey_app/survey.php?survey=hw_gp)\n\nShare your feedback. Take the IMD Heat Wave Alert Survey (13 Aug 2026 to 13 Sept 2026).\n\n×\n\n# India Meteorological Department  \nRMC Mumbai\n\nSkip to main content (press enter)\n\nIndia Meteorological Department\n\n# पृथ्वी विज्ञान मंत्रालय\n\n# भारत मौसम विज्ञान विभाग\n\n# प्रादेशिक मौसम केंद्र मुंबई\n\n♦ [Monthly Outlook for Rainfall and Temperature during July 2026](https://mausam.imd.gov.in/Forecast/mcmarq/mcmarq_data/English Press Release July 2026.pdf)\n\nCity forecast\n\nवर्तमान मौसम\n\n### Mumbai\n\n29 o C\n\n79%\n\n* 18\\.5 km/h\n\nअवलोकन समय: 2026-08-25 23.30 IST\n\nसूर्योदय: 06:22 (IST)\n\nसूर्यास्त: 19:00 (IST)\n\nचंद्रोदय: 17:14 (IST)\n\nचंद्रास्त: 03:38 (IST)\n\n* [उपग्रह](https://mausam.imd.gov.in/imd_latest/contents/satellite.php)\n* [रडार](https://mausam.imd.gov.in/mumbai/index_radar.php)\n* [उपग्रहसहआकाशीय बिजली](https://mausam.imd.gov.in/lightning/Converted/BT.gif \"Current Weather\")\n*\n\n## हमारी सेवाएं\n\n* मौसम विवरण  \n  दैनिक\n\n...\n\n© Copyright [Regional Met Centre Mumbai India Meteorological Department Ministry of Earth Sciences](https://moes.gov.in/) , New Delhi, India"
+          "Urban Area Forecast · City forecast · वर्तमान मौसम · 29oC · 79% 13 km/h अवलोकन समय: 2026-09-05 16.30 IST · सूर्योदय: 06:24 (IST) सूर्यास्त: 18:51 (IST) चंद्रोदय: 00:08 (IST) चंद्रास्त: 14:07 (IST) उपग्रह ·"
         ]
       },
       {
@@ -48,34 +48,34 @@
       },
       {
         "url": "https://mausam.imd.gov.in/mumbai/mcdata/district.pdf",
-        "title": "DISTRICT FORECAST AND WARNING FOR THE NEXT ...",
-        "publish_date": "2026-07-23",
+        "title": "Date: 02-08-2026 Time of Issue: 13:00 HRS IST (MID DAY) DISTRICT FORECAST AND WARNING FOR THE NEXT FIVE DAYS. Forecast",
+        "publish_date": "2026-08-02",
         "excerpts": [
-          "As there is a possibility of heavy rainfall activity over the region, <strong>harvesting of matured crops should be done</strong>."
+          "... observations and numerical weather prediction model guidance available. Please be regularly updated with the latest warnings and forecasts issued by IMD in the coming days. Further details are available on websites of IMD HQ, IMD Mumbai and IMD N"
         ]
       },
       {
-        "url": "https://mausam.imd.gov.in/imd_latest/contents/Todaysweather_mc.php?id=21%2F1000",
-        "title": "IMD mumbai | Todays Weather Report",
+        "url": "https://mausam.imd.gov.in/mumbai/ums.php",
+        "title": "Mumbai - IMD - India Meteorological Department",
         "publish_date": null,
         "excerpts": [
-          "India Meteorological Department\n\n# पृथ्वी विज्ञान मंत्रालय\n\n# भारत मौसम विज्ञान विभाग\n\n# प्रादेशिक मौसम केंद्र मुंबई\n\n## चेतावनी\n\n* [उपखंड वार](https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning_mc.php?id=21 \"Subdivision Wise\") [जिला वार](https://mausam.imd.gov.in/imd_latest/contents/districtwise-warning_mc.php?id=21 \"District Wise\")\n\n## तात्कालिक चेतावनी\n\n* [जिला वार](https://mausam.imd.gov.in/imd_latest/contents/districtwisewarnings_mc.php?id=21 \"District Wise\") [स्टेशन वार](https://mausam.imd.gov.in/imd_latest/contents/stationwise-nowcast-warning_mc.php?id=21 \"Station Wise\")\n\n## मौसम अवलोकन\n\n* [दैनिक](https://mausam.imd.gov.in/imd_latest/contents/Todaysweather_mc.php?id=21 \"Temperature\") [स्वचालित मौसम स्टेशन](http://aws.imd.gov.in:8091/state/MAHARASHTRA \"Temperature\") [Met-Obs](https://mausam.imd.gov.in/mumbai/mcdata/Met-Obs.pdf \"Met-Obs\")\n\n|एंड्रॉयडऐप्स : [मौसम](https://play.google.com/store/apps/details?id=com.imd."
+          "District Wise Station Wise · Daily AWS Met-Obs · Forecast · Local Forecast · City Forecast · District Forecast · Regional Forecast · National Forecast · Extended Range Forecast · Seasonal Forecast · Impact Based Forecast · Highway Forecast ·"
         ]
       },
       {
-        "url": "https://mausam.imd.gov.in/responsive/stationWiseNowcast.php",
-        "title": "SW Nowcast Warnings | India Meteorological Department",
+        "url": "https://mausam.imd.gov.in/imd_latest/contents/stationwise-nowcast-warning_mc.php",
+        "title": "IMD | Nowcast Warning",
         "publish_date": null,
         "excerpts": [
-          "[प्रेस विज्ञप्ति तारीख 22 अगस्त, 2026:आज 22 अगस्त, 2026 को पूर्वी उत्तर प्रदेश और पूर्वी मध्य प्रदेश में कहीं-कहीं भारी से बहुत भारी बारिश जारी रहने की संभावना है।](https://mausam.imd.gov.in/Forecast/marquee_data/ विज्ञप्ति 22.08.2026.pdf)\n\n[Press Release Dated 22nd August 2026:isolated heavy to very heavy rainfall likely to continue over East Uttar Pradesh and East Madhya Pradesh on today, the 22nd August, 2026.](https://mausam.imd.gov.in/Forecast/marquee_data/Press Release 22-08-2026.pdf)\n\n[Current Weather Status and Extended Range Forecast for the next two weeks (20 August to 02 September 2026)](https://mausam.imd.gov.in/Forecast/marquee_data/extended_1787223090.pdf)\n[Registrations open for Emerging Science, Technology, and Innovation Conclave (ESTIC) 2026](https://estic2026.in/index.html)\n\n[PRESS RELEASE: CURRENT WEATHER STATUS AND EXTENDED RANGE FORECAST FOR THE NEXT TWO WEEKS (13 to 26 August 2026)](https://mausam.imd.gov.in/Forecast/marquee_data/ERF 13.08.26.pdf)\n\n### Stationwise Nowcast Warnings\n\n* WarningSymbol No Warning\n* WarningSymbol Watch\n* WarningSymbol Alert\n* WarningSymbol Warning"
+          "Nowcast-warnings"
         ]
       },
       {
-        "url": "https://mausam.imd.gov.in/imd_latest/contents/districtwisewarnings_mc.php?id=4",
-        "title": "IMD | District-Wise-Nowcast",
+        "url": "https://mausam.imd.gov.in/mumbai/rainfall_info.php",
+        "title": "Mumbai Rainfall - IMD - India Meteorological Department",
         "publish_date": null,
         "excerpts": [
-          "[India Meteorological Department](#.)\n\n# Ministry of Earth Sciences\n\n# India Meteorological Department\n\n# Met Centre Thiruvananthapuram\n\n© Copyright [Met Centre Thiruvananthapuram India Meteorological Department Ministry of Earth Sciences](https://mo"
+          "© Copyright Regional Met Centre Mumbai India Meteorological Department Ministry of Earth Sciences, New Delhi, India"
         ]
       }
     ],
