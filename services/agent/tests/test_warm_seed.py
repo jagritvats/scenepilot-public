@@ -33,9 +33,13 @@ def test_warm_seed_loads_the_screenplay_and_every_recorded_dossier():
     repo, project, notes = _warm()
     assert len(project.parsed_screenplay_scenes) == 5
     assert {s.scene_number for s in project.parsed_screenplay_scenes} == {"42", "27", "48", "31", "19"}
-    # one dossier per location that has a recording, persisted as an observable TaskRun
-    runs = repo.list_task_runs(project_id=PROJECT_ID)
+    # one dossier per location that has a recording, persisted as an observable TaskRun. Filtered by
+    # purpose: the warm seed also replays weather timelines, which are Task runs against a *day*, so
+    # counting every run here made the dossier assertion fail the moment a weather fixture landed.
+    runs = [r for r in repo.list_task_runs(project_id=PROJECT_ID) if r.purpose == "location_dossier"]
     assert len(runs) == 4 and {r.resource_id for r in runs} == {"loc_rooftop", "loc_alley", "loc_street", "loc_apartment"}
+    weather = [r for r in repo.list_task_runs(project_id=PROJECT_ID) if r.purpose == "weather_timeline"]
+    assert {r.shoot_day_id for r in weather} == {"day_4", "day_6"}, "the committed weather fixtures warm too"
     assert notes and any("Screenplay Studio" in n for n in notes)
 
 

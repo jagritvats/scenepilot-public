@@ -233,8 +233,18 @@ export function MultiDayPanel({
                     Est. Budget: {inr(plan.total_ripple_cost_inr)}
                   </span>
                 </div>
+                {/* Says what the solver decided, not what a pickup day sounds like it should be for.
+                    This read "saturated within standard union hours ... without triggering rolling
+                    6th-day meal and overtime penalties" — three claims the engine never makes. There
+                    is no consecutive-day rule anywhere in `labor_rules.py`; `_can_accommodate` places
+                    a scene unless it raises a HARD violation, which is a different question from
+                    capacity; and the scene being carried here is a market-street chase, not a stunt.
+                    An invented union rule beside the largest number on the page is the last place
+                    this product can afford one. */}
                 <div className="text-xs text-zinc-300">
-                  All regular shoot days are saturated within standard union hours. A contingency pickup day was automatically synthesized to capture exterior stunts without triggering rolling 6th-day meal and overtime penalties.
+                  No downstream day can take this scene without breaking a constraint the validator treats as hard —
+                  the day/night window, a permit window, cast availability or turnaround. A dedicated pickup unit is
+                  the only placement left, priced at this production&apos;s pickup-day rate.
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 text-[11px]">
                   <div className="p-2 rounded bg-zinc-900/60 border border-zinc-800">

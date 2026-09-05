@@ -110,3 +110,24 @@ def test_warming_the_plan_does_not_change_what_day_4_accepts():
     assert before == after, f"warming the plan moved the rescue: {before} -> {after}"
     assert sum(1 for _, feasible in after if feasible) == 3
     assert sum(1 for _, feasible in after if not feasible) == 2
+
+
+def test_the_planning_replay_is_deterministic():
+    """The same recorded run must replay the same way every time, not most of the time.
+
+    It did not. The evidence analyst grades questions concurrently, so two searches could share a
+    `started_at`; `list_search_runs` ordered on that column alone and SQLite returns equal keys in
+    arbitrary order. The analyst's sources therefore arrived in a different order run to run, which
+    reordered its prompt, which changed the recording key, which turned a perfectly good recording
+    into a `ReplayMiss`. Measured before the fix: **17 of 25**. So roughly one cold start in three
+    got no warm plan at all, and the scene page a judge is pointed at opened empty.
+
+    Adding an id tiebreak was not enough — run ids are generated per run, so ordering by them still
+    does not reproduce creation order. `list_search_runs(ids=...)` now returns the caller's order.
+
+    Ten iterations, because the failure was probabilistic: a single pass proved nothing, which is
+    exactly why this survived until someone ran the suite in a loop.
+    """
+    for i in range(10):
+        repo, project = _seeded()
+        assert _warm(repo, project), f"warm planning produced nothing on iteration {i + 1} of 10"

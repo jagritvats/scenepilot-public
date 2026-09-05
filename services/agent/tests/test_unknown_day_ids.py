@@ -81,3 +81,47 @@ def test_all_four_documents_agree_on_how_many_days_the_picture_has():
     assert None not in totals.values(), f"a document stopped reporting its denominator: {totals}"
     assert len(set(totals.values())) == 1, f"the paper disagrees about the picture's length: {totals}"
     assert totals["sides"] >= 6, f"a six-day schedule cannot be 'of {totals['sides']}'"
+
+
+def test_a_wrapped_day_does_not_charge_overtime_for_a_scene_it_never_shot():
+    """The wrap record has to agree with itself.
+
+    `day_completion` computes the day's wrap carefully — preferring the recorded `camera_wrap` over
+    `max(end)`, with a comment saying a carried strip must not date the day — and then measured
+    overtime with `overtime_minutes(day, items)`, which takes `max(end)` across *every* strip
+    including the ones nobody shot. So a day that wrapped early with a scene carried over billed
+    overtime against the scheduled end of work that never happened, two lines under the wrap time
+    that said otherwise.
+    """
+    from scenepilot.domain.enums import ScheduleItemStatus, ShootDayStatus
+    from scenepilot.seed.nightfall import build_project
+    from scenepilot.services.completion import day_completion
+    from scenepilot.services.timeutil import to_hhmm, to_minutes
+
+    p = build_project()
+    # The seed's one wrapped day holds a single strip, and a day whose only scene was carried has no
+    # work to measure. Wrap the four-scene hero day instead: carrying its last strip is exactly the
+    # shape this is about — a unit that wrapped early with a scene still owed.
+    day = next(d for d in p.shoot_days if len(d.items) > 1)
+    day.status = ShootDayStatus.WRAPPED
+    last = max(day.items, key=lambda i: to_minutes(i.end))
+    for i in day.items:
+        i.status = ScheduleItemStatus.COMPLETED
+    last.status = ScheduleItemStatus.DEFERRED  # carried: on the strip, not shot
+    shot = [i for i in day.items if i is not last]
+    day.camera_wrap = max(i.end for i in shot)
+
+    # Push the carried strip past the standard day. Without this the two readings agree at zero —
+    # the hero day wraps before its 19:00 standard end — and the test would pass against the bug.
+    standard_end = to_minutes(day.unit_call) + int(day.standard_hours * 60)
+    last.start, last.end = to_hhmm(standard_end + 30), to_hhmm(standard_end + 120)
+    assert to_minutes(day.camera_wrap) < standard_end < to_minutes(last.end)
+
+    rec = day_completion(p, day)
+    assert rec is not None
+    expected = max(0, to_minutes(day.camera_wrap) - standard_end)
+    assert expected == 0, "the unit wrapped inside the standard day, so it owes no overtime"
+    assert rec["overtime_minutes"] == expected, (
+        f"overtime {rec['overtime_minutes']} does not follow from the recorded wrap "
+        f"{day.camera_wrap} (expected {expected}) — it is being read off a carried strip"
+    )

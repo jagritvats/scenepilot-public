@@ -19,7 +19,6 @@ from typing import Any
 from ..domain.enums import ScheduleItemStatus, ShootDayStatus
 from ..domain.models import Project, ScheduleItem, ShootDay
 from .callsheet import eighths_label
-from .schedule import overtime_minutes
 from .timeutil import to_hhmm, to_minutes
 
 
@@ -61,7 +60,12 @@ def day_completion(project: Project, day: ShootDay) -> dict[str, Any] | None:
     # a carried scene's scheduled end as a wrap time: a strip nobody shot would date the day and
     # inflate the overtime derived from it.
     wrap = to_minutes(day.camera_wrap) if day.camera_wrap else max(to_minutes(i.end) for i in items)
-    ot = overtime_minutes(day, items)
+    # Measured off the wrap this record just established, not off `items`. `overtime_minutes` takes
+    # `max(end)` across everything on the strip — including the scenes that were carried and never
+    # shot — so a wrapped day billed overtime for work it did not do, and contradicted the wrap time
+    # printed two lines above it. Same arithmetic as `overtime_minutes`, against the day that
+    # happened rather than the day that was planned.
+    ot = max(0, wrap - (call + int(day.standard_hours * 60)))
     ot_cost = math.ceil(ot / 60 * day.overtime_rate_per_hour) if ot else 0
     carry_cost = len(outstanding) * day.carry_over_cost
 

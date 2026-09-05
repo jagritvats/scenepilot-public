@@ -206,9 +206,12 @@ export function DisruptionScrubber({
         </p>
       )}
 
-      {/* No timeline yet: the capability is named, priced and timed rather than hidden — and the
-          panel says plainly that nothing is known, instead of drawing an axis of empty hours. */}
-      {onResearchWeather && !weather && (
+      {/* No timeline yet — or one that came back with a day summary and not one usable hour, which
+          is what Mumbai currently returns. Both are "nothing is known hour by hour", so both keep the
+          capability named, priced and timed rather than hidden. Keying this on `!weather` alone hid
+          the button the moment a run answered *anything*, so a run that resolved no hour at all left
+          a summary line and no way to ask again. */}
+      {onResearchWeather && (!weather || !weather.hours?.length) && (
         <div className="flex items-center gap-2 flex-wrap border-t border-line pt-2">
           <button
             className="btn btn-ghost"
@@ -221,7 +224,9 @@ export function DisruptionScrubber({
           <span className="text-[11px] text-dim">
             {weatherOff
               ? `No hourly forecast has been researched for this day. ${weatherFeature?.env || "SCENEPILOT_PARALLEL_TASK=1"} enables it.`
-              : "No hourly forecast yet. Each hour comes back with its own sources, reasoning and confidence."}
+              : weather
+                ? "The forecast that came back covers the day, not the hour: no source answered any single hour, so no hour is drawn. Research again to try for hourly detail."
+                : "No hourly forecast yet. An answered hour comes back with its own sources, reasoning and confidence."}
           </span>
         </div>
       )}

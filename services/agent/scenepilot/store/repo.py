@@ -105,7 +105,13 @@ class Repo:
         return SearchRun.model_validate(row[0]) if row else None
 
     def list_search_runs(self, run_id: str | None = None, project_id: str | None = None, ids: list[str] | None = None) -> list[SearchRun]:
-        stmt = select(db.search_runs.c.doc).order_by(db.search_runs.c.started_at.asc())
+        # Ties broken on id, deliberately. Two searches issued side by side (the evidence analyst
+        # runs questions under a semaphore) can share a `started_at`, and SQLite orders equal keys
+        # arbitrarily — so the same run replayed twice could hand the analyst its sources in a
+        # different order. That reorders the prompt, which changes the recording key, which turns a
+        # perfectly good recording into a ReplayMiss. It made the warm planning replay succeed only
+        # about two times in three, and would equally have made recordings unreproducible.
+        stmt = select(db.search_runs.c.doc).order_by(db.search_runs.c.started_at.asc(), db.search_runs.c.id.asc())
         if run_id:
             stmt = stmt.where(db.search_runs.c.run_id == run_id)
         if project_id:
@@ -116,7 +122,16 @@ class Repo:
             stmt = stmt.where(db.search_runs.c.id.in_(ids))
         with self._lock, self.engine.begin() as conn:
             rows = conn.execute(stmt).all()
-        return [SearchRun.model_validate(r[0]) for r in rows]
+        found = [SearchRun.model_validate(r[0]) for r in rows]
+        if ids is not None:
+            # Hand them back in the order the caller asked for, which is the order they were made.
+            # Sorting on stored columns cannot reproduce that: concurrent runs share a `started_at`,
+            # and the tiebreak id is freshly generated per run, so the same replay could order the
+            # analyst's sources differently each time. That reorders the prompt, which changes the
+            # recording key, which turns a good recording into a ReplayMiss.
+            rank = {run_id: i for i, run_id in enumerate(ids)}
+            found.sort(key=lambda r: rank.get(r.id, len(rank)))
+        return found
 
     # ----- extract runs -----
     def save_extract_run(self, xr: ExtractRun) -> None:
@@ -204,7 +219,13 @@ class Repo:
         return ExtractRun.model_validate(row[0]) if row else None
 
     def list_extract_runs(self, run_id: str | None = None, project_id: str | None = None, ids: list[str] | None = None) -> list[ExtractRun]:
-        stmt = select(db.extract_runs.c.doc).order_by(db.extract_runs.c.started_at.asc())
+        # Ties broken on id, deliberately. Two searches issued side by side (the evidence analyst
+        # runs questions under a semaphore) can share a `started_at`, and SQLite orders equal keys
+        # arbitrarily — so the same run replayed twice could hand the analyst its sources in a
+        # different order. That reorders the prompt, which changes the recording key, which turns a
+        # perfectly good recording into a ReplayMiss. It made the warm planning replay succeed only
+        # about two times in three, and would equally have made recordings unreproducible.
+        stmt = select(db.extract_runs.c.doc).order_by(db.extract_runs.c.started_at.asc(), db.extract_runs.c.id.asc())
         if run_id:
             stmt = stmt.where(db.extract_runs.c.run_id == run_id)
         if project_id:
@@ -215,7 +236,16 @@ class Repo:
             stmt = stmt.where(db.extract_runs.c.id.in_(ids))
         with self._lock, self.engine.begin() as conn:
             rows = conn.execute(stmt).all()
-        return [ExtractRun.model_validate(r[0]) for r in rows]
+        found = [ExtractRun.model_validate(r[0]) for r in rows]
+        if ids is not None:
+            # Hand them back in the order the caller asked for, which is the order they were made.
+            # Sorting on stored columns cannot reproduce that: concurrent runs share a `started_at`,
+            # and the tiebreak id is freshly generated per run, so the same replay could order the
+            # analyst's sources differently each time. That reorders the prompt, which changes the
+            # recording key, which turns a good recording into a ReplayMiss.
+            rank = {run_id: i for i, run_id in enumerate(ids)}
+            found.sort(key=lambda r: rank.get(r.id, len(rank)))
+        return found
 
     def find_extract_run(self, run_id: str, url: str) -> ExtractRun | None:
         """Cache lookup: an existing successful extract of this URL within the run."""

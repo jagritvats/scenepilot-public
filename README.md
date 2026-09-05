@@ -1,7 +1,7 @@
 # ScenePilot — Production Intelligence & Resilient Field Coordination 🎬
 
 > Built with **Google ADK + Gemini 3.5** and the **Parallel Runtime API Suite (Search, Extract, Task, FindAll, Memory, Monitor)**.  
-> **609 Automated Tests Passing** · **Next.js 16 (Turbopack)** · **Deterministic Constraint Engine**
+> **611 Automated Tests Passing** · **Next.js 16 (Turbopack)** · **Deterministic Constraint Engine**
 
 ScenePilot is an intelligent production control room for film and television crews. It answers two connected operational questions:
 
@@ -63,7 +63,7 @@ That rule cost four panels and three hardcoded constants during the build, and i
 - 🚨 **Phase 3: Autonomous Multi-Day Rescue & Coordinated Field Dispatch**: Multi-day cascading ripple solver across downstream days (or synthesizing dedicated Pickup Unit days), the AI 1st AD pair `rescue_planner` (proposes orderings) and `rescue_explainer` (writes the rationale), DGA Call Sheet 2.0, and a multi-channel WhatsApp/SMS/Email dispatch log built from the call sheet — queued, never transmitted, with read/confirmed states marked by hand and labelled as simulated.
 - 📄 **The paper a production actually runs on**: beside the call sheet, four more printable documents built from the same committed state — a **Daily Production Report** (issued only for a wrapped day; it refuses a day that has not happened, and says why), a **movement order** (legs, departures and arrivals from the production's own travel times, with no invented road route), a **sides packet** (the day's pages in shooting order, where a scene the Studio holds no text for prints as a *named gap* rather than a missing page), and a printable **force-majeure claim packet**.
 - 🔁 **Decisions that go both ways**: a producer can now **commit a downstream placement** or **materialise the synthesised pickup day** into the schedule — and **revert an applied recovery**, as its own audit-trailed change set, with the original approval left standing on the record. A committed pickup day is deliberately *uncleared*: it names the cast and locations nobody has booked onto it rather than inventing their availability.
-- 🌦️ **Hourly weather with per-hour citations**: a Parallel **Task** run whose every hour carries its own sources, reasoning and calibrated confidence, drawn over the disruption scrubber. An hour no source covered is left blank — a dry hour and an unresearched hour must never look alike.
+- 🌦️ **Hourly weather, per hour, with its own citations**: a Parallel **Task** run that asks for each hour separately, so an answered hour carries its own sources, reasoning and calibrated confidence, drawn over the disruption scrubber. An hour no source covered is left blank, and a day where *no* hour resolved draws no axis at all — a dry hour and an unresearched hour must never look alike. Mumbai currently answers at day resolution rather than hourly, so the demo shows exactly that: a cited day summary, and the hourly ask still on offer.
 - 📊 **Where the production is fragile, and what a day costs**: a **fact-drift inbox** (what moved in the world since this production last looked), a **risk register** ordered by severity × likelihood, a **booking-pressure heatmap** (resource × day), and a **day-cost card** rolling up overtime, meal penalties, carry-overs, re-rentals, company moves and held cast — with anything the production cannot price *named* rather than counted as zero.
 - ⚡ **Guided Demo Tour & Parallel Intelligence Console**: 1-click guided demo tour banner on the Home page, a **Ctrl+K command palette** over every scene, day, resource, discovered fact and log line, and a telemetry console inspecting all 6 Parallel APIs — now with a **dollar ledger that distinguishes what was spent from what a recording answered for free**.
 
@@ -273,13 +273,13 @@ cd services/agent && uv run python scripts/live_validate.py deep
 
 Without keys the rescue workflow still runs end-to-end on deterministic logic: the verification searches fail visibly (logged as warnings, shown as errored `SearchRun`s), the report is treated as unverified, and Gemini explanations fall back to deterministic text. The planning workflow needs Gemini and Parallel.
 
-### Automated Tests (609/609 Passing)
+### Automated Tests (611/611 Passing)
 
 ```bash
 cd services/agent && uv run pytest -q
 ```
 
-All **609 tests** pass in under a minute:
+All **611 tests** pass in under a minute:
 - **Orchestration**: both pipelines are ADK `Workflow` graphs — the follow-up loop is a routed cycle, the
   rescue graph is terminal at producer approval, node names match the stages a run reports, and a node that
   raises stops the graph while keeping its original exception (`test_graph.py`).

@@ -213,8 +213,17 @@ def test_the_weather_endpoint_gates_researches_and_reads_back(monkeypatch):
         r = c.post(f"/api/projects/proj_nightfall/shoot-days/{DAY4_ID}/weather-timeline")
         assert r.status_code == 501 and r.json()["detail"]["env"] == "SCENEPILOT_PARALLEL_TASK=1"
 
-        # A day nobody has researched says so, rather than drawing an empty axis.
-        assert c.get(f"/api/projects/proj_nightfall/shoot-days/{DAY4_ID}/weather-timeline").json()["timeline"] is None
+        # Day 4 now warms from a committed recording, so it reads back a real replayed run. What
+        # came back is a *day* summary and not one usable hour — Mumbai answers at day resolution —
+        # which is the honest shape this feature was built for: hours empty, summary cited, and the
+        # UI keeps offering the hourly ask rather than drawing an axis of blanks.
+        warmed = c.get(f"/api/projects/proj_nightfall/shoot-days/{DAY4_ID}/weather-timeline").json()["timeline"]
+        assert warmed is not None and warmed["replayed"] is True
+        assert warmed["hours"] == [], "no source answered a single hour; drawing one would invent it"
+        assert warmed["day_summary"] and warmed["day_summary"]["citations"], "a summary must carry its sources"
+
+        # A day with no recording at all still says so, rather than drawing an empty axis.
+        assert c.get("/api/projects/proj_nightfall/shoot-days/day_5/weather-timeline").json()["timeline"] is None
         assert c.get("/api/projects/proj_nightfall/shoot-days/day_nope/weather-timeline").status_code == 404
 
         monkeypatch.setattr(app_module, "settings", _live_settings(warm_demo=False))

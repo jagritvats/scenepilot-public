@@ -2032,7 +2032,17 @@ async def find_substitutes(project_id: str, resource_id: str, shoot_day_id: str 
 
     scope = memory_scope_key(p, settings) if settings.parallel_memory_enabled else None
     tool = ParallelFindAllTool(p, settings=settings, memory_scope_key=scope, on_event=lambda kind, msg, meta: _log_project(p, kind, msg, meta))
-    findall_run = await asyncio.to_thread(tool.find_substitutes, resource, shoot_day_id=shoot_day_id, note=note, mode=mode)
+    # Guarded the way the dossier and weather routes already are. `require_budget` above no longer
+    # refuses a recordable endpoint outright — it degrades the request to replay — and
+    # `can_serve_from_recording` answers for the *namespace*, not for whether this particular request
+    # has a recording behind it. FindAll is the case where those come apart: the one committed
+    # recording is a `findall` run and the default mode is `entity_search`, so a degraded call misses
+    # and, unguarded, escaped as a 500. A 503 that names the reason is the same answer the sibling
+    # paid routes give, and it keeps a spent budget from looking like a crash.
+    try:
+        findall_run = await asyncio.to_thread(tool.find_substitutes, resource, shoot_day_id=shoot_day_id, note=note, mode=mode)
+    except ReplayMiss as exc:
+        raise HTTPException(503, f"replay mode has no recording for this substitute search: {exc}")
     repo.save_findall_run(findall_run)
     return {"findall_run": findall_run.model_dump(mode="json"), **_substitutes_view(p, resource_id)}
 
