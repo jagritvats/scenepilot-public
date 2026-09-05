@@ -218,3 +218,32 @@ def test_the_commit_endpoints(monkeypatch):
         assert any(d["day_number"] == 7 for d in days)
         log = c.get("/api/projects/proj_nightfall/activity").json()["events"]
         assert any(e["kind"] == "approval" and "pickup unit" in e["message"] for e in log)
+
+
+# --------------------------------------------------------------------------- #
+# The same scene cannot end up on two days
+# --------------------------------------------------------------------------- #
+
+
+def test_a_pickup_day_will_not_be_committed_while_its_scene_is_still_booked():
+    """`commit_placement` asked this and `materialize_pickup_day` did not.
+
+    The pickup day exists to catch a scene that came *off* a day. Committing one while the recovery
+    is still awaiting approval — the scene still sitting on Day 4, because the producer has not
+    approved the deferral yet — put that scene on the new day as well, and the schedule then held it
+    twice, on two days, both looking legitimate. Both routes are advertised buttons, so this is two
+    clicks in the order a producer would naturally make them.
+    """
+    p = build_project()
+    plan = _plan(p, ["sc_48"])  # planned *without* carrying it off Day 4 first
+    pickup = plan.synthesized_pickup_day
+    assert pickup is not None, "the hero carry has no downstream home, so a pickup day is synthesized"
+
+    with pytest.raises(CommitRefused, match="still scheduled on another day"):
+        materialize_pickup_day(p, pickup)
+
+    # Released first, the same commit is allowed — the guard blocks a double booking, not the feature.
+    _carry(p, "sc_48")
+    materialize_pickup_day(p, pickup)
+    booked = [(d.id, i.scene_id) for d in p.shoot_days for i in d.items if i.scene_id == "sc_48"]
+    assert len(booked) == 1, f"sc_48 is on more than one day: {booked}"

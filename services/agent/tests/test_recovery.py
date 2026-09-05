@@ -206,3 +206,64 @@ def test_revalidation_reports_no_change_when_the_fact_cannot_touch_the_day():
     state = RescueState(shoot_day_id=day.id, disruption_id=d.id, baseline=[i.model_copy() for i in day.items], options=options)
     _accepted_curfew(p)
     assert revalidate_options(p, day, d, state) == []
+
+
+def test_the_feed_names_rejected_options_by_the_letter_the_list_shows():
+    """The activity feed and the option list must agree about which option was rejected.
+
+    Rejections used to be logged in `_step_candidates`, before `_step_proposals` could add Gemini
+    options and `rank_options` re-letter the whole list. So the feed named an option by the letter it
+    held *before* the sort: "Option D rejected — …" beside a list showing D as feasible. Both are on
+    one screen, and the demo video reads the letters aloud.
+    """
+    import asyncio
+
+    from scenepilot.domain.models import RescueState, RunKind, WorkflowRun
+    from scenepilot.seed.nightfall import DAY4_ID, build_project, make_fixture_disruption
+    from scenepilot.store.db import make_engine
+    from scenepilot.store.repo import Repo
+    from scenepilot.workflows.context import RunContext
+    from scenepilot.workflows.rescue import run_rescue
+
+    repo = Repo(make_engine("sqlite:///:memory:"))
+    p = build_project()
+    d = make_fixture_disruption(p.id, DAY4_ID, "rain_pm")
+    p.disruptions.append(d)
+    repo.save_project(p)
+    run = WorkflowRun(project_id=p.id, kind=RunKind.RESCUE, mode="replay",
+                      rescue=RescueState(shoot_day_id=DAY4_ID, disruption_id=d.id))
+    repo.save_run(run)
+    asyncio.run(run_rescue(RunContext(repo, run, p)))
+
+    saved = repo.get_run(run.id)
+    options = {o.label: o.feasible for o in saved.rescue.options}
+    logged = [
+        e.message.split()[1]
+        for e in repo.list_activity(run_id=run.id)
+        if e.message.startswith("Option ") and "rejected:" in e.message
+    ]
+    assert logged, "the feed must say which options were rejected and why"
+
+    # The label check above only bites when Gemini actually adds an option — in replay the recorded
+    # run adds none, so `rank_options` never re-letters and the old code looked fine. What is
+    # deterministic is *when* the lines are written: they must come after the proposals step, since
+    # that is what can add options and re-letter the list. On the old code they were emitted in
+    # `_step_candidates`, before it.
+    messages = [e.message for e in repo.list_activity(run_id=run.id)]
+    # Either ending of the proposals step — it reports what it added, or reports being skipped.
+    proposals_at = next(
+        (i for i, m in enumerate(messages)
+         if m.startswith("Rescue Planner proposed") or m.startswith("Gemini proposals skipped")),
+        None,
+    )
+    assert proposals_at is not None, "the proposals step should report itself either way"
+    first_rejection = next(i for i, m in enumerate(messages) if m.startswith("Option ") and "rejected:" in m)
+    assert first_rejection > proposals_at, (
+        "rejected options are named before the proposals step can re-letter the list, so the letter "
+        "in the feed is the one the option held before ranking"
+    )
+    for label in logged:
+        assert label in options, f"the feed names Option {label}, which is not on the list"
+        assert options[label] is False, (
+            f"the feed says Option {label} was rejected; the list shows it as feasible"
+        )

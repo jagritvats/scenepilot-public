@@ -1,7 +1,7 @@
 # ScenePilot — Production Intelligence & Resilient Field Coordination 🎬
 
 > Built with **Google ADK + Gemini 3.5** and the **Parallel Runtime API Suite (Search, Extract, Task, FindAll, Memory, Monitor)**.  
-> **611 Automated Tests Passing** · **Next.js 16 (Turbopack)** · **Deterministic Constraint Engine**
+> **614 Automated Tests Passing** · **Next.js 16 (Turbopack)** · **Deterministic Constraint Engine**
 
 ScenePilot is an intelligent production control room for film and television crews. It answers two connected operational questions:
 
@@ -273,13 +273,13 @@ cd services/agent && uv run python scripts/live_validate.py deep
 
 Without keys the rescue workflow still runs end-to-end on deterministic logic: the verification searches fail visibly (logged as warnings, shown as errored `SearchRun`s), the report is treated as unverified, and Gemini explanations fall back to deterministic text. The planning workflow needs Gemini and Parallel.
 
-### Automated Tests (611/611 Passing)
+### Automated Tests (614/614 Passing)
 
 ```bash
 cd services/agent && uv run pytest -q
 ```
 
-All **611 tests** pass in under a minute:
+All **614 tests** pass in under a minute:
 - **Orchestration**: both pipelines are ADK `Workflow` graphs — the follow-up loop is a routed cycle, the
   rescue graph is terminal at producer approval, node names match the stages a run reports, and a node that
   raises stops the graph while keeping its original exception (`test_graph.py`).

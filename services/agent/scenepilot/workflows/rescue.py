@@ -227,9 +227,12 @@ async def _step_candidates(ctx: RunContext, rec: _Recovery) -> None:
     options = generate_candidates(ctx.project, day, disruption, impact, verification_confidence=rec.confidence)
     feasible = [o for o in options if o.feasible]
     rejected = [o for o in options if not o.feasible]
+    # Counts only. The per-option lines wait until `_step_explain`, because the letters are not
+    # settled yet: `_step_proposals` may add Gemini options and then `rank_options` re-letters the
+    # whole list. Logging them here named an option by the letter it held *before* the sort, so the
+    # feed could say "Option D rejected" while the list on the same screen showed D as feasible —
+    # visible to anyone reading both, and the video reads the letters aloud.
     ctx.log("deterministic", f"{len(feasible)} feasible recovery schedule(s) shortlisted, {len(rejected)} rejected by hard constraints", {"labels": [o.label for o in options]})
-    for o in rejected:
-        ctx.log("deterministic", f"Option {o.label} rejected: {o.rejected_reason}", {"option_id": o.id})
     rec.options = options
 
 
@@ -258,6 +261,10 @@ async def _step_proposals(ctx: RunContext, rec: _Recovery) -> None:
 async def _step_explain(ctx: RunContext, rec: _Recovery) -> None:
     state, day, disruption = _day_and_disruption(ctx)
     ctx.stage("explain")
+    # Now the letters are final — every option that is going to exist exists, and ranking has run.
+    for o in rec.options:
+        if not o.feasible:
+            ctx.log("deterministic", f"Option {o.label} rejected: {o.rejected_reason}", {"option_id": o.id})
     recommended = next((o for o in rec.options if o.feasible), None)
     try:
         expl = await ctx.gemini.run_structured("rescue_explainer", _explain_prompt(ctx.project, day, disruption, rec.options), RescueExplanationOutput)

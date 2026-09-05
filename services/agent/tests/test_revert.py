@@ -123,3 +123,48 @@ def test_a_run_that_was_never_applied_has_nothing_to_revert(client):
 
 def test_an_unknown_run_is_a_404(client):
     assert client.post("/api/runs/run_nope/revert", json={"reason": "x"}).status_code == 404
+
+
+def test_a_revert_is_refused_while_the_carried_scene_is_booked_on_another_day():
+    """A revert puts the carried scenes back. It must not put one back on top of a real booking.
+
+    Both halves are advertised buttons — README offers "commit a downstream placement or materialise
+    the synthesised pickup day" and "revert an applied recovery" — so this is those two pressed in
+    the order a producer would press them. The restore reads `RescueState.baseline` wholesale and had
+    no idea the scene had since been given a home, so it booked it on both days and returned 200 with
+    a reassuring note.
+
+    Refused rather than reconciled: un-committing the other day is a second decision and it belongs
+    to the producer. The message has to name the day so it can be undone there first.
+    """
+    from scenepilot.domain.models import ChangeSet, RescueState, RunKind, WorkflowRun
+    from scenepilot.seed.nightfall import build_project
+    from scenepilot.services.revert import RevertRefused, revert_changeset
+
+    p = build_project()
+    day4 = p.shoot_day(DAY4_ID)
+    baseline = [i.model_copy(deep=True) for i in day4.items]
+    carried = next(i for i in baseline if i.scene_id == "sc_42")
+
+    # An approved recovery that carried sc_42 off Day 4 …
+    day4.items = [i for i in day4.items if i.scene_id != carried.scene_id]
+    changeset = ChangeSet(project_id=p.id, shoot_day_id=DAY4_ID, changes=[])
+    p.changeset_ids.append(changeset.id)
+    run = WorkflowRun(
+        project_id=p.id, kind=RunKind.RESCUE, mode="replay", status=RunStatus.APPLIED,
+        rescue=RescueState(shoot_day_id=DAY4_ID, disruption_id="dis_test", baseline=baseline,
+                           changeset=changeset),
+    )
+
+    # … and a producer who then gave that scene a home on another day. Written straight onto the day
+    # rather than through `commit_placement`, which rightly refuses sc_42 on Day 5 (no rooftop, no
+    # crane, no golden hour). How the booking got there is not what this guard is about; that the
+    # scene is *on* another day is.
+    other = p.shoot_day("day_5")
+    other.items.append(carried.model_copy(deep=True))
+
+    with pytest.raises(RevertRefused, match="booked elsewhere"):
+        revert_changeset(p, run, changeset, reverted_by="producer", reason="test")
+
+    booked = [(d.id, i.scene_id) for d in p.shoot_days for i in d.items if i.scene_id == "sc_42"]
+    assert len(booked) == 1, f"sc_42 ended up on more than one day: {booked}"

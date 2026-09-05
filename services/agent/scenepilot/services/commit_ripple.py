@@ -325,6 +325,21 @@ def materialize_pickup_day(project: Project, pickup: ShootDay, *, committed_by: 
         )
     if not pickup.items:
         raise CommitRefused("A pickup day with no scenes on it is not a day; it is a placeholder.")
+    # The same question `commit_placement` asks, and for the same reason: a pickup day exists to
+    # catch scenes that came *off* a day. Without this, materialising while the recovery is still
+    # awaiting approval put the carried scene on the new day while it was still sitting on the old
+    # one — the producer had not approved the deferral yet — and the schedule then held one scene
+    # twice, on two days, with both looking legitimate.
+    still_booked = sorted(
+        {project.scene(i.scene_id).number for i in pickup.items if not _scene_is_unscheduled(project, i.scene_id)}
+    )
+    if still_booked:
+        raise CommitRefused(
+            f"Scene{'s' if len(still_booked) > 1 else ''} {', '.join(still_booked)} "
+            f"{'are' if len(still_booked) > 1 else 'is'} still scheduled on another day. "
+            "Approve the recovery that carries it off first — a pickup day catches a scene that has been "
+            "released, and committing one now would book the same scene twice."
+        )
 
     day = pickup.model_copy(deep=True)
     for item in day.items:

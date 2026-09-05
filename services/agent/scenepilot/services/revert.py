@@ -25,7 +25,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from ..domain.enums import RunKind, RunStatus, ShootDayStatus
+from ..domain.enums import RunKind, RunStatus, ScheduleItemStatus, ShootDayStatus
 from ..domain.models import Change, ChangeSet, Project, ShootDay, WorkflowRun, utcnow
 from .changeset import derive_equipment_calls, derive_transport
 from .commit_ripple import _revalidate
@@ -144,6 +144,26 @@ def revert_changeset(project: Project, run: WorkflowRun, changeset: ChangeSet, *
         raise RevertRefused(
             f"Day {day.day_number} has wrapped. What it shot is a matter of record now, and un-approving "
             "the recovery it shot under would not change that."
+        )
+
+    # A revert puts the carried scenes back on this day. If one of them has since been committed
+    # somewhere else — a downstream placement, or a materialised pickup day created to catch exactly
+    # this scene — restoring the snapshot would book it on both, and both would look legitimate.
+    # Refused rather than reconciled: un-committing another day's schedule is a second decision, and
+    # it is the producer's, not this function's. The message names the day so it can be undone there
+    # first.
+    elsewhere: list[str] = []
+    for item in run.rescue.baseline:
+        for other in project.shoot_days:
+            if other.id == day.id:
+                continue
+            if any(i.scene_id == item.scene_id and i.status != ScheduleItemStatus.DEFERRED for i in other.items):
+                elsewhere.append(f"Scene {project.scene(item.scene_id).number} on Day {other.day_number}")
+    if elsewhere:
+        raise RevertRefused(
+            "This recovery cannot be reverted while the scenes it carried are booked elsewhere: "
+            + "; ".join(sorted(set(elsewhere)))
+            + ". Release that placement first, or the same scene would sit on two days."
         )
 
     before = [i.model_copy(deep=True) for i in day.items]
