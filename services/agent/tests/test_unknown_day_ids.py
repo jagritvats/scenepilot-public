@@ -48,3 +48,36 @@ def test_a_real_day_still_works():
     with TestClient(app) as client:
         assert client.get(f"/api/projects/{PROJECT_ID}/shoot-days/day_4/ephemeris").status_code == 200
         assert client.get(f"/api/projects/{PROJECT_ID}/shoot-days/day_4/multiday-plan").status_code == 200
+
+
+def test_all_four_documents_agree_on_how_many_days_the_picture_has():
+    """"Day 6 of 4" is not a thing. The four paper documents must print one denominator.
+
+    The call sheet read the production's own numbering (`max(day_number)` = 6) and carried a comment
+    explaining why; the sides packet, the DPR and the movement order counted rows instead
+    (`len(shoot_days)` = 4, because this project models Days 3-6 of a six-day schedule). Day 6
+    therefore printed as "Day 6 of 4" on three documents and "Day 6 of 6" on the fourth — and the
+    Day 6 sides packet is linked straight from the home page.
+    """
+    def find_total(payload):
+        """Each document nests its header under a different key (`current`, `sides`, ...)."""
+        if isinstance(payload, dict):
+            if "day_of_total" in payload:
+                return payload["day_of_total"]
+            for v in payload.values():
+                found = find_total(v)
+                if found is not None:
+                    return found
+        return None
+
+    with TestClient(app) as client:
+        base = f"/api/projects/{PROJECT_ID}/shoot-days"
+        totals = {
+            "call-sheet": find_total(client.get(f"{base}/day_6/call-sheet").json()),
+            "sides": find_total(client.get(f"{base}/day_6/sides").json()),
+            "movement-order": find_total(client.get(f"{base}/day_6/movement-order").json()),
+            "dpr": find_total(client.get(f"{base}/day_3/dpr").json()),
+        }
+    assert None not in totals.values(), f"a document stopped reporting its denominator: {totals}"
+    assert len(set(totals.values())) == 1, f"the paper disagrees about the picture's length: {totals}"
+    assert totals["sides"] >= 6, f"a six-day schedule cannot be 'of {totals['sides']}'"

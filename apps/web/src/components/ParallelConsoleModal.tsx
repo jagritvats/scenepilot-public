@@ -69,7 +69,7 @@ const PARALLEL_APIS: ParallelApi[] = [
   {
     name: "Parallel Task",
     badge: "Structured Dossier",
-    endpoint: "POST /v1/tasks",
+    endpoint: "POST /v1/tasks/runs",
     feature: "task",
     role: "Structured location intelligence & confidence-graded constraints",
     cost: "$25 / 1k runs on core",
@@ -82,7 +82,7 @@ const PARALLEL_APIS: ParallelApi[] = [
   {
     name: "Parallel FindAll & Entity Search",
     badge: "Supplier Discovery",
-    endpoint: "POST /v1/findall",
+    endpoint: "POST /v1beta/findall/entity-search · /runs",
     feature: "findall",
     role: "Autonomous substitute vendor and replacement equipment sourcing",
     cost: "$5 / 1k (Entity Search) · $0.25 + $0.03/match (FindAll base)",
@@ -95,7 +95,7 @@ const PARALLEL_APIS: ParallelApi[] = [
   {
     name: "Parallel Memory",
     badge: "Production Brain",
-    endpoint: "GET/POST /v1/memory",
+    endpoint: "POST /v1beta/memory/retrieve",
     feature: "memory",
     role: "Cross-shoot-day institutional memory and verified fact retention",
     cost: "Beta — no per-call cost",

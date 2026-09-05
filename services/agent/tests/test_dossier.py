@@ -506,3 +506,42 @@ def test_re_researching_continues_the_previous_interaction():
     assert fake.created[1]["previous_interaction_id"] == "int_1"
     # the recorded request is unchanged, so the replay key is identical for both runs
     assert build_task_request(fake.created[0]["input"], "core-fast") == build_task_request(fake.created[1]["input"], "core-fast")
+
+
+def test_an_accepted_curfew_still_binds_after_the_day_crosses_midnight():
+    """The curfew must not stop existing at 24:00 — a night unit's day legitimately runs past it.
+
+    A shoot day is measured in minutes from its own 00:00 and Day 6's night unit hard-wraps at 28:00,
+    so a strip can sit entirely on the far side of midnight. The window logic used to split a
+    wrapping rule into `(22:00, 24:00)`, `(00:00, 06:00)` and `(46:00, 48:00)` — which guards
+    nothing between 24:00 and 30:00. A scene at 24:00–26:30 therefore scored *zero* minutes inside a
+    curfew it sits wholly within, and the schedule validated as legal.
+
+    That is the exact rule the demo's climax turns on: accept the cited statute, and the schedule
+    that breaks it is rejected. Nudging the strip an hour later must not be a way around it.
+    """
+    p, tr, _ = _run_dossier()
+    merge_facts(p, "loc_rooftop", map_facts(tr, p))
+    curfew = next(f for f in p.location_facts if f.key == "noise_curfew")
+    curfew.accepted = True
+    assert curfew.binds is True
+
+    day = p.shoot_day(DAY4_ID)
+    item = next(i for i in day.items if i.location_id == "loc_rooftop")
+
+    def minutes_inside(start: str, end: str) -> int:
+        item.start, item.end = start, end
+        ctx = ValidationContext(project=p, day=day, location_facts=[f for f in p.location_facts if f.binds])
+        v = [x for x in validate_schedule(ctx, day.items) if x.kind == ConstraintKind.EXTERNAL_RULE]
+        return sum(x.minutes or 0 for x in v)
+
+    # Wholly before midnight, straddling it, and wholly after it: a 150-minute scene inside a
+    # 22:00–06:00 ban is 150 minutes in breach wherever it sits in that window.
+    assert minutes_inside("22:00", "24:30") == 150
+    assert minutes_inside("23:30", "26:00") == 150
+    assert minutes_inside("24:00", "26:30") == 150, "a strip past midnight escaped the curfew entirely"
+    assert minutes_inside("25:00", "27:30") == 150
+
+    # Partial overlap is still measured, not rounded up, and a scene clear of the ban is clean.
+    assert minutes_inside("21:00", "23:30") == 90
+    assert minutes_inside("18:00", "20:30") == 0

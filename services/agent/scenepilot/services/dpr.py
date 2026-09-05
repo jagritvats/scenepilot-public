@@ -25,7 +25,7 @@ from __future__ import annotations
 from typing import Any
 
 from ..domain.models import Project, ShootDay
-from .callsheet import advance_block, eighths_label
+from .callsheet import advance_block, day_of_total, eighths_label
 from .completion import day_completion
 from .day_cost import day_cost
 from .timeutil import to_minutes
@@ -80,7 +80,7 @@ def build_dpr(project: Project, day: ShootDay) -> dict[str, Any] | None:
         "production": project.title,
         "fictional": True,
         "day_number": day.day_number,
-        "day_of_total": len(project.shoot_days),
+        "day_of_total": day_of_total(project, day),
         "date": day.date,
         "status": day.status.value,
         "unit_call": completion["unit_call"],

@@ -217,8 +217,23 @@ def external_rule_check(project: Project, facts: list[LocationFact], scene: Scen
         url = fact.citations[0].url if fact.citations else None
         if rule.kind == "TIME_WINDOW_BAN" and rule.window_start and rule.window_end:
             ws, we = to_minutes(rule.window_start), to_minutes(rule.window_end)
-            # A window that wraps past midnight (22:00–06:00) is two windows within a shoot day.
-            windows = [(ws, we)] if we > ws else [(ws, 24 * 60), (0, we), (ws + 24 * 60, 48 * 60)]
+            # Tile the ban across the frame instead of cutting it at midnight.
+            #
+            # A shoot day is measured in minutes from its own 00:00 and legitimately runs past 24:00
+            # — Day 6's night unit hard-wraps at 28:00. The previous form split a wrapping rule into
+            # `(ws, 24:00)`, `(00:00, we)` and `(ws+24h, 48:00)`, which leaves **24:00 to we+24h
+            # uncovered**: for 22:00–06:00 nothing at all guarded 24:00–30:00. A night strip nudged
+            # past midnight was therefore judged legal — Sc 58 at 24:00–26:30 scored zero minutes
+            # inside a curfew it sits wholly within, and a board committed through `commit_board`
+            # was accepted. That is the exact rule the demo's climax turns on.
+            #
+            # Extending the end past midnight instead of truncating it keeps each period one
+            # contiguous interval, and repeating it at ±24h covers a scene that starts before the
+            # day's own midnight or after it. A non-wrapping rule is the same expression with
+            # `end == we`, so both shapes go through one branch.
+            period = 24 * 60
+            rule_end = we if we > ws else we + period
+            windows = [(ws + k * period, rule_end + k * period) for k in (-1, 0, 1)]
             minutes = sum(overlap_minutes(start, end, a, b) for a, b in windows)
             if minutes > 0:
                 out.append(ConstraintViolation(

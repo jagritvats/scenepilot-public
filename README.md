@@ -1,7 +1,7 @@
 # ScenePilot — Production Intelligence & Resilient Field Coordination 🎬
 
 > Built with **Google ADK + Gemini 3.5** and the **Parallel Runtime API Suite (Search, Extract, Task, FindAll, Memory, Monitor)**.  
-> **604 Automated Tests Passing** · **Next.js 16 (Turbopack)** · **Deterministic Constraint Engine**
+> **609 Automated Tests Passing** · **Next.js 16 (Turbopack)** · **Deterministic Constraint Engine**
 
 ScenePilot is an intelligent production control room for film and television crews. It answers two connected operational questions:
 
@@ -273,13 +273,13 @@ cd services/agent && uv run python scripts/live_validate.py deep
 
 Without keys the rescue workflow still runs end-to-end on deterministic logic: the verification searches fail visibly (logged as warnings, shown as errored `SearchRun`s), the report is treated as unverified, and Gemini explanations fall back to deterministic text. The planning workflow needs Gemini and Parallel.
 
-### Automated Tests (604/604 Passing)
+### Automated Tests (609/609 Passing)
 
 ```bash
 cd services/agent && uv run pytest -q
 ```
 
-All **604 tests** pass in under a minute:
+All **609 tests** pass in under a minute:
 - **Orchestration**: both pipelines are ADK `Workflow` graphs — the follow-up loop is a routed cycle, the
   rescue graph is terminal at producer approval, node names match the stages a run reports, and a node that
   raises stops the graph while keeping its original exception (`test_graph.py`).
@@ -288,7 +288,7 @@ All **604 tests** pass in under a minute:
 - **Phase 1**: Screenplay parsers (Fountain & FDX), eighths math, Day-Out-Of-Days (DOOD) generator, and Gemini breakdown extraction (`test_parsers.py`, `test_dood.py`, `test_breakdown_agent.py`, `test_screenplay_api.py`).
 - **Phase 2**: NOAA astronomical ephemeris equations, DGA compounding meal penalties & turnaround rest, and multi-unit concurrency (`test_ephemeris.py`, `test_labor_rules.py`, `test_scheduling_api.py`).
 - **Phase 3**: Multi-day cascading ripple solver across downstream days, pickup day synthesis, and multi-channel WhatsApp/SMS call sheet field dispatch (`test_multiday_solver.py`, `test_delivery.py`, `test_phase3_api.py`).
-- **Deep Parallel integration** (76 tests): the confidence gate turning cited facts into HARD/SOFT/ADVISORY constraints (`test_dossier.py`), substitute-supplier discovery across Entity Search and FindAll (`test_findall.py`), the production brain (`test_memory.py`), snapshot monitors and pending fact changes — a binding change keeps constraining the schedule until the producer adopts it, and adopting clears the acceptance (`test_fact_watch.py`, `test_monitor.py`), and the Parallel tool layer with its fake SDK client double, query hygiene and record/replay keying (`test_parallel_tools.py`).
+- **Deep Parallel integration** (79 tests): the confidence gate turning cited facts into HARD/SOFT/ADVISORY constraints (`test_dossier.py`), substitute-supplier discovery across Entity Search and FindAll (`test_findall.py`), the production brain (`test_memory.py`), snapshot monitors and pending fact changes — a binding change keeps constraining the schedule until the producer adopts it, and adopting clears the acceptance (`test_fact_watch.py`, `test_monitor.py`), and the Parallel tool layer with its fake SDK client double, query hygiene and record/replay keying (`test_parallel_tools.py`).
 - **Deployment safety**: the paid-call budget and per-endpoint cooldown that bound spend on a public hosted demo (`test_budget.py`), and the shoot-day re-anchor that keeps the hero day dated today on a long-lived instance (`test_seed_anchor.py`).
 - **Core domain**: interval logic, permit windows, travel, disruption exposure, candidate ranking, **infeasible-option rejection** against real constraints, ChangeSet build/apply idempotency, derived coordination actions, and both orchestrators end-to-end.
 

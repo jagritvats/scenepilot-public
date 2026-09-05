@@ -222,7 +222,7 @@ export default function ProjectsPage() {
       <div className="flex flex-wrap items-center gap-2 pt-1 text-[11px] text-dim">
         <span className="mono text-[10px] px-2 py-0.5 rounded bg-accent/15 text-accent font-semibold">Google Cloud Agentic Cinema</span>
         <span className="mono text-[10px] px-2 py-0.5 rounded bg-parallel/15 text-parallel font-semibold">Parallel partner track</span>
-        <span className="mono text-[10px] px-2 py-0.5 rounded bg-ok/15 text-ok font-semibold">604 Tests Passing</span>
+        <span className="mono text-[10px] px-2 py-0.5 rounded bg-ok/15 text-ok font-semibold">609 Tests Passing</span>
         <span>Google ADK · Gemini 3.5 Flash · Parallel Search, Extract, Task, FindAll, Memory, Monitor · Next.js 16</span>
       </div>
     </div>

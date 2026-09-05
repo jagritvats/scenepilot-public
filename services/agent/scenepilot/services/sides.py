@@ -19,6 +19,7 @@ from __future__ import annotations
 from typing import Any
 
 from ..domain.models import Project, ShootDay
+from .callsheet import day_of_total
 from .timeutil import to_minutes
 
 
@@ -82,7 +83,7 @@ def build_sides(project: Project, day: ShootDay) -> dict[str, Any]:
         "production": project.title,
         "fictional": True,
         "day_number": day.day_number,
-        "day_of_total": len(project.shoot_days),
+        "day_of_total": day_of_total(project, day),
         "date": day.date,
         "unit_call": day.unit_call,
         "status": day.status.value,

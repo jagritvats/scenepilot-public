@@ -334,6 +334,21 @@ def _signature_block(project: Project, approved_by: str | None, approved_at: str
     }
 
 
+
+def day_of_total(project: Project, day: ShootDay) -> int:
+    """The denominator in "Day 4 of 6" — the production's own numbering, not the row count.
+
+    Those are different numbers here and the difference matters: this project models Days 3–6 of a
+    six-day schedule, so counting the rows prints "Day 4 of 4" and tells the unit it is wrapping the
+    picture on a day with two more ahead of it. The call sheet had this right and said so in a
+    comment; the sides packet, the DPR and the movement order each counted rows instead, so Day 6
+    printed as **"Day 6 of 4"** on three documents while the call sheet for the same day printed
+    "of 6". Shared so the four cannot drift apart again. `days_held` carries which days are actually
+    on file, so a document can say that rather than imply it holds them all.
+    """
+    return max((d.day_number for d in project.shoot_days), default=day.day_number)
+
+
 def build_call_sheet(
     project: Project,
     day: ShootDay,
@@ -513,13 +528,7 @@ def build_call_sheet(
         "production": project.title,
         "synthetic": project.synthetic,
         "day_number": day.day_number,
-        # "Day 4 of 6" — the line that tells a crew where in the schedule they are, read off the
-        # production's own day numbering rather than off how many days ScenePilot happens to hold.
-        # Those are different numbers here and the difference matters: this project models Days 3–6
-        # of a six-day schedule, so counting the rows would print "Day 4 of 4" and tell the unit it
-        # was wrapping the picture on a day with two more ahead of it. `days_held` carries the gap
-        # so the sheet can say which days are actually on file instead of implying all of them are.
-        "day_of_total": max((d.day_number for d in project.shoot_days), default=day.day_number),
+        "day_of_total": day_of_total(project, day),
         "days_held": sorted(d.day_number for d in project.shoot_days),
         "revision": revision_of(revision),
         "date": day.date,

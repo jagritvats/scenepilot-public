@@ -25,6 +25,7 @@ from __future__ import annotations
 from typing import Any
 
 from ..domain.models import Project, ShootDay
+from .callsheet import day_of_total
 from .changeset import VEHICLE_LOAD_MINUTES as LOAD_MINUTES
 from .geo import day_geography
 from .timeutil import to_hhmm, to_minutes
@@ -89,7 +90,7 @@ def build_movement_order(project: Project, day: ShootDay) -> dict[str, Any]:
         "production": project.title,
         "fictional": True,
         "day_number": day.day_number,
-        "day_of_total": len(project.shoot_days),
+        "day_of_total": day_of_total(project, day),
         "date": day.date,
         "status": day.status.value,
         "unit_call": day.unit_call,
